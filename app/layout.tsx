@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   },
   description:
     "Your business is invisible to AI search. We audit, fix, and monitor your presence across ChatGPT, Google AI, and Perplexity so customers find you first.",
+  verification: {
+    google: "fVrPXoghLTUXCWoQ5DBqBIuc6vSo1JbLA1qU7ayvT28",
+  },
   metadataBase: new URL("https://avantevisibility.com"),
   openGraph: {
     type: "website",
