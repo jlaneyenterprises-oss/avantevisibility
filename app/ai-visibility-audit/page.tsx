@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Hero from "@/components/Hero";
 import HeroIllustration from "@/components/HeroIllustration";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -242,9 +243,13 @@ export default function AIVisibilityAuditPage() {
               The Shift to AI Search Is Already Here
             </h2>
             <p className="text-text-muted leading-relaxed text-lg mb-8">
-              Your potential customers are increasingly getting their answers
-              from AI &mdash; not from scrolling through search results. The
-              data makes the shift clear:
+              An <strong>AI visibility audit</strong> reveals whether your
+              business is being recommended &mdash; or ignored &mdash; by
+              ChatGPT, Perplexity, Google AI Overviews, and other generative
+              engines. Also known as a <strong>GEO audit</strong> or{" "}
+              <strong>AEO audit</strong>, this analysis shows exactly where you
+              stand in the new AI-driven search landscape. The data makes the
+              shift clear:
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -508,6 +513,29 @@ export default function AIVisibilityAuditPage() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <FAQAccordion items={faqItems} />
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="bg-bg-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl font-bold text-secondary text-center mb-8">
+            Strengthen Your Full Digital Presence
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link href="/review-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Review Intelligence Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Your reviews shape AI recommendations. Find out what they&apos;re really saying.</p>
+            </Link>
+            <Link href="/gbp-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Google Business Profile Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">AI platforms pull data from your GBP. Make sure it&apos;s accurate and complete.</p>
+            </Link>
+            <Link href="/packages" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Full Digital Visibility Package</h3>
+              <p className="mt-2 text-sm text-text-muted">Bundle all three audits and save $94 with our most popular package.</p>
+            </Link>
           </div>
         </div>
       </section>

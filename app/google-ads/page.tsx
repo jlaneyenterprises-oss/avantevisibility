@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import HeroIllustration from "@/components/HeroIllustration";
@@ -23,11 +24,11 @@ const CALENDLY_URL = "https://calendly.com/avantevisibility";
 export const metadata: Metadata = {
   title: "Google Ads & Landing Pages for Local Business",
   description:
-    "Google Ads campaigns and conversion-optimized landing pages built specifically for local businesses. No wasted budget. Just qualified leads.",
+    "Google Ads campaigns and conversion-optimized landing pages built for local businesses. Setup from $497, management from $397/mo. No wasted budget.",
   openGraph: {
     title: "Google Ads & Landing Pages for Local Business",
     description:
-      "Google Ads campaigns and conversion-optimized landing pages built specifically for local businesses. No wasted budget. Just qualified leads.",
+      "Google Ads campaigns and conversion-optimized landing pages built for local businesses. Setup from $497, management from $397/mo. No wasted budget.",
   },
 };
 
@@ -374,6 +375,32 @@ export default function GoogleAdsPage() {
               Contact us for a custom proposal.
             </a>
           </p>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl font-bold text-secondary text-center mb-8">
+            Maximize Your Full Digital Visibility
+          </h2>
+          <p className="text-text-muted text-center mb-8 max-w-2xl mx-auto">
+            Google Ads drive traffic, but your visibility ecosystem determines whether that traffic converts. These audits ensure the rest of your digital presence is working just as hard.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link href="/ai-visibility-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">AI Visibility Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">See if AI search platforms are recommending your business alongside your paid ads.</p>
+            </Link>
+            <Link href="/review-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Review Intelligence Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Reviews impact ad quality score and conversions. Understand what yours are saying.</p>
+            </Link>
+            <Link href="/gbp-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Google Business Profile Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Your GBP drives local search visibility that compounds your paid traffic.</p>
+            </Link>
+          </div>
         </div>
       </section>
 

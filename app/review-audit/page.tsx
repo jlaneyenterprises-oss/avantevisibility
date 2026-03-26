@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import HeroIllustration from "@/components/HeroIllustration";
@@ -283,10 +284,12 @@ export default function ReviewAuditPage() {
               Intelligence Report.
             </h2>
             <p className="text-text-muted leading-relaxed text-lg mb-8">
-              Looking only at your star rating is like reading only the final
-              score of a game. It tells you whether you won or lost, but nothing
-              about why. Your reviews contain a wealth of operational
-              intelligence that most business owners never extract:
+              A <strong>review intelligence audit</strong> goes far beyond your
+              star rating. Looking only at that number is like reading only the
+              final score of a game &mdash; it tells you whether you won or
+              lost, but nothing about why. Our{" "}
+              <strong>review audit</strong> extracts the operational intelligence
+              hidden in your reviews that most business owners never see:
             </p>
             <ul className="space-y-3 mb-12">
               {[
@@ -534,6 +537,29 @@ export default function ReviewAuditPage() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <FAQAccordion items={faqItems} />
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl font-bold text-secondary text-center mb-8">
+            Complete Your Visibility Picture
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link href="/ai-visibility-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">AI Visibility Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Reviews feed AI recommendations. See if those platforms are recommending you.</p>
+            </Link>
+            <Link href="/gbp-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Google Business Profile Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Your GBP hosts your reviews. Make sure the full profile is optimized.</p>
+            </Link>
+            <Link href="/packages" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Full Digital Visibility Package</h3>
+              <p className="mt-2 text-sm text-text-muted">Bundle all three audits and save $94 with our most popular package.</p>
+            </Link>
           </div>
         </div>
       </section>

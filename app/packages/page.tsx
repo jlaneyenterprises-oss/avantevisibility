@@ -12,11 +12,11 @@ const CALENDLY_URL = "https://calendly.com/avantevisibility";
 export const metadata: Metadata = {
   title: "Digital Visibility Packages & Pricing | Avante Visibility",
   description:
-    "Bundle your AI visibility, review, and GBP audits and save. See all packages and pricing — designed for local businesses ready to grow.",
+    "Bundle AI visibility, review intelligence, and GBP audits to save up to $94. Full Digital Visibility Package starts at $597. See all audit packages and pricing.",
   openGraph: {
     title: "Digital Visibility Packages & Pricing | Avante Visibility",
     description:
-      "Bundle your AI visibility, review, and GBP audits and save. See all packages and pricing — designed for local businesses ready to grow.",
+      "Bundle AI visibility, review intelligence, and GBP audits to save up to $94. Full Digital Visibility Package starts at $597. See all audit packages and pricing.",
   },
 };
 

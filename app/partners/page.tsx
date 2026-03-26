@@ -206,7 +206,9 @@ export default function PartnersPage() {
               </h2>
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
-                  The GEO (Generative Engine Optimization) market was valued at{" "}
+                  Our <strong>white-label audit</strong> program lets agencies
+                  offer AI visibility, review intelligence, and GBP audits under
+                  their own brand. The GEO (Generative Engine Optimization) market was valued at{" "}
                   <span className="font-bold text-secondary">
                     $886 million in 2024
                   </span>{" "}

@@ -23,7 +23,7 @@ export default function Hero({
     <section className="relative bg-gradient-to-br from-secondary to-primary text-white overflow-hidden">
       {/* Background illustration */}
       {illustration && (
-        <div className="absolute inset-0 flex items-center justify-center opacity-40 pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-center opacity-40 pointer-events-none" aria-hidden="true" role="presentation">
           {illustration}
         </div>
       )}

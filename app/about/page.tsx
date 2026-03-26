@@ -10,11 +10,11 @@ const CALENDLY_URL = "https://calendly.com/avantevisibility";
 export const metadata: Metadata = {
   title: "About Avante Visibility | Jolyn — Digital Marketing Expert",
   description:
-    "20+ years in digital marketing, Google Ads specialist, and pioneer in AI visibility audits. Meet Jolyn and learn why Avante Visibility exists.",
+    "20+ years in digital marketing, Google Ads specialist, and pioneer in AI visibility audits for local businesses. Meet Jolyn and the story behind Avante Visibility.",
   openGraph: {
     title: "About Avante Visibility | Jolyn — Digital Marketing Expert",
     description:
-      "20+ years in digital marketing, Google Ads specialist, and pioneer in AI visibility audits. Meet Jolyn and learn why Avante Visibility exists.",
+      "20+ years in digital marketing, Google Ads specialist, and pioneer in AI visibility audits for local businesses. Meet Jolyn and the story behind Avante Visibility.",
   },
 };
 
@@ -137,6 +137,7 @@ export default function AboutPage() {
             {/* Story Text */}
             <div className="space-y-4 text-text-muted leading-relaxed">
               <p>
+                I&apos;m JoLyn Laney, founder of <strong>Avante Visibility</strong>.
                 I&apos;ve spent more than two decades in digital marketing &mdash;
                 long enough to have watched search change in ways most people
                 didn&apos;t see coming.

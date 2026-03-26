@@ -83,14 +83,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary">
-              The Search Game Changed. Most Businesses Missed the Memo.
+              AI Search Changed the Game. Most Businesses Missed the Memo.
             </h2>
             <p className="mt-6 text-text-muted leading-relaxed">
-              AI-powered search is no longer a future trend — it&apos;s happening
-              right now. ChatGPT, Google AI Overviews, Perplexity, and other AI
-              platforms are fundamentally changing how consumers find and choose
-              local businesses. The businesses that adapt will thrive. The ones
-              that don&apos;t will disappear from the results entirely.
+              An AI visibility audit reveals whether your business shows up when
+              customers ask ChatGPT, Google AI Overviews, or Perplexity for
+              recommendations. These AI platforms are fundamentally changing how
+              consumers find and choose local businesses. Without a GEO audit or
+              AEO audit to identify your gaps, you&apos;re invisible to a growing
+              share of your market.
             </p>
           </div>
 
@@ -171,7 +172,7 @@ export default function HomePage() {
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
-            Four Audits. Total Visibility.
+            AI Visibility, Review, &amp; GBP Audits — Total Visibility
           </h2>
           <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto leading-relaxed">
             Every Avante Visibility audit delivers a clear written report with
@@ -290,7 +291,7 @@ export default function HomePage() {
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
-            Bundle and Save
+            Bundle Your Audits and Save
           </h2>
           <p className="text-text-muted text-center mb-4 max-w-2xl mx-auto leading-relaxed">
             Most visibility problems don&apos;t live in just one place. Your

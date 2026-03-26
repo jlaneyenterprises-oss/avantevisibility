@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Hero from "@/components/Hero";
 import HeroIllustration from "@/components/HeroIllustration";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -26,6 +27,11 @@ export const metadata: Metadata = {
   title: "Google Business Profile Audit | GBP Audit Service",
   description:
     "Is your Google Business Profile costing you customers? Our GBP audit finds every ranking gap, wrong category, and missed opportunity. Starting at $197.",
+  openGraph: {
+    title: "Google Business Profile Audit | GBP Audit Service",
+    description:
+      "Is your Google Business Profile costing you customers? Our GBP audit finds every ranking gap, wrong category, and missed opportunity. Starting at $197.",
+  },
 };
 
 const faqItems = [
@@ -223,11 +229,13 @@ export default function GBPAuditPage() {
               Customers
             </h2>
             <p className="mt-6 text-text-muted leading-relaxed">
-              Your Google Business Profile is often the first thing a potential
-              customer sees &mdash; before your website, before your social
-              media, before anything else. If it&apos;s incomplete, miscategorized,
-              or inconsistent, you&apos;re not just missing opportunities.
-              You&apos;re handing them to your competitors.
+              A <strong>Google Business Profile audit</strong> examines the
+              listing most customers see first &mdash; before your website,
+              before your social media, before anything else. Our{" "}
+              <strong>GBP audit</strong> identifies whether your profile is
+              incomplete, miscategorized, or inconsistent. If it is, you&apos;re
+              not just missing opportunities &mdash; you&apos;re handing them
+              to your competitors.
             </p>
           </div>
 
@@ -456,6 +464,29 @@ export default function GBPAuditPage() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <FAQAccordion items={faqItems} />
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl font-bold text-secondary text-center mb-8">
+            Go Beyond Your Google Business Profile
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link href="/ai-visibility-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">AI Visibility Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Your GBP data feeds AI search. Find out if AI platforms are recommending you.</p>
+            </Link>
+            <Link href="/review-audit" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Review Intelligence Audit</h3>
+              <p className="mt-2 text-sm text-text-muted">Your reviews live on your GBP. Understand what they reveal about your business.</p>
+            </Link>
+            <Link href="/packages" className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all">
+              <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Full Digital Visibility Package</h3>
+              <p className="mt-2 text-sm text-text-muted">Bundle all three audits and save $94 with our most popular package.</p>
+            </Link>
           </div>
         </div>
       </section>
