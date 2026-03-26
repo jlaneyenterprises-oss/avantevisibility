@@ -2,9 +2,11 @@ import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const navLinks = [
-  { name: "AI Visibility Audit", href: "/audit" },
-  { name: "Reputation Engine", href: "/reputation" },
+  { name: "AI Visibility Audit", href: "/ai-visibility-audit" },
+  { name: "Review Intelligence Audit", href: "/review-audit" },
+  { name: "GBP Audit", href: "/gbp-audit" },
   { name: "Google Ads", href: "/google-ads" },
+  { name: "Packages", href: "/packages" },
   { name: "Partners", href: "/partners" },
   { name: "About", href: "/about" },
 ];
@@ -20,7 +22,8 @@ export default function Footer() {
               Avante <span className="text-primary">Visibility</span>
             </p>
             <p className="mt-3 text-sm text-gray-400">
-              AI search visibility agency for local businesses.
+              AI visibility audits, review intelligence, and Google Business
+              Profile audits for local businesses and agencies.
             </p>
           </div>
 

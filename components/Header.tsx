@@ -7,8 +7,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
 const services = [
-  { name: "AI Visibility Audit", href: "/audit" },
-  { name: "Reputation & Review Engine", href: "/reputation" },
+  { name: "AI Visibility Audit", href: "/ai-visibility-audit" },
+  { name: "Review Intelligence Audit", href: "/review-audit" },
+  { name: "Google Business Profile Audit", href: "/gbp-audit" },
   { name: "Google Ads & Landing Pages", href: "/google-ads" },
 ];
 
@@ -37,7 +38,7 @@ export default function Header() {
               </button>
               {servicesOpen && (
                 <div className="absolute top-full left-0 pt-2">
-                  <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[220px]">
+                  <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[260px]">
                     {services.map((s) => (
                       <Link
                         key={s.href}
@@ -51,6 +52,12 @@ export default function Header() {
                 </div>
               )}
             </div>
+            <Link
+              href="/packages"
+              className="text-sm font-medium text-text-primary hover:text-primary transition-colors"
+            >
+              Packages
+            </Link>
             <Link
               href="/partners"
               className="text-sm font-medium text-text-primary hover:text-primary transition-colors"
@@ -108,6 +115,13 @@ export default function Header() {
               </Link>
             ))}
             <hr className="border-gray-100" />
+            <Link
+              href="/packages"
+              className="block py-2 text-sm text-text-primary hover:text-primary"
+              onClick={() => setMobileOpen(false)}
+            >
+              Packages
+            </Link>
             <Link
               href="/partners"
               className="block py-2 text-sm text-text-primary hover:text-primary"

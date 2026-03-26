@@ -1,20 +1,74 @@
 import Image from "next/image";
+import Link from "next/link";
 import Hero from "@/components/Hero";
 import HeroIllustration from "@/components/HeroIllustration";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
-import { Search, Star, MousePointerClick, Building2 } from "lucide-react";
+import FAQAccordion from "@/components/FAQAccordion";
+import PricingCard from "@/components/PricingCard";
+import { Search, Star, MapPin, MousePointerClick, Quote } from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
+
+const faqItems = [
+  {
+    question: "What is AI search visibility and why does it matter for my business?",
+    answer:
+      "AI search visibility refers to whether your business appears when someone asks an AI tool — like ChatGPT, Google Gemini, or Perplexity — for a recommendation. These platforms are rapidly replacing traditional search for millions of consumers. If your business isn't structured in a way that AI systems can read, trust, and recommend, you simply won't appear. And if you don't appear, your competitor will.",
+  },
+  {
+    question: "What is a GEO audit?",
+    answer:
+      "GEO stands for Generative Engine Optimization. It's the practice of optimizing your online presence so that AI-powered search engines — not just Google, but ChatGPT, Perplexity, Gemini, and others — can find, understand, and recommend your business. A GEO audit evaluates how well your business is positioned for these generative AI platforms and gives you a specific action plan to improve.",
+  },
+  {
+    question: "What is AEO — answer engine optimization?",
+    answer:
+      "AEO (Answer Engine Optimization) focuses on getting your business featured as the direct answer to a user's question. When someone asks an AI assistant 'What's the best Italian restaurant in Henderson?' or 'Who should I call for emergency plumbing in Las Vegas?', AEO is what determines whether your business is the one that gets recommended. It involves optimizing your content, reviews, structured data, and authority signals so AI systems see you as the most credible answer.",
+  },
+  {
+    question: "How do I know if my business is showing up in ChatGPT or Perplexity?",
+    answer:
+      "The simplest way is to ask. Open ChatGPT, Perplexity, or Google Gemini and type a question a customer would ask — like 'best [your service] in [your city].' If your business doesn't appear in the response, you have a visibility problem. Our AI Visibility Audit goes much deeper, testing your presence across multiple AI platforms, analyzing why you're being included or excluded, and giving you a specific plan to fix it.",
+  },
+  {
+    question: "Will fixing these things really bring in more customers?",
+    answer:
+      "Yes. The data is clear: 88% of consumers who search for a local business on mobile visit or call within 24 hours. AI search is quickly becoming the primary way people find businesses. If you're not visible in AI search results, you're invisible to a growing segment of your potential customers. Our audits identify the specific gaps that are costing you visibility — and customers — and give you a clear path to fix them.",
+  },
+  {
+    question: "Do I need all three audits?",
+    answer:
+      "It depends on your situation. If you're not sure where to start, the AI Visibility Audit is the best first step — it gives you a complete picture of how AI platforms see your business. If you already know your reviews need work or your Google Business Profile is outdated, you can start with those individual audits. For the most comprehensive view and the biggest savings, our Full Digital Visibility bundle includes all three audits at a significant discount.",
+  },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero */}
       <Hero
         headline="Your Business Is Invisible to AI. We Fix That."
-        subheadline="When customers ask ChatGPT, Perplexity, or Google AI for recommendations, is your business showing up? If not, you're losing customers to competitors who are."
-        primaryCTA={{ text: "Get Your AI Visibility Score", href: CALENDLY_URL }}
+        subheadline="When a customer asks ChatGPT &quot;best dentist near me&quot; or searches Google AI for &quot;top-rated restaurant in Henderson,&quot; is your business in the answer? If not, you're losing customers to competitors who are. Avante Visibility finds the gaps and closes them."
+        primaryCTA={{ text: "Get Your Free AI Visibility Score", href: CALENDLY_URL }}
         secondaryCTA={{ text: "Book a Free Strategy Call", href: CALENDLY_URL }}
         trustBadges={[
           "20+ Years Digital Marketing Experience",
@@ -29,19 +83,53 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary">
-              The Search Game Changed. Did You?
+              The Search Game Changed. Most Businesses Missed the Memo.
             </h2>
             <p className="mt-6 text-text-muted leading-relaxed">
-              AI search (ChatGPT, Google AI Overviews, Perplexity) now influences
-              68% of local searches. Traditional SEO alone isn&apos;t enough. When
-              someone asks &quot;best [service] near me&quot; to an AI, your
-              competitors show up and you don&apos;t. The AI decides based on
-              reviews, content structure, authority signals, and brand clarity —
-              most local business websites aren&apos;t optimized for any of this.
+              AI-powered search is no longer a future trend — it&apos;s happening
+              right now. ChatGPT, Google AI Overviews, Perplexity, and other AI
+              platforms are fundamentally changing how consumers find and choose
+              local businesses. The businesses that adapt will thrive. The ones
+              that don&apos;t will disappear from the results entirely.
             </p>
           </div>
 
-          {/* Before/After Cards */}
+          {/* Stats */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto mb-12">
+            {[
+              {
+                stat: "25%",
+                text: "Gartner predicts that 25% of traditional search volume will decline by 2026",
+              },
+              {
+                stat: "50%+",
+                text: "Google AI Overviews now appear in over 50% of search results",
+              },
+              {
+                stat: "88%",
+                text: "88% of consumers who search for a local business on mobile visit or call within 24 hours",
+              },
+              {
+                stat: "71%",
+                text: "71% of consumers now use Google Reviews to evaluate local businesses",
+              },
+            ].map((item) => (
+              <div
+                key={item.stat}
+                className="bg-white rounded-xl border border-gray-200 p-6 text-center"
+              >
+                <p className="text-3xl font-bold text-primary mb-2">{item.stat}</p>
+                <p className="text-sm text-text-muted leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-text-muted text-center max-w-2xl mx-auto mb-12 leading-relaxed">
+            If your business isn&apos;t optimized for how AI reads, evaluates, and
+            recommends — you&apos;re not just behind. You&apos;re invisible.
+          </p>
+
+          {/* Before/After AI Comparison Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="bg-white rounded-xl border-2 border-primary/40 p-6 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-4">
@@ -54,8 +142,11 @@ export default function HomePage() {
                   </div>
                   <p className="text-sm font-medium text-secondary">
                     &quot;Based on reviews, services, and online presence, I
-                    recommend <span className="text-primary font-bold">Smith &amp; Co Plumbing</span>.
-                    They have 4.9 stars across 200+ reviews, offer 24/7 emergency
+                    recommend{" "}
+                    <span className="text-primary font-bold">
+                      Smith &amp; Co Plumbing
+                    </span>
+                    . They have 4.9 stars across 200+ reviews, offer 24/7 emergency
                     service, and consistently receive praise for transparent
                     pricing...&quot;
                   </p>
@@ -80,74 +171,93 @@ export default function HomePage() {
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
-            How We Make You Visible
+            Four Audits. Total Visibility.
           </h2>
-          <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
-            Four core services designed to get your business recommended by AI search engines.
+          <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto leading-relaxed">
+            Every Avante Visibility audit delivers a clear written report with
+            specific, prioritized fixes. No jargon. No 60-page PDF you&apos;ll
+            never read. Just exactly what&apos;s wrong and what to do about it.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ServiceCard
-              icon={Search}
-              title="AI Visibility Audit"
-              description="Find out exactly where you stand across ChatGPT, Google AI, Perplexity, and more."
-              href="/audit"
-            />
-            <ServiceCard
-              icon={Star}
-              title="Reputation & Review Engine"
-              description="Become the business AI recommends with automated review management."
-              href="/reputation"
-            />
-            <ServiceCard
-              icon={MousePointerClick}
-              title="Google Ads & Landing Pages"
-              description="Convert the traffic once you're visible with optimized campaigns."
-              href="/google-ads"
-            />
-            <ServiceCard
-              icon={Building2}
-              title="Agency White-Label"
-              description="Add AI visibility services to your agency's menu."
-              href="/partners"
-            />
+            <div>
+              <ServiceCard
+                icon={Search}
+                title="AI Visibility Audit"
+                description="Find out if ChatGPT, Perplexity, and Google AI are recommending your business — and why they aren't."
+                href="/ai-visibility-audit"
+              />
+              <p className="mt-2 text-center text-sm font-semibold text-primary">
+                Starting at $297
+              </p>
+            </div>
+            <div>
+              <ServiceCard
+                icon={Star}
+                title="Review Intelligence Audit"
+                description="Your star rating tells part of the story. Your reviews tell all of it."
+                href="/review-audit"
+              />
+              <p className="mt-2 text-center text-sm font-semibold text-primary">
+                Starting at $197
+              </p>
+            </div>
+            <div>
+              <ServiceCard
+                icon={MapPin}
+                title="Google Business Profile Audit"
+                description="Your GBP may be the most important page about your business that you didn't write."
+                href="/gbp-audit"
+              />
+              <p className="mt-2 text-center text-sm font-semibold text-primary">
+                Starting at $197
+              </p>
+            </div>
+            <div>
+              <ServiceCard
+                icon={MousePointerClick}
+                title="Google Ads & Landing Pages"
+                description="Every dollar you spend on Google Ads should be working harder."
+                href="/google-ads"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works - with image */}
+      {/* How It Works */}
       <section className="bg-bg-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-16">
             How It Works
           </h2>
-          <p className="text-text-muted text-center mb-16 max-w-2xl mx-auto">
-            A simple three-step process to make your business the one AI recommends.
-          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 step: "01",
-                title: "We Audit",
-                desc: "We check how your business appears across ChatGPT, Google AI, Perplexity, and 5+ AI platforms. You get a clear report showing where you're visible, where you're invisible, and why.",
+                title: "Order Your Audit",
+                desc: "Choose the audit or bundle that matches your biggest visibility challenge. You'll complete a short intake form so we understand your business, your market, and your goals.",
                 img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&q=80",
                 alt: "Data analytics dashboard showing search visibility metrics",
               },
               {
                 step: "02",
-                title: "We Fix",
-                desc: "We optimize your digital presence — reviews, content structure, authority signals, local listings — so AI systems confidently recommend you.",
+                title: "We Do the Deep Dive",
+                desc: "Using a combination of AI-powered tools and expert human analysis, we examine your digital presence across all relevant platforms. Most audits are delivered within 3\u20135 business days.",
                 img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80",
                 alt: "Digital marketing optimization workflow on screen",
               },
               {
                 step: "03",
-                title: "You Grow",
-                desc: "More visibility = more recommendations = more customers. We monitor and optimize monthly to keep you ahead.",
+                title: "You Get a Roadmap, Not a Report",
+                desc: "Your audit arrives as a clear, prioritized action plan. Every finding is explained in plain language. Every recommendation is ranked by impact.",
                 img: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&q=80",
                 alt: "Business growth chart trending upward",
               },
             ].map((item) => (
-              <div key={item.step} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+              <div
+                key={item.step}
+                className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100"
+              >
                 <div className="relative h-48 w-full">
                   <Image
                     src={item.img}
@@ -176,46 +286,147 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Social Proof */}
+      {/* Bundle Section */}
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
+            Bundle and Save
+          </h2>
+          <p className="text-text-muted text-center mb-4 max-w-2xl mx-auto leading-relaxed">
+            Most visibility problems don&apos;t live in just one place. Your
+            reviews affect your AI visibility. Your Google Business Profile
+            affects your reviews. Everything is connected. Our bundles give you
+            the complete picture — at a better price.
+          </p>
+          <p className="text-center mb-12">
+            <Link
+              href="/packages"
+              className="text-primary font-medium hover:underline"
+            >
+              View all packages &rarr;
+            </Link>
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <PricingCard
+              title="AI + GBP Bundle"
+              price="$447"
+              description="AI Visibility Audit + Google Business Profile Audit (save $47)"
+              features={[
+                "Full AI Visibility Audit",
+                "Complete GBP Audit",
+                "Cross-platform recommendations",
+                "Prioritized action plan",
+              ]}
+              ctaText="Get Started"
+            />
+            <PricingCard
+              title="AI + Review Bundle"
+              price="$447"
+              description="AI Visibility Audit + Review Intelligence Audit (save $47)"
+              features={[
+                "Full AI Visibility Audit",
+                "Complete Review Intelligence Audit",
+                "Sentiment analysis & insights",
+                "Prioritized action plan",
+              ]}
+              ctaText="Get Started"
+            />
+            <PricingCard
+              title="Full Digital Visibility"
+              price="$597"
+              description="All 3 Audits — AI Visibility + Review Intelligence + GBP (save $94)"
+              features={[
+                "Full AI Visibility Audit",
+                "Complete Review Intelligence Audit",
+                "Complete GBP Audit",
+                "Unified strategy & action plan",
+                "Priority delivery",
+              ]}
+              ctaText="Get Started"
+              badge="Most Popular"
+              highlighted
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-bg-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
-            What Our Clients Say
+            What Business Owners Are Saying
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
+            {[
+              {
+                quote:
+                  "I had no idea my Google Business Profile had the wrong primary category. That one fix alone changed our local search ranking within a week. The audit paid for itself before I even finished implementing everything.",
+                name: "Restaurant Owner",
+                location: "Las Vegas, NV",
+              },
+              {
+                quote:
+                  "The Review Intelligence Audit was eye-opening. We thought we had great reviews, but the audit showed us exactly what language was hurting us in AI recommendations and what our competitors were doing differently. It was like seeing behind the curtain.",
+                name: "Service Business Owner",
+                location: "",
+              },
+              {
+                quote:
+                  "Finally an agency that speaks in plain English. No fluff, no 60-page report I'll never read. Just 'here's what's wrong, here's how to fix it, here's what to do first.' That's what I needed.",
+                name: "Healthcare Professional",
+                location: "Nevada",
+              },
+            ].map((testimonial) => (
               <div
-                key={i}
+                key={testimonial.name}
                 className="bg-white border border-gray-200 rounded-xl p-6"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-bg-alt rounded-full" />
+                <Quote className="w-8 h-8 text-primary/20 mb-4" />
+                <p className="text-sm text-text-muted italic leading-relaxed mb-6">
+                  &quot;{testimonial.quote}&quot;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-sm font-bold text-primary">
+                      {testimonial.name.charAt(0)}
+                    </span>
+                  </div>
                   <div>
                     <p className="text-sm font-medium text-secondary">
-                      Client Name
+                      {testimonial.name}
                     </p>
-                    <p className="text-xs text-text-muted">Business Name</p>
+                    {testimonial.location && (
+                      <p className="text-xs text-text-muted">
+                        {testimonial.location}
+                      </p>
+                    )}
                   </div>
                 </div>
-                <div className="flex gap-1 mb-3">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <Star key={s} className="w-4 h-4 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-sm text-text-muted italic leading-relaxed">
-                  &quot;Client testimonials coming soon — launching March
-                  2026&quot;
-                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <FAQAccordion items={faqItems} />
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <CTASection
-        headline="Ready to See What AI Says About Your Business?"
+        headline="Ready to Stop Being Invisible?"
+        description="Every day your business doesn't appear in AI search results is a day your competitors get the recommendation instead. Let's find out exactly what's holding you back — and fix it."
         buttonText="Get Your Free AI Visibility Score"
+        secondaryButtonText="Book a Free Strategy Call"
+        showContact
       />
     </>
   );

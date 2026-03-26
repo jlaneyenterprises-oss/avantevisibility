@@ -11,11 +11,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Avante Visibility — AI Search Visibility for Local Businesses",
+    default: "AI Visibility & Local SEO Audits | Avante Visibility",
     template: "%s | Avante Visibility",
   },
   description:
-    "Your business is invisible to AI search. We audit, fix, and monitor your presence across ChatGPT, Google AI, and Perplexity so customers find you first.",
+    "Your business may be invisible to ChatGPT, Google AI, and Perplexity. Avante Visibility audits find the gaps and fix them fast. Get your free score.",
   verification: {
     google: "fVrPXoghLTUXCWoQ5DBqBIuc6vSo1JbLA1qU7ayvT28",
   },
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://avantevisibility.com",
     siteName: "Avante Visibility",
-    title: "Avante Visibility — AI Search Visibility for Local Businesses",
+    title: "AI Visibility & Local SEO Audits | Avante Visibility",
     description:
-      "Your business is invisible to AI search. We audit, fix, and monitor your presence across ChatGPT, Google AI, and Perplexity so customers find you first.",
+      "Your business may be invisible to ChatGPT, Google AI, and Perplexity. Avante Visibility audits find the gaps and fix them fast. Get your free score.",
   },
 };
 
@@ -39,8 +39,8 @@ const jsonLd = {
       "@id": "https://avantevisibility.com/#organization",
       name: "Avante Visibility",
       url: "https://avantevisibility.com",
+      telephone: "+17025255958",
       email: "jolyn@avantevisibility.com",
-      telephone: "(702) 525-5958",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Las Vegas",
@@ -52,18 +52,28 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://avantevisibility.com/#localbusiness",
       name: "Avante Visibility",
+      description:
+        "AI visibility audits, review intelligence audits, and Google Business Profile audits for local businesses and agencies.",
       url: "https://avantevisibility.com",
+      telephone: "+17025255958",
       email: "jolyn@avantevisibility.com",
-      telephone: "(702) 525-5958",
+      priceRange: "$$",
+      areaServed: "US",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Las Vegas",
         addressRegion: "NV",
         addressCountry: "US",
       },
-      priceRange: "$$",
-      description:
-        "AI search visibility agency for local businesses. GEO/AEO Visibility Audits, Reputation Management, and Google Ads optimization.",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://avantevisibility.com/#website",
+      url: "https://avantevisibility.com",
+      name: "Avante Visibility",
+      publisher: {
+        "@id": "https://avantevisibility.com/#organization",
+      },
     },
   ],
 };
