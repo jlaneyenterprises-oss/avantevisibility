@@ -63,13 +63,12 @@ export default function AboutPage() {
             <div className="flex justify-center">
               <div className="relative w-72 h-80 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&q=80"
-                  alt="Professional headshot placeholder — replace with actual photo"
+                  src="/jolyn.jpg"
+                  alt="JoLyn Laney — Founder of Avante Visibility"
                   fill
                   className="object-cover"
                   sizes="300px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent" />
               </div>
             </div>
 
