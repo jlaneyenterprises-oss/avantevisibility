@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -22,8 +23,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-secondary">
-            Avante <span className="text-primary">Visibility</span>
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Avante Visibility"
+              width={160}
+              height={48}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
