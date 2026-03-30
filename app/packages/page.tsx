@@ -10,11 +10,11 @@ import { Check, ArrowRight, Brain, Star, MapPin, Megaphone } from "lucide-react"
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
 export const metadata: Metadata = {
-  title: "Digital Visibility Packages & Pricing | Avante Visibility",
+  title: "Digital Visibility Packages & Pricing",
   description:
     "Bundle AI visibility, review intelligence, and GBP audits to save up to $94. Full Digital Visibility Package starts at $597. See all audit packages and pricing.",
   openGraph: {
-    title: "Digital Visibility Packages & Pricing | Avante Visibility",
+    title: "Digital Visibility Packages & Pricing",
     description:
       "Bundle AI visibility, review intelligence, and GBP audits to save up to $94. Full Digital Visibility Package starts at $597. See all audit packages and pricing.",
   },

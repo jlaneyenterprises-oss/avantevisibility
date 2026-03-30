@@ -3,7 +3,7 @@ import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import HeroIllustration from "@/components/HeroIllustration";
-import { MessageCircle, Target, RefreshCw, User, MapPin } from "lucide-react";
+import { MessageCircle, Target, RefreshCw, User, Globe } from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
@@ -44,10 +44,10 @@ const values = [
       "Avante Visibility is a boutique practice, not a volume agency. Jolyn is personally involved in every engagement.",
   },
   {
-    icon: MapPin,
-    title: "We&apos;re Las Vegas-based and nationally focused.",
+    icon: Globe,
+    title: "We serve businesses nationwide.",
     description:
-      "Our office is in Las Vegas, but our clients span the country. Local expertise, national reach.",
+      "Our clients span the country. Whether you're a single-location business or a multi-market operator, our audits work for any geography.",
   },
 ];
 
@@ -55,7 +55,7 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Jolyn",
+    name: "JoLyn Laney",
     jobTitle: "Founder, Avante Visibility",
     description:
       "20+ year digital marketing veteran specializing in Google Ads strategy, local search optimization, and AI visibility audits for local businesses.",
@@ -70,16 +70,14 @@ const jsonLd = [
     name: "Avante Visibility",
     url: "https://avantevisibility.com",
     description:
-      "AI visibility audits, review intelligence, and GBP optimization for local businesses and agencies.",
+      "AI visibility audits, review intelligence, and GBP optimization for businesses and agencies nationwide.",
     founder: {
       "@type": "Person",
-      name: "Jolyn",
+      name: "JoLyn Laney",
     },
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Las Vegas",
-      addressRegion: "NV",
-      addressCountry: "US",
+    areaServed: {
+      "@type": "Country",
+      name: "US",
     },
   },
 ];

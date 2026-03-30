@@ -363,7 +363,7 @@ export default function HomePage() {
                 quote:
                   "I had no idea my Google Business Profile had the wrong primary category. That one fix alone changed our local search ranking within a week. The audit paid for itself before I even finished implementing everything.",
                 name: "Restaurant Owner",
-                location: "Las Vegas, NV",
+                location: "",
               },
               {
                 quote:
@@ -375,7 +375,7 @@ export default function HomePage() {
                 quote:
                   "Finally an agency that speaks in plain English. No fluff, no 60-page report I'll never read. Just 'here's what's wrong, here's how to fix it, here's what to do first.' That's what I needed.",
                 name: "Healthcare Professional",
-                location: "Nevada",
+                location: "",
               },
             ].map((testimonial) => (
               <div

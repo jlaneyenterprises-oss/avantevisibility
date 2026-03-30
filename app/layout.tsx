@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     description:
       "Your business may be invisible to ChatGPT, Google AI, and Perplexity. Avante Visibility audits find the gaps and fix them fast. Get your free score.",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@AvanteVisible",
+    creator: "@AvanteVisible",
+  },
 };
 
 const jsonLd = {
@@ -39,31 +44,96 @@ const jsonLd = {
       "@id": "https://avantevisibility.com/#organization",
       name: "Avante Visibility",
       url: "https://avantevisibility.com",
+      logo: "https://avantevisibility.com/favicon.ico",
+      description:
+        "AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.",
       telephone: "+17025255958",
       email: "jolyn@avantevisibility.com",
+      foundingDate: "2024",
+      founder: {
+        "@type": "Person",
+        name: "JoLyn Laney",
+      },
+      sameAs: [
+        "https://www.linkedin.com/company/avante-visibility",
+        "https://www.facebook.com/profile.php?id=61577552439813",
+        "https://www.instagram.com/avantevisibility",
+        "https://x.com/AvanteVisible",
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+17025255958",
+        contactType: "sales",
+        email: "jolyn@avantevisibility.com",
+        areaServed: "US",
+        availableLanguage: "English",
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "US",
+      },
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Las Vegas",
-        addressRegion: "NV",
         addressCountry: "US",
       },
     },
     {
-      "@type": "LocalBusiness",
-      "@id": "https://avantevisibility.com/#localbusiness",
+      "@type": "ProfessionalService",
+      "@id": "https://avantevisibility.com/#business",
       name: "Avante Visibility",
       description:
-        "AI visibility audits, review intelligence audits, and Google Business Profile audits for local businesses and agencies.",
+        "AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.",
       url: "https://avantevisibility.com",
+      image: "https://avantevisibility.com/favicon.ico",
       telephone: "+17025255958",
       email: "jolyn@avantevisibility.com",
       priceRange: "$$",
-      areaServed: "US",
+      areaServed: {
+        "@type": "Country",
+        name: "US",
+      },
+      sameAs: [
+        "https://www.linkedin.com/company/avante-visibility",
+        "https://www.facebook.com/profile.php?id=61577552439813",
+        "https://www.instagram.com/avantevisibility",
+        "https://x.com/AvanteVisible",
+      ],
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Las Vegas",
-        addressRegion: "NV",
         addressCountry: "US",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Digital Visibility Audits",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "AI Visibility Audit",
+              description:
+                "Comprehensive audit testing whether AI platforms like ChatGPT, Perplexity, and Google AI recommend your business.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Review Intelligence Audit",
+              description:
+                "Analysis of review sentiment, language patterns, and competitive positioning across review platforms.",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Google Business Profile Audit",
+              description:
+                "Comprehensive GBP optimization assessment with prioritized action items.",
+            },
+          },
+        ],
       },
     },
     {
@@ -71,8 +141,15 @@ const jsonLd = {
       "@id": "https://avantevisibility.com/#website",
       url: "https://avantevisibility.com",
       name: "Avante Visibility",
+      description:
+        "AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.",
       publisher: {
         "@id": "https://avantevisibility.com/#organization",
+      },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://avantevisibility.com/blog?q={search_term_string}",
+        "query-input": "required name=search_term_string",
       },
     },
   ],

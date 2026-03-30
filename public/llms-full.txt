@@ -1,0 +1,115 @@
+# Avante Visibility — Full Reference
+> AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.
+
+## Company Overview
+Avante Visibility is a boutique digital marketing practice specializing in AI search visibility. Founded by JoLyn Laney, who has 20+ years of experience in digital marketing, Google Ads strategy, and local search optimization. Avante Visibility was created to help local businesses and agencies understand and improve how they appear in AI-powered search platforms.
+
+The company serves businesses nationwide, offering diagnostic audits that reveal gaps in how AI platforms like ChatGPT, Google AI Overviews, Perplexity, Claude, and Gemini perceive and recommend businesses.
+
+## Core Services
+
+### AI Visibility Audit (Starting at $297)
+A comprehensive audit that tests whether AI-powered search platforms recommend your business. The audit:
+- Queries multiple AI platforms with real customer questions relevant to your business
+- Measures your citation rate (how often AI links to your site) and mention rate (how often AI names your business)
+- Compares your visibility against known competitors
+- Identifies "blue ocean" keyword opportunities where no competitor is being cited
+- Analyzes your technical readiness for AI crawlers (robots.txt, llms.txt, schema markup)
+- Evaluates your content's E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness)
+- Produces a 19-page branded PDF report with prioritized action items
+- Includes a "Verify Our Findings" section with step-by-step tests the client can replicate
+
+### Review Intelligence Audit (Starting at $197)
+An audit that goes beyond star ratings to analyze what your reviews actually say and how AI interprets them:
+- Sentiment analysis across all review platforms
+- Keyword and theme extraction from review text
+- Competitive review benchmarking
+- Identification of review language that helps or hurts AI recommendations
+- Actionable recommendations for improving review quality and quantity
+
+### Google Business Profile Audit (Starting at $197)
+A comprehensive assessment of your Google Business Profile optimization:
+- Primary and secondary category analysis
+- Completeness scoring across all GBP fields
+- Photo and media optimization review
+- Review response analysis
+- Local pack ranking factors assessment
+- Competitor GBP comparison
+- Step-by-step fix list prioritized by impact
+
+### Google Ads & Landing Page Audit
+Expert analysis of Google Ads campaigns and landing pages:
+- Campaign structure and bidding strategy review
+- Keyword quality and match type analysis
+- Landing page conversion optimization
+- Quality Score improvement recommendations
+- Budget efficiency assessment
+
+## Bundle Packages
+- AI + GBP Bundle: $447 (save $47)
+- AI + Review Bundle: $447 (save $47)
+- Full Digital Visibility Package: $597 (save $94) — includes AI Visibility, Review Intelligence, and GBP audits with a unified strategy
+
+## White-Label Agency Program
+Avante Visibility offers a white-label audit program for agencies:
+
+### Wholesale Pricing
+| Audit | Wholesale | Suggested Retail | Agency Margin |
+|-------|-----------|-----------------|---------------|
+| AI Visibility Audit | $147 | $297 | $150 (50%+) |
+| Review Intelligence Audit | $97 | $197 | $100 (50%+) |
+| Google Business Profile Audit | $97 | $197 | $100 (50%+) |
+| Full Digital Visibility Package | $297 | $597 | $300 (50%+) |
+
+### Volume Pricing
+| Monthly Volume | Discount |
+|---------------|----------|
+| 5-9 audits | 10% off wholesale |
+| 10-19 audits | 15% off wholesale |
+| 20+ audits | 20% off wholesale |
+
+### Program Details
+- No monthly minimums, no contracts
+- 3-5 business day turnaround (rush available)
+- Reports delivered under the agency's brand
+- Direct access to JoLyn for partner support
+- Custom bundle configurations available
+
+## Key Differentiators
+1. Plain English: Every report is written for business owners, not SEO technicians
+2. Prioritized by Impact: Findings are ranked so clients know what to fix first
+3. Roadmap, Not a Report: Deliverables are actionable plans, not data dumps
+4. Boutique Practice: JoLyn is personally involved in every engagement
+5. AI-First Expertise: Built specifically around AI search visibility, not pivoted from traditional SEO
+
+## Industry Context
+- GEO (Generative Engine Optimization): The practice of optimizing online presence for AI-powered search engines
+- AEO (Answer Engine Optimization): Optimizing to be featured as the direct answer to user questions in AI platforms
+- The GEO market was valued at $886 million in 2024, projected to reach $7.3 billion by 2031 (34% CAGR)
+- Gartner predicts 25% of traditional search volume will decline by 2026
+- Google AI Overviews appear in over 50% of search results
+
+## Founder
+JoLyn Laney — 20+ years in digital marketing. Began in Google Ads when pay-per-click was still emerging. Built specializations in Google Ads strategy, landing page optimization, and local search. Created Avante Visibility after recognizing that AI search was fundamentally changing how consumers find businesses, and that the tools to measure and improve AI visibility didn't exist.
+
+## Contact
+- Website: https://avantevisibility.com
+- Email: jolyn@avantevisibility.com
+- Phone: (702) 525-5958
+- Book a call: https://calendly.com/avantevisibility
+- LinkedIn: https://www.linkedin.com/company/avante-visibility
+- Facebook: https://www.facebook.com/profile.php?id=61577552439813
+- Instagram: https://www.instagram.com/avantevisibility
+- X/Twitter: https://x.com/AvanteVisible
+
+## Sitemap
+- Home: https://avantevisibility.com
+- AI Visibility Audit: https://avantevisibility.com/ai-visibility-audit
+- Review Intelligence Audit: https://avantevisibility.com/review-audit
+- GBP Audit: https://avantevisibility.com/gbp-audit
+- Google Ads: https://avantevisibility.com/google-ads
+- Packages: https://avantevisibility.com/packages
+- Agency Partners: https://avantevisibility.com/partners
+- Blog: https://avantevisibility.com/blog
+- About: https://avantevisibility.com/about
+- Contact: https://avantevisibility.com/contact

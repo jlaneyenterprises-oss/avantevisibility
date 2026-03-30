@@ -314,18 +314,35 @@ export default function PartnersPage() {
               ))}
             </div>
 
-            <p className="mt-6 text-center text-sm text-text-muted">
-              Volume pricing available for 5+ audits per month.{" "}
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                Let&apos;s talk
-              </a>
-              .
-            </p>
+            {/* Volume Pricing Tiers */}
+            <div className="mt-10 bg-white border border-gray-200 rounded-xl p-6">
+              <h3 className="text-lg font-bold text-secondary text-center mb-4">
+                Volume Pricing
+              </h3>
+              <p className="text-sm text-text-muted text-center mb-6">
+                The more audits you send, the more you save. Discounts apply to all audit types.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="text-center p-4 bg-bg-alt rounded-xl">
+                  <p className="text-2xl font-bold text-primary">10%</p>
+                  <p className="text-sm font-semibold text-secondary mt-1">off wholesale</p>
+                  <p className="text-xs text-text-muted mt-2">5&ndash;9 audits/month</p>
+                </div>
+                <div className="text-center p-4 bg-primary/5 border border-primary/20 rounded-xl">
+                  <p className="text-2xl font-bold text-primary">15%</p>
+                  <p className="text-sm font-semibold text-secondary mt-1">off wholesale</p>
+                  <p className="text-xs text-text-muted mt-2">10&ndash;19 audits/month</p>
+                </div>
+                <div className="text-center p-4 bg-bg-alt rounded-xl">
+                  <p className="text-2xl font-bold text-primary">20%</p>
+                  <p className="text-sm font-semibold text-secondary mt-1">off wholesale</p>
+                  <p className="text-xs text-text-muted mt-2">20+ audits/month</p>
+                </div>
+              </div>
+              <p className="mt-4 text-center text-xs text-text-muted">
+                Example: At 10+ audits/month, an AI Visibility Audit drops to ~$125 wholesale (your margin: $172+).
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -421,6 +438,53 @@ export default function PartnersPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Partner FAQ */}
+      <section className="bg-bg-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
+            Common Partner Questions
+          </h2>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {[
+              {
+                q: "Can I set my own retail pricing?",
+                a: "Absolutely. The retail prices shown are suggestions based on market rates. You set whatever price works for your client base and positioning. Many partners charge more than our suggested retail.",
+              },
+              {
+                q: "Will you ever contact my clients directly?",
+                a: "Never. Your client relationship is yours. We deliver the report to you, and you deliver it to your client. We don\u2019t reach out to, market to, or communicate with your clients in any way.",
+              },
+              {
+                q: "What if my client has technical questions about the report?",
+                a: "You have direct access to JoLyn. If a client question comes up that you can\u2019t answer, message or call us and we\u2019ll help you prepare a response. We\u2019re your behind-the-scenes team.",
+              },
+              {
+                q: "How do I submit audit requests?",
+                a: "Once approved as a partner, you\u2019ll receive a simple intake form to submit client details. Email works too. We keep the process lightweight so it fits into however your agency already operates.",
+              },
+              {
+                q: "Is there a minimum commitment or contract?",
+                a: "No minimums and no contracts. Send us one audit or fifty. The partnership works on your schedule. Volume discounts kick in automatically based on your monthly submissions.",
+              },
+              {
+                q: "Can reports be branded with my agency\u2019s logo and colors?",
+                a: "Yes. All reports are delivered white-labeled with your agency branding. Your client will never see our name anywhere in the deliverable.",
+              },
+            ].map((faq) => (
+              <div
+                key={faq.q}
+                className="bg-white border border-gray-200 rounded-xl p-6"
+              >
+                <h3 className="font-semibold text-secondary">{faq.q}</h3>
+                <p className="mt-2 text-sm text-text-muted leading-relaxed">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
