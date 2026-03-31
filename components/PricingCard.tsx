@@ -1,7 +1,5 @@
 import { Check } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
-
 interface PricingCardProps {
   title: string;
   price: string;
@@ -9,7 +7,7 @@ interface PricingCardProps {
   description: string;
   features: string[];
   ctaText: string;
-  ctaHref?: string;
+  ctaHref: string;
   badge?: string;
   highlighted?: boolean;
 }
@@ -21,7 +19,7 @@ export default function PricingCard({
   description,
   features,
   ctaText,
-  ctaHref = CALENDLY_URL,
+  ctaHref,
   badge,
   highlighted = false,
 }: PricingCardProps) {

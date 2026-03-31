@@ -9,6 +9,17 @@ import { Check, ArrowRight, Brain, Star, MapPin, Megaphone } from "lucide-react"
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  aiVisibility: "https://buy.stripe.com/fZudR99cy5l67on0jZgjC00",
+  reviewIntelligence: "https://buy.stripe.com/28E9AT2Oa3cYbED0jZgjC01",
+  gbpAudit: "https://buy.stripe.com/aFa14n88u28U6kj5EjgjC02",
+  googleAds: "https://buy.stripe.com/14A5kDdsOfZKfUT4AfgjC03",
+  aiGbpBundle: "https://buy.stripe.com/cNi9AT9cy8xi5gf0jZgjC04",
+  aiReviewBundle: "https://buy.stripe.com/3cIdR960m14Q7on3wbgjC05",
+  reviewGbpBundle: "https://buy.stripe.com/00w7sL9cy3cY5gfaYDgjC06",
+  fullPackage: "https://buy.stripe.com/5kQcN560m3cY8sraYDgjC07",
+};
+
 export const metadata: Metadata = {
   title: "Digital Visibility Packages & Pricing",
   description:
@@ -135,7 +146,7 @@ export default function PackagesPage() {
         subheadline="Your online visibility is a system, not a single thing. AI search, Google reviews, and your Google Business Profile are interconnected &mdash; a weakness in one limits the performance of all three. Our bundle packages address your entire digital presence in one coordinated effort, at a price that reflects the full picture."
         primaryCTA={{
           text: "Order Full Digital Visibility Package \u2014 $597",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.fullPackage,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call",
@@ -206,7 +217,7 @@ export default function PackagesPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Order AI + GBP Bundle"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.aiGbpBundle}
             />
             <PricingCard
               title="AI + Review Bundle"
@@ -219,7 +230,7 @@ export default function PackagesPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Order AI + Review Bundle"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.aiReviewBundle}
             />
             <PricingCard
               title="Review + GBP Bundle"
@@ -232,7 +243,7 @@ export default function PackagesPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Order Review + GBP Bundle"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.reviewGbpBundle}
             />
             <PricingCard
               title="Full Digital Visibility Package"
@@ -245,7 +256,7 @@ export default function PackagesPage() {
                 "30-min walkthrough call per audit",
               ]}
               ctaText="Order Full Package \u2014 $597"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.fullPackage}
               badge="Most Popular"
               highlighted
             />
@@ -358,7 +369,7 @@ export default function PackagesPage() {
       <CTASection
         headline="Ready to Get Completely Visible?"
         buttonText="Order Full Digital Visibility Package &mdash; $597"
-        buttonHref={CALENDLY_URL}
+        buttonHref={STRIPE_LINKS.fullPackage}
         secondaryButtonText="Book a Free Strategy Call"
         secondaryButtonHref={CALENDLY_URL}
         showContact

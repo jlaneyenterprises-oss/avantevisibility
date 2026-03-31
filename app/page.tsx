@@ -10,6 +10,17 @@ import { Search, Star, MapPin, MousePointerClick, Quote } from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  aiVisibility: "https://buy.stripe.com/fZudR99cy5l67on0jZgjC00",
+  reviewIntelligence: "https://buy.stripe.com/28E9AT2Oa3cYbED0jZgjC01",
+  gbpAudit: "https://buy.stripe.com/aFa14n88u28U6kj5EjgjC02",
+  googleAds: "https://buy.stripe.com/14A5kDdsOfZKfUT4AfgjC03",
+  aiGbpBundle: "https://buy.stripe.com/cNi9AT9cy8xi5gf0jZgjC04",
+  aiReviewBundle: "https://buy.stripe.com/3cIdR960m14Q7on3wbgjC05",
+  reviewGbpBundle: "https://buy.stripe.com/00w7sL9cy3cY5gfaYDgjC06",
+  fullPackage: "https://buy.stripe.com/5kQcN560m3cY8sraYDgjC07",
+};
+
 const faqItems = [
   {
     question: "What is AI search visibility and why does it matter for my business?",
@@ -319,6 +330,7 @@ export default function HomePage() {
                 "Prioritized action plan",
               ]}
               ctaText="Get Started"
+              ctaHref={STRIPE_LINKS.aiGbpBundle}
             />
             <PricingCard
               title="AI + Review Bundle"
@@ -331,6 +343,7 @@ export default function HomePage() {
                 "Prioritized action plan",
               ]}
               ctaText="Get Started"
+              ctaHref={STRIPE_LINKS.aiReviewBundle}
             />
             <PricingCard
               title="Full Digital Visibility"
@@ -344,6 +357,7 @@ export default function HomePage() {
                 "Priority delivery",
               ]}
               ctaText="Get Started"
+              ctaHref={STRIPE_LINKS.fullPackage}
               badge="Most Popular"
               highlighted
             />

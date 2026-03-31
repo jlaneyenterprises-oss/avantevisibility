@@ -23,6 +23,12 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  gbpAudit: "https://buy.stripe.com/aFa14n88u28U6kj5EjgjC02",
+  aiGbpBundle: "https://buy.stripe.com/cNi9AT9cy8xi5gf0jZgjC04",
+  fullPackage: "https://buy.stripe.com/5kQcN560m3cY8sraYDgjC07",
+};
+
 export const metadata: Metadata = {
   title: "Google Business Profile Audit | GBP Audit Service",
   description:
@@ -211,7 +217,7 @@ export default function GBPAuditPage() {
         subheadline="Your Google Business Profile may be the most important page about your business that you didn&apos;t write. It controls how you appear in Maps, local search, and AI recommendations. Our GBP audit finds every gap, wrong category, and missed opportunity that&apos;s costing you customers &mdash; and tells you exactly how to fix it."
         primaryCTA={{
           text: "Get My GBP Audit \u2014 $197",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.gbpAudit,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
@@ -418,6 +424,7 @@ export default function GBPAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get My GBP Audit"
+              ctaHref={STRIPE_LINKS.gbpAudit}
             />
             <PricingCard
               title="AI + GBP Bundle"
@@ -432,6 +439,7 @@ export default function GBPAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get the Bundle"
+              ctaHref={STRIPE_LINKS.aiGbpBundle}
             />
             <PricingCard
               title="Full Digital Visibility"
@@ -447,6 +455,7 @@ export default function GBPAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get Full Visibility"
+              ctaHref={STRIPE_LINKS.fullPackage}
             />
           </div>
 
@@ -496,6 +505,7 @@ export default function GBPAuditPage() {
         headline="Find Out What Your GBP Is Costing You"
         description="The customers who can&apos;t find you on Google Maps are going to your competitors instead. A GBP audit shows you exactly what&apos;s wrong and how to fix it."
         buttonText="Get My GBP Audit &mdash; $197"
+        buttonHref={STRIPE_LINKS.gbpAudit}
         secondaryButtonText="Book a Free Strategy Call First"
         showContact
       />

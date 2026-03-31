@@ -25,6 +25,13 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  aiVisibility: "https://buy.stripe.com/fZudR99cy5l67on0jZgjC00",
+  aiGbpBundle: "https://buy.stripe.com/cNi9AT9cy8xi5gf0jZgjC04",
+  aiReviewBundle: "https://buy.stripe.com/3cIdR960m14Q7on3wbgjC05",
+  fullPackage: "https://buy.stripe.com/5kQcN560m3cY8sraYDgjC07",
+};
+
 export const metadata: Metadata = {
   title: "AI Visibility Audit | GEO & AEO Audit Service",
   description:
@@ -226,7 +233,7 @@ export default function AIVisibilityAuditPage() {
         subheadline="ChatGPT is answering questions about businesses like yours right now. So is Perplexity. And Google AI Overviews. The AI recommendations your potential customers see are shaping decisions before those customers ever visit a website. If your business isn&apos;t showing up in those answers, this audit tells you exactly why &mdash; and exactly what to change."
         primaryCTA={{
           text: "Get My AI Visibility Audit \u2014 $297",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.aiVisibility,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
@@ -454,7 +461,7 @@ export default function AIVisibilityAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get Started"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.aiVisibility}
             />
             <PricingCard
               title="AI + GBP Bundle"
@@ -467,7 +474,7 @@ export default function AIVisibilityAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get Started"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.aiGbpBundle}
             />
             <PricingCard
               title="AI + Review Bundle"
@@ -480,7 +487,7 @@ export default function AIVisibilityAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get Started"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.aiReviewBundle}
             />
             <PricingCard
               title="Full Digital Visibility"
@@ -493,7 +500,7 @@ export default function AIVisibilityAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get Started"
-              ctaHref={CALENDLY_URL}
+              ctaHref={STRIPE_LINKS.fullPackage}
               badge="Most Popular"
               highlighted
             />
@@ -544,7 +551,7 @@ export default function AIVisibilityAuditPage() {
         headline="Ready to Find Out Where You Stand?"
         description="Businesses that optimize for AI search now are building an early advantage that will compound as AI-driven traffic grows."
         buttonText="Get My AI Visibility Audit &mdash; $297"
-        buttonHref={CALENDLY_URL}
+        buttonHref={STRIPE_LINKS.aiVisibility}
         secondaryButtonText="Book a Free Strategy Call First"
         secondaryButtonHref={CALENDLY_URL}
         showContact

@@ -27,6 +27,12 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  reviewIntelligence: "https://buy.stripe.com/28E9AT2Oa3cYbED0jZgjC01",
+  aiReviewBundle: "https://buy.stripe.com/3cIdR960m14Q7on3wbgjC05",
+  fullPackage: "https://buy.stripe.com/5kQcN560m3cY8sraYDgjC07",
+};
+
 export const metadata: Metadata = {
   title: "Review Intelligence Audit | Online Review Analysis",
   description:
@@ -266,7 +272,7 @@ export default function ReviewAuditPage() {
         subheadline="Most business owners check their star rating and move on. But buried inside your reviews — and your competitors&apos; reviews — is a detailed map of exactly what&apos;s driving customers away and what&apos;s bringing them back. Our Review Intelligence Audit extracts that map and hands it to you with a clear action plan."
         primaryCTA={{
           text: "Get My Review Intelligence Audit \u2014 $197",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.reviewIntelligence,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
@@ -493,6 +499,7 @@ export default function ReviewAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get My Review Audit"
+              ctaHref={STRIPE_LINKS.reviewIntelligence}
             />
             <PricingCard
               title="AI + Review Bundle"
@@ -505,6 +512,7 @@ export default function ReviewAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get the Bundle"
+              ctaHref={STRIPE_LINKS.aiReviewBundle}
             />
             <PricingCard
               title="Full Digital Visibility"
@@ -519,6 +527,7 @@ export default function ReviewAuditPage() {
                 "30-min walkthrough call",
               ]}
               ctaText="Get Full Visibility"
+              ctaHref={STRIPE_LINKS.fullPackage}
               badge="Most Popular"
               highlighted
             />
@@ -569,6 +578,7 @@ export default function ReviewAuditPage() {
         headline="Stop Guessing. Start Knowing."
         description="Your reviews contain more operational intelligence than most business owners realize. Let us extract it, organize it, and hand you a clear plan to turn that intelligence into higher ratings, better rankings, and more customers."
         buttonText="Get My Review Intelligence Audit &mdash; $197"
+        buttonHref={STRIPE_LINKS.reviewIntelligence}
         secondaryButtonText="Book a Free Strategy Call First"
         showContact
       />
