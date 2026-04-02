@@ -40,12 +40,25 @@ const socialLinks = [
   },
 ];
 
-const navLinks = [
+const localLinks = [
   { name: "AI Visibility Audit", href: "/ai-visibility-audit" },
   { name: "Review Intelligence Audit", href: "/review-audit" },
   { name: "GBP Audit", href: "/gbp-audit" },
   { name: "Google Ads", href: "/google-ads" },
+];
+
+const growthLinks = [
+  { name: "GEO Audit", href: "/geo-audit" },
+  { name: "Technical SEO Audit", href: "/technical-seo-audit" },
+  { name: "Speed & Core Web Vitals", href: "/speed-audit" },
+  { name: "Conversion Funnel Audit", href: "/conversion-audit" },
+  { name: "Competitor Intelligence", href: "/competitor-intelligence" },
+  { name: "Algorithm Recovery", href: "/algorithm-recovery" },
+];
+
+const companyLinks = [
   { name: "Packages", href: "/packages" },
+  { name: "Monthly Plans", href: "/monthly-plans" },
   { name: "Partners", href: "/partners" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
@@ -56,15 +69,15 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <p className="text-xl font-bold">
               Avante <span className="text-primary">Visibility</span>
             </p>
             <p className="mt-3 text-sm text-gray-400">
-              AI visibility audits, review intelligence, and Google Business
-              Profile audits for local businesses and agencies.
+              AI visibility audits and optimization for local businesses,
+              e-commerce brands, and agencies.
             </p>
             <div className="flex gap-3 mt-4">
               {socialLinks.map((social) => (
@@ -82,13 +95,51 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* Local Services */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-              Pages
+              Local Business
             </p>
             <ul className="space-y-2">
-              {navLinks.map((link) => (
+              {localLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Growth Services */}
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
+              Growth &amp; Performance
+            </p>
+            <ul className="space-y-2">
+              {growthLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
+              Company
+            </p>
+            <ul className="space-y-2">
+              {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

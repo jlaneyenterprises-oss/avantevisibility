@@ -6,7 +6,21 @@ import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
 import PricingCard from "@/components/PricingCard";
-import { Search, Star, MapPin, MousePointerClick, Quote } from "lucide-react";
+import {
+  Search,
+  Star,
+  MapPin,
+  MousePointerClick,
+  Quote,
+  Brain,
+  Monitor,
+  Zap,
+  GitBranch,
+  Users,
+  RotateCcw,
+  TrendingUp,
+  ArrowRight,
+} from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
@@ -231,6 +245,126 @@ export default function HomePage() {
                 description="Every dollar you spend on Google Ads should be working harder."
                 href="/google-ads"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Growth Audits */}
+      <section className="bg-bg-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
+            Growth &amp; Performance Audits
+          </h2>
+          <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto leading-relaxed">
+            For SaaS companies, e-commerce brands, and businesses ready to
+            dominate their market. Deep-dive audits with data-backed roadmaps.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: Brain,
+                title: "GEO Audit",
+                price: "$2,500",
+                description:
+                  "28+ live AI query tests, 12-point scoring, competitive benchmarking, and a 90-day roadmap.",
+                href: "/geo-audit",
+              },
+              {
+                icon: Monitor,
+                title: "Technical SEO Audit",
+                price: "$997",
+                description:
+                  "Full crawl analysis, Core Web Vitals, schema validation, and prioritized technical fixes.",
+                href: "/technical-seo-audit",
+              },
+              {
+                icon: Zap,
+                title: "Speed & Core Web Vitals",
+                price: "$497",
+                description:
+                  "Page-by-page speed analysis for your top 20 pages with projected improvement scores.",
+                href: "/speed-audit",
+              },
+              {
+                icon: GitBranch,
+                title: "Conversion Funnel Audit",
+                price: "$997",
+                description:
+                  "Full funnel analysis from landing page to conversion with A/B test recommendations.",
+                href: "/conversion-audit",
+              },
+              {
+                icon: Users,
+                title: "Competitor Intelligence",
+                price: "$797",
+                description:
+                  "Deep analysis of 3-5 competitors including AI citations, traffic, content, and positioning gaps.",
+                href: "/competitor-intelligence",
+              },
+              {
+                icon: RotateCcw,
+                title: "Algorithm Recovery",
+                price: "$1,497",
+                description:
+                  "Pinpoint which update hit you, which pages were affected, and the exact recovery plan.",
+                href: "/algorithm-recovery",
+              },
+            ].map((item) => (
+              <Link
+                key={item.title}
+                href={item.href}
+                className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all"
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">
+                  {item.title}
+                </h3>
+                <p className="mt-1 text-xl font-bold text-primary">
+                  {item.price}
+                </p>
+                <p className="mt-2 text-sm text-text-muted leading-relaxed">
+                  {item.description}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary">
+                  Learn More{" "}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Monthly Plans Callout */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="bg-secondary rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-4">
+                <TrendingUp className="w-6 h-6 text-primary" />
+                <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+                  Monthly Plans
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Don&apos;t Just Audit. Grow Every Month.
+              </h2>
+              <p className="text-gray-300 leading-relaxed">
+                Our monthly plans track your AI citations, implement fixes, and
+                grow your visibility with data proving it&apos;s working. Starting
+                at $1,500/mo.
+              </p>
+            </div>
+            <div className="shrink-0">
+              <Link
+                href="/monthly-plans"
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"
+              >
+                View Monthly Plans <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>

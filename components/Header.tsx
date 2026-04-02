@@ -7,11 +7,20 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
-const services = [
+const localServices = [
   { name: "AI Visibility Audit", href: "/ai-visibility-audit" },
   { name: "Review Intelligence Audit", href: "/review-audit" },
   { name: "Google Business Profile Audit", href: "/gbp-audit" },
   { name: "Google Ads & Landing Pages", href: "/google-ads" },
+];
+
+const growthServices = [
+  { name: "GEO Audit", href: "/geo-audit" },
+  { name: "Technical SEO Audit", href: "/technical-seo-audit" },
+  { name: "Speed & Core Web Vitals", href: "/speed-audit" },
+  { name: "Conversion Funnel Audit", href: "/conversion-audit" },
+  { name: "Competitor Intelligence", href: "/competitor-intelligence" },
+  { name: "Algorithm Recovery", href: "/algorithm-recovery" },
 ];
 
 export default function Header() {
@@ -46,8 +55,20 @@ export default function Header() {
               </button>
               {servicesOpen && (
                 <div className="absolute top-full left-0 pt-2">
-                  <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[260px]">
-                    {services.map((s) => (
+                  <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[280px]">
+                    <p className="px-4 py-1.5 text-xs font-semibold text-text-muted uppercase tracking-wider">Local Business</p>
+                    {localServices.map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        className="block px-4 py-2 text-sm text-text-primary hover:bg-bg-alt hover:text-primary transition-colors"
+                      >
+                        {s.name}
+                      </Link>
+                    ))}
+                    <hr className="my-2 border-gray-100" />
+                    <p className="px-4 py-1.5 text-xs font-semibold text-text-muted uppercase tracking-wider">Growth &amp; Performance</p>
+                    {growthServices.map((s) => (
                       <Link
                         key={s.href}
                         href={s.href}
@@ -65,6 +86,12 @@ export default function Header() {
               className="text-sm font-medium text-text-primary hover:text-primary transition-colors"
             >
               Packages
+            </Link>
+            <Link
+              href="/monthly-plans"
+              className="text-sm font-medium text-text-primary hover:text-primary transition-colors"
+            >
+              Monthly Plans
             </Link>
             <Link
               href="/partners"
@@ -116,9 +143,23 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-3">
             <p className="text-xs font-semibold text-text-muted uppercase tracking-wider">
-              Services
+              Local Business
             </p>
-            {services.map((s) => (
+            {localServices.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="block py-2 text-sm text-text-primary hover:text-primary"
+                onClick={() => setMobileOpen(false)}
+              >
+                {s.name}
+              </Link>
+            ))}
+            <hr className="border-gray-100" />
+            <p className="text-xs font-semibold text-text-muted uppercase tracking-wider">
+              Growth &amp; Performance
+            </p>
+            {growthServices.map((s) => (
               <Link
                 key={s.href}
                 href={s.href}
@@ -135,6 +176,13 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
             >
               Packages
+            </Link>
+            <Link
+              href="/monthly-plans"
+              className="block py-2 text-sm text-text-primary hover:text-primary"
+              onClick={() => setMobileOpen(false)}
+            >
+              Monthly Plans
             </Link>
             <Link
               href="/partners"
