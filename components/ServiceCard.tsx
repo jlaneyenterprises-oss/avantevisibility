@@ -17,9 +17,9 @@ export default function ServiceCard({
   return (
     <Link
       href={href}
-      className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition-all"
+      className="group block bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl hover:shadow-primary/5 hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200"
     >
-      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+      <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/15 group-hover:scale-105 transition-all duration-200">
         <Icon className="w-6 h-6 text-primary" aria-hidden="true" />
       </div>
       <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">
@@ -28,8 +28,9 @@ export default function ServiceCard({
       <p className="mt-2 text-sm text-text-muted leading-relaxed">
         {description}
       </p>
-      <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary">
-        View {title} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary">
+        Learn more
+        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
       </span>
     </Link>
   );

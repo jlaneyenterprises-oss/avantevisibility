@@ -25,8 +25,14 @@ export default function CTASection({
   const isSecondaryExternal = secondaryButtonHref.startsWith("http");
 
   return (
-    <section className="bg-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section className="relative bg-gradient-to-br from-secondary via-secondary-light to-secondary overflow-hidden">
+      {/* Subtle decorative elements */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-accent rounded-full blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             {headline}
@@ -40,14 +46,14 @@ export default function CTASection({
                 href={buttonHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"
+                className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-all duration-200 text-base hover:shadow-lg hover:shadow-primary/25"
               >
                 {buttonText}
               </a>
             ) : (
               <Link
                 href={buttonHref}
-                className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"
+                className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-all duration-200 text-base hover:shadow-lg hover:shadow-primary/25"
               >
                 {buttonText}
               </Link>
@@ -58,14 +64,14 @@ export default function CTASection({
                   href={secondaryButtonHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-3.5 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors text-base"
+                  className="inline-flex items-center px-8 py-3.5 border border-white/20 text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-200 text-base"
                 >
                   {secondaryButtonText}
                 </a>
               ) : (
                 <Link
                   href={secondaryButtonHref}
-                  className="inline-flex items-center px-8 py-3.5 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors text-base"
+                  className="inline-flex items-center px-8 py-3.5 border border-white/20 text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-200 text-base"
                 >
                   {secondaryButtonText}
                 </Link>
@@ -76,14 +82,14 @@ export default function CTASection({
               Questions? Email{" "}
               <a
                 href="mailto:jolyn@avantevisibility.com"
-                className="text-primary hover:underline"
+                className="text-primary-light hover:underline"
               >
                 jolyn@avantevisibility.com
               </a>{" "}
               or call{" "}
               <a
                 href="tel:+17025255958"
-                className="text-primary hover:underline"
+                className="text-primary-light hover:underline"
               >
                 (702) 525-5958
               </a>

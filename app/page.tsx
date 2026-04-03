@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import HeroIllustration from "@/components/HeroIllustration";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -112,7 +111,7 @@ export default function HomePage() {
           "AI-Powered Diagnostics",
           "Results in Days, Not Months",
         ]}
-        illustration={<HeroIllustration className="w-full h-full" />}
+        showBanner
       />
 
       {/* Problem Section */}
@@ -133,7 +132,7 @@ export default function HomePage() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto mb-12 stagger">
             {[
               {
                 stat: "25%",
@@ -216,8 +215,8 @@ export default function HomePage() {
             specific, prioritized fixes. No jargon. No 60-page PDF you&apos;ll
             never read. Just exactly what&apos;s wrong and what to do about it.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+            <div className="animate-fade-in-up">
               <ServiceCard
                 icon={Search}
                 title="AI Visibility Audit"
@@ -228,7 +227,7 @@ export default function HomePage() {
                 Starting at $297
               </p>
             </div>
-            <div>
+            <div className="animate-fade-in-up">
               <ServiceCard
                 icon={Star}
                 title="Review Intelligence Audit"
@@ -239,7 +238,7 @@ export default function HomePage() {
                 Starting at $197
               </p>
             </div>
-            <div>
+            <div className="animate-fade-in-up">
               <ServiceCard
                 icon={MapPin}
                 title="Google Business Profile Audit"
@@ -250,7 +249,7 @@ export default function HomePage() {
                 Starting at $197
               </p>
             </div>
-            <div>
+            <div className="animate-fade-in-up">
               <ServiceCard
                 icon={MousePointerClick}
                 title="Google Ads & Landing Pages"
@@ -272,7 +271,7 @@ export default function HomePage() {
             For SaaS companies, e-commerce brands, and businesses ready to
             dominate their market. Deep-dive audits with data-backed roadmaps.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
             {[
               {
                 icon: Brain,
@@ -353,7 +352,7 @@ export default function HomePage() {
       {/* Monthly Plans Callout */}
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="bg-secondary rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+          <div className="bg-gradient-to-br from-secondary to-secondary-light rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-4">
                 <TrendingUp className="w-6 h-6 text-primary" />

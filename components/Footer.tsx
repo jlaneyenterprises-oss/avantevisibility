@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const socialLinks = [
   {
@@ -67,19 +67,19 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+    <footer className="bg-gradient-to-b from-secondary to-[#060F10] text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <p className="text-xl font-bold">
               Avante <span className="text-primary">Visibility</span>
             </p>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-sm text-gray-400 leading-relaxed">
               AI visibility audits and optimization for local businesses,
               e-commerce brands, and agencies.
             </p>
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-2.5 mt-5">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -87,7 +87,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.name}
-                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary/30 transition-colors"
+                  className="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary/20 transition-all duration-200"
                 >
                   {social.icon}
                 </a>
@@ -97,15 +97,15 @@ export default function Footer() {
 
           {/* Local Services */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
               Local Business
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {localLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -116,15 +116,15 @@ export default function Footer() {
 
           {/* Growth Services */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-              Growth &amp; Performance
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
+              Growth & Performance
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {growthLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -135,15 +135,15 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
               Company
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -154,37 +154,60 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
               Contact
             </p>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-sm text-gray-300">
-                <Mail className="w-4 h-4 text-primary" />
+            <ul className="space-y-3.5">
+              <li>
                 <a
                   href="mailto:jolyn@avantevisibility.com"
-                  className="hover:text-white transition-colors"
+                  className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group"
                 >
+                  <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Mail className="w-4 h-4 text-primary" />
+                  </div>
                   jolyn@avantevisibility.com
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-gray-300">
-                <Phone className="w-4 h-4 text-primary" />
+              <li>
                 <a
                   href="tel:+17025255958"
-                  className="hover:text-white transition-colors"
+                  className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group"
                 >
+                  <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Phone className="w-4 h-4 text-primary" />
+                  </div>
                   (702) 525-5958
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-gray-300">
+              <li className="flex items-center gap-2.5 text-sm text-gray-400">
+                <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-4 h-4 text-primary" />
+                </div>
                 Serving businesses nationwide
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
-          &copy; 2026 Avante Visibility. All rights reserved.
+        <div className="mt-14 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-gray-500">
+            &copy; 2026 Avante Visibility. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6 text-sm text-gray-500">
+            <Link
+              href="/contact"
+              className="hover:text-gray-300 transition-colors"
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="/about"
+              className="hover:text-gray-300 transition-colors"
+            >
+              About
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

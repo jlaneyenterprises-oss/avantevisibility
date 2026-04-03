@@ -1,6 +1,5 @@
 import { type ReactNode } from "react";
-
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+import Image from "next/image";
 
 interface HeroProps {
   headline: string;
@@ -9,6 +8,7 @@ interface HeroProps {
   secondaryCTA?: { text: string; href: string };
   trustBadges?: string[];
   illustration?: ReactNode;
+  showBanner?: boolean;
 }
 
 export default function Hero({
@@ -17,23 +17,87 @@ export default function Hero({
   primaryCTA,
   secondaryCTA,
   trustBadges,
-  illustration,
+  showBanner = false,
 }: HeroProps) {
-  return (
-    <section className="relative bg-gradient-to-br from-secondary to-primary text-white overflow-hidden">
-      {/* Background illustration */}
-      {illustration && (
-        <div className="absolute inset-0 flex items-center justify-center opacity-40 pointer-events-none" aria-hidden="true" role="presentation">
-          {illustration}
+  if (showBanner) {
+    return (
+      <section className="relative bg-secondary overflow-hidden">
+        {/* Full-width banner image */}
+        <div className="relative w-full" style={{ minHeight: "340px" }}>
+          <Image
+            src="/banner.jpg"
+            alt="Avante Visibility - AI Visibility & Growth Strategy"
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-secondary/80" />
         </div>
-      )}
 
+        {/* Content below banner */}
+        <div className="relative bg-gradient-to-b from-secondary/90 to-secondary px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              {headline}
+            </h1>
+            <p className="mt-5 text-base md:text-lg text-primary-light/80 leading-relaxed max-w-2xl mx-auto">
+              {subheadline}
+            </p>
+
+            {(primaryCTA || secondaryCTA) && (
+              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                {primaryCTA && (
+                  <a
+                    href={primaryCTA.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base shadow-lg shadow-primary/25"
+                  >
+                    {primaryCTA.text}
+                  </a>
+                )}
+                {secondaryCTA && (
+                  <a
+                    href={secondaryCTA.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-8 py-3.5 border-2 border-primary/40 text-primary-light font-medium rounded-lg hover:bg-primary/10 transition-colors text-base"
+                  >
+                    {secondaryCTA.text}
+                  </a>
+                )}
+              </div>
+            )}
+
+            {trustBadges && trustBadges.length > 0 && (
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
+                {trustBadges.map((badge) => (
+                  <div
+                    key={badge}
+                    className="flex items-center gap-2 text-sm text-gray-400"
+                  >
+                    <div className="w-2 h-2 bg-accent rounded-full" />
+                    {badge}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Subpage hero: dark teal gradient without banner image
+  return (
+    <section className="relative bg-gradient-to-br from-secondary via-secondary-light to-secondary text-white overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             {headline}
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-primary-light/70 leading-relaxed">
             {subheadline}
           </p>
 
@@ -42,7 +106,9 @@ export default function Hero({
               {primaryCTA && (
                 <a
                   href={primaryCTA.href}
-                  className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base shadow-lg shadow-primary/25"
                 >
                   {primaryCTA.text}
                 </a>
@@ -52,7 +118,7 @@ export default function Hero({
                   href={secondaryCTA.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-3.5 border-2 border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors text-base"
+                  className="inline-flex items-center px-8 py-3.5 border-2 border-primary/40 text-primary-light font-medium rounded-lg hover:bg-primary/10 transition-colors text-base"
                 >
                   {secondaryCTA.text}
                 </a>
@@ -65,7 +131,7 @@ export default function Hero({
               {trustBadges.map((badge) => (
                 <div
                   key={badge}
-                  className="flex items-center gap-2 text-sm text-gray-300"
+                  className="flex items-center gap-2 text-sm text-gray-400"
                 >
                   <div className="w-2 h-2 bg-accent rounded-full" />
                   {badge}
