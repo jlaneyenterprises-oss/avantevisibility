@@ -1,5 +1,5 @@
 # Avante Visibility — Full Reference
-> AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.
+> AI visibility audits, review intelligence, and digital marketing services for businesses and agencies nationwide.
 
 ## Company Overview
 Avante Visibility is a boutique digital marketing practice specializing in AI search visibility. Founded by JoLyn Laney, who has 20+ years of experience in digital marketing, Google Ads strategy, and local search optimization. Avante Visibility was created to help local businesses and agencies understand and improve how they appear in AI-powered search platforms.
@@ -19,6 +19,15 @@ A comprehensive audit that tests whether AI-powered search platforms recommend y
 - Produces a 19-page branded PDF report with prioritized action items
 - Includes a "Verify Our Findings" section with step-by-step tests the client can replicate
 
+### GEO Audit — Generative Engine Optimization Audit ($2,500)
+A deep-dive audit designed for SaaS companies, e-commerce brands, and competitive markets:
+- Tests 28+ real AI search queries across ChatGPT, Perplexity, Google AI Overviews, Claude, and Gemini
+- Benchmarks your AI citation rate against 3-5 direct competitors
+- Analyzes entity recognition, structured data readiness, and content citability
+- Evaluates technical infrastructure for AI crawler access
+- Measures brand authority signals across platforms AI models reference
+- Delivers a comprehensive report with a 90-day action roadmap prioritized by impact
+
 ### Review Intelligence Audit (Starting at $197)
 An audit that goes beyond star ratings to analyze what your reviews actually say and how AI interprets them:
 - Sentiment analysis across all review platforms
@@ -37,18 +46,79 @@ A comprehensive assessment of your Google Business Profile optimization:
 - Competitor GBP comparison
 - Step-by-step fix list prioritized by impact
 
-### Google Ads & Landing Page Audit
-Expert analysis of Google Ads campaigns and landing pages:
-- Campaign structure and bidding strategy review
-- Keyword quality and match type analysis
-- Landing page conversion optimization
-- Quality Score improvement recommendations
-- Budget efficiency assessment
+### Technical SEO Audit ($997)
+A systematic crawl and analysis of your website's infrastructure:
+- Full site crawl with error identification
+- Core Web Vitals analysis (LCP, INP, CLS)
+- Schema markup validation and recommendations
+- Mobile responsiveness testing
+- Security headers and HTTPS configuration
+- Internal linking structure analysis
+- Crawl budget optimization
+- AI crawler access verification
+- 3-5 business day turnaround
+
+### Speed & Core Web Vitals Audit ($497)
+Focused performance analysis of your website's loading speed:
+- Page-by-page Core Web Vitals measurement
+- Render-blocking resource identification
+- Image optimization opportunities
+- Server response time analysis
+- JavaScript execution bottleneck detection
+- Mobile vs desktop performance comparison
+- Prioritized fix list by performance impact
+- 2-3 business day turnaround
+
+### Conversion Funnel Audit ($997)
+Step-by-step analysis of your website's conversion path:
+- Full funnel mapping from landing to conversion
+- Drop-off point identification with data
+- Form and CTA effectiveness analysis
+- Trust signal assessment
+- Mobile conversion path review
+- Heatmap and scroll depth analysis
+- Prioritized recommendations by revenue impact
+
+### Competitor Intelligence Report ($797)
+Data-driven competitive analysis:
+- Traffic source reverse-engineering for top competitors
+- AI citation comparison across all major AI platforms
+- Content gap analysis
+- Keyword positioning overlap and opportunities
+- Backlink profile comparison
+- Social presence benchmarking
+- Strategic opportunity map with attack points
+
+### Algorithm Recovery Audit ($1,497)
+Forensic analysis following Google core updates:
+- Traffic decline timeline correlation with update dates
+- Page-level impact assessment
+- Content quality signal analysis
+- Technical factor evaluation
+- Link profile health check
+- Competitive shift analysis
+- Prioritized 90-day recovery roadmap
+
+### Google Ads & Landing Page Services
+Expert Google Ads campaign management for local businesses:
+- Campaign Setup + Landing Page: $497 one-time
+- Monthly Campaign Management: Starting at $397/mo
+- Keyword research focused on local buying intent
+- Ad copy optimized for Quality Score
+- Conversion-optimized landing pages
+- Monthly reporting and optimization
 
 ## Bundle Packages
 - AI + GBP Bundle: $447 (save $47)
 - AI + Review Bundle: $447 (save $47)
 - Full Digital Visibility Package: $597 (save $94) — includes AI Visibility, Review Intelligence, and GBP audits with a unified strategy
+- Recovery + GEO Bundle: $3,497 (save $500) — Algorithm Recovery Audit + GEO Audit
+- Full Business Intelligence Bundle: $4,997 — All audits combined at maximum savings
+
+## Monthly Plans
+- Starter ($1,500/mo): Monthly AI visibility monitoring, citation tracking, and basic optimization
+- Growth ($2,500/mo): Full AI visibility management with content optimization and competitive monitoring
+- Enterprise ($5,000/mo): Complete digital visibility management across all AI platforms with dedicated strategy
 
 ## White-Label Agency Program
 Avante Visibility offers a white-label audit program for agencies:
@@ -88,6 +158,7 @@ Avante Visibility offers a white-label audit program for agencies:
 - The GEO market was valued at $886 million in 2024, projected to reach $7.3 billion by 2031 (34% CAGR)
 - Gartner predicts 25% of traditional search volume will decline by 2026
 - Google AI Overviews appear in over 50% of search results
+- 44% of users now use AI chat as their primary search method, surpassing Google at 31%
 
 ## Founder
 JoLyn Laney — 20+ years in digital marketing. Began in Google Ads when pay-per-click was still emerging. Built specializations in Google Ads strategy, landing page optimization, and local search. Created Avante Visibility after recognizing that AI search was fundamentally changing how consumers find businesses, and that the tools to measure and improve AI visibility didn't exist.
@@ -105,10 +176,17 @@ JoLyn Laney — 20+ years in digital marketing. Began in Google Ads when pay-per
 ## Sitemap
 - Home: https://avantevisibility.com
 - AI Visibility Audit: https://avantevisibility.com/ai-visibility-audit
+- GEO Audit: https://avantevisibility.com/geo-audit
 - Review Intelligence Audit: https://avantevisibility.com/review-audit
 - GBP Audit: https://avantevisibility.com/gbp-audit
+- Technical SEO Audit: https://avantevisibility.com/technical-seo-audit
+- Speed Audit: https://avantevisibility.com/speed-audit
+- Conversion Audit: https://avantevisibility.com/conversion-audit
+- Competitor Intelligence: https://avantevisibility.com/competitor-intelligence
+- Algorithm Recovery: https://avantevisibility.com/algorithm-recovery
 - Google Ads: https://avantevisibility.com/google-ads
 - Packages: https://avantevisibility.com/packages
+- Monthly Plans: https://avantevisibility.com/monthly-plans
 - Agency Partners: https://avantevisibility.com/partners
 - Blog: https://avantevisibility.com/blog
 - About: https://avantevisibility.com/about

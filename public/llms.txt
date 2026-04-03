@@ -1,30 +1,30 @@
 # Avante Visibility
-> AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.
+> AI visibility audits and digital marketing services that help businesses get recommended by ChatGPT, Perplexity, Google AI Overviews, Claude, and Gemini.
 
 ## About
-Avante Visibility helps businesses understand and improve how they appear in AI-powered search platforms like ChatGPT, Google AI Overviews, Perplexity, and Claude. Founded by JoLyn Laney, a 20+ year digital marketing veteran.
+Avante Visibility is a boutique digital marketing practice specializing in AI search visibility (GEO - Generative Engine Optimization). Founded by JoLyn Laney, 20+ years in digital marketing. Based in Las Vegas, NV. Serving businesses nationwide.
 
 ## Services
-- AI Visibility Audit ($297+): Tests whether AI platforms recommend your business and identifies gaps
-- Review Intelligence Audit ($197+): Analyzes review sentiment, language, and competitive positioning
-- Google Business Profile Audit ($197+): Comprehensive GBP optimization assessment
-- Full Digital Visibility Package ($597): All three audits bundled with unified strategy
+- [AI Visibility Audit](https://avantevisibility.com/ai-visibility-audit): Tests whether AI platforms recommend your business. Starting at $297.
+- [GEO Audit](https://avantevisibility.com/geo-audit): Full generative engine optimization audit with 28+ AI search queries. $2,500.
+- [Review Intelligence Audit](https://avantevisibility.com/review-audit): Deep analysis of review sentiment, patterns, and competitive gaps. $197.
+- [Google Business Profile Audit](https://avantevisibility.com/gbp-audit): Comprehensive GBP listing optimization review. $197.
+- [Technical SEO Audit](https://avantevisibility.com/technical-seo-audit): Site crawl, Core Web Vitals, schema, and indexation analysis. $997.
+- [Speed & Core Web Vitals Audit](https://avantevisibility.com/speed-audit): Page performance and loading speed analysis. $497.
+- [Conversion Funnel Audit](https://avantevisibility.com/conversion-audit): Identifies where visitors drop off and how to fix it. $997.
+- [Competitor Intelligence Report](https://avantevisibility.com/competitor-intelligence): Reverse-engineers competitor strategies and finds gaps. $797.
+- [Algorithm Recovery Audit](https://avantevisibility.com/algorithm-recovery): Diagnoses traffic loss after Google updates with recovery plan. $1,497.
+- [Google Ads & Landing Pages](https://avantevisibility.com/google-ads): Campaign setup from $497, management from $397/mo.
+- [Monthly AI Visibility Plans](https://avantevisibility.com/monthly-plans): Ongoing AI visibility monitoring and optimization from $1,500/mo.
 
-## For Agencies
-White-label audit program with wholesale pricing (50%+ margins), 3-5 day turnaround, no minimums.
+## Packages & Bundles
+- [All Packages & Pricing](https://avantevisibility.com/packages): Individual audits, bundles, and enterprise packages.
+- [White-Label Agency Program](https://avantevisibility.com/partners): Wholesale pricing for agencies, no minimums.
 
-## Contact
-- Website: https://avantevisibility.com
-- Email: jolyn@avantevisibility.com
-- Book a call: https://calendly.com/avantevisibility
+## Resources
+- [Blog](https://avantevisibility.com/blog): Articles on GEO, AEO, AI visibility, and local search.
+- [About](https://avantevisibility.com/about): JoLyn Laney's background and Avante Visibility's story.
+- [Contact](https://avantevisibility.com/contact): Get in touch or book a free strategy call.
 
-## Links
-- AI Visibility Audit: https://avantevisibility.com/ai-visibility-audit
-- Review Audit: https://avantevisibility.com/review-audit
-- GBP Audit: https://avantevisibility.com/gbp-audit
-- Packages: https://avantevisibility.com/packages
-- Agency Partners: https://avantevisibility.com/partners
-- Blog: https://avantevisibility.com/blog
-- About: https://avantevisibility.com/about
-- Contact: https://avantevisibility.com/contact
-- Full details: https://avantevisibility.com/llms-full.txt
+## Full Documentation
+- [Full reference](https://avantevisibility.com/llms-full.txt): Complete service details, pricing, and program information.

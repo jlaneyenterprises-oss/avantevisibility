@@ -194,6 +194,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <link rel="llms" href="https://avantevisibility.com/llms.txt" />
+        <link rel="llms-full" href="https://avantevisibility.com/llms-full.txt" />
       </head>
       <body className="min-h-screen flex flex-col">
         <Header />

@@ -5,6 +5,7 @@ import HeroIllustration from "@/components/HeroIllustration";
 import Breadcrumb from "@/components/Breadcrumb";
 import PricingCard from "@/components/PricingCard";
 import CTASection from "@/components/CTASection";
+import FAQAccordion from "@/components/FAQAccordion";
 import {
   Check,
   ArrowRight,
@@ -187,6 +188,39 @@ const recommendationBlocks = [
   },
 ];
 
+const faqItems = [
+  {
+    question: "Which audit should I start with?",
+    answer:
+      "If you're not sure where to start, the AI Visibility Audit ($297) gives you the broadest picture — it tests whether AI platforms are recommending your business and identifies the biggest gaps. If you know you have a specific issue (bad reviews, slow site, lost traffic), start with the audit that targets that problem. You can also book a free strategy call and we'll recommend the right starting point.",
+  },
+  {
+    question: "What's the difference between individual audits and bundles?",
+    answer:
+      "Individual audits focus on one area in depth. Bundles combine multiple audits at a discount and include a unified strategy that shows how the findings connect. For example, the Full Digital Visibility Package ($597) combines AI Visibility, Review Intelligence, and GBP audits into one report with cross-referenced insights you wouldn't get from ordering them separately.",
+  },
+  {
+    question: "How long does it take to receive my audit?",
+    answer:
+      "Most individual audits are delivered within 3-5 business days. Speed & Core Web Vitals audits are faster at 2-3 business days. Larger audits like the GEO Audit or Full Business Intelligence Bundle may take 5-7 business days. Rush delivery is available if you need results sooner.",
+  },
+  {
+    question: "Do you offer monthly plans instead of one-time audits?",
+    answer:
+      "Yes. Our monthly plans start at $1,500/month and include ongoing AI visibility monitoring, citation tracking, content optimization, and regular reporting. Monthly plans are ideal for businesses that want continuous improvement rather than a one-time snapshot. See our Monthly Plans page for details.",
+  },
+  {
+    question: "Can I upgrade from an individual audit to a bundle later?",
+    answer:
+      "Yes. If you start with a single audit and later decide you want a bundle, we'll credit the cost of your first audit toward the bundle price. Just reach out within 30 days of your original purchase.",
+  },
+  {
+    question: "What do I get in each audit report?",
+    answer:
+      "Every audit includes a branded PDF report written in plain English (not technical jargon), a prioritized action plan ranked by impact, specific data and findings with evidence, and clear next steps you can implement yourself or hand to your team. We focus on giving you a roadmap, not a data dump.",
+  },
+];
+
 export default function PackagesPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -217,6 +251,17 @@ export default function PackagesPage() {
         provider: {
           "@id": "https://avantevisibility.com/#organization",
         },
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
       },
     ],
   };
@@ -539,6 +584,21 @@ export default function PackagesPage() {
                 Book a Free Strategy Call
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-text-muted text-center mb-10">
+              Common questions about our audit packages and pricing.
+            </p>
+            <FAQAccordion items={faqItems} />
           </div>
         </div>
       </section>

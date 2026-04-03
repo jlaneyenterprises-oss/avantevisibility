@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import HeroIllustration from "@/components/HeroIllustration";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
+import FAQAccordion from "@/components/FAQAccordion";
 import {
   Search,
   FileText,
@@ -111,6 +112,39 @@ const whoItems = [
   "Need someone to manage campaigns so they can focus on running the business",
 ];
 
+const faqItems = [
+  {
+    question: "How much should I spend on Google Ads as a local business?",
+    answer:
+      "There's no universal answer, but most local businesses see meaningful results starting at $1,000-$2,000/month in ad spend. The key is not budget size — it's efficiency. A well-structured campaign with tight keyword targeting and a strong landing page will outperform a high-budget campaign with poor structure every time. We'll recommend a starting budget based on your market and competition.",
+  },
+  {
+    question: "How long does it take to see results from Google Ads?",
+    answer:
+      "You can start seeing clicks and leads within the first week. However, it typically takes 30-60 days to gather enough data to fully optimize a campaign. During that period, we're testing ad copy, refining keywords, and adjusting bids to find the combination that delivers the best cost per lead for your business.",
+  },
+  {
+    question: "Why do I need a landing page? Can't I just send traffic to my website?",
+    answer:
+      "Your website is designed to serve multiple purposes — information, branding, navigation. A landing page is designed to do one thing: convert the specific visitor who clicked your ad. Landing pages consistently convert 2-5x better than generic website pages because they match the exact intent of the search query and remove distractions.",
+  },
+  {
+    question: "What's the difference between your service and managing ads myself?",
+    answer:
+      "Most local business owners who manage their own ads are unknowingly wasting 30-60% of their budget on broad keywords, poor match types, or missing negative keywords. We bring campaign structure expertise, ongoing optimization, and conversion tracking that turns ad spend into measurable ROI — not just clicks.",
+  },
+  {
+    question: "Do you work with businesses outside of Las Vegas?",
+    answer:
+      "Yes. While we're based in Las Vegas, Google Ads management is done remotely. We work with local businesses across the US. What matters is understanding your market, your customers, and your competition — and we do that through research and strategy calls, not geography.",
+  },
+  {
+    question: "What happens if I want to cancel?",
+    answer:
+      "There are no long-term contracts. Monthly management is month-to-month. If you decide to pause or stop, you keep your Google Ads account, your campaigns, and your landing page. We believe in earning your business every month, not locking you in.",
+  },
+];
+
 export default function GoogleAdsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -161,6 +195,17 @@ export default function GoogleAdsPage() {
             url: "https://avantevisibility.com/google-ads",
           },
         ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
       },
     ],
   };
@@ -421,6 +466,21 @@ export default function GoogleAdsPage() {
               <h3 className="text-lg font-bold text-secondary group-hover:text-primary transition-colors">Google Business Profile Audit</h3>
               <p className="mt-2 text-sm text-text-muted">Your GBP drives local search visibility that compounds your paid traffic.</p>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-text-muted text-center mb-10">
+              Common questions about Google Ads management for local businesses.
+            </p>
+            <FAQAccordion items={faqItems} />
           </div>
         </div>
       </section>
