@@ -20,6 +20,7 @@ const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
 const STRIPE_LINKS = {
   algorithmRecovery: "https://buy.stripe.com/9B6eVd60maFqdML3wbgjC0c",
+  recoveryGeoBundle: "https://buy.stripe.com/cNi4gzcoKcNy4cbaYDgjC0k",
 };
 
 export const metadata: Metadata = {
@@ -395,8 +396,8 @@ export default function AlgorithmRecoveryPage() {
                 "Priority delivery",
                 "45-min strategy call",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $3,497"
+              ctaHref={STRIPE_LINKS.recoveryGeoBundle}
             />
           </div>
           <p className="text-center text-sm text-text-muted mt-8">
