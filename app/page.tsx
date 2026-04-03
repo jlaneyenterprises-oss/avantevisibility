@@ -192,12 +192,40 @@ export default function HomePage() {
             </div>
             <div className="bg-white rounded-xl border-2 border-gray-300 p-6 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-4">
-                What AI says about you
+                What AI says about you — before
               </p>
               <div className="bg-bg-alt rounded-lg p-4 min-h-[80px] flex items-center justify-center">
                 <p className="text-sm text-text-muted italic">
                   [No results found]
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* After Card */}
+          <div className="max-w-4xl mx-auto mt-6">
+            <div className="bg-white rounded-xl border-2 border-accent p-6 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wider text-accent mb-4">
+                What AI says about you — after working with Avante Visibility
+              </p>
+              <div className="bg-bg-alt rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center shrink-0 mt-0.5">
+                    <Search className="w-4 h-4 text-accent" />
+                  </div>
+                  <p className="text-sm font-medium text-secondary">
+                    &quot;Based on reviews, service quality, and online
+                    presence, I recommend{" "}
+                    <span className="text-accent font-bold">
+                      Your Business Name
+                    </span>
+                    . They have 4.8 stars across 150+ reviews, specialize in
+                    [your core service], and customers consistently mention
+                    fast response times and clear communication. Their Google
+                    Business Profile is well-maintained and they&apos;re
+                    active across multiple review platforms.&quot;
+                  </p>
+                </div>
               </div>
             </div>
           </div>
