@@ -18,6 +18,15 @@ const STRIPE_LINKS = {
   aiReviewBundle: "https://buy.stripe.com/3cIdR960m14Q7on3wbgjC05",
   reviewGbpBundle: "https://buy.stripe.com/00w7sL9cy3cY5gfaYDgjC06",
   fullPackage: "https://buy.stripe.com/5kQcN560m3cY8sraYDgjC07",
+  geoAudit: "https://buy.stripe.com/14AcN52Oa4h25gf2s7gjC0j",
+  technicalSeo: "https://buy.stripe.com/eVqeVd0G200MaAz0jZgjC08",
+  speedAudit: "https://buy.stripe.com/fZu9ATewS8xi6kj2s7gjC09",
+  conversionAudit: "https://buy.stripe.com/dRm14nagC3cYdMLc2HgjC0a",
+  competitorIntel: "https://buy.stripe.com/fZu4gzbkGbJucIH1o3gjC0b",
+  algorithmRecovery: "https://buy.stripe.com/9B6eVd60maFqdML3wbgjC0c",
+  competitiveEdge: "https://buy.stripe.com/dRm4gz9cycNy387eaPgjC0d",
+  growthStarter: "https://buy.stripe.com/28E7sL0G2eVGeQPc2HgjC0e",
+  fullBusiness: "https://buy.stripe.com/28E5kD4WieVGfUTfeTgjC0f",
 };
 
 export const metadata: Metadata = {

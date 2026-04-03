@@ -22,6 +22,11 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  competitorIntel: "https://buy.stripe.com/fZu4gzbkGbJucIH1o3gjC0b",
+  competitiveEdge: "https://buy.stripe.com/dRm4gz9cycNy387eaPgjC0d",
+};
+
 export const metadata: Metadata = {
   title: "Competitor Intelligence Report | Competitive Analysis Service",
   description:
@@ -215,7 +220,7 @@ export default function CompetitorIntelligencePage() {
         subheadline="You can&apos;t beat competitors you don&apos;t understand. Our Competitor Intelligence Report reverse-engineers what&apos;s working for the top players in your space &mdash; their content, their AI citations, their traffic sources, their positioning gaps &mdash; and shows you exactly where to attack."
         primaryCTA={{
           text: "Get My Competitor Intelligence Report \u2014 $797",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.competitorIntel,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
@@ -415,8 +420,8 @@ export default function CompetitorIntelligencePage() {
                 "Strategic opportunity map",
                 "30-min strategy call",
               ]}
-              ctaText="Get My Report"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Report \u2014 $797"
+              ctaHref={STRIPE_LINKS.competitorIntel}
             />
             <PricingCard
               title="Competitive Edge Bundle"
@@ -429,8 +434,8 @@ export default function CompetitorIntelligencePage() {
                 "Priority delivery",
                 "30-min strategy call",
               ]}
-              ctaText="Get the Bundle"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $2,997"
+              ctaHref={STRIPE_LINKS.competitiveEdge}
               badge="Save $300"
               highlighted
             />
@@ -506,7 +511,7 @@ export default function CompetitorIntelligencePage() {
         headline="Stop Competing Blind"
         description="The businesses that win market share aren&apos;t just better at what they do &mdash; they&apos;re better informed about what everyone else is doing. Get the intelligence you need to compete strategically."
         buttonText="Get My Competitor Intelligence Report &mdash; $797"
-        buttonHref={CALENDLY_URL}
+        buttonHref={STRIPE_LINKS.competitorIntel}
         secondaryButtonText="Book a Free Strategy Call First"
         secondaryButtonHref={CALENDLY_URL}
         showContact

@@ -21,6 +21,12 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  geoAudit: "https://buy.stripe.com/14AcN52Oa4h25gf2s7gjC0j",
+  competitiveEdge: "https://buy.stripe.com/dRm4gz9cycNy387eaPgjC0d",
+  growthStarter: "https://buy.stripe.com/28E7sL0G2eVGeQPc2HgjC0e",
+};
+
 export const metadata: Metadata = {
   title: "GEO Audit | Generative Engine Optimization Audit for SaaS & E-Commerce",
   description:
@@ -188,8 +194,8 @@ export default function GEOAuditPage() {
         headline="See Exactly What AI Says When Customers Search for What You Sell"
         subheadline="When someone asks ChatGPT, Perplexity, or Google AI for the best tool, product, or service in your space &mdash; are you in the answer? Our GEO Audit tests your site against 28+ real AI search queries, benchmarks you against competitors, and gives you the exact roadmap to get cited. This isn&apos;t theory. It&apos;s data."
         primaryCTA={{
-          text: "Book a Strategy Call",
-          href: CALENDLY_URL,
+          text: "Order GEO Audit \u2014 $2,500",
+          href: STRIPE_LINKS.geoAudit,
         }}
         secondaryCTA={{
           text: "See What's Included",
@@ -389,12 +395,12 @@ export default function GEOAuditPage() {
                   </p>
                 </div>
                 <a
-                  href={CALENDLY_URL}
+                  href={STRIPE_LINKS.geoAudit}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
                 >
-                  Book a strategy call <ArrowRight className="w-4 h-4" />
+                  Order GEO Audit <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -429,8 +435,8 @@ export default function GEOAuditPage() {
                 "15-20 page branded PDF report",
                 "45-min strategy call",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order GEO Audit \u2014 $2,500"
+              ctaHref={STRIPE_LINKS.geoAudit}
               highlighted
               badge="Most Popular"
             />
@@ -446,8 +452,8 @@ export default function GEOAuditPage() {
                 "Priority delivery",
                 "45-min strategy call",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $2,997"
+              ctaHref={STRIPE_LINKS.competitiveEdge}
             />
             <PricingCard
               title="Growth Starter Bundle"
@@ -461,8 +467,8 @@ export default function GEOAuditPage() {
                 "Priority delivery",
                 "45-min strategy call",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $3,997"
+              ctaHref={STRIPE_LINKS.growthStarter}
             />
           </div>
           <p className="text-center text-sm text-text-muted mt-8">
@@ -534,8 +540,8 @@ export default function GEOAuditPage() {
       <CTASection
         headline="Ready to See What AI Really Says About You?"
         description="Get a complete diagnostic of your AI visibility with 28+ real query tests, competitive benchmarking, and a clear roadmap to start getting cited."
-        buttonText="Book a Strategy Call"
-        buttonHref={CALENDLY_URL}
+        buttonText="Order GEO Audit \u2014 $2,500"
+        buttonHref={STRIPE_LINKS.geoAudit}
         secondaryButtonText="Learn About the $297 AI Visibility Audit"
         secondaryButtonHref="/ai-visibility-audit"
         showContact

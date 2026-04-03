@@ -23,6 +23,12 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  technicalSeo: "https://buy.stripe.com/eVqeVd0G200MaAz0jZgjC08",
+  growthStarter: "https://buy.stripe.com/28E7sL0G2eVGeQPc2HgjC0e",
+  fullBusiness: "https://buy.stripe.com/28E5kD4WieVGfUTfeTgjC0f",
+};
+
 export const metadata: Metadata = {
   title: "Technical SEO Audit | Site Speed, Schema & Crawl Error Analysis",
   description:
@@ -209,8 +215,8 @@ export default function TechnicalSEOAuditPage() {
         headline="The Technical Foundation That Makes Everything Else Work"
         subheadline="AI visibility, rankings, and conversions all depend on a technically sound website. Our Technical SEO Audit crawls your entire site and identifies every issue holding you back &mdash; from slow page speed to broken schema to crawl errors that search engines and AI platforms can&apos;t get past."
         primaryCTA={{
-          text: "Book a Strategy Call \u2014 $997",
-          href: CALENDLY_URL,
+          text: "Order Technical SEO Audit \u2014 $997",
+          href: STRIPE_LINKS.technicalSeo,
         }}
         secondaryCTA={{
           text: "See What\u2019s Included",
@@ -356,8 +362,8 @@ export default function TechnicalSEOAuditPage() {
                 "Prioritized fix list",
                 "30-min walkthrough call",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Audit \u2014 $997"
+              ctaHref={STRIPE_LINKS.technicalSeo}
             />
             <PricingCard
               title="Growth Starter Bundle"
@@ -371,8 +377,8 @@ export default function TechnicalSEOAuditPage() {
                 "Walkthrough call per audit",
                 "Priority delivery",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $3,997"
+              ctaHref={STRIPE_LINKS.growthStarter}
               badge="Best Value"
               highlighted
             />
@@ -389,8 +395,8 @@ export default function TechnicalSEOAuditPage() {
                 "Walkthrough call per audit",
                 "Priority delivery",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $4,997"
+              ctaHref={STRIPE_LINKS.fullBusiness}
             />
           </div>
           <p className="text-center text-sm text-text-muted mt-8">
@@ -462,8 +468,8 @@ export default function TechnicalSEOAuditPage() {
       <CTASection
         headline="Ready to Fix What's Holding Your Site Back?"
         description="Technical issues are silent killers of rankings and conversions. Get a complete picture of your site's technical health and a clear plan to fix every issue."
-        buttonText="Book a Strategy Call"
-        buttonHref={CALENDLY_URL}
+        buttonText="Order Technical SEO Audit \u2014 $997"
+        buttonHref={STRIPE_LINKS.technicalSeo}
         secondaryButtonText="See All Packages"
         secondaryButtonHref="/packages"
         showContact

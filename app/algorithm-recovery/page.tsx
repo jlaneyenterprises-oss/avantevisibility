@@ -18,6 +18,10 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  algorithmRecovery: "https://buy.stripe.com/9B6eVd60maFqdML3wbgjC0c",
+};
+
 export const metadata: Metadata = {
   title: "Algorithm Recovery Audit | Recover Lost Traffic After a Google Update",
   description:
@@ -178,8 +182,8 @@ export default function AlgorithmRecoveryPage() {
         headline="Lost Traffic After a Google Update? Here&apos;s How to Get It Back."
         subheadline="Google algorithm updates can wipe out months of growth overnight. Our Algorithm Recovery Audit pinpoints exactly what changed, which pages were affected, and why. Then we give you the specific recovery plan &mdash; prioritized by impact &mdash; to rebuild your traffic."
         primaryCTA={{
-          text: "Book a Strategy Call",
-          href: CALENDLY_URL,
+          text: "Order Recovery Audit \u2014 $1,497",
+          href: STRIPE_LINKS.algorithmRecovery,
         }}
         secondaryCTA={{
           text: "See What's Included",
@@ -373,8 +377,8 @@ export default function AlgorithmRecoveryPage() {
                 "Delivered in 5-7 business days",
                 "45-min strategy call",
               ]}
-              ctaText="Book a Strategy Call"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Recovery Audit \u2014 $1,497"
+              ctaHref={STRIPE_LINKS.algorithmRecovery}
               highlighted
               badge="Most Popular"
             />
@@ -464,8 +468,8 @@ export default function AlgorithmRecoveryPage() {
       <CTASection
         headline="Ready to Recover Your Lost Traffic?"
         description="Stop guessing why your traffic dropped. Get a data-driven diagnosis and a prioritized recovery plan built for your specific situation."
-        buttonText="Book a Strategy Call"
-        buttonHref={CALENDLY_URL}
+        buttonText="Order Recovery Audit \u2014 $1,497"
+        buttonHref={STRIPE_LINKS.algorithmRecovery}
         secondaryButtonText="Learn About the GEO Audit"
         secondaryButtonHref="/geo-audit"
         showContact

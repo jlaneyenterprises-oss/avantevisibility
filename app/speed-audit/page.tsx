@@ -21,6 +21,11 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  speedAudit: "https://buy.stripe.com/fZu9ATewS8xi6kj2s7gjC09",
+  growthStarter: "https://buy.stripe.com/28E7sL0G2eVGeQPc2HgjC0e",
+};
+
 export const metadata: Metadata = {
   title: "Speed & Core Web Vitals Audit | Site Performance Analysis",
   description:
@@ -174,7 +179,7 @@ export default function SpeedAuditPage() {
         subheadline="Google uses Core Web Vitals as a ranking factor. AI platforms deprioritize slow-loading sites. And 53% of mobile users abandon sites that take more than 3 seconds to load. Our Speed Audit identifies exactly what&apos;s slowing you down and the fastest path to fix it."
         primaryCTA={{
           text: "Get My Speed Audit \u2014 $497",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.speedAudit,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
@@ -444,8 +449,8 @@ export default function SpeedAuditPage() {
                 "Projected before/after scores",
                 "30-min walkthrough call",
               ]}
-              ctaText="Get My Speed Audit"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Speed Audit \u2014 $497"
+              ctaHref={STRIPE_LINKS.speedAudit}
             />
             <PricingCard
               title="Growth Starter Bundle"
@@ -462,8 +467,8 @@ export default function SpeedAuditPage() {
                 "Priority delivery",
                 "30-min walkthrough call",
               ]}
-              ctaText="Get the Growth Starter Bundle"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $3,997"
+              ctaHref={STRIPE_LINKS.growthStarter}
             />
           </div>
 
@@ -537,7 +542,7 @@ export default function SpeedAuditPage() {
         headline="Find Out What&apos;s Slowing You Down"
         description="Every second of load time costs you customers, rankings, and AI citations. Our Speed Audit shows you exactly what to fix and the impact each fix will have."
         buttonText="Get My Speed Audit &mdash; $497"
-        buttonHref={CALENDLY_URL}
+        buttonHref={STRIPE_LINKS.speedAudit}
         secondaryButtonText="Book a Free Strategy Call First"
         showContact
       />

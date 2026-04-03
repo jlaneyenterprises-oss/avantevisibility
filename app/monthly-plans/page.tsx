@@ -23,6 +23,12 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS: Record<string, string> = {
+  "Monitor + Advise": "https://buy.stripe.com/6oU7sL4WiaFq8sraYDgjC0g",
+  "Monitor + Implement": "https://buy.stripe.com/aFa7sLbkGfZKbED2s7gjC0h",
+  "Full AI Visibility Program": "https://buy.stripe.com/eVq9ATcoKbJufUT5EjgjC0i",
+};
+
 export const metadata: Metadata = {
   title: "Monthly AI Visibility Plans | Ongoing GEO Optimization",
   description:
@@ -252,8 +258,8 @@ export default function MonthlyPlansPage() {
         headline="Stop Guessing. Start Growing. Every Month."
         subheadline="AI search results change every month. A citation you earn today can disappear tomorrow if a competitor publishes better content or a platform updates its model. Our monthly plans track your AI visibility, implement fixes, and grow your citations &mdash; with data proving it&apos;s working."
         primaryCTA={{
-          text: "Book a Strategy Call",
-          href: CALENDLY_URL,
+          text: "See Plans & Pricing",
+          href: "#choose-plan",
         }}
         secondaryCTA={{
           text: "View One-Time Audits",
@@ -319,7 +325,7 @@ export default function MonthlyPlansPage() {
       {/* Pricing Tiers */}
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
+          <h2 id="choose-plan" className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
             Choose Your Plan
           </h2>
           <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
@@ -335,8 +341,8 @@ export default function MonthlyPlansPage() {
                 period="mo"
                 description={tier.description}
                 features={tier.features}
-                ctaText="Book a Strategy Call"
-                ctaHref={CALENDLY_URL}
+                ctaText={`Get Started \u2014 ${tier.price}/mo`}
+                ctaHref={STRIPE_LINKS[tier.name] || CALENDLY_URL}
                 badge={tier.highlighted ? "Most Popular" : undefined}
                 highlighted={tier.highlighted}
               />
@@ -492,8 +498,8 @@ export default function MonthlyPlansPage() {
       <CTASection
         headline="Ready to Grow Your AI Visibility Every Month?"
         description="The longer you wait, the further ahead your competitors get. Let&apos;s talk about which plan makes sense for your business."
-        buttonText="Book a Strategy Call"
-        buttonHref={CALENDLY_URL}
+        buttonText="Get Started \u2014 $1,500/mo"
+        buttonHref={STRIPE_LINKS["Monitor + Advise"]}
         secondaryButtonText="View One-Time Audits"
         secondaryButtonHref="/packages"
         showContact

@@ -22,6 +22,11 @@ import {
 
 const CALENDLY_URL = "https://calendly.com/avantevisibility";
 
+const STRIPE_LINKS = {
+  conversionAudit: "https://buy.stripe.com/dRm14nagC3cYdMLc2HgjC0a",
+  fullBusiness: "https://buy.stripe.com/28E5kD4WieVGfUTfeTgjC0f",
+};
+
 export const metadata: Metadata = {
   title: "Conversion Funnel Audit | Increase Your Website Conversion Rate",
   description:
@@ -207,7 +212,7 @@ export default function ConversionAuditPage() {
         subheadline="Traffic without conversions is just expensive window shopping. Our Conversion Funnel Audit follows the exact path your visitors take &mdash; from first click to final action &mdash; and identifies every point where you&apos;re losing them. Most businesses find 3&ndash;5 quick fixes that immediately improve conversion rates."
         primaryCTA={{
           text: "Get My Conversion Audit \u2014 $997",
-          href: CALENDLY_URL,
+          href: STRIPE_LINKS.conversionAudit,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
@@ -421,8 +426,8 @@ export default function ConversionAuditPage() {
                 "Prioritized A/B test recommendations",
                 "30-min walkthrough call",
               ]}
-              ctaText="Get My Conversion Audit"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Conversion Audit \u2014 $997"
+              ctaHref={STRIPE_LINKS.conversionAudit}
             />
             <PricingCard
               title="Full Business Intelligence Bundle"
@@ -437,8 +442,8 @@ export default function ConversionAuditPage() {
                 "Priority delivery",
                 "30-min walkthrough call",
               ]}
-              ctaText="Get the Full Bundle"
-              ctaHref={CALENDLY_URL}
+              ctaText="Order Bundle \u2014 $4,997"
+              ctaHref={STRIPE_LINKS.fullBusiness}
               badge="Best Value"
               highlighted
             />
@@ -514,7 +519,7 @@ export default function ConversionAuditPage() {
         headline="Stop Losing Customers at the Finish Line"
         description="Your traffic is proof that people are interested. The conversion funnel audit shows you exactly where that interest dies and how to keep it alive all the way to the sale."
         buttonText="Get My Conversion Audit &mdash; $997"
-        buttonHref={CALENDLY_URL}
+        buttonHref={STRIPE_LINKS.conversionAudit}
         secondaryButtonText="Book a Free Strategy Call First"
         secondaryButtonHref={CALENDLY_URL}
         showContact
