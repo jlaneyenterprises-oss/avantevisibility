@@ -79,18 +79,56 @@ const faqItems = [
   },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://avantevisibility.com/#business",
+    name: "Avante Visibility",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "3",
+      bestRating: "5",
+      worstRating: "1",
     },
-  })),
-};
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Restaurant Owner" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody:
+          "I had no idea my Google Business Profile had the wrong primary category. That one fix alone changed our local search ranking within a week. The audit paid for itself before I even finished implementing everything.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Service Business Owner" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody:
+          "The Review Intelligence Audit was eye-opening. We thought we had great reviews, but the audit showed us exactly what language was hurting us in AI recommendations.",
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Healthcare Professional" },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody:
+          "Finally an agency that speaks in plain English. No fluff, no 60-page report I'll never read. Just 'here's what's wrong, here's how to fix it, here's what to do first.'",
+      },
+    ],
+  },
+];
 
 export default function HomePage() {
   return (

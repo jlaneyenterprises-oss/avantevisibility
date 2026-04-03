@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import { getAllPosts, getPostBySlug, getAuthor } from "@/lib/blog";
-import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, User, Lightbulb, RefreshCw } from "lucide-react";
 import { notFound } from "next/navigation";
 
 interface PageProps {
@@ -31,8 +32,17 @@ export async function generateMetadata({
       description: post.description,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.dateModified,
       authors: [post.author],
       url: `https://avantevisibility.com/blog/${post.slug}`,
+      images: [
+        {
+          url: "https://avantevisibility.com/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
     },
   };
 }
@@ -43,6 +53,18 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) notFound();
 
   const author = getAuthor(post.author);
+
+  const publishedDate = new Date(post.date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  const modifiedDate = new Date(post.dateModified).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -74,8 +96,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         "@type": "Article",
         headline: post.title,
         description: post.description,
+        image: "https://avantevisibility.com/opengraph-image",
         datePublished: post.date,
-        dateModified: post.date,
+        dateModified: post.dateModified,
         wordCount: post.content.split(/\s+/).length,
         author: {
           "@type": "Person",
@@ -104,7 +127,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         },
         speakable: {
           "@type": "SpeakableSpecification",
-          cssSelector: ["article h1", "article .post-description"],
+          cssSelector: ["article h1", "article .post-description", "article .key-takeaways"],
         },
       },
     ],
@@ -135,14 +158,6 @@ export default async function BlogPostPage({ params }: PageProps) {
                   {post.category}
                 </span>
                 <span className="flex items-center gap-1">
-                  <Calendar className="w-3.5 h-3.5" />
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
-                <span className="flex items-center gap-1">
                   <Clock className="w-3.5 h-3.5" />
                   {post.readTime}
                 </span>
@@ -153,19 +168,39 @@ export default async function BlogPostPage({ params }: PageProps) {
               <p className="mt-4 text-lg text-white/80 post-description">
                 {post.description}
               </p>
-              {author && (
-                <div className="mt-6 flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary/30 rounded-full flex items-center justify-center">
-                    <User className="w-5 h-5 text-primary-light" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-white">
-                      {author.name}
-                    </p>
-                    <p className="text-xs text-white/60">{author.title}</p>
-                  </div>
+
+              {/* Author byline + dates */}
+              <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                {author && (
+                  <Link href="/about" className="flex items-center gap-3 group">
+                    <Image
+                      src="/jolyn.jpg"
+                      alt={author.name}
+                      width={40}
+                      height={40}
+                      className="rounded-full object-cover"
+                    />
+                    <div>
+                      <p className="text-sm font-medium text-white group-hover:text-primary-light transition-colors">
+                        By {author.name}
+                      </p>
+                      <p className="text-xs text-white/60">Founder, Avante Visibility</p>
+                    </div>
+                  </Link>
+                )}
+                <div className="flex items-center gap-4 text-xs text-white/60">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3.5 h-3.5" />
+                    Published: {publishedDate}
+                  </span>
+                  {post.dateModified !== post.date && (
+                    <span className="flex items-center gap-1">
+                      <RefreshCw className="w-3 h-3" />
+                      Updated: {modifiedDate}
+                    </span>
+                  )}
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </section>
@@ -173,6 +208,24 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Content */}
         <section>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            {/* Key Takeaways TL;DR block */}
+            {post.keyTakeaways && post.keyTakeaways.length > 0 && (
+              <div className="max-w-3xl mx-auto mb-10 p-6 bg-primary/5 border border-primary/20 rounded-xl key-takeaways">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="w-5 h-5 text-primary" />
+                  <h2 className="text-base font-bold text-secondary">Key Takeaways</h2>
+                </div>
+                <ul className="space-y-2">
+                  {post.keyTakeaways.map((takeaway, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-text-primary leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5 shrink-0">{i + 1}.</span>
+                      {takeaway}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             <div className="max-w-3xl mx-auto prose prose-lg prose-gray prose-headings:text-secondary prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-secondary prose-li:marker:text-primary">
               <ReactMarkdown>{post.content}</ReactMarkdown>
             </div>
@@ -181,9 +234,13 @@ export default async function BlogPostPage({ params }: PageProps) {
             {author && (
               <div className="max-w-3xl mx-auto mt-12 p-6 md:p-8 bg-bg-alt rounded-xl border border-gray-200">
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-                    <User className="w-7 h-7 text-primary" />
-                  </div>
+                  <Image
+                    src="/jolyn.jpg"
+                    alt={author.name}
+                    width={56}
+                    height={56}
+                    className="rounded-full object-cover shrink-0"
+                  />
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1">
                       About the Author

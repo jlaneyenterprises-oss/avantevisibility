@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     title: "White-Label AI & Local SEO Audits for Agencies",
     description:
       "Offer white-label AI visibility, GBP, and review audits under your brand. Wholesale pricing, fast turnaround, no client minimums. Built for agencies.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "White-Label AI & Local SEO Audits for Agencies",
+      },
+    ],
   },
 };
 

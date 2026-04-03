@@ -34,6 +34,14 @@ export const metadata: Metadata = {
     title: "Speed & Core Web Vitals Audit | Site Performance Analysis",
     description:
       "A slow site loses customers and AI citations. Our Speed Audit analyzes Core Web Vitals, page-by-page performance, and render-blocking resources. $497 with 2-3 day turnaround.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Speed & Core Web Vitals Audit | Site Performance Analysis",
+      },
+    ],
   },
 };
 
@@ -186,7 +194,20 @@ export default function SpeedAuditPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 10, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a Speed &amp; Core Web Vitals Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>speed and Core Web Vitals audit</strong> measures your website&apos;s real-world loading performance across Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS) &mdash; the three metrics Google uses as direct ranking signals. It identifies render-blocking resources, unoptimized images, slow server responses, and JavaScript bottlenecks, then provides a prioritized fix list to improve both user experience and search visibility.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Problem Section */}
       <section className="bg-bg-alt">

@@ -37,6 +37,14 @@ export const metadata: Metadata = {
     title: "Google Business Profile Audit | GBP Audit Service",
     description:
       "Is your Google Business Profile costing you customers? Our GBP audit finds every ranking gap, wrong category, and missed opportunity. Starting at $197.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Google Business Profile Audit | GBP Audit Service",
+      },
+    ],
   },
 };
 
@@ -224,7 +232,20 @@ export default function GBPAuditPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 18, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a Google Business Profile Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>Google Business Profile audit</strong> (formerly Google My Business audit) is a comprehensive review of your GBP listing that checks category accuracy, NAP consistency, photo optimization, review management, Q&amp;A completeness, and local ranking signals. It identifies every gap that&apos;s reducing your visibility in Google Maps, local search results, and the AI-powered recommendations that increasingly pull from GBP data.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Problem Section */}
       <section className="bg-bg-alt">

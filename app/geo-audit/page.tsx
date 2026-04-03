@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     title: "GEO Audit | Generative Engine Optimization Audit for SaaS & E-Commerce",
     description:
       "See exactly what AI says when customers search for what you sell. Our GEO Audit tests 28+ real AI queries, benchmarks competitors, and delivers a full roadmap to get cited. $2,500.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "GEO Audit | Generative Engine Optimization Audit for SaaS & E-Commerce",
+      },
+    ],
   },
 };
 
@@ -202,7 +210,20 @@ export default function GEOAuditPage() {
           href: "#what-it-covers",
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 25, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a GEO Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>GEO audit</strong> (Generative Engine Optimization audit) is a structured analysis that tests whether your business appears in AI-generated search results from platforms like ChatGPT, Perplexity, Google AI Overviews, and Claude. Unlike traditional SEO audits that focus on keyword rankings, a GEO audit evaluates citation frequency, answer inclusion, entity recognition, and structured data readiness across every major AI search platform &mdash; then delivers a prioritized action plan to get your business recommended.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* The Problem / Stats Section */}
       <section className="bg-bg-alt">

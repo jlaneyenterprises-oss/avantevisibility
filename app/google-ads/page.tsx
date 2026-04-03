@@ -29,6 +29,14 @@ export const metadata: Metadata = {
     title: "Google Ads & Landing Pages for Local Business",
     description:
       "Google Ads campaigns and conversion-optimized landing pages built for local businesses. Setup from $497, management from $397/mo. No wasted budget.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Google Ads & Landing Pages for Local Business",
+      },
+    ],
   },
 };
 
@@ -183,7 +191,20 @@ export default function GoogleAdsPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 10, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is Google Ads Management for Local Businesses?</h2>
+            <p className="text-text-muted leading-relaxed">
+              <strong>Google Ads management</strong> for local businesses is the strategic setup, optimization, and ongoing management of paid search campaigns designed to drive local customers &mdash; not just clicks. It includes keyword research focused on buying intent, ad copy tailored to local search behavior, landing page alignment, bid strategy optimization, and continuous performance monitoring to maximize your return on ad spend.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Problem Section */}
       <section>

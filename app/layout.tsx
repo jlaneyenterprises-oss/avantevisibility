@@ -28,11 +28,20 @@ export const metadata: Metadata = {
     title: "AI Visibility & Local SEO Audits | Avante Visibility",
     description:
       "Your business may be invisible to ChatGPT, Google AI, and Perplexity. Avante Visibility audits find the gaps and fix them fast. Get your free score.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Avante Visibility - AI Visibility & Local SEO Audits",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@AvanteVisible",
     creator: "@AvanteVisible",
+    images: ["https://avantevisibility.com/opengraph-image"],
   },
 };
 
@@ -44,7 +53,8 @@ const jsonLd = {
       "@id": "https://avantevisibility.com/#organization",
       name: "Avante Visibility",
       url: "https://avantevisibility.com",
-      logo: "https://avantevisibility.com/favicon.ico",
+      logo: "https://avantevisibility.com/logo.png",
+      image: "https://avantevisibility.com/opengraph-image",
       description:
         "AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.",
       telephone: "+17025255958",
@@ -53,6 +63,14 @@ const jsonLd = {
       founder: {
         "@type": "Person",
         name: "JoLyn Laney",
+        url: "https://avantevisibility.com/about",
+        jobTitle: "Founder & AI Visibility Strategist",
+        description:
+          "JoLyn Laney has over 20 years of experience in digital marketing, SEO, and paid media. A Google Partner since 2012, she specializes in helping businesses get found by AI-powered search engines.",
+        sameAs: [
+          "https://www.linkedin.com/company/avante-visibility",
+          "https://x.com/AvanteVisible",
+        ],
       },
       sameAs: [
         "https://www.linkedin.com/company/avante-visibility",
@@ -84,7 +102,7 @@ const jsonLd = {
       description:
         "AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.",
       url: "https://avantevisibility.com",
-      image: "https://avantevisibility.com/favicon.ico",
+      image: "https://avantevisibility.com/opengraph-image",
       telephone: "+17025255958",
       email: "jolyn@avantevisibility.com",
       priceRange: "$$",

@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     title: "Conversion Funnel Audit | Increase Your Website Conversion Rate",
     description:
       "You're getting traffic but they're not buying. Our Conversion Funnel Audit traces every step from landing page to conversion and identifies where you're losing customers. $997.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Conversion Funnel Audit | Increase Your Website Conversion Rate",
+      },
+    ],
   },
 };
 
@@ -219,7 +227,20 @@ export default function ConversionAuditPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 10, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a Conversion Funnel Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>conversion funnel audit</strong> is a step-by-step analysis of the path visitors take from landing on your site to completing a desired action &mdash; whether that&apos;s a purchase, form submission, or phone call. It identifies friction points, drop-off stages, confusing navigation, weak calls to action, and trust gaps that are costing you customers, then delivers a prioritized fix list based on impact and effort.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* The Problem Section */}
       <section className="bg-bg-alt">

@@ -41,6 +41,14 @@ export const metadata: Metadata = {
     title: "Review Intelligence Audit | Online Review Analysis",
     description:
       "Stop guessing what your reviews say. Our Review Intelligence Audit reveals patterns, competitor gaps, and the fixes that move your star rating. $197.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Review Intelligence Audit | Online Review Analysis",
+      },
+    ],
   },
 };
 
@@ -279,7 +287,20 @@ export default function ReviewAuditPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 18, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a Review Intelligence Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>review intelligence audit</strong> is a deep analysis of your online reviews and your competitors&apos; reviews that extracts actionable business intelligence. It goes beyond star ratings to identify recurring complaint themes, sentiment patterns, competitive gaps, and the specific language customers use &mdash; giving you a data-driven action plan to improve ratings, respond strategically, and win the trust signals that AI platforms use when making recommendations.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* The Problem Section */}
       <section>

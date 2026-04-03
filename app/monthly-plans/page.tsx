@@ -37,6 +37,14 @@ export const metadata: Metadata = {
     title: "Monthly AI Visibility Plans | Ongoing GEO Optimization",
     description:
       "Monthly AI visibility monitoring and optimization plans. Track your AI citations, implement fixes, and grow your presence across ChatGPT, Perplexity, and Google AI. Starting at $1,500/mo.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Monthly AI Visibility Plans | Ongoing GEO Optimization",
+      },
+    ],
   },
 };
 
@@ -266,6 +274,7 @@ export default function MonthlyPlansPage() {
           href: "/packages",
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 22, 2026"
       />
 
       {/* Why Monthly */}

@@ -1,5 +1,6 @@
 import { type ReactNode } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface HeroProps {
   headline: string;
@@ -9,6 +10,31 @@ interface HeroProps {
   trustBadges?: string[];
   illustration?: ReactNode;
   showBanner?: boolean;
+  lastUpdated?: string;
+}
+
+function AuthorBadge({ lastUpdated }: { lastUpdated?: string }) {
+  return (
+    <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+      <Link href="/about" className="flex items-center gap-2.5 group">
+        <Image
+          src="/jolyn.jpg"
+          alt="JoLyn Laney"
+          width={32}
+          height={32}
+          className="rounded-full object-cover"
+        />
+        <span className="text-sm text-white/70 group-hover:text-primary-light transition-colors">
+          By <span className="font-medium text-white/90">JoLyn Laney</span>, Founder
+        </span>
+      </Link>
+      {lastUpdated && (
+        <span className="text-xs text-white/50">
+          Last updated: {lastUpdated}
+        </span>
+      )}
+    </div>
+  );
 }
 
 export default function Hero({
@@ -18,6 +44,7 @@ export default function Hero({
   secondaryCTA,
   trustBadges,
   showBanner = false,
+  lastUpdated,
 }: HeroProps) {
   if (showBanner) {
     return (
@@ -139,6 +166,8 @@ export default function Hero({
               ))}
             </div>
           )}
+
+          {lastUpdated && <AuthorBadge lastUpdated={lastUpdated} />}
         </div>
       </div>
     </section>

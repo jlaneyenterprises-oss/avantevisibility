@@ -24,9 +24,11 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  dateModified: string;
   author: string;
   readTime: string;
   category: string;
+  keyTakeaways: string[];
   content: string;
 }
 
@@ -41,9 +43,16 @@ export const posts: BlogPost[] = [
     description:
       "GEO is the new SEO. If you want your business to show up when people ask AI for recommendations, you need to understand generative engine optimization and how it works.",
     date: "2026-04-03",
+    dateModified: "2026-04-03",
     author: "JoLyn Laney",
     readTime: "7 min read",
     category: "GEO",
+    keyTakeaways: [
+      "GEO (Generative Engine Optimization) is the practice of optimizing your business so AI systems like ChatGPT and Perplexity recommend you",
+      "Unlike SEO which focuses on rankings, GEO focuses on reviews, structured data, citations, and content clarity",
+      "AI models evaluate trust signals, review sentiment, schema markup, and citation consistency when making recommendations",
+      "GEO doesn't replace SEO -- it adds a new layer that compounds your advantage",
+    ],
     content: `
 ## SEO Got You Here. GEO Gets You What's Next.
 
@@ -133,9 +142,16 @@ The first step is understanding where you stand. The second step is fixing what 
     description:
       "Answer Engine Optimization (AEO) focuses on getting your business featured as the direct answer when someone asks an AI assistant for a recommendation. Here's what it is and how to do it.",
     date: "2026-04-01",
+    dateModified: "2026-04-01",
     author: "JoLyn Laney",
     readTime: "6 min read",
     category: "AI Visibility",
+    keyTakeaways: [
+      "AEO (Answer Engine Optimization) is about becoming the business AI names as the direct answer to a user's question",
+      "AI decides who gets the answer based on relevance, authority, recency, and specificity",
+      "Make your website citable with specific facts, FAQ sections, and schema markup",
+      "Build review strength with 50+ reviews on Google at 4.5+ average with owner responses",
+    ],
     content: `
 ## When the Answer Is the Search Result
 
@@ -225,9 +241,16 @@ That's exactly what an AI Visibility Audit does. It gives you the data, the anal
     description:
       "Your Google Business Profile might be the most important page about your business that you didn't write. Here are 7 common mistakes that are costing you customers in both Google and AI search.",
     date: "2026-03-30",
+    dateModified: "2026-03-30",
     author: "JoLyn Laney",
     readTime: "8 min read",
     category: "Google Business Profile",
+    keyTakeaways: [
+      "Your GBP is one of the primary data sources AI platforms use to recommend local businesses",
+      "Wrong primary category is the #1 mistake -- be as specific as possible from Google's 4,000+ categories",
+      "Post at least weekly, add 25+ photos, and pre-populate your Q&A with 10-15 common questions",
+      "Respond to every review within 24-48 hours -- AI platforms interpret response patterns as a trust signal",
+    ],
     content: `
 ## Your GBP Is Doing More Work Than You Think
 
@@ -312,9 +335,16 @@ Every recommendation comes with clear instructions. No jargon. No guesswork. Jus
     description:
       "AI platforms read your reviews to decide whether to recommend you. Star ratings are just the start -- here's what AI actually looks for in your review profile and how to improve it.",
     date: "2026-03-28",
+    dateModified: "2026-03-28",
     author: "JoLyn Laney",
     readTime: "7 min read",
     category: "Reviews",
+    keyTakeaways: [
+      "AI reads the actual text of your reviews, not just star ratings, to form opinions about your business",
+      "50+ reviews on Google is the minimum to be competitive for AI recommendations",
+      "Detailed reviews mentioning specific services are far more valuable than generic 5-star reviews",
+      "Respond to every review -- AI platforms interpret review responses as a positive trust signal",
+    ],
     content: `
 ## AI Reads Your Reviews. All of Them.
 
@@ -399,9 +429,16 @@ The audit identifies exactly what's working in your review profile, what's hurti
     description:
       "The way people find local businesses is changing faster than most business owners realize. AI search is creating winners and losers, and most businesses don't even know they're in the game.",
     date: "2026-03-24",
+    dateModified: "2026-04-01",
     author: "JoLyn Laney",
     readTime: "5 min read",
     category: "AI Visibility",
+    keyTakeaways: [
+      "44% of consumers now use AI chat as their primary search method vs. 31% who start with Google",
+      "In AI search, if you're not in the top 3-5 recommendations, you get nothing -- there is no page 2",
+      "AI rewards trust signals across multiple data sources over raw website traffic",
+      "Most local businesses haven't optimized for AI search yet, creating a real first-mover opportunity",
+    ],
     content: `
 ## The Numbers Don't Lie
 
@@ -473,9 +510,16 @@ The businesses that act now will have a significant head start. The ones that wa
     description:
       "Schema markup helps AI understand your business. Without it, you're making AI guess who you are, what you do, and where you're located. Here's a plain-English guide to what matters.",
     date: "2026-03-22",
+    dateModified: "2026-03-22",
     author: "JoLyn Laney",
     readTime: "6 min read",
     category: "Technical SEO",
+    keyTakeaways: [
+      "Schema markup is invisible code that tells AI exactly what your business is, does, and where it's located",
+      "The most impactful schema types for local businesses are LocalBusiness, Service, FAQ, and AggregateRating",
+      "Without schema markup, AI has to guess your business details -- and it often gets them wrong or skips you",
+      "Most local businesses don't have comprehensive schema, creating a competitive advantage for those who do",
+    ],
     content: `
 ## Speaking the AI's Language
 
@@ -560,9 +604,16 @@ Schema markup is one piece of the puzzle. Combined with clean website structure,
     description:
       "Everything a local business owner needs to know about AI visibility in one place. What it is, why it matters, and the step-by-step playbook to get your business recommended by AI.",
     date: "2026-03-20",
+    dateModified: "2026-04-03",
     author: "JoLyn Laney",
     readTime: "10 min read",
     category: "AI Visibility",
+    keyTakeaways: [
+      "AI visibility is whether your business appears when someone asks an AI assistant for a recommendation",
+      "The 6 pillars: Google Business Profile, online reviews, website content, schema markup, citation consistency, and brand authority",
+      "Start with foundation work (GBP, NAP consistency, reviews) before moving to content and technical optimization",
+      "Test your AI visibility monthly by running the same queries across ChatGPT, Perplexity, and Google AI",
+    ],
     content: `
 ## What Is AI Visibility?
 
@@ -721,9 +772,16 @@ The first step is understanding where you stand. Everything else follows from th
     description:
       "Millions of people now ask ChatGPT for local recommendations instead of Googling. Here's how to check whether your business is being recommended — and what to do if it's not.",
     date: "2026-03-26",
+    dateModified: "2026-04-01",
     author: "JoLyn Laney",
     readTime: "6 min read",
     category: "AI Visibility",
+    keyTakeaways: [
+      "Test your AI visibility by asking ChatGPT, Perplexity, and Google AI the questions your customers ask",
+      "If you don't show up, it's usually thin online footprint, weak reviews, unstructured website, or incomplete GBP",
+      "A manual check gives you a snapshot, but a structured audit reveals the why and the fix",
+      "AI search runs parallel to Google -- businesses visible in both channels have a compounding advantage",
+    ],
     content: `
 ## The Shift You Can't Ignore
 

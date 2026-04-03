@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     title: "Blog — AI Visibility & Local SEO Insights",
     description:
       "Practical guides on AI search visibility, GEO, AEO, Google Business Profile optimization, and review management for local businesses.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Blog — AI Visibility & Local SEO Insights",
+      },
+    ],
   },
 };
 

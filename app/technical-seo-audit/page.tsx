@@ -37,6 +37,14 @@ export const metadata: Metadata = {
     title: "Technical SEO Audit | Site Speed, Schema & Crawl Error Analysis",
     description:
       "Comprehensive technical SEO audit covering site crawl analysis, Core Web Vitals, schema markup, mobile optimization, security headers, and internal linking. $997 with 3-5 day turnaround.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Technical SEO Audit | Site Speed, Schema & Crawl Error Analysis",
+      },
+    ],
   },
 };
 
@@ -223,7 +231,20 @@ export default function TechnicalSEOAuditPage() {
           href: "#what-the-audit-covers",
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 10, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a Technical SEO Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>technical SEO audit</strong> is a systematic crawl and analysis of your website&apos;s infrastructure &mdash; covering page speed, Core Web Vitals, crawlability, indexation, schema markup, mobile responsiveness, security headers, and server configuration. It identifies the hidden technical issues that prevent search engines and AI platforms from properly accessing, rendering, and understanding your content.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Why Technical SEO Matters */}
       <section className="bg-bg-alt">

@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     title: "Competitor Intelligence Report | Competitive Analysis Service",
     description:
       "Know exactly what your competitors are doing and where they're vulnerable. AI citations, traffic sources, content gaps, keyword opportunities, and a strategic opportunity map. $797.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Competitor Intelligence Report | Competitive Analysis Service",
+      },
+    ],
   },
 };
 
@@ -227,7 +235,20 @@ export default function CompetitorIntelligencePage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 10, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is a Competitor Intelligence Report?</h2>
+            <p className="text-text-muted leading-relaxed">
+              A <strong>competitor intelligence report</strong> is a data-driven analysis that reverse-engineers your top competitors&apos; digital strategies &mdash; their content, traffic sources, AI citation presence, keyword positioning, and reputation signals. It identifies where they&apos;re strong, where they&apos;re vulnerable, and the specific opportunities you can exploit to gain market share in both traditional search and AI-powered recommendations.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* The Problem Section */}
       <section className="bg-bg-alt">

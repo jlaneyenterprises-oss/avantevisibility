@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     title: "Contact Us",
     description:
       "Get in touch with Avante Visibility. Questions about AI visibility audits, review intelligence, GBP optimization, or Google Ads? We'd love to hear from you.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Contact Us",
+      },
+    ],
   },
 };
 

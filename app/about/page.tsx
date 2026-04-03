@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     title: "About Avante Visibility | Jolyn — Digital Marketing Expert",
     description:
       "20+ years in digital marketing, Google Ads specialist, and pioneer in AI visibility audits for local businesses. Meet Jolyn and the story behind Avante Visibility.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "About Avante Visibility | Jolyn — Digital Marketing Expert",
+      },
+    ],
   },
 };
 

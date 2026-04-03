@@ -40,6 +40,14 @@ export const metadata: Metadata = {
     title: "AI Visibility Audit | GEO & AEO Audit Service",
     description:
       "Find out why your business isn't showing up in ChatGPT, Perplexity, or Google AI Overviews — and get a clear roadmap to fix it. Starting at $297.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "AI Visibility Audit | GEO & AEO Audit Service",
+      },
+    ],
   },
 };
 
@@ -240,7 +248,30 @@ export default function AIVisibilityAuditPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 20, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">
+              What is an AI Visibility Audit?
+            </h2>
+            <p className="text-text-muted leading-relaxed">
+              An <strong>AI visibility audit</strong> is a comprehensive analysis
+              that tests whether your business is being recommended by AI-powered
+              search platforms like ChatGPT, Perplexity, Google AI Overviews, and
+              Claude. The audit queries these platforms with the exact questions
+              your potential customers ask, identifies why competitors appear
+              instead of you, and delivers a prioritized action plan to improve
+              your AI citation rate. Also called a{" "}
+              <strong>GEO audit</strong> (Generative Engine Optimization) or{" "}
+              <strong>AEO audit</strong> (Answer Engine Optimization).
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* The Problem Section */}
       <section className="bg-bg-alt">

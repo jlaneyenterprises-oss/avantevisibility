@@ -51,6 +51,14 @@ export const metadata: Metadata = {
     title: "Digital Visibility Packages & Pricing | All Audits & Bundles",
     description:
       "Complete catalog of AI visibility audits, technical SEO, conversion optimization, and competitor intelligence services. Individual audits from $197. Bundle packages save up to $791.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Digital Visibility Packages & Pricing | All Audits & Bundles",
+      },
+    ],
   },
 };
 
@@ -239,6 +247,7 @@ export default function PackagesPage() {
           href: CALENDLY_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 22, 2026"
       />
 
       {/* Starter Audits */}

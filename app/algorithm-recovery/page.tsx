@@ -31,6 +31,14 @@ export const metadata: Metadata = {
     title: "Algorithm Recovery Audit | Recover Lost Traffic After a Google Update",
     description:
       "Lost traffic after a Google algorithm update? Our Algorithm Recovery Audit pinpoints what changed, which pages were affected, and delivers a prioritized recovery plan. $1,497.",
+    images: [
+      {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Algorithm Recovery Audit | Recover Lost Traffic After a Google Update",
+      },
+    ],
   },
 };
 
@@ -191,7 +199,20 @@ export default function AlgorithmRecoveryPage() {
           href: "#what-it-covers",
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
+        lastUpdated="March 10, 2026"
       />
+
+      {/* Definition Block */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="max-w-3xl mx-auto bg-primary/5 border border-primary/15 rounded-xl p-6 md:p-8">
+            <h2 className="text-lg font-bold text-secondary mb-2">What is an Algorithm Recovery Audit?</h2>
+            <p className="text-text-muted leading-relaxed">
+              An <strong>algorithm recovery audit</strong> is a forensic analysis of your website&apos;s traffic and ranking data following a Google core update. It identifies which pages were affected, what quality signals triggered the decline, and whether the issue is content-related, technical, or link-based &mdash; then delivers a prioritized recovery plan to restore your rankings and traffic.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* The Problem / Stats Section */}
       <section className="bg-bg-alt">
