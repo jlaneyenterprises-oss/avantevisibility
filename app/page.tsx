@@ -21,7 +21,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   aiVisibility: "https://buy.stripe.com/fZudR99cy5l67on0jZgjC00",
@@ -142,8 +142,8 @@ export default function HomePage() {
       <Hero
         headline="Your Business Is Invisible to AI. We Fix That."
         subheadline="When a customer asks ChatGPT &quot;best dentist near me&quot; or searches Google AI for &quot;top-rated restaurant in Henderson,&quot; is your business in the answer? If not, you're losing customers to competitors who are. Avante Visibility finds the gaps and closes them."
-        primaryCTA={{ text: "Get Your Free AI Visibility Score", href: CALENDLY_URL }}
-        secondaryCTA={{ text: "Book a Free Strategy Call", href: CALENDLY_URL }}
+        primaryCTA={{ text: "Get Your Free AI Visibility Score", href: BOOKING_URL }}
+        secondaryCTA={{ text: "Book a Free Strategy Call", href: BOOKING_URL }}
         trustBadges={[
           "20+ Years Digital Marketing Experience",
           "AI-Powered Diagnostics",

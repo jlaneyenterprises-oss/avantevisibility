@@ -17,7 +17,7 @@ import {
   Handshake,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 export const metadata: Metadata = {
   title: "White-Label AI & Local SEO Audits for Agencies",
@@ -195,11 +195,11 @@ export default function PartnersPage() {
         subheadline="Your clients are asking about AI search, GEO, and why their Google Business Profile isn&apos;t performing. If you don&apos;t have a ready answer &mdash; and a ready service &mdash; another agency will. Our white-label audit program gives you a complete AI and local visibility audit suite under your brand, with wholesale pricing, fast turnaround, and zero client minimums."
         primaryCTA={{
           text: "Apply for a Partner Account",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         secondaryCTA={{
           text: "Book a Partner Intro Call",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
       />
@@ -502,9 +502,9 @@ export default function PartnersPage() {
         headline="Ready to Add These Services to Your Agency?"
         description="Let&apos;s talk about how a white-label partnership works for your specific client mix and volume."
         buttonText="Apply for a Partner Account"
-        buttonHref={CALENDLY_URL}
+        buttonHref={BOOKING_URL}
         secondaryButtonText="Book a Partner Intro Call"
-        secondaryButtonHref={CALENDLY_URL}
+        secondaryButtonHref={BOOKING_URL}
         showContact
       />
     </>

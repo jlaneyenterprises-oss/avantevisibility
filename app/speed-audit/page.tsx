@@ -19,7 +19,7 @@ import {
   AlertTriangle,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   speedAudit: "https://buy.stripe.com/fZu9ATewS8xi6kj2s7gjC09",
@@ -191,7 +191,7 @@ export default function SpeedAuditPage() {
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 10, 2026"

@@ -16,7 +16,7 @@ import {
   Route,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   algorithmRecovery: "https://buy.stripe.com/9B6eVd60maFqdML3wbgjC0c",

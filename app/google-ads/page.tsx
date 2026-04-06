@@ -20,7 +20,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 export const metadata: Metadata = {
   title: "Google Ads & Landing Pages for Local Business",
@@ -229,11 +229,11 @@ export default function GoogleAdsPage() {
         subheadline="Google Ads is still one of the fastest ways to put your business in front of customers who are actively searching for what you offer. But most local businesses either waste budget on traffic that doesn&apos;t convert or spend on campaigns that were built to launch, not to perform. We build and manage campaigns designed for local results."
         primaryCTA={{
           text: "Get a Custom Google Ads Proposal",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 10, 2026"
@@ -433,7 +433,7 @@ export default function GoogleAdsPage() {
           <p className="text-center text-text-muted mt-8">
             Every business is different.{" "}
             <a
-              href={CALENDLY_URL}
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-medium hover:underline"
@@ -488,9 +488,9 @@ export default function GoogleAdsPage() {
       <CTASection
         headline="Ready to Stop Wasting Ad Spend?"
         buttonText="Get a Custom Google Ads Proposal"
-        buttonHref={CALENDLY_URL}
+        buttonHref={BOOKING_URL}
         secondaryButtonText="Book a Free Strategy Call"
-        secondaryButtonHref={CALENDLY_URL}
+        secondaryButtonHref={BOOKING_URL}
         showContact
       />
     </>

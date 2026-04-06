@@ -20,7 +20,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   conversionAudit: "https://buy.stripe.com/dRm14nagC3cYdMLc2HgjC0a",
@@ -224,7 +224,7 @@ export default function ConversionAuditPage() {
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 10, 2026"
@@ -542,7 +542,7 @@ export default function ConversionAuditPage() {
         buttonText="Get My Conversion Audit &mdash; $997"
         buttonHref={STRIPE_LINKS.conversionAudit}
         secondaryButtonText="Book a Free Strategy Call First"
-        secondaryButtonHref={CALENDLY_URL}
+        secondaryButtonHref={BOOKING_URL}
         showContact
       />
     </>

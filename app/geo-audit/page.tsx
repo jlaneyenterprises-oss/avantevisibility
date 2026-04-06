@@ -19,7 +19,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   geoAudit: "https://buy.stripe.com/14AcN52Oa4h25gf2s7gjC0j",

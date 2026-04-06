@@ -20,7 +20,7 @@ import {
   BarChart3,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   competitorIntel: "https://buy.stripe.com/fZu4gzbkGbJucIH1o3gjC0b",
@@ -232,7 +232,7 @@ export default function CompetitorIntelligencePage() {
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 10, 2026"
@@ -534,7 +534,7 @@ export default function CompetitorIntelligencePage() {
         buttonText="Get My Competitor Intelligence Report &mdash; $797"
         buttonHref={STRIPE_LINKS.competitorIntel}
         secondaryButtonText="Book a Free Strategy Call First"
-        secondaryButtonHref={CALENDLY_URL}
+        secondaryButtonHref={BOOKING_URL}
         showContact
       />
     </>

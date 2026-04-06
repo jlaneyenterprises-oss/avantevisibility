@@ -21,7 +21,7 @@ import {
   ServerCrash,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   technicalSeo: "https://buy.stripe.com/eVqeVd0G200MaAz0jZgjC08",

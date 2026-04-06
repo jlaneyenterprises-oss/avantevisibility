@@ -20,7 +20,7 @@ import {
   RotateCcw,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const localServices = [
   {
@@ -291,7 +291,7 @@ export default function Header() {
                 Contact
               </Link>
               <a
-                href={CALENDLY_URL}
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center px-5 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-all hover:shadow-lg hover:shadow-primary/25"
@@ -413,7 +413,7 @@ export default function Header() {
           {/* Mobile CTA */}
           <div className="pt-4 mt-4 border-t border-white/10">
             <a
-              href={CALENDLY_URL}
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-5 py-3 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors"

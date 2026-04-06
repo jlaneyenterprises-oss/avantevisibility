@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import HeroIllustration from "@/components/HeroIllustration";
 import { MessageCircle, Target, RefreshCw, User, Globe } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 export const metadata: Metadata = {
   title: "About Avante Visibility | Jolyn — Digital Marketing Expert",

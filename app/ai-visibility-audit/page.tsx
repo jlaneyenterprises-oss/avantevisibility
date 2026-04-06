@@ -23,7 +23,7 @@ import {
   Trophy,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   aiVisibility: "https://buy.stripe.com/fZudR99cy5l67on0jZgjC00",
@@ -245,7 +245,7 @@ export default function AIVisibilityAuditPage() {
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 20, 2026"
@@ -584,7 +584,7 @@ export default function AIVisibilityAuditPage() {
         buttonText="Get My AI Visibility Audit &mdash; $297"
         buttonHref={STRIPE_LINKS.aiVisibility}
         secondaryButtonText="Book a Free Strategy Call First"
-        secondaryButtonHref={CALENDLY_URL}
+        secondaryButtonHref={BOOKING_URL}
         showContact
       />
     </>

@@ -21,7 +21,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   gbpAudit: "https://buy.stripe.com/aFa14n88u28U6kj5EjgjC02",
@@ -229,7 +229,7 @@ export default function GBPAuditPage() {
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call First",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 18, 2026"

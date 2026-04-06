@@ -21,7 +21,7 @@ import {
   Globe,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS: Record<string, string> = {
   "Monitor + Advise": "https://buy.stripe.com/6oU7sL4WiaFq8sraYDgjC0g",
@@ -351,7 +351,7 @@ export default function MonthlyPlansPage() {
                 description={tier.description}
                 features={tier.features}
                 ctaText={`Get Started \u2014 ${tier.price}/mo`}
-                ctaHref={STRIPE_LINKS[tier.name] || CALENDLY_URL}
+                ctaHref={STRIPE_LINKS[tier.name] || BOOKING_URL}
                 badge={tier.highlighted ? "Most Popular" : undefined}
                 highlighted={tier.highlighted}
               />
@@ -442,7 +442,7 @@ export default function MonthlyPlansPage() {
               recommend based on your situation.
             </p>
             <a
-              href={CALENDLY_URL}
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"

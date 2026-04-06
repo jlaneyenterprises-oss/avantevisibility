@@ -130,7 +130,7 @@ export default function ContactPage() {
                   Skip the form and schedule a free strategy call.
                 </p>
                 <a
-                  href="https://calendly.com/avantevisibility"
+                  href="https://cal.com/provemyads/15min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary-dark transition-colors"

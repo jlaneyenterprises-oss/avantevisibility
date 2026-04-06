@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 interface CTASectionProps {
   headline: string;
@@ -16,9 +16,9 @@ export default function CTASection({
   headline,
   description,
   buttonText,
-  buttonHref = CALENDLY_URL,
+  buttonHref = BOOKING_URL,
   secondaryButtonText,
-  secondaryButtonHref = CALENDLY_URL,
+  secondaryButtonHref = BOOKING_URL,
   showContact = false,
 }: CTASectionProps) {
   const isExternal = buttonHref.startsWith("http");

@@ -21,7 +21,7 @@ import {
   RotateCcw,
 } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/avantevisibility";
+const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 const STRIPE_LINKS = {
   aiVisibility: "https://buy.stripe.com/fZudR99cy5l67on0jZgjC00",
@@ -289,7 +289,7 @@ export default function PackagesPage() {
         }}
         secondaryCTA={{
           text: "Book a Free Strategy Call",
-          href: CALENDLY_URL,
+          href: BOOKING_URL,
         }}
         illustration={<HeroIllustration className="w-full h-full" />}
         lastUpdated="March 22, 2026"
@@ -576,7 +576,7 @@ export default function PackagesPage() {
                 situation.
               </p>
               <a
-                href={CALENDLY_URL}
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"
@@ -608,7 +608,7 @@ export default function PackagesPage() {
         buttonText="Order Full Business Intelligence Bundle &mdash; $4,997"
         buttonHref={STRIPE_LINKS.fullBusiness}
         secondaryButtonText="Book a Free Strategy Call"
-        secondaryButtonHref={CALENDLY_URL}
+        secondaryButtonHref={BOOKING_URL}
         showContact
       />
     </>
