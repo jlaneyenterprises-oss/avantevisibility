@@ -19,6 +19,8 @@ import {
   RotateCcw,
   TrendingUp,
   ArrowRight,
+  CheckCircle,
+  BarChart3,
 } from "lucide-react";
 
 const BOOKING_URL = "https://cal.com/provemyads/15min";
@@ -148,6 +150,7 @@ export default function HomePage() {
           "20+ Years Digital Marketing Experience",
           "AI-Powered Diagnostics",
           "Results in Days, Not Months",
+          "+940% Client Schema Score Improvement",
         ]}
         showBanner
       />
@@ -634,8 +637,99 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Case Study Section */}
       <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
+              Case Study
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary">
+              +940% Schema Integrity in 24 Hours
+            </h2>
+            <p className="mt-4 text-text-muted max-w-2xl mx-auto leading-relaxed">
+              See how we transformed SellerMockups.com from invisible to AI
+              platforms to fully discoverable — with measurable results.
+            </p>
+          </div>
+
+          {/* Before/After Hero Stat */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+            <div className="bg-red-50 border border-red-200 rounded-xl px-8 py-6 text-center min-w-[180px]">
+              <p className="text-xs font-semibold uppercase tracking-wider text-red-600 mb-2">
+                Before
+              </p>
+              <p className="text-5xl font-bold text-red-600">5</p>
+              <p className="text-sm text-text-muted mt-1">/ 100 Schema Score</p>
+            </div>
+            <div className="text-3xl font-bold text-text-muted">
+              &rarr;
+            </div>
+            <div className="bg-green-50 border border-green-200 rounded-xl px-8 py-6 text-center min-w-[180px]">
+              <p className="text-xs font-semibold uppercase tracking-wider text-green-600 mb-2">
+                After
+              </p>
+              <p className="text-5xl font-bold text-green-600">52</p>
+              <p className="text-sm text-text-muted mt-1">/ 100 Schema Score</p>
+            </div>
+          </div>
+
+          {/* Key Results Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 max-w-5xl mx-auto">
+            {[
+              { stat: "159", label: "Pages with structured data (from 0)" },
+              { stat: "6", label: "Schema types deployed" },
+              { stat: "92/100", label: "llms.txt AI discoverability score" },
+              { stat: "80%", label: "Branded AI citation rate" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="bg-bg-alt rounded-xl p-5 text-center"
+              >
+                <p className="text-2xl font-bold text-primary">{item.stat}</p>
+                <p className="text-xs text-text-muted mt-1 leading-snug">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* What Was Done */}
+          <div className="bg-bg-alt rounded-2xl p-8 max-w-4xl mx-auto mb-8">
+            <h3 className="text-lg font-bold text-secondary mb-4 flex items-center gap-2">
+              <BarChart3 className="w-5 h-5 text-primary" />
+              What We Implemented
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                "Schema markup across all 159 pages (6 types)",
+                "llms.txt + llms-full.txt for AI discovery",
+                "ai-plugin.json for ChatGPT recognition",
+                "AI crawler access for 12+ bot types",
+                "970 FAQ headings with structured markup",
+                "Contact page for E-E-A-T trust signals",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm text-text-primary">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/case-study/sellermockups"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors text-base"
+            >
+              Read the Full Case Study <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-bg-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
             Frequently Asked Questions
