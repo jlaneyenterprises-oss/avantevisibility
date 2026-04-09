@@ -10,6 +10,7 @@ interface HeroProps {
   trustBadges?: string[];
   illustration?: ReactNode;
   showBanner?: boolean;
+  bannerImage?: string;
   lastUpdated?: string;
 }
 
@@ -44,6 +45,7 @@ export default function Hero({
   secondaryCTA,
   trustBadges,
   showBanner = false,
+  bannerImage = "/banner.jpg",
   lastUpdated,
 }: HeroProps) {
   if (showBanner) {
@@ -52,7 +54,7 @@ export default function Hero({
         {/* Full-width banner image */}
         <div className="relative w-full" style={{ minHeight: "340px" }}>
           <Image
-            src="/banner.jpg"
+            src={bannerImage}
             alt="Avante Visibility - AI Visibility & Growth Strategy"
             fill
             className="object-cover object-center"

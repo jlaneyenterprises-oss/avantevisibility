@@ -174,6 +174,7 @@ export default function MedSpaPage() {
           "Results in Weeks, Not Months",
         ]}
         showBanner
+        bannerImage="/med-spa-hero.jpg"
         lastUpdated="April 9, 2026"
       />
 
