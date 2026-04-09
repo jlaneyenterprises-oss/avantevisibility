@@ -38,6 +38,159 @@ export function getAuthor(name: string): Author | undefined {
 
 export const posts: BlogPost[] = [
   {
+    slug: "what-we-did-in-30-days-to-42x-ai-traffic",
+    title: "What We Actually Did in 30 Days to 42x a Site's AI Traffic",
+    description:
+      "A transparent look at the exact timeline, decisions, and technical changes that took SellerMockups from 1 LLM session to 43 — with what worked, what surprised us, and what we'd do differently.",
+    date: "2026-04-09",
+    dateModified: "2026-04-09",
+    author: "JoLyn Laney",
+    readTime: "9 min read",
+    category: "GEO",
+    keyTakeaways: [
+      "The biggest unlock was making the site discoverable by AI crawlers — llms.txt, robots.txt permissions, and schema markup created the foundation everything else built on",
+      "Content depth matters more than content volume — expanding llms-full.txt to 5,500 words had more impact than the 64 existing blog posts combined",
+      "AI traffic quality exceeded every other channel — Copilot visitors averaged 5 minutes per session with 12.5 events, the highest engagement on the entire site",
+      "GEO improvements created a halo effect across traditional search — Bing +825%, Yahoo +3,200%, DuckDuckGo +1,400%",
+    ],
+    content: `
+## The Starting Point
+
+In early March 2026, SellerMockups had a problem that most websites don't even know they have: it was completely invisible to AI.
+
+The site had decent organic traffic. It had 64 published blog posts. It had a real product that real people were using. But when you asked ChatGPT, Perplexity, or Copilot for mockup generator recommendations, SellerMockups didn't exist.
+
+The Google Analytics data told the story: **1 total LLM session in the prior 30 days.** One. From any AI platform.
+
+I decided to use SellerMockups as a test case for our GEO methodology. Here's exactly what happened over the next 30 days — the decisions, the timeline, and the results.
+
+## Day 1: The Audit (March 4)
+
+Before touching anything, I ran through the site the way an AI crawler would see it.
+
+**What I found:**
+- No \`llms.txt\` file (the plain-text file AI models use to understand a site)
+- No \`ai-plugin.json\` (the metadata file for AI plugin discovery)
+- \`robots.txt\` didn't mention any AI crawlers — GPTBot, ChatGPT-User, PerplexityBot, and others were being treated like any generic bot
+- Zero schema markup anywhere on the site
+- 64 blog posts with no author attribution and no structured data
+- No About page with real person information
+
+The site was essentially locked in a room with no door for AI to enter through.
+
+## Phase 1: Opening the Door (March 4)
+
+The first priority was basic: make the site findable and parseable.
+
+**\`llms.txt\`** — I created a structured plain-text file describing what SellerMockups is, what it does, who it's for, and where to find key pages. This is the equivalent of a README file for AI models. It's not a standard yet, but the major AI platforms check for it.
+
+**\`ai-plugin.json\`** — Metadata following the emerging AI plugin specification. Another discovery file that costs nothing to add and signals AI-friendliness.
+
+**\`robots.txt\` updates** — I explicitly allowed 8 AI crawlers: GPTBot, ChatGPT-User, Claude-Web, PerplexityBot, Bytespider, GoogleOther, Applebot-Extended, and cohere-ai. Most sites either block these or don't address them at all. Explicitly allowing them is a clear signal.
+
+**Schema markup** — Added Product, SoftwareApplication, and FAQPage schema to key pages. This gives AI structured data to extract rather than having to parse marketing copy.
+
+**Comparison pages** — Built pages targeting queries like "SellerMockups vs Placeit" and "best AI mockup generator." These are exactly the queries people type into ChatGPT when evaluating tools.
+
+This entire phase took a few hours. Nothing fancy. Just creating the infrastructure that lets AI find and understand the site.
+
+## The Waiting Game (March 5–24)
+
+After Phase 1, I watched the analytics. This is the part most people don't talk about — the gap between making changes and seeing results.
+
+During these three weeks, LLM traffic started trickling in. Not dramatically, but it moved from zero to a handful of sessions. The crawlers were finding the site and indexing the new structured data. But it wasn't enough to draw conclusions.
+
+The interesting part: Bing organic traffic started ticking up during this period. The same structured data that helps AI platforms also helps Bing's algorithm. That was the first hint that GEO improvements have a broader impact than just AI search.
+
+## Phase 2: Authority Signals (March 25)
+
+Phase 1 opened the door. Phase 2 was about giving AI reasons to trust what it found.
+
+**Schema expansion** — Added Organization, WebSite, and BlogPosting schema across the entire site. This connects every page into a coherent structure that AI can navigate.
+
+**Author attribution** — Added real author information to all 64 blog posts with Person schema. Before this, the blog posts were anonymous. AI models care about authorship because it's an E-E-A-T signal (Experience, Expertise, Authoritativeness, Trustworthiness).
+
+**About page** — Built a comprehensive About page with Person schema, professional background, and sameAs social links. This gives AI a way to verify that the author is a real person with real credentials.
+
+**llms-full.txt expansion** — This was the single most impactful change. I expanded the detailed AI-readable file to 5,500 words covering product features, pricing, technical architecture, use cases, and competitive positioning. Content depth correlates with a 4.3x citation multiplier in generative engines. I gave the AI platforms a comprehensive document they could confidently cite.
+
+The key insight here: I didn't create new content for the blog. I created new content *for AI models*. The llms-full.txt file isn't meant for human visitors — it's a dense, factual document designed to be the primary reference material when an AI platform needs to recommend or describe SellerMockups.
+
+## Phase 3: Freshness and Reinforcement (April 2)
+
+The final phase focused on the signals that tell AI platforms the site is active, current, and maintained.
+
+**sameAs social links** — Connected brand identity across platforms through schema markup. This helps AI verify the business is real and active.
+
+**dateModified and wordCount** — Added these fields to all BlogPosting schema. Recent content modifications carry a 3.2x citation multiplier. Telling AI when content was last updated is a simple signal with outsized impact.
+
+**AuthorByline component** — Added visible authorship on 25+ pages. This reinforces the structured data with visible on-page content. AI models cross-reference what schema says with what the page actually shows.
+
+**Branded OG images** — Generated consistent, branded social sharing images. When AI platforms link to your site, the preview image matters for click-through.
+
+## The Results
+
+Here's what happened between March 4 and April 8, compared to the previous 30 days (February 4 – March 3):
+
+**LLM traffic: 1 → 43 sessions (+4,200%)**
+
+That 43 broke down across platforms:
+- **ChatGPT:** 26 sessions — became the #6 traffic source overall
+- **Copilot:** 8 sessions — with 5m 02s average engagement and 12.5 events/session
+- **Perplexity:** 5 sessions
+- **Claude:** 4 sessions
+
+**Combined AI traffic became the #3 traffic source**, ahead of Google organic and paid ads.
+
+But the number that surprised me most was the **engagement quality**. These weren't bounce-and-leave visitors:
+
+- ChatGPT visitors: 1m 11s average engagement, 7.5 events/session, 88.46% engagement rate
+- Copilot visitors: 5m 02s average engagement, 12.5 events/session — the highest-quality traffic source on the entire site
+- Overall engagement rate jumped from 83.6% to 90.5%
+
+The industry average for AI referral traffic is less than 1%. SellerMockups hit 8.2%.
+
+## The Halo Effect
+
+This is the part that wasn't in the original plan: GEO improvements lifted traditional search too.
+
+- **Bing organic: +825%**
+- **Yahoo organic: +3,200%**
+- **DuckDuckGo organic: +1,400%**
+- **Key events (conversions): +20.8%**
+
+The same structured data, authorship signals, and content depth that AI platforms reward also move the needle on traditional search engines. It's the same investment working across multiple channels.
+
+## What I'd Do Differently
+
+If I were doing this again from scratch, I'd change the sequencing:
+
+1. **llms-full.txt first.** The expanded AI-readable content file had the biggest single impact. I'd start there instead of waiting for Phase 2.
+
+2. **Author attribution earlier.** Adding real authorship to the blog posts was easy and impactful. No reason to wait.
+
+3. **Skip the comparison pages initially.** They're good for long-term SEO, but the structured data and discovery files drove the AI traffic. The comparison pages can come later.
+
+## What This Means for Other Businesses
+
+SellerMockups is a SaaS product, but the principles apply to any business:
+
+**The bar is low right now.** Most websites have zero GEO optimization. Adding llms.txt, proper robots.txt permissions, and schema markup puts you ahead of 95% of competitors overnight.
+
+**Content depth beats content volume.** 64 blog posts didn't move the needle until they had proper structured data and authorship. One 5,500-word llms-full.txt file had more impact than all of them combined.
+
+**AI traffic is pre-qualified.** Visitors who arrive via AI recommendations have already been told what your product does and why it was recommended. They're past the awareness stage. That's why engagement metrics are so much higher.
+
+**The compounding effect is real.** GEO improvements help AI platforms, traditional search engines, and user engagement simultaneously. One investment, multiple returns.
+
+## What's Next
+
+The 30-day window was just the beginning. SellerMockups is now visible to AI platforms, but there's more to do: expanding schema to product-specific pages, building more comparison content, and keeping the llms-full.txt file updated as the product evolves.
+
+The playbook is repeatable. If you want to see what it would look like for your business, that's exactly what our [GEO Audit](/geo-audit) is built for.
+`,
+  },
+  {
     slug: "what-is-geo-generative-engine-optimization",
     title: "What Is GEO? Generative Engine Optimization Explained for Business Owners",
     description:
