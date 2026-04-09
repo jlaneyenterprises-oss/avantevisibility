@@ -57,6 +57,7 @@ const growthLinks = [
 ];
 
 const companyLinks = [
+  { name: "Med Spas", href: "/med-spa" },
   { name: "Packages", href: "/packages" },
   { name: "Monthly Plans", href: "/monthly-plans" },
   { name: "Partners", href: "/partners" },
@@ -160,13 +161,13 @@ export default function Footer() {
             <ul className="space-y-3.5">
               <li>
                 <a
-                  href="mailto:jolyn@avantevisibility.com"
+                  href="mailto:jolyn@avante.agency"
                   className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors group"
                 >
                   <div className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Mail className="w-4 h-4 text-primary" />
                   </div>
-                  jolyn@avantevisibility.com
+                  jolyn@avante.agency
                 </a>
               </li>
               <li>

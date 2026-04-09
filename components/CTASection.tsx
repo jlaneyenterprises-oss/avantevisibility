@@ -81,10 +81,10 @@ export default function CTASection({
             <p className="mt-6 text-sm text-gray-400">
               Questions? Email{" "}
               <a
-                href="mailto:jolyn@avantevisibility.com"
+                href="mailto:jolyn@avante.agency"
                 className="text-primary-light hover:underline"
               >
-                jolyn@avantevisibility.com
+                jolyn@avante.agency
               </a>{" "}
               or call{" "}
               <a

@@ -85,10 +85,10 @@ export default function ContactPage() {
                         Email
                       </p>
                       <a
-                        href="mailto:jolyn@avantevisibility.com"
+                        href="mailto:jolyn@avante.agency"
                         className="text-sm text-primary hover:underline"
                       >
-                        jolyn@avantevisibility.com
+                        jolyn@avante.agency
                       </a>
                     </div>
                   </li>

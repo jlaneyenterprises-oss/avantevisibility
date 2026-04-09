@@ -58,7 +58,7 @@ const jsonLd = {
       description:
         "AI visibility audits, review intelligence, and Google Business Profile audits for businesses and agencies nationwide.",
       telephone: "+17025255958",
-      email: "jolyn@avantevisibility.com",
+      email: "jolyn@avante.agency",
       foundingDate: "2024",
       founder: {
         "@type": "Person",
@@ -82,7 +82,7 @@ const jsonLd = {
         "@type": "ContactPoint",
         telephone: "+17025255958",
         contactType: "sales",
-        email: "jolyn@avantevisibility.com",
+        email: "jolyn@avante.agency",
         areaServed: "US",
         availableLanguage: "English",
       },
@@ -104,7 +104,7 @@ const jsonLd = {
       url: "https://avantevisibility.com",
       image: "https://avantevisibility.com/opengraph-image",
       telephone: "+17025255958",
-      email: "jolyn@avantevisibility.com",
+      email: "jolyn@avante.agency",
       priceRange: "$$",
       areaServed: {
         "@type": "Country",

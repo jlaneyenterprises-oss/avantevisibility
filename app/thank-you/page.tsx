@@ -98,11 +98,11 @@ export default function ThankYouPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
-                href="mailto:jolyn@avantevisibility.com"
+                href="mailto:jolyn@avante.agency"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
               >
                 <Mail className="w-5 h-5" />
-                jolyn@avantevisibility.com
+                jolyn@avante.agency
               </a>
               <a
                 href="tel:+17025255958"

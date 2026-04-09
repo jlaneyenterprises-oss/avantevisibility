@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })),
     {
+      url: `${baseUrl}/med-spa`,
+      lastModified: "2026-04-09",
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/partners`,
       lastModified: "2026-03-15",
       changeFrequency: "monthly" as const,

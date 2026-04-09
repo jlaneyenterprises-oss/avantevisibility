@@ -263,6 +263,7 @@ export default function Header() {
 
               {/* Top-level Links */}
               {[
+                { name: "Med Spas", href: "/med-spa" },
                 { name: "Pricing", href: "/packages" },
                 { name: "Blog", href: "/blog" },
                 { name: "Partners", href: "/partners" },
@@ -390,6 +391,7 @@ export default function Header() {
 
           {/* Top-level Mobile Links */}
           {[
+            { name: "Med Spas", href: "/med-spa" },
             { name: "Pricing", href: "/packages" },
             { name: "Monthly Plans", href: "/monthly-plans" },
             { name: "Blog", href: "/blog" },
