@@ -206,21 +206,66 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* GA4 Traffic Chart */}
+      {/* Before / After GA4 Screenshots */}
       <section>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
-            <Image
-              src="/images/case-study-traffic-chart.png"
-              alt="Google Analytics traffic acquisition report showing ChatGPT as the #6 traffic source for SellerMockups with sessions trending upward across all channels"
-              width={1456}
-              height={816}
-              className="w-full h-auto"
-            />
-          </div>
-          <p className="text-center text-sm text-text-muted mt-4">
-            GA4 Traffic Acquisition report &mdash; SellerMockups.com, March&ndash;April 2026
+          <h2 className="text-2xl font-bold text-secondary text-center mb-2">
+            The Proof: Before &amp; After
+          </h2>
+          <p className="text-text-muted text-center mb-10 max-w-2xl mx-auto">
+            Real GA4 Traffic Acquisition data &mdash; no cherry-picking, no
+            filters. Just the raw numbers.
           </p>
+
+          {/* Before */}
+          <div className="mb-10">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="inline-flex items-center px-3 py-1 bg-red-100 text-red-700 text-xs font-bold uppercase tracking-wider rounded-full">
+                Before
+              </span>
+              <span className="text-sm text-text-muted">
+                Feb 4 &ndash; Mar 3, 2026
+              </span>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+              <Image
+                src="/images/case-study-before.png"
+                alt="GA4 Traffic Acquisition report before GEO — Feb 4 to Mar 3 2026 showing zero LLM traffic sources, 82.48% engagement rate, and no ChatGPT, Perplexity, or Copilot sessions"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-text-muted mt-3">
+              Zero AI traffic sources in the top 10. Engagement rate at 82.48%.
+              Bing organic at #9 with just 7 sessions.
+            </p>
+          </div>
+
+          {/* After */}
+          <div>
+            <div className="flex items-center gap-3 mb-3">
+              <span className="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 text-xs font-bold uppercase tracking-wider rounded-full">
+                After
+              </span>
+              <span className="text-sm text-text-muted">
+                Mar 4 &ndash; Apr 8, 2026
+              </span>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+              <Image
+                src="/images/case-study-after.png"
+                alt="GA4 Traffic Acquisition report after GEO — Mar 4 to Apr 8 2026 showing ChatGPT at #6 with 26 sessions, 88.46% engagement rate, 7.54 events per session, and overall engagement rate up to 90.39%"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-text-muted mt-3">
+              ChatGPT appears at #6 with 26 sessions and 88.46% engagement.
+              Overall engagement rate jumped to 90.39%.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -425,42 +470,6 @@ export default function CaseStudiesPage() {
             </p>
           </div>
 
-          {/* GA4 Data Tables */}
-          <div className="max-w-5xl mx-auto mt-16">
-            <h3 className="text-xl font-bold text-secondary mb-6">
-              Straight From Google Analytics
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-md">
-                <Image
-                  src="/images/case-study-traffic-table.png"
-                  alt="GA4 traffic acquisition table showing ChatGPT at #6 with 25 sessions, 88% engagement rate, and 7.60 events per session"
-                  width={1456}
-                  height={816}
-                  className="w-full h-auto"
-                />
-                <div className="bg-white px-4 py-3 border-t border-gray-100">
-                  <p className="text-xs text-text-muted">
-                    ChatGPT at #6 &mdash; 25 sessions, 88% engagement, 7.60 events/session
-                  </p>
-                </div>
-              </div>
-              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-md">
-                <Image
-                  src="/images/case-study-traffic-table-2.png"
-                  alt="GA4 traffic acquisition table page 2 showing Copilot with 5m 02s average engagement and 12.50 events per session, plus Claude referral traffic"
-                  width={1456}
-                  height={816}
-                  className="w-full h-auto"
-                />
-                <div className="bg-white px-4 py-3 border-t border-gray-100">
-                  <p className="text-xs text-text-muted">
-                    Copilot at #15 &mdash; 5m 02s avg engagement, 12.50 events/session
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
