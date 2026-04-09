@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import {
@@ -205,6 +206,24 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {/* GA4 Traffic Chart */}
+      <section>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+            <Image
+              src="/images/case-study-traffic-chart.png"
+              alt="Google Analytics traffic acquisition report showing ChatGPT as the #6 traffic source for SellerMockups with sessions trending upward across all channels"
+              width={1456}
+              height={816}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-center text-sm text-text-muted mt-4">
+            GA4 Traffic Acquisition report &mdash; SellerMockups.com, March&ndash;April 2026
+          </p>
+        </div>
+      </section>
+
       {/* The Client */}
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -404,6 +423,43 @@ export default function CaseStudiesPage() {
               per session with 12.5 events &mdash; the highest-quality traffic
               source on the entire site.
             </p>
+          </div>
+
+          {/* GA4 Data Tables */}
+          <div className="max-w-5xl mx-auto mt-16">
+            <h3 className="text-xl font-bold text-secondary mb-6">
+              Straight From Google Analytics
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-md">
+                <Image
+                  src="/images/case-study-traffic-table.png"
+                  alt="GA4 traffic acquisition table showing ChatGPT at #6 with 25 sessions, 88% engagement rate, and 7.60 events per session"
+                  width={1456}
+                  height={816}
+                  className="w-full h-auto"
+                />
+                <div className="bg-white px-4 py-3 border-t border-gray-100">
+                  <p className="text-xs text-text-muted">
+                    ChatGPT at #6 &mdash; 25 sessions, 88% engagement, 7.60 events/session
+                  </p>
+                </div>
+              </div>
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-md">
+                <Image
+                  src="/images/case-study-traffic-table-2.png"
+                  alt="GA4 traffic acquisition table page 2 showing Copilot with 5m 02s average engagement and 12.50 events per session, plus Claude referral traffic"
+                  width={1456}
+                  height={816}
+                  className="w-full h-auto"
+                />
+                <div className="bg-white px-4 py-3 border-t border-gray-100">
+                  <p className="text-xs text-text-muted">
+                    Copilot at #15 &mdash; 5m 02s avg engagement, 12.50 events/session
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
