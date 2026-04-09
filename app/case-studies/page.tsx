@@ -176,7 +176,7 @@ export default function CaseStudiesPage() {
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
               How We Grew AI Search Traffic{" "}
-              <span className="text-primary">4,200%</span> in 30 Days
+              <span className="text-white underline decoration-primary decoration-4 underline-offset-4">4,200%</span> in 30 Days
             </h1>
             <p className="mt-6 text-gray-300 text-lg leading-relaxed">
               SellerMockups went from 1 LLM session to 43 &mdash; making
@@ -198,7 +198,7 @@ export default function CaseStudiesPage() {
                 key={stat.label}
                 className="bg-white/10 rounded-xl p-5 text-center border border-white/10"
               >
-                <p className="text-3xl font-bold text-primary">{stat.value}</p>
+                <p className="text-3xl font-bold text-white">{stat.value}</p>
                 <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
               </div>
             ))}
