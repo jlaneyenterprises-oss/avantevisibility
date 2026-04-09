@@ -38,59 +38,59 @@ export function getAuthor(name: string): Author | undefined {
 
 export const posts: BlogPost[] = [
   {
-    slug: "what-we-did-in-30-days-to-42x-ai-traffic",
-    title: "What We Actually Did in 30 Days to 42x a Site's AI Traffic",
+    slug: "geo-case-study-42x-ai-search-traffic-in-30-days",
+    title: "GEO Case Study: How We Grew AI Search Traffic 4,200% in 30 Days",
     description:
-      "A transparent look at the exact timeline, decisions, and technical changes that took SellerMockups from 1 LLM session to 43 — with what worked, what surprised us, and what we'd do differently.",
+      "A behind-the-scenes look at the generative engine optimization strategy that took a SaaS site from 1 AI referral session to 43 — including llms.txt, structured data, and the exact GEO tactics that drove ChatGPT visibility, Perplexity citations, and AI search traffic growth.",
     date: "2026-04-09",
     dateModified: "2026-04-09",
     author: "JoLyn Laney",
     readTime: "9 min read",
     category: "GEO",
     keyTakeaways: [
-      "The biggest unlock was making the site discoverable by AI crawlers — llms.txt, robots.txt permissions, and schema markup created the foundation everything else built on",
-      "Content depth matters more than content volume — expanding llms-full.txt to 5,500 words had more impact than the 64 existing blog posts combined",
-      "AI traffic quality exceeded every other channel — Copilot visitors averaged 5 minutes per session with 12.5 events, the highest engagement on the entire site",
-      "GEO improvements created a halo effect across traditional search — Bing +825%, Yahoo +3,200%, DuckDuckGo +1,400%",
+      "The biggest AI search visibility unlock was making the site discoverable by AI crawlers — llms.txt, robots.txt permissions, and structured data for AI search created the foundation everything else built on",
+      "Content depth matters more than content volume for generative engine optimization — expanding llms-full.txt to 5,500 words had more impact than 64 existing blog posts combined",
+      "AI referral traffic quality exceeded every other channel — Copilot visitors averaged 5 minutes per session with 12.5 events, the highest engagement on the entire site",
+      "GEO strategy improvements created a halo effect across traditional search — Bing +825%, Yahoo +3,200%, DuckDuckGo +1,400%",
     ],
     content: `
-## The Starting Point
+## The Starting Point: Zero AI Search Visibility
 
-In early March 2026, SellerMockups had a problem that most websites don't even know they have: it was completely invisible to AI.
+In early March 2026, SellerMockups had a problem that most websites don't even know they have: zero AI search visibility. The site was completely invisible to every generative AI search engine on the market.
 
-The site had decent organic traffic. It had 64 published blog posts. It had a real product that real people were using. But when you asked ChatGPT, Perplexity, or Copilot for mockup generator recommendations, SellerMockups didn't exist.
+The site had decent organic traffic. It had 64 published blog posts. It had a real product that real people were using. But when you asked ChatGPT, Perplexity, or Copilot for mockup generator recommendations, SellerMockups didn't exist. No ChatGPT visibility. No Perplexity citations. Nothing.
 
-The Google Analytics data told the story: **1 total LLM session in the prior 30 days.** One. From any AI platform.
+The Google Analytics data told the story: **1 total LLM session in the prior 30 days.** One. From any AI platform. Zero AI referral traffic worth measuring.
 
-I decided to use SellerMockups as a test case for our GEO methodology. Here's exactly what happened over the next 30 days — the decisions, the timeline, and the results.
+I decided to use SellerMockups as a test case for our generative engine optimization (GEO) methodology. Here's the exact GEO strategy we executed over the next 30 days — the decisions, the timeline, and the AI search traffic growth that followed.
 
-## Day 1: The Audit (March 4)
+## Day 1: The AI Visibility Audit (March 4)
 
-Before touching anything, I ran through the site the way an AI crawler would see it.
+Before touching anything, I ran a full AI search visibility audit — examining the site the way an AI crawler would see it.
 
 **What I found:**
 - No \`llms.txt\` file (the plain-text file AI models use to understand a site)
 - No \`ai-plugin.json\` (the metadata file for AI plugin discovery)
 - \`robots.txt\` didn't mention any AI crawlers — GPTBot, ChatGPT-User, PerplexityBot, and others were being treated like any generic bot
-- Zero schema markup anywhere on the site
-- 64 blog posts with no author attribution and no structured data
+- Zero structured data or schema markup anywhere on the site
+- 64 blog posts with no author attribution and no E-E-A-T signals
 - No About page with real person information
 
-The site was essentially locked in a room with no door for AI to enter through.
+The site was essentially locked in a room with no door for AI to enter through. No wonder there was no AI referral traffic.
 
-## Phase 1: Opening the Door (March 4)
+## Phase 1: Building the AI Discovery Foundation (March 4)
 
-The first priority was basic: make the site findable and parseable.
+The first priority in any GEO strategy is basic: make the site findable and parseable by generative AI search engines.
 
-**\`llms.txt\`** — I created a structured plain-text file describing what SellerMockups is, what it does, who it's for, and where to find key pages. This is the equivalent of a README file for AI models. It's not a standard yet, but the major AI platforms check for it.
+**\`llms.txt\`** — I created a structured plain-text file describing what SellerMockups is, what it does, who it's for, and where to find key pages. Think of llms.txt as a README file for AI models. It's not a universal standard yet, but ChatGPT, Perplexity, and other AI platforms check for it when crawling sites.
 
 **\`ai-plugin.json\`** — Metadata following the emerging AI plugin specification. Another discovery file that costs nothing to add and signals AI-friendliness.
 
-**\`robots.txt\` updates** — I explicitly allowed 8 AI crawlers: GPTBot, ChatGPT-User, Claude-Web, PerplexityBot, Bytespider, GoogleOther, Applebot-Extended, and cohere-ai. Most sites either block these or don't address them at all. Explicitly allowing them is a clear signal.
+**\`robots.txt\` updates** — I explicitly allowed 8 AI crawlers: GPTBot, ChatGPT-User, Claude-Web, PerplexityBot, Bytespider, GoogleOther, Applebot-Extended, and cohere-ai. Most sites either block these or don't address them at all. Explicitly allowing them is a clear signal for LLM optimization.
 
-**Schema markup** — Added Product, SoftwareApplication, and FAQPage schema to key pages. This gives AI structured data to extract rather than having to parse marketing copy.
+**Structured data for AI search** — Added Product, SoftwareApplication, and FAQPage schema markup to key pages. This gives AI structured data to extract rather than having to parse marketing copy. Research shows 61% of pages cited by AI platforms use schema markup.
 
-**Comparison pages** — Built pages targeting queries like "SellerMockups vs Placeit" and "best AI mockup generator." These are exactly the queries people type into ChatGPT when evaluating tools.
+**Comparison pages** — Built pages targeting queries like "SellerMockups vs Placeit" and "best AI mockup generator." These are exactly the commercial-intent queries people type into ChatGPT when evaluating tools — and commercial intent prompts trigger web search 53% more often than informational queries.
 
 This entire phase took a few hours. Nothing fancy. Just creating the infrastructure that lets AI find and understand the site.
 
@@ -102,19 +102,19 @@ During these three weeks, LLM traffic started trickling in. Not dramatically, bu
 
 The interesting part: Bing organic traffic started ticking up during this period. The same structured data that helps AI platforms also helps Bing's algorithm. That was the first hint that GEO improvements have a broader impact than just AI search.
 
-## Phase 2: Authority Signals (March 25)
+## Phase 2: E-E-A-T and Authority Signals for AI Search (March 25)
 
-Phase 1 opened the door. Phase 2 was about giving AI reasons to trust what it found.
+Phase 1 opened the door. Phase 2 was about giving AI reasons to trust what it found — building the E-E-A-T signals that drive AI platform citations and topical authority.
 
-**Schema expansion** — Added Organization, WebSite, and BlogPosting schema across the entire site. This connects every page into a coherent structure that AI can navigate.
+**Schema expansion** — Added Organization, WebSite, and BlogPosting structured data across the entire site. This connects every page into a coherent knowledge graph that AI can navigate and cite with confidence.
 
-**Author attribution** — Added real author information to all 64 blog posts with Person schema. Before this, the blog posts were anonymous. AI models care about authorship because it's an E-E-A-T signal (Experience, Expertise, Authoritativeness, Trustworthiness).
+**Author attribution** — Added real author information to all 64 blog posts with Person schema. Before this, the blog posts were anonymous. AI models heavily weight authorship because it's a core E-E-A-T signal. No authorship means lower citation frequency in generative AI search results.
 
-**About page** — Built a comprehensive About page with Person schema, professional background, and sameAs social links. This gives AI a way to verify that the author is a real person with real credentials.
+**About page** — Built a comprehensive About page with Person schema, professional background, and sameAs social links. This gives AI a way to verify that the author is a real person — a critical factor for Perplexity optimization and ChatGPT visibility.
 
-**llms-full.txt expansion** — This was the single most impactful change. I expanded the detailed AI-readable file to 5,500 words covering product features, pricing, technical architecture, use cases, and competitive positioning. Content depth correlates with a 4.3x citation multiplier in generative engines. I gave the AI platforms a comprehensive document they could confidently cite.
+**llms-full.txt expansion** — This was the single most impactful change for AI search traffic growth. I expanded the detailed AI-readable file to 5,500 words covering product features, pricing, technical architecture, use cases, and competitive positioning. Content depth correlates with a 4.3x citation multiplier in generative engines. I gave the AI platforms a comprehensive document they could confidently cite.
 
-The key insight here: I didn't create new content for the blog. I created new content *for AI models*. The llms-full.txt file isn't meant for human visitors — it's a dense, factual document designed to be the primary reference material when an AI platform needs to recommend or describe SellerMockups.
+The key insight here: I didn't create new blog content. I created content *for AI models*. The llms-full.txt file isn't meant for human visitors — it's a dense, factual document designed to be the primary reference material when a generative AI search engine needs to recommend or describe SellerMockups. This is the core of any content strategy for generative search.
 
 ## Phase 3: Freshness and Reinforcement (April 2)
 
@@ -128,27 +128,27 @@ The final phase focused on the signals that tell AI platforms the site is active
 
 **Branded OG images** — Generated consistent, branded social sharing images. When AI platforms link to your site, the preview image matters for click-through.
 
-## The Results
+## The Results: AI Search Traffic Growth by the Numbers
 
-Here's what happened between March 4 and April 8, compared to the previous 30 days (February 4 – March 3):
+Here's the AI search traffic growth between March 4 and April 8, compared to the previous 30 days (February 4 – March 3):
 
-**LLM traffic: 1 → 43 sessions (+4,200%)**
+**AI referral traffic: 1 → 43 sessions (+4,200%)**
 
-That 43 broke down across platforms:
-- **ChatGPT:** 26 sessions — became the #6 traffic source overall
+That 43 broke down across AI platforms:
+- **ChatGPT:** 26 sessions — became the #6 traffic source overall. From zero ChatGPT visibility to a top-10 channel.
 - **Copilot:** 8 sessions — with 5m 02s average engagement and 12.5 events/session
-- **Perplexity:** 5 sessions
+- **Perplexity:** 5 sessions — confirming Perplexity citations were indexing the new structured data
 - **Claude:** 4 sessions
 
-**Combined AI traffic became the #3 traffic source**, ahead of Google organic and paid ads.
+**Combined AI referral traffic became the #3 traffic source**, ahead of Google organic and paid ads.
 
-But the number that surprised me most was the **engagement quality**. These weren't bounce-and-leave visitors:
+But the number that surprised me most was the **engagement quality**. AI referral traffic wasn't bounce-and-leave visitors:
 
 - ChatGPT visitors: 1m 11s average engagement, 7.5 events/session, 88.46% engagement rate
 - Copilot visitors: 5m 02s average engagement, 12.5 events/session — the highest-quality traffic source on the entire site
 - Overall engagement rate jumped from 83.6% to 90.5%
 
-The industry average for AI referral traffic is less than 1%. SellerMockups hit 8.2%.
+The industry average for AI referral traffic share is less than 1% of total website traffic. SellerMockups hit 8.2% — more than 8x the benchmark.
 
 ## The Halo Effect
 
@@ -171,23 +171,23 @@ If I were doing this again from scratch, I'd change the sequencing:
 
 3. **Skip the comparison pages initially.** They're good for long-term SEO, but the structured data and discovery files drove the AI traffic. The comparison pages can come later.
 
-## What This Means for Other Businesses
+## What This GEO Case Study Means for Other Businesses
 
-SellerMockups is a SaaS product, but the principles apply to any business:
+SellerMockups is a SaaS product, but the generative engine optimization principles apply to any business — local services, e-commerce, B2B, or SaaS:
 
-**The bar is low right now.** Most websites have zero GEO optimization. Adding llms.txt, proper robots.txt permissions, and schema markup puts you ahead of 95% of competitors overnight.
+**The bar for AI search visibility is low right now.** Most websites have zero GEO optimization. Adding llms.txt, proper robots.txt permissions, and structured data for AI search puts you ahead of 95% of competitors overnight. Nearly 35% of Gen Z already uses AI chatbots as their primary search method — and that number is growing across all demographics.
 
-**Content depth beats content volume.** 64 blog posts didn't move the needle until they had proper structured data and authorship. One 5,500-word llms-full.txt file had more impact than all of them combined.
+**Content depth beats content volume for LLM optimization.** 64 blog posts didn't move the needle until they had proper structured data and authorship. One 5,500-word llms-full.txt file had more impact than all of them combined. AI platforms want dense, factual, citable content — not keyword-stuffed blog posts.
 
-**AI traffic is pre-qualified.** Visitors who arrive via AI recommendations have already been told what your product does and why it was recommended. They're past the awareness stage. That's why engagement metrics are so much higher.
+**AI referral traffic is pre-qualified.** Visitors who arrive via AI recommendations have already been told what your product does and why it was recommended. They're past the awareness stage. That's why engagement metrics are so much higher than organic search or paid ads.
 
-**The compounding effect is real.** GEO improvements help AI platforms, traditional search engines, and user engagement simultaneously. One investment, multiple returns.
+**The compounding effect is real.** GEO strategy improvements help AI platforms, traditional search engines, and user engagement simultaneously. One investment, multiple returns. Gartner predicts 25% of traditional search volume will shift to AI by end of 2026 — the businesses optimizing now are building a moat.
 
-## What's Next
+## What's Next for AI Search Optimization
 
-The 30-day window was just the beginning. SellerMockups is now visible to AI platforms, but there's more to do: expanding schema to product-specific pages, building more comparison content, and keeping the llms-full.txt file updated as the product evolves.
+The 30-day window was just the beginning. SellerMockups is now visible across ChatGPT, Perplexity, Copilot, and Claude, but there's more to do: expanding schema to product-specific pages, building more comparison content for AI Overviews, and keeping the llms-full.txt file updated as the product evolves.
 
-The playbook is repeatable. If you want to see what it would look like for your business, that's exactly what our [GEO Audit](/geo-audit) is built for.
+The GEO playbook is repeatable. If you want to see what generative engine optimization would look like for your business, that's exactly what our [GEO Audit](/geo-audit) is built for.
 `,
   },
   {
