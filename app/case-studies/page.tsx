@@ -17,13 +17,15 @@ import {
 const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 export const metadata: Metadata = {
-  title: "Case Study: 4,200% AI Search Traffic Growth in 30 Days",
+  title:
+    "GEO Case Study: 4,200% AI Search Traffic Growth | Generative Engine Optimization Results",
   description:
-    "See how Avante Visibility grew SellerMockups AI search traffic from 1 session to 43 sessions in 30 days — making ChatGPT, Perplexity, and Copilot their #3 traffic source.",
+    "See how our generative engine optimization (GEO) strategy grew SellerMockups AI referral traffic 4,200% in 30 days — from 1 LLM session to 43, with ChatGPT, Perplexity, and Copilot becoming their #3 traffic source using llms.txt, structured data, and E-E-A-T signals.",
   openGraph: {
-    title: "Case Study: 4,200% AI Search Traffic Growth in 30 Days",
+    title:
+      "GEO Case Study: 4,200% AI Search Traffic Growth in 30 Days",
     description:
-      "See how Avante Visibility grew SellerMockups AI search traffic from 1 session to 43 sessions in 30 days — making ChatGPT, Perplexity, and Copilot their #3 traffic source.",
+      "See how our generative engine optimization strategy grew AI referral traffic 4,200% in 30 days — ChatGPT, Perplexity, and Copilot became the #3 traffic source, ahead of Google organic.",
   },
 };
 
@@ -113,7 +115,7 @@ export default function CaseStudiesPage() {
       {
         "@type": "Article",
         headline:
-          "Case Study: How We Grew AI Search Traffic 4,200% in 30 Days",
+          "GEO Case Study: How Generative Engine Optimization Grew AI Search Traffic 4,200% in 30 Days",
         author: {
           "@type": "Person",
           name: "JoLyn Laney",
@@ -123,7 +125,7 @@ export default function CaseStudiesPage() {
         },
         datePublished: "2026-04-09",
         description:
-          "SellerMockups went from 1 LLM session to 43 in 30 days. Here\u2019s the exact GEO strategy that made AI search their #3 traffic source.",
+          "SellerMockups went from 1 LLM session to 43 AI referral sessions in 30 days using generative engine optimization. Here\u2019s the exact GEO strategy — llms.txt, structured data, and E-E-A-T signals — that made AI search their #3 traffic source.",
         url: "https://avantevisibility.com/case-studies",
         about: {
           "@type": "Service",
@@ -172,14 +174,14 @@ export default function CaseStudiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">
-              Case Study &mdash; SellerMockups.com
+              GEO Case Study &mdash; SellerMockups.com
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              How We Grew AI Search Traffic{" "}
+              How Generative Engine Optimization Grew AI Search Traffic{" "}
               <span className="text-white underline decoration-primary decoration-4 underline-offset-4">4,200%</span> in 30 Days
             </h1>
             <p className="mt-6 text-gray-300 text-lg leading-relaxed">
-              SellerMockups went from 1 LLM session to 43 &mdash; making
+              SellerMockups went from 1 AI referral session to 43 &mdash; making
               ChatGPT, Perplexity, Copilot, and Claude their{" "}
               <strong className="text-white">#3 traffic source</strong>, ahead
               of Google organic and paid ads.
@@ -304,12 +306,12 @@ export default function CaseStudiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
-              The Challenge
+              The Challenge: Zero AI Search Visibility
             </h2>
             <p className="text-text-muted leading-relaxed text-lg mb-8">
               SellerMockups had strong product-market fit but near-zero AI
-              visibility. The site was effectively invisible to every generative
-              engine on the market.
+              search visibility. The site was effectively invisible to every generative
+              AI search engine on the market &mdash; no ChatGPT visibility, no Perplexity citations, no structured data for AI crawlers to parse.
             </p>
             <div className="space-y-4">
               {[
@@ -337,11 +339,10 @@ export default function CaseStudiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
-              The Approach
+              The GEO Strategy
             </h2>
             <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
-              A three-phase GEO strategy executed over 30 days, each phase
-              building on the last.
+              A three-phase generative engine optimization strategy executed over 30 days &mdash; llms.txt, structured data, E-E-A-T signals, and AI-specific content &mdash; each phase building on the last.
             </p>
 
             <div className="space-y-8">
@@ -383,11 +384,11 @@ export default function CaseStudiesPage() {
       <section className="bg-bg-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-4">
-            The Results
+            AI Search Traffic Results
           </h2>
           <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
             Industry average is less than 1% AI referral traffic.
-            SellerMockups hit 8.2% &mdash; more than 8x the benchmark.
+            Our generative engine optimization strategy pushed SellerMockups to 8.2% &mdash; more than 8x the benchmark.
           </p>
 
           {/* Headline Results */}
@@ -478,13 +479,12 @@ export default function CaseStudiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
-              The Ripple Effect
+              The Ripple Effect: GEO Lifts All Search
             </h2>
             <p className="text-text-muted leading-relaxed text-lg mb-8">
-              GEO improvements didn&apos;t just lift AI traffic &mdash; they
+              Generative engine optimization didn&apos;t just lift AI referral traffic &mdash; it
               boosted traditional search performance across the board. The same
-              structured data, authorship signals, and content depth that help AI
-              platforms also help search engines.
+              structured data, E-E-A-T signals, and content depth that improve AI search visibility also improve rankings on Bing, Yahoo, and DuckDuckGo.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -520,7 +520,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
-              What Made It Work
+              Why This GEO Strategy Worked
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
