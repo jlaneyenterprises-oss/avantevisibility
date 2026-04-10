@@ -338,8 +338,9 @@ export default function GoogleAdsPage() {
               <Image
                 src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&h=600&fit=crop&q=80"
                 alt="Marketing team analyzing ad campaign performance data"
-                fill
-                className="object-cover"
+                width={800}
+                height={600}
+                className="absolute inset-0 w-full h-full object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

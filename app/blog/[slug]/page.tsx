@@ -155,17 +155,20 @@ export default async function BlogPostPage({ params }: PageProps) {
     });
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": graph,
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {graph.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              ...schema,
+            }),
+          }}
+        />
+      ))}
 
       <Breadcrumb
         items={[
@@ -218,12 +221,12 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <div className="flex items-center gap-4 text-xs text-white/60">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-3.5 h-3.5" />
-                    Published: {publishedDate}
+                    Published: <time dateTime={post.date}>{publishedDate}</time>
                   </span>
                   {post.dateModified !== post.date && (
                     <span className="flex items-center gap-1">
                       <RefreshCw className="w-3 h-3" />
-                      Updated: {modifiedDate}
+                      Updated: <time dateTime={post.dateModified}>{modifiedDate}</time>
                     </span>
                   )}
                 </div>

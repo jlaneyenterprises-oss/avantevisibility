@@ -95,11 +95,13 @@ export default function BlogPage() {
                     </span>
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3.5 h-3.5" />
-                      {new Date(post.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
+                      <time dateTime={post.date}>
+                        {new Date(post.date).toLocaleDateString("en-US", {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        })}
+                      </time>
                     </span>
                     <span className="flex items-center gap-1">
                       <Clock className="w-3.5 h-3.5" />

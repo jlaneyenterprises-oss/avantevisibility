@@ -425,8 +425,9 @@ export default function ReviewAuditPage() {
               <Image
                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop&q=80"
                 alt="Restaurant interior with happy diners representing improved review ratings"
-                fill
-                className="object-cover"
+                width={800}
+                height={600}
+                className="absolute inset-0 w-full h-full object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

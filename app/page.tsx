@@ -21,6 +21,8 @@ import {
   ArrowRight,
   CheckCircle,
   BarChart3,
+  ShieldCheck,
+  Clock,
 } from "lucide-react";
 
 const BOOKING_URL = "https://cal.com/provemyads/15min";
@@ -135,10 +137,13 @@ const jsonLd = [
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {jsonLd.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
 
       {/* Hero */}
       <Hero
@@ -488,8 +493,9 @@ export default function HomePage() {
                   <Image
                     src={item.img}
                     alt={item.alt}
-                    fill
-                    className="object-cover"
+                    width={600}
+                    height={400}
+                    className="absolute inset-0 w-full h-full object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
@@ -508,6 +514,52 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 48-Hour Delivery Guarantee */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-primary/10 via-white to-accent/10 border-2 border-primary/30 rounded-2xl p-8 md:p-10">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="shrink-0 w-20 h-20 bg-primary/15 rounded-full flex items-center justify-center">
+                <ShieldCheck className="w-10 h-10 text-primary" />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 rounded-full mb-3">
+                  <Clock className="w-3.5 h-3.5 text-primary" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                    48-Hour Delivery Guarantee
+                  </span>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-3">
+                  Your Initial Technical Findings in 48 Hours — Guaranteed
+                </h2>
+                <p className="text-text-muted leading-relaxed">
+                  Order any audit and we&apos;ll deliver your initial technical
+                  findings — schema gaps, crawler access issues, critical
+                  blockers — to your inbox within 48 hours. Your full,
+                  prioritized audit report arrives within 3&ndash;5 business
+                  days. If we miss the 48-hour window on initial findings,
+                  your audit is free. No excuses, no fine print.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-4 justify-center md:justify-start text-sm">
+                  <div className="flex items-center gap-1.5 text-secondary">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span className="font-medium">Initial findings in 48 hours</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-secondary">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span className="font-medium">Full audit in 3&ndash;5 business days</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-secondary">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span className="font-medium">Or it&apos;s free</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
