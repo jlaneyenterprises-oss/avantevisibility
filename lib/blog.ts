@@ -19,10 +19,23 @@ export const authors: Record<string, Author> = {
   },
 };
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface AuditCta {
+  label: string;
+  subtext?: string;
+  href: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
   description: string;
+  metaTitle?: string;
+  metaDescription?: string;
   date: string;
   dateModified: string;
   author: string;
@@ -30,6 +43,8 @@ export interface BlogPost {
   category: string;
   keyTakeaways: string[];
   content: string;
+  faqs?: FAQItem[];
+  auditCta?: AuditCta;
 }
 
 export function getAuthor(name: string): Author | undefined {
@@ -37,6 +52,302 @@ export function getAuthor(name: string): Author | undefined {
 }
 
 export const posts: BlogPost[] = [
+  {
+    slug: "zero-click-seo-local-visibility-geo-audit",
+    title: "Zero‑Click SEO in 2026: How Local Brands Win When Nobody Clicks",
+    metaTitle: "Zero‑Click SEO in 2026: Local Visibility & GEO Audit Guide",
+    description:
+      "Zero‑click SEO is the new battleground. AI Overviews, map packs, and SERP features now decide who wins local search in 2026. Here's how to audit and fix your zero‑click local visibility.",
+    metaDescription:
+      "Learn how zero‑click SEO, AI Overviews, and GEO audits reshape local visibility in 2026—and how Avante Visibility helps your locations win more searches.",
+    date: "2026-04-10",
+    dateModified: "2026-04-10",
+    author: "JoLyn Laney",
+    readTime: "11 min read",
+    category: "Local SEO",
+    keyTakeaways: [
+      "Zero‑click SEO is the practice of optimizing for every place customers see and choose you before they click—AI Overviews, map packs, featured snippets, and social feeds",
+      "Local and multi‑location businesses are hit first because map packs, reviews, and AI answers often replace the traditional blue links for 'near me' and city‑based queries",
+      "A Zero‑Click Local Visibility Audit maps where your brand is visible (or invisible) across SERPs, maps, and AI answers—then prioritizes the fixes that actually move the needle",
+      "GEO improvements like schema markup, structured FAQs, and AI‑readable content lift you in AI search and traditional search at the same time",
+    ],
+    auditCta: {
+      label: "Book a Zero‑Click Local Visibility Audit",
+      subtext:
+        "Get a GEO‑driven audit that shows where you're invisible in SERPs, maps, and AI answers—and exactly what to fix first.",
+      href: "/geo-audit",
+    },
+    faqs: [
+      {
+        question: "What is zero‑click SEO?",
+        answer:
+          "Zero‑click SEO is the practice of optimizing your brand so people can get answers and choose you directly in search results, maps, AI Overviews, and social feeds—without visiting your website. It focuses on featured snippets, local packs, AI citations, and on‑platform content that shape decisions before the click.",
+      },
+      {
+        question: "Do zero‑click searches hurt my website traffic?",
+        answer:
+          "Zero‑click searches can reduce traditional organic clicks, especially on simple, information‑only queries. But they also increase the importance of impressions, brand visibility, and map pack presence. If you show up prominently in those features, you can gain trust, branded search, calls, and walk‑ins even when sessions do not increase.",
+      },
+      {
+        question: "How does zero‑click SEO affect local businesses?",
+        answer:
+          "Zero‑click SEO hits local businesses first because map listings, reviews, and AI Overviews often appear before organic links for 'near me' and city‑based searches. Your Google Business Profile, NAP consistency, reviews, and localized content now matter as much as your website for winning calls and visits.",
+      },
+      {
+        question: "What is a Zero‑Click Local Visibility Audit?",
+        answer:
+          "A Zero‑Click Local Visibility Audit reviews how your brand appears across SERPs, maps, and AI answers—before anyone clicks. It documents which queries show your locations in map packs, snippets, and AI Overviews, where you are invisible, and which fixes and content updates will win more of that high‑value real estate.",
+      },
+      {
+        question: "How can GEO audits help my zero‑click SEO?",
+        answer:
+          "GEO audits map your visibility across locations and service areas, showing how often you appear in SERP features, maps, and AI citations for each market. By combining GEO data with a zero‑click audit, you can prioritize which cities, profiles, and pages to fix first for maximum local impact.",
+      },
+      {
+        question: "Does Google penalize AI‑written content?",
+        answer:
+          "Google does not penalize content just because AI helped write it; it targets low‑quality, spammy, or unhelpful content regardless of how it was created. When you use AI to draft and then add real expertise, original insights, and accurate information, you align with Google's quality guidelines.",
+      },
+    ],
+    content: `
+Most marketers are still chasing clicks, sessions, and "time on site." In 2026, the real battle for attention is happening before any of that—inside AI Overviews, map packs, rich SERP features, and social feeds where users get what they need without ever visiting your website.
+
+This is zero‑click SEO, and if you run a local or multi‑location business, you're already playing this game whether you realize it or not.
+
+As the founder of Avante Visibility, I spend my days running GEO and local SEO audits that expose a simple truth: rankings and traffic metrics are only half the story now. The other half lives in the zero‑click layer—every place your brand is seen, judged, and chosen without a traditional "visit" ever showing up in your analytics.
+
+If you suspect you're invisible in those zero‑click moments—or you've never seen what your AI Overviews, map packs, and local SERPs really look like from a customer's perspective—this is exactly what our [Zero‑Click Local Visibility & GEO Audits](/geo-audit) are built to uncover and fix.
+
+{{AUDIT_BUTTON}}
+
+## What Is Zero‑Click SEO?
+
+Zero‑click SEO is the practice of optimizing your brand for all the places a user can get an answer or make a decision without clicking through to your site.
+
+Instead of focusing only on "rank and get the click," zero‑click SEO asks:
+
+- Where are my customers seeing me before they ever land on my site?
+- How often am I the default answer in SERPs, maps, and AI summaries?
+- What do my brand and locations look like in those zero‑click moments?
+
+That includes:
+
+- Featured snippets, FAQs, and "People Also Ask" boxes
+- AI Overviews and generative answers at the top of the SERP
+- Google Maps and local packs
+- Native social posts that deliver full value without asking for a click
+- AI assistants like ChatGPT and Perplexity that synthesize answers from multiple sources
+
+In a world where more than half of searches end without a click, optimizing for these zero‑click touchpoints is not optional anymore—it's where your next customer is actually choosing who to call.
+
+## Why Zero‑Click Search Has Exploded
+
+Several shifts have converged to make zero‑click the new normal:
+
+**AI Overviews and generative search.** Search engines now generate conversational answers directly in the results, pulling in a small set of sources and often satisfying intent on the spot.
+
+**Aggressive SERP features.** Local packs, knowledge panels, rich snippets, and FAQs take up far more real estate than a simple list of blue links ever did.
+
+**Mature user behavior.** Users know the "answer" is usually visible somewhere on the page—whether in the map, a snippet, or an AI block—so they increasingly skim, decide, and move on.
+
+**Social algorithms that hate links.** LinkedIn, Instagram, and other platforms openly favor native, zero‑click content that keeps people inside the feed.
+
+Put simply: impressions and in‑SERP influence now matter as much as traditional organic traffic. Your brand can be winning or losing business in zero‑click spaces you're barely measuring.
+
+## Zero‑Click SEO vs Traditional SEO
+
+Traditional SEO was built around a three‑step arc: rank → get the click → convert. Zero‑click SEO stretches that arc and recognizes that a lot of the decision‑making has shifted upstream.
+
+| Aspect | Traditional SEO | Zero‑Click SEO |
+|--------|-----------------|----------------|
+| Core goal | Drive clicks and sessions | Shape decisions made in SERPs, maps, AI, and feeds |
+| Main success metric | Organic traffic, average position | SERP feature ownership, AI citations, map pack presence |
+| Content focus | Long‑form pages and blog posts | Structured answers, FAQs, entity‑rich and locally tuned content |
+| Where people decide | On your website | On Google SERPs, Maps, AI Overviews, and social feeds |
+| Audit mindset | "How do we get more clicks?" | "Where and how are we visible before the click?" |
+
+The goal isn't to abandon traffic and conversions. It's to recognize that your brand's influence and trust are being formed in zero‑click environments you can—and should—deliberately optimize.
+
+## Why Zero‑Click SEO Hits Local Businesses First
+
+If you're a local service business or a multi‑location brand, zero‑click SEO isn't a trend; it's your daily reality.
+
+Think of searches like:
+
+- "emergency plumber near me"
+- "best dentist in [city]"
+- "local seo consultant near me"
+
+What does the user see?
+
+- A map pack with three highlighted businesses, star ratings, and "Call" buttons
+- Local services ads or search ads at the top
+- Organic listings with enhanced snippets and FAQs
+- Increasingly, an AI Overview summarizing options and next steps
+
+Many users:
+
+- Tap to call directly from the map
+- Compare review counts and star ratings without visiting any sites
+- Skim the AI summary and choose from the brands mentioned there
+
+Your website can still matter a lot—but it's not always the first or primary place where that decision is made. This is why local SEO audits and GEO audits must evolve. If your visibility report only talks about keyword rankings and traffic, it's missing the layer where your phone is actually made to ring.
+
+## From "SEO Audit" to Zero‑Click Local Visibility Audit
+
+At Avante Visibility, I use the term **Zero‑Click Local Visibility Audit** to describe the kind of audit local brands actually need in 2026.
+
+Instead of just asking "how does this site rank," we ask:
+
+- Where does this brand appear across SERPs, maps, and AI answers—without a click?
+- Where is it completely invisible?
+- What signals are AI and search engines missing that they need to confidently recommend this brand?
+
+A zero‑click‑aware audit looks at:
+
+- Local pack and map presence for core queries
+- Featured snippets, FAQs, and "People Also Ask" opportunities
+- Whether AI Overviews or other generative answer boxes are citing you—or only your competitors
+- How your reviews, profiles, and on‑platform content appear in those moments
+- How well your site is structured to feed these systems the answers they want to surface
+
+You can try to piece this together in‑house—but most teams discover quickly that collecting, comparing, and prioritizing all of this data across multiple locations is a full‑time job. That's why the brands that move fastest usually hand this work to a specialist.
+
+## The Avante Visibility Zero‑Click GEO Audit Framework
+
+Here is the framework I use when I run [GEO and local SEO audits](/geo-audit) for clients. You'll see why most busy teams prefer to have it done for them.
+
+### Query & Intent Mapping
+
+We map the real‑world queries that drive revenue: service + city, "near me," "best [service]," and the problem‑based questions your customers actually ask. Then we capture what those SERPs look like across your service area, including map packs, AI Overviews, snippets, and competitors.
+
+### Zero‑Click Footprint Baseline
+
+For each high‑value query, we document who owns featured snippets, who appears in the 3‑pack, whether AI answers are present, and which brands are being cited or highlighted. This becomes your current zero‑click visibility map.
+
+### Location & Profile Deep‑Dive
+
+We audit your Google Business Profiles, location pages, and key citations: categories, descriptions, services, photos, NAP consistency, review profiles, and on‑platform FAQs. The goal is to see how your locations show up when users never touch your website.
+
+### Answerability & Structure Review
+
+On your site, we evaluate how "answerable" your content is: Are core topics clearly defined? Do pages include concise Q&A sections? Is schema in place where it should be? Are there obvious gaps where competitors are feeding AI and SERPs better data?
+
+### GEO & AI Visibility Layer
+
+We look at how well your content and technical setup serve AI systems and generative search: structured data coverage, FAQ depth, and whether your content aligns with how AI is currently phrasing and answering your topics.
+
+### Prioritized Action Plan
+
+Finally, we turn all of that into a prioritized roadmap: quick wins (profile fixes, on‑page adjustments), medium projects (new or revamped location pages, review strategy), and longer‑term plays (topical authority, content hubs, and structured resources designed for AI and zero‑click features).
+
+Could your internal team replicate this? In theory, yes. In practice, most local businesses don't have the bandwidth, tooling, or repetition to do it at the depth and speed required—which is exactly why this is the core service Avante Visibility offers.
+
+## A Real‑World Zero‑Click Visibility Example
+
+One recent project at Avante Visibility involved a client whose site was essentially invisible to AI systems and modern SERPs. They had solid products, decent traffic, and almost no presence in the places that now matter most.
+
+In our audit we found:
+
+- Weak or missing structured data across most key pages
+- No clear signals for AI crawlers about what the site actually offered
+- Thin FAQ coverage around high‑intent questions
+- Very limited visibility in zero‑click surfaces
+
+Within a day of implementation, we:
+
+- Rolled out schema markup across their core pages using multiple schema types
+- Added clear signals so AI crawlers could safely discover and understand their content
+- Structured hundreds of FAQ headings to directly match the questions users and AI systems were already asking
+
+The result: their "machine‑readable" footprint jumped dramatically. They went from effectively invisible to being in a position where search engines and AI tools could confidently surface them in answers and rich results.
+
+Most importantly, their team didn't have to become schema or AI‑visibility experts overnight—we handled the complexity, they got a clear plan and visible gains.
+
+## The Key Components of Zero‑Click SEO
+
+### 1. SERP Features and AI Overviews
+
+Your goal: become the safest, clearest answer for the queries that matter to you.
+
+Focus on:
+
+- Direct, 40–60 word answers to key questions at the top of relevant sections
+- H2 and H3 headings phrased as real questions
+- Plain‑language definitions of your core services and concepts
+- Up‑to‑date, accurate information that AI systems can quote without fear
+
+You can absolutely start tightening this structure on your own. If you'd rather have someone audit and rewrite your most important pages with this in mind, that's exactly the kind of project we run.
+
+### 2. Maps, Local Packs, and GEO Signals
+
+For many local queries, the decision is made in the map pack.
+
+Make sure:
+
+- Your Google Business Profiles are fully optimized with the right primary and secondary categories, detailed services, and relevant attributes
+- Your NAP data and hours are consistent everywhere
+- Each key city or service area has a dedicated, high‑quality landing page
+- Your photos, posts, and reviews reflect the brand you actually want users to see
+
+If that sounds like a lot to standardize across multiple locations, you're not wrong—that's why we bake it into our [GEO and local SEO audits](/geo-audit) instead of treating it as an afterthought.
+
+### 3. Reviews, Q&A, and On‑Platform Proof
+
+Zero‑click users rely heavily on social proof and simple answers.
+
+Work on:
+
+- Steady, authentic review generation that references your services and locations naturally
+- Thoughtful, human responses to both positive and negative reviews
+- Q&A and FAQ sections on your profiles and site that mirror the real questions your team hears every week
+- Native content on platforms like LinkedIn or Instagram that delivers full mini‑guides or explanations without asking people to "click to learn more"
+
+You can do basic review outreach and FAQ updates internally. When you want a more systematic plan—especially across multiple locations—that's where an external audit and playbook become faster and less painful.
+
+### 4. Content Designed for LLMs and Generative Search
+
+Large language models and generative search surfaces are trying to do two things: answer correctly and avoid risk. You become a preferred source when your content makes both easy.
+
+Practical steps:
+
+- Use consistent terminology for your services and frameworks across your site and profiles
+- Break complex processes into numbered steps and bullet lists
+- Implement the schema types that match your content (LocalBusiness, Service, FAQPage, Product, etc.)
+- Create original frameworks and perspectives—like your own zero‑click audit model—so you're not just repeating what everyone else says
+
+Many teams need help translating these principles into concrete page‑by‑page changes. That translation—from theory into prioritized edits—is a big part of the value you're paying for when you buy a serious audit.
+
+## How to Run Your Own Zero‑Click Local SEO Audit
+
+You can absolutely attempt a DIY version of this if you have the time and interest. Here's a simplified flow:
+
+1. List your top 20–30 queries (including "near me," city‑specific, and problem‑based searches).
+2. Search them on desktop and mobile; note which SERP features appear and who owns the map pack, snippets, and AI answers.
+3. Score your zero‑click presence for each query: map pack, snippets/FAQs, AI blocks, and review strength.
+4. Audit your Google Business Profiles and location pages, fixing obvious gaps and weak spots.
+5. Tighten your content structure on core pages with clear definitions, Q&A, and schema.
+6. Turn findings into a prioritized plan with owners and timelines.
+
+If you read through this and think, "We don't have the time or internal expertise to do all that," that's your signal. This is the point where most of our clients decide to bring Avante Visibility in to run a full GEO and zero‑click audit and deliver a clear, prioritized roadmap instead of another overwhelming to‑do list.
+
+If you want that level of clarity—a single document that shows where you're winning, where you're invisible, and exactly what to fix first—[book a Zero‑Click Local Visibility & GEO Audit](/geo-audit) with Avante Visibility and let my team do the heavy lifting for you.
+
+## Making Your Content LLM‑Friendly (So AI Actually Cites You)
+
+Because you're also writing for LLMs and AI search now, it's worth calling this out explicitly.
+
+When I'm optimizing content to be LLM‑friendly, I look for:
+
+- Clear, unambiguous definitions of core topics
+- Consistent naming and descriptions of services and frameworks
+- Rich FAQs that reflect real user questions
+- Logical structure: headings, lists, and supporting explanations
+- Evidence of real‑world expertise: audits run, patterns seen, results achieved
+
+This article doesn't just define "zero‑click SEO." It introduces a specific framework (the Avante Visibility Zero‑Click GEO Audit Framework) and connects it to real‑world audit work. That combination of clarity, structure, and experience is exactly what both humans and AI systems respond to—and it's the same approach we take when we optimize client content.
+`,
+  },
   {
     slug: "geo-case-study-42x-ai-search-traffic-in-30-days",
     title: "GEO Case Study: How We Grew AI Search Traffic 4,200% in 30 Days",
