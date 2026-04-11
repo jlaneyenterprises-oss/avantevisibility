@@ -27,6 +27,19 @@ export async function generateMetadata({
   const author = getAuthor(post.author);
   const metaTitle = post.metaTitle ?? post.title;
   const metaDescription = post.metaDescription ?? post.description;
+  const ogImage = post.coverImage
+    ? {
+        url: `https://avantevisibility.com${post.coverImage}`,
+        width: post.coverImageWidth ?? 1275,
+        height: post.coverImageHeight ?? 1150,
+        alt: post.coverImageAlt ?? post.title,
+      }
+    : {
+        url: "https://avantevisibility.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: post.title,
+      };
   return {
     title: metaTitle,
     description: metaDescription,
@@ -39,14 +52,7 @@ export async function generateMetadata({
       modifiedTime: post.dateModified,
       authors: [post.author],
       url: `https://avantevisibility.com/blog/${post.slug}`,
-      images: [
-        {
-          url: "https://avantevisibility.com/opengraph-image",
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
+      images: [ogImage],
     },
   };
 }
@@ -105,7 +111,9 @@ export default async function BlogPostPage({ params }: PageProps) {
       "@type": "Article",
       headline: post.title,
       description: post.description,
-      image: "https://avantevisibility.com/opengraph-image",
+      image: post.coverImage
+        ? `https://avantevisibility.com${post.coverImage}`
+        : "https://avantevisibility.com/opengraph-image",
       datePublished: post.date,
       dateModified: post.dateModified,
       wordCount: post.content.split(/\s+/).length,
@@ -234,6 +242,24 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* Cover Image */}
+        {post.coverImage && (
+          <section className="bg-bg-alt border-b border-gray-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+              <div className="max-w-3xl mx-auto">
+                <Image
+                  src={post.coverImage}
+                  alt={post.coverImageAlt ?? post.title}
+                  width={post.coverImageWidth ?? 1275}
+                  height={post.coverImageHeight ?? 1150}
+                  className="w-full h-auto rounded-xl border border-gray-200 shadow-lg"
+                  priority
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Content */}
         <section>

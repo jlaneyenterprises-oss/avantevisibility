@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import { getAllPosts, getAuthor } from "@/lib/blog";
@@ -87,8 +88,21 @@ export default function BlogPage() {
               return (
                 <article
                   key={post.slug}
-                  className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-lg hover:border-primary/30 transition-all"
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all"
                 >
+                  {post.coverImage && (
+                    <Link href={`/blog/${post.slug}`} className="block">
+                      <Image
+                        src={post.coverImage}
+                        alt={post.coverImageAlt ?? post.title}
+                        width={post.coverImageWidth ?? 1275}
+                        height={post.coverImageHeight ?? 1150}
+                        className="w-full h-auto border-b border-gray-200"
+                        priority={false}
+                      />
+                    </Link>
+                  )}
+                  <div className="p-6 md:p-8">
                   <div className="flex items-center gap-3 text-sm text-text-muted mb-3">
                     <span className="inline-flex items-center px-2.5 py-0.5 bg-primary/10 text-primary text-xs font-medium rounded-full">
                       {post.category}
@@ -132,6 +146,7 @@ export default function BlogPage() {
                         {author.name}
                       </div>
                     )}
+                  </div>
                   </div>
                 </article>
               );

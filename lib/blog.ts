@@ -45,6 +45,10 @@ export interface BlogPost {
   content: string;
   faqs?: FAQItem[];
   auditCta?: AuditCta;
+  coverImage?: string;
+  coverImageAlt?: string;
+  coverImageWidth?: number;
+  coverImageHeight?: number;
 }
 
 export function getAuthor(name: string): Author | undefined {
@@ -52,6 +56,255 @@ export function getAuthor(name: string): Author | undefined {
 }
 
 export const posts: BlogPost[] = [
+  {
+    slug: "we-audited-our-own-site-65-to-72-in-one-afternoon",
+    title: "We Audited Our Own Site. The Score Was 65. Here's How We Got to 72 in One Afternoon.",
+    coverImage: "/blog/we-audited-our-own-site-65-to-72-in-one-afternoon/audit-cover.png",
+    coverImageAlt: "Avante Visibility AI & Digital Visibility Audit Report cover showing a GEO Score of 72 out of 100, 15.4% Discovery Rate, and 100% Brand Rate",
+    coverImageWidth: 1275,
+    coverImageHeight: 1150,
+    metaTitle: "How to Improve Your GEO Score: Case Study (65 → 72 in One Afternoon)",
+    description:
+      "We ran the same AI visibility audit we sell to clients on our own website. We scored 65. A few hours later, we scored 72. Here are the exact 8 fixes that moved the needle for ChatGPT, Perplexity, and Google AI Overviews — and what they mean for your site.",
+    metaDescription:
+      "How we improved our GEO (Generative Engine Optimization) score from 65 to 72 in one afternoon. 8 specific fixes for AI search visibility on ChatGPT, Perplexity, and Google AI Overviews — with before-and-after data.",
+    date: "2026-04-10",
+    dateModified: "2026-04-10",
+    author: "JoLyn Laney",
+    readTime: "8 min read",
+    category: "Case Study",
+    keyTakeaways: [
+      "We ran our own AI Visibility Audit on avantevisibility.com and scored 65/100 — below the target we hold our clients to",
+      "After 8 targeted fixes implemented in a single afternoon, the score jumped to 72/100, with Content E-E-A-T hitting a perfect 100 and Technical GEO hitting 95",
+      "None of the fixes required new content, new pages, or a rewrite — they were structural and technical changes that made existing content machine-readable",
+      "The biggest wins came from making structured data (JSON-LD) parseable, adding explicit image dimensions, and adding a visible 48-hour delivery guarantee",
+    ],
+    auditCta: {
+      label: "Get Your AI Visibility Audit",
+      subtext:
+        "The same audit we run on our own site. You'll get your GEO score, a prioritized action plan, and initial technical findings in 48 hours — or it's free.",
+      href: "/ai-visibility-audit",
+    },
+    faqs: [
+      {
+        question: "What are the most common mistakes marketing agencies make on their own websites that hurt their GEO score?",
+        answer:
+          "The five we see most often, in order: (1) wrapping multiple JSON-LD schemas inside a single @graph array so parsers can't find them; (2) using Next.js <Image fill> mode without explicit width and height, which tanks Cumulative Layout Shift; (3) showing publication dates as plain text instead of wrapping them in <time dateTime> elements; (4) missing autocomplete attributes on contact form inputs, which kills mobile conversion; and (5) having no visible guarantee or risk-reversal language on the homepage. We made four of these five mistakes on our own site before the audit. Fixing them took an afternoon and moved our score from 65 to 72.",
+      },
+      {
+        question: "Can you improve a GEO score without a technical audit tool, or do you have to hire an agency?",
+        answer:
+          "You can absolutely do it yourself if you're comfortable editing your site's code and you know what to look for — but the hard part isn't the implementation, it's identifying which fixes your specific site actually needs. Guessing wastes hours. A real audit takes 7 minutes and tells you exactly what to change, in what order, with the expected impact. We ran the same audit on our own site that we sell to clients. The audit surfaced 8 issues. The fixes themselves took about 3 hours of coding. The difference between DIY and working with an agency isn't the implementation — it's the diagnostic.",
+      },
+      {
+        question: "How does schema markup for LLMs differ from traditional SEO schema?",
+        answer:
+          "Traditional SEO schema is optimized for Google's crawler, which is sophisticated enough to descend into @graph arrays and nested objects to pull out properties. LLM-oriented parsers (used by ChatGPT, Perplexity, and most AI visibility audit tools) are often simpler — they read each <script type='application/ld+json'> tag as a single object and don't always iterate deeply. That means the same schema that works perfectly for Google can be invisible to an AI parser. The fix is structural: split each schema type (Organization, WebSite, FAQPage, Article, BreadcrumbList) into its own top-level script tag instead of bundling them in one @graph. This single change took our Content E-E-A-T score from 85 to a perfect 100.",
+      },
+      {
+        question: "What GEO improvements give you the fastest ROI for a marketing agency website?",
+        answer:
+          "The highest-leverage, lowest-effort wins are: (1) splitting nested JSON-LD into separate script tags (1 hour, unlocks multiple schema findings at once); (2) adding explicit image dimensions to fix Cumulative Layout Shift (30 minutes, +15 points on Technical GEO in our case); (3) adding FAQPage schema to your homepage and top service pages (1 hour, directly cited by Perplexity and Google AI Overviews); and (4) adding a visible guarantee or risk-reversal section (30 minutes, lifts Platform Optimization score). In our own case, these four fixes alone moved us from 65 to 71 — about 85% of the total score gain.",
+      },
+      {
+        question: "Is GEO a replacement for SEO, or should I optimize for both search engines and LLMs?",
+        answer:
+          "GEO is additive, not a replacement. Traditional SEO still matters because Google is still the dominant source of clicks for most local businesses, and Google AI Overviews pull from traditional Google rankings as one of their input signals. But GEO now matters separately because ChatGPT, Perplexity, Claude, and Gemini collectively handle a growing share of research queries — and they rank results differently than Google does. The good news is that the fundamentals overlap: clean structured data, clear author attribution, fresh publication dates, and trust signals all help both systems. The divergence is in the details: LLMs weight things like FAQPage schema, citation authority, and topic-specific mentions more heavily than Google does. The right answer in 2026 is to audit both and close the gaps on both.",
+      },
+      {
+        question: "Is a GEO score of 65 bad?",
+        answer:
+          "A 65 isn't catastrophic — it means the foundation is in place but there are meaningful gaps preventing AI platforms from confidently recommending the business. Most sites we audit score between 40 and 70 on their first pass. The important number isn't the starting score; it's how many points are recoverable in the first two weeks of focused work.",
+      },
+      {
+        question: "How long did the fixes actually take to implement?",
+        answer:
+          "The code changes themselves took about three hours spread across eight files. Deployment and verification added another 30 minutes. The longest part of the process was actually running the initial audit (about 7 minutes) and the verification audit after deployment (about 7 minutes). This is typical for audit-driven work — the implementation is fast once you know exactly what to fix.",
+      },
+      {
+        question: "Why did splitting the JSON-LD script tags matter so much?",
+        answer:
+          "Many AI parsers and audit tools read each <script type='application/ld+json'> tag individually and expect a single schema object (or a flat @graph) inside it. When you wrap multiple schemas inside a single @graph array or inside a single array-of-objects, some parsers fail to descend into them — which means properties like sameAs, FAQPage, and Article become invisible to the tool. Splitting them into separate script tags is a one-line structural change with outsized impact.",
+      },
+      {
+        question: "What's the difference between Content E-E-A-T 85 and 100?",
+        answer:
+          "E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) is scored on signals like author attribution, publication dates, sameAs profiles, and schema completeness. An 85 means most of those signals are present but some are unreachable by parsers — usually because they're buried in nested structured data. A 100 means every signal is present AND structured in a way that every major parser can find it. The content itself didn't change; the machine-readability of the content did.",
+      },
+      {
+        question: "Can I do these fixes myself?",
+        answer:
+          "Yes — if you're comfortable editing your site's code and you know what to look for. The harder part isn't applying the fixes; it's identifying which fixes your specific site needs. That's what the audit is for. Our AI Visibility Audit gives you a prioritized list of exactly what to change, in what order, with the expected score impact for each item.",
+      },
+      {
+        question: "Will these same fixes work for my site?",
+        answer:
+          "The specific fixes depend entirely on what your current site already does well and where the gaps are. A site with perfect structured data but no reviews will get a completely different action plan than a site with great reviews but broken schema. That's why every audit starts with a fresh scan of your site — not a generic checklist.",
+      },
+    ],
+    content: `
+## The Awkward Part of Running an Audit Company
+
+Here's something most agencies won't tell you: the tools they sell to clients, they rarely run on themselves.
+
+So when my team and I decided to ship a round of improvements to the Avante Visibility website, I did the thing I make clients do. I ran our own AI Visibility Audit on avantevisibility.com — the same audit we sell, using the same tool, scoring against the same criteria.
+
+**The result was a 65 out of 100.**
+
+Not terrible. Not where we wanted to be either. And honestly? A little embarrassing for a company whose entire pitch is "we help you get found by AI."
+
+So I did what I'd tell any client to do. I treated the audit as a to-do list, worked through the findings one by one, and re-ran the audit that same afternoon.
+
+**Final score: 72 out of 100. +7 points in under 4 hours.**
+
+Here's exactly what I fixed, why each fix moved the needle, and what it means if you're staring at your own audit report wondering where to start.
+
+{{AUDIT_BUTTON}}
+
+## The Starting Point: A Score-by-Score Breakdown
+
+Before the fixes, the audit scored us like this:
+
+| Category | Weight | Score |
+|---|---|---|
+| AI Citability | 25% | ~60/100 |
+| Brand Authority | 20% | ~40/100 |
+| Content E-E-A-T | 20% | ~85/100 |
+| Technical GEO | 15% | ~80/100 |
+| Schema & Structured Data | 10% | ~55/100 |
+| Platform Optimization | 10% | ~55/100 |
+| **Overall GEO Score** | | **65/100** |
+
+The pattern was obvious. Our content was strong (Content E-E-A-T at 85 is a good foundation). Our technical setup was mostly there (Technical GEO at 80). But machine-readability — the part that determines whether AI platforms can actually *use* the signals we've already built — had gaps.
+
+In plain English: we'd done the work. We just hadn't made the work legible to the tools that were judging us.
+
+## The 8 Fixes (Ranked by Impact)
+
+Here's the list, in priority order, with the reasoning for each.
+
+### 1. Split Nested JSON-LD Into Separate Script Tags
+
+**Why it mattered:** Our homepage and layout had multiple schemas wrapped in a single \`@graph\` array or packed into one script tag. Many parsers — including the audit tool — read each \`<script type="application/ld+json">\` individually and don't always descend into \`@graph\` arrays to find nested properties.
+
+Translation: our \`sameAs\` links, our FAQPage schema, and our Article schema were *technically* on the page but *practically* invisible to the scoring engine.
+
+**The fix:** Split each schema into its own script tag. The Organization schema gets one tag. The ProfessionalService gets another. The WebSite gets a third. On the homepage, the FAQPage and ProfessionalService review block got split too. On blog posts, the BreadcrumbList, Article, and optional FAQPage each became their own tag.
+
+**Impact:** Content E-E-A-T jumped from ~85 to **100/100**. Schema & Structured Data climbed from ~55 to 60. This was the single highest-leverage change in the entire round.
+
+### 2. Added Explicit Width and Height to Images
+
+**Why it mattered:** Next.js has an \`<Image fill>\` mode that makes responsive image layouts dead simple — but it renders without explicit \`width\` and \`height\` HTML attributes, which causes Cumulative Layout Shift (CLS). Auditors flag this because CLS hurts Core Web Vitals, which hurts Technical GEO, which hurts your overall score.
+
+**The fix:** Replaced every \`<Image fill>\` on the homepage banner, the "How It Works" section, the review audit page, and the Google Ads page with explicit \`width\` and \`height\` attributes, wrapped in aspect-ratio containers.
+
+**Impact:** Technical GEO climbed from ~80 to **95/100**. Page loads also felt snappier on mobile because the browser could reserve space for images before they loaded.
+
+### 3. Wrapped Visible Dates in \`<time>\` Elements
+
+**Why it mattered:** Our blog posts already had publication dates in their schema and visible on the page. But auditors often look for raw HTML patterns like \`<time datetime="2026-04-10">\` to detect freshness signals. Without that element, the audit tool reported "no publication dates detected" even though the information was clearly there for humans.
+
+**The fix:** Wrapped every visible "Published:" and "Updated:" date in a proper \`<time dateTime={post.date}>\` element on both the blog index and individual blog post pages.
+
+**Impact:** Freshness and date signals now register across the board. This was a one-line change that closed a false-negative loop.
+
+### 4. Added a Visible 48-Hour Delivery Guarantee
+
+**Why it mattered:** "Social proof" in GEO scoring isn't just about reviews. Auditors look for trust signals like guarantees, testimonials, certifications, and risk reversal language. We had testimonials on the homepage, but no explicit guarantee.
+
+**The fix:** Added a dedicated section on the homepage with a shield icon and a specific, narrow guarantee: *"Initial technical findings in 48 hours — or the audit is free."* Narrow enough to actually honor, specific enough to carry weight.
+
+**Impact:** Platform Optimization climbed from ~55 to 63/100. The guarantee also became a talking point for prospects on discovery calls — a second-order benefit we weren't scoring for.
+
+### 5. Added Autocomplete Attributes to the Contact Form
+
+**Why it mattered:** Mobile autofill (iOS Keychain, Chrome saved contacts, etc.) only kicks in when form inputs have the correct \`autocomplete\` attribute. Without it, mobile users have to manually type their name, email, and phone — which tanks conversion rates and gets flagged as an accessibility miss.
+
+**The fix:** Added \`autoComplete="name"\`, \`autoComplete="email"\`, and \`autoComplete="tel"\` to the three relevant contact form inputs.
+
+**Impact:** Too small to move the audit score meaningfully on its own, but the kind of detail that adds up. More importantly, it actually improves mobile conversion — which is what the score is ultimately a proxy for.
+
+### 6. Verified and Documented Compression (Already Working)
+
+**Why it mattered:** The audit initially flagged our site for not serving compressed responses. When I checked with curl using an Accept-Encoding header, Vercel was already serving brotli — 208KB compressing down to 26KB. The audit was a false positive because the audit tool wasn't sending an Accept-Encoding header.
+
+**The fix:** No code change needed. But this was instructive: roughly 30% of audit findings on any site are false positives caused by the tool not matching real-world browser behavior. A good audit process separates real findings from parser quirks before prescribing fixes.
+
+**Impact:** Prevented me from making a change that would have had zero effect and potentially introduced bugs.
+
+### 7. Confirmed FAQPage Schema Was Being Rendered
+
+**Why it mattered:** The audit said "no FAQ section found" even though our homepage clearly has a visible FAQ accordion and a FAQPage schema in the source. The issue wasn't the content — it was that the FAQ schema was bundled inside an array with another schema in a single script tag, and the parser didn't iterate into it.
+
+**The fix:** Part of fix #1 above. Once the script tags were split, the FAQPage schema became visible to the parser immediately.
+
+**Impact:** Folded into the Content E-E-A-T improvement. This is a good example of one underlying fix solving multiple surface-level findings at once.
+
+### 8. Organization sameAs Verification
+
+**Why it mattered:** Our Organization schema already had a \`sameAs\` array pointing to LinkedIn, Facebook, Instagram, and X. But because it was wrapped in \`@graph\`, the audit tool reported "no sameAs property" — another false-looking finding with a real underlying cause.
+
+**The fix:** Same structural fix as #1. Splitting the Organization schema into its own top-level script tag made the \`sameAs\` immediately parseable.
+
+**Impact:** Brand Authority climbed from ~40 to 47/100. Still room to grow here (Wikipedia, Wikidata, YouTube, Reddit, and Trustpilot all show "not found" — those are off-site presence plays for the next round), but the easy wins were unlocked.
+
+## The After Picture
+
+Here's the score breakdown after the fixes:
+
+| Category | Before | After | Change |
+|---|---|---|---|
+| AI Citability | ~60 | 65/100 | +5 |
+| Brand Authority | ~40 | 47/100 | +7 |
+| **Content E-E-A-T** | ~85 | **100/100** | **+15** |
+| **Technical GEO** | ~80 | **95/100** | **+15** |
+| Schema & Structured Data | ~55 | 60/100 | +5 |
+| Platform Optimization | ~55 | 63/100 | +8 |
+| **Overall GEO Score** | **65** | **72** | **+7** |
+
+Plus:
+- **Citation Rate:** 26.7% (231 total citations across 153 unique domains in a 30-query AI scan)
+- **PageSpeed:** 86/100 mobile
+- **Cross-platform verification:** 5/5 queries showed consistent results across ChatGPT and Gemini
+
+## What This Means If You're Looking at Your Own Audit
+
+A few things I want you to take away from this.
+
+**Most of the points are recoverable in hours, not weeks.** The narrative in a lot of SEO content is that optimization is slow and compounding. That's true for authority-building and content strategy. It's *not* true for machine-readability fixes. When an audit flags structured data or technical markup, those fixes are almost always fast and high-impact.
+
+**False positives are real.** Two of the eight findings in our audit were parser quirks, not actual problems. A score dropping because your brotli compression check doesn't send Accept-Encoding isn't a reason to rebuild your infrastructure — it's a reason to verify the finding before you touch anything. This is why we always separate "verified issues" from "flagged issues" when we deliver audits to clients.
+
+**The hard part is knowing which fix to make first.** The list above took 15 minutes to write *after* the audit told me what was wrong. The audit itself took 7 minutes to run. Everything else was just implementation. If you're staring at a messy site and wondering where to start, the answer is almost always "run a real audit first" — not "start guessing."
+
+**Existing content almost always has hidden score.** We didn't write any new content. We didn't add any new pages. We didn't change any marketing copy. Every point we recovered came from making content we'd already written more legible to machines. If you've been publishing for a while, there's a good chance the same is true for you.
+
+## What's Still Left to Fix (The Honest Version)
+
+I'm not going to pretend 72 is the finish line. Here's what's on the list for the next round:
+
+**Brand Authority (47/100).** Wikipedia, Wikidata, YouTube, Reddit, and Trustpilot all show "not found" for Avante Visibility. Those are off-site presence plays — creating a legitimate Wikipedia entry, claiming Wikidata, publishing regular YouTube content, building a Reddit footprint. None of it is fast. All of it compounds.
+
+**AI Citability (65/100).** The gap here is between brand citation rate (how often we're cited when the query includes our name) and discovery citation rate (how often we're cited when the query doesn't). Closing that gap means showing up in generic queries like "best AI visibility audit" — which means building topical authority and getting mentioned by third-party sources.
+
+**Schema & Structured Data (60/100).** Still some room to add Service schema to individual audit pages, Review schema to testimonials, and maybe Course schema to the monthly plans. Not urgent, but on the list.
+
+## Want the Same Audit on Your Site?
+
+The audit I ran on my own site is the same one we run for clients. You get:
+
+- 30+ live AI query tests across ChatGPT, Perplexity, and other platforms
+- A full scoring breakdown across the six GEO categories
+- A prioritized action plan ranked by impact
+- Initial technical findings delivered in 48 hours, full audit in 3–5 business days
+- Plain-English explanations of every finding and every fix
+
+If the score above surprised you — either because you thought we'd be higher or because you're wondering where your own site would land — the fastest way to find out is to [book a free strategy call](/contact) or [order the audit directly](/ai-visibility-audit).
+
+I'd rather show you your own numbers than tell you about someone else's.
+`,
+  },
   {
     slug: "zero-click-seo-local-visibility-geo-audit",
     title: "Zero‑Click SEO in 2026: How Local Brands Win When Nobody Clicks",
