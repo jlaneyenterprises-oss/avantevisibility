@@ -238,22 +238,40 @@ export default function ScoreForm() {
 
         {/* CTA */}
         <div className="bg-gradient-to-br from-secondary to-secondary-light rounded-xl p-8 text-center">
-          <h4 className="text-xl font-bold text-white mb-2">
-            Want the Full Picture?
+          <h4 className="text-xl font-bold text-white mb-3">
+            {result.level === "critical"
+              ? "Your Competitors Are Being Recommended Instead of You"
+              : result.level === "needs-work"
+                ? "You Are Losing Customers on the Queries That Matter Most"
+                : "Lock In Your Advantage Before Competitors Catch Up"}
           </h4>
-          <p className="text-gray-300 mb-6 text-sm leading-relaxed">
-            This is a quick snapshot. A full AI Visibility Audit tests your
-            business across 28+ queries on every major AI platform, benchmarks
-            you against competitors, and gives you a prioritized action plan.
+          <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+            This checked 3 queries. The full AI Visibility Audit tests <strong className="text-white">28+ real
+            customer queries</strong> across ChatGPT, Perplexity, Google AI, and Gemini.
           </p>
+          <ul className="text-gray-300 text-sm text-left max-w-md mx-auto mb-6 space-y-2">
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <span>See exactly which competitors are being cited instead of you</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <span>Get a prioritized 30/60/90 day action plan to fix it</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <span>Score breakdown across 12 ranking factors with specific fixes</span>
+            </li>
+          </ul>
           <a
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors"
           >
-            Book a Free Strategy Call <ArrowRight className="w-4 h-4" />
+            Get Your Full AI Visibility Audit <ArrowRight className="w-4 h-4" />
           </a>
+          <p className="text-gray-400 text-xs mt-3">Free 15-minute strategy call. No obligation.</p>
         </div>
       </div>
     );

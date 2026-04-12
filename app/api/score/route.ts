@@ -224,29 +224,29 @@ export async function POST(req: NextRequest) {
     if (score <= 30) {
       level = "critical";
       recommendations = [
-        "AI platforms do not recognize your business -- potential customers using ChatGPT, Perplexity, or Google AI will not find you.",
-        "Add structured data (schema markup) to your website so AI can extract your business information accurately.",
-        "Create clear, factual content on your website with FAQ sections that AI can easily quote and cite.",
-        "Build your presence on review platforms and business directories that AI platforms reference.",
-        "Ensure your website has About and Contact pages with complete business details.",
+        "AI platforms do not recognize your business. When potential customers ask ChatGPT, Perplexity, or Google AI for recommendations, your competitors are showing up instead of you.",
+        "This quick check only tested 3 queries. A full AI Visibility Audit tests 28+ queries across branded, commercial, informational, and comparison searches to pinpoint exactly where you are invisible.",
+        "Your competitors may already be optimizing for AI search. The full audit benchmarks you head-to-head so you can see exactly who is stealing your potential customers.",
+        "There are specific technical fixes (schema markup, content structure, trust signals) that directly improve AI citations. The full audit identifies which ones will have the biggest impact for your business.",
+        "Every week without AI visibility is a week your competitors are capturing customers who would have chosen you.",
       ];
     } else if (score <= 60) {
       level = "needs-work";
       recommendations = [
-        "AI recognizes your brand but does not recommend you for non-branded searches -- you are missing potential customers.",
-        "Create dedicated landing pages for each service you offer, optimized with the questions your customers ask.",
-        "Add comparison content showing how you stack up against competitors -- AI platforms heavily cite these.",
-        "Publish educational content targeting the specific queries where your competitors are being cited.",
-        "Build authority through reviews, third-party mentions, and industry directory listings.",
+        "AI recognizes your brand, but when customers search for your services without using your name, your competitors are showing up instead. This is where you are losing the most business.",
+        "This check only tested 3 queries. The full audit tests 28+ queries and reveals exactly which searches your competitors are winning -- and the specific content and technical gaps causing it.",
+        "Businesses in your space are already being cited on commercial queries like \"best " + industryLabel + "\" and \"top " + industryLabel + " near me.\" The full audit shows you exactly which competitors are getting those citations and why.",
+        "There is a gap between your brand recognition and your commercial visibility. The full audit includes a prioritized 30/60/90 day action plan to close that gap.",
+        "AI search is growing fast -- 44% of consumers now use AI chat as their primary search tool. The businesses that optimize now will dominate their category.",
       ];
     } else {
       level = "good";
       recommendations = [
-        "Your business has strong AI visibility -- you are being found across multiple query types.",
-        "Monitor your AI visibility monthly to maintain your competitive position.",
-        "Expand to more long-tail queries specific to your services and specialties.",
-        "Build authority through local press mentions and industry directory listings.",
-        "Consider ongoing AI visibility monitoring to stay ahead of competitors.",
+        "Strong foundation -- AI platforms recognize and recommend your business across multiple query types.",
+        "But this only tested 3 queries. The full audit tests 28+ queries and often reveals blind spots even for well-performing businesses -- specific queries where competitors are being cited instead of you.",
+        "AI citation rates shift monthly as platforms update their models. Ongoing monitoring ensures you do not lose ground to competitors who are actively optimizing.",
+        "The full audit includes a competitive benchmark showing exactly how you stack up across all query categories, plus a roadmap to strengthen your weakest areas.",
+        "You are in a strong position to dominate your category in AI search. The full audit shows you exactly how to lock that in.",
       ];
     }
 
