@@ -34,11 +34,18 @@ async function queryPerplexity(query: string): Promise<string> {
   });
 
   if (!res.ok) {
+    const errorText = await res.text().catch(() => "unknown");
+    console.error(`Perplexity API error: ${res.status} - ${errorText}`);
     throw new Error(`Perplexity API error: ${res.status}`);
   }
 
   const data = await res.json();
-  return data.choices?.[0]?.message?.content || "";
+  const content = data.choices?.[0]?.message?.content || "";
+  if (!content) {
+    console.error("Perplexity returned empty content for query:", query);
+    throw new Error("Empty response from Perplexity");
+  }
+  return content;
 }
 
 function checkMention(response: string, businessName: string): boolean {
@@ -86,16 +93,29 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // Handle "Other" industry -- use a generic term instead
+  const industryLabel = industry === "Other" ? "local business" : industry;
+
   const queries = [
-    `What is the best ${industry} in ${city}? Recommend specific businesses by name.`,
-    `Can you recommend a top-rated ${industry} near ${city}? List specific business names.`,
-    `Who are the most recommended ${industry} providers in ${city}? Name specific businesses.`,
+    `What is the best ${industryLabel} in ${city}? Recommend specific businesses by name.`,
+    `Can you recommend a top-rated ${industryLabel} near ${city}? List specific business names.`,
+    `Who are the most recommended ${industryLabel} providers in ${city}? Name specific businesses.`,
   ];
 
   try {
     const results = await Promise.allSettled(
       queries.map((q) => queryPerplexity(q))
     );
+
+    // Check if ALL queries failed
+    const allFailed = results.every((r) => r.status === "rejected");
+    if (allFailed) {
+      console.error("All Perplexity queries failed:", results.map((r) => r.status === "rejected" ? (r as PromiseRejectedResult).reason?.message : "ok"));
+      return NextResponse.json(
+        { error: "AI platforms are temporarily unavailable. Please try again in a few minutes." },
+        { status: 503 }
+      );
+    }
 
     const platformResults: PlatformResult[] = [
       {
@@ -116,14 +136,16 @@ export async function POST(req: NextRequest) {
     ];
 
     let foundCount = 0;
+    let successCount = 0;
 
     results.forEach((result, i) => {
       if (result.status === "fulfilled") {
+        successCount++;
         const found = checkMention(result.value, businessName);
         platformResults[i].found = found;
         platformResults[i].details = found
           ? `Your business was mentioned in AI search results for this query.`
-          : `Your business was not found. AI recommended other ${industry} businesses instead.`;
+          : `Your business was not found. AI recommended other ${industryLabel} businesses instead.`;
         if (found) foundCount++;
       } else {
         platformResults[i].details =
@@ -131,11 +153,11 @@ export async function POST(req: NextRequest) {
       }
     });
 
-    // Calculate score (0-100)
-    const baseScore = Math.round((foundCount / queries.length) * 70);
+    // Calculate score (0-100) -- only count queries that actually ran
+    const baseScore = successCount > 0 ? Math.round((foundCount / successCount) * 70) : 0;
     // Bonus points for having a website URL (up to 15) and being in a known industry (up to 15)
     const websiteBonus = websiteUrl.startsWith("http") ? 15 : 5;
-    const industryBonus = industry ? 15 : 0;
+    const industryBonus = industry && industry !== "Other" ? 15 : 5;
     const score = Math.min(100, baseScore + websiteBonus + industryBonus);
 
     // Determine score level
