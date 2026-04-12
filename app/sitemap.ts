@@ -35,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })),
     {
+      url: `${baseUrl}/ai-score`,
+      lastModified: "2026-04-12",
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/med-spa`,
       lastModified: "2026-04-09",
       changeFrequency: "weekly" as const,
@@ -44,6 +50,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/case-studies`,
       lastModified: "2026-04-09",
       changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/dentists`,
+      lastModified: "2026-04-12",
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/law-firms`,
+      lastModified: "2026-04-12",
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/home-services`,
+      lastModified: "2026-04-12",
+      changeFrequency: "weekly" as const,
       priority: 0.9,
     },
     {

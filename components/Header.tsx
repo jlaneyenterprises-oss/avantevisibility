@@ -18,6 +18,10 @@ import {
   GitBranch,
   Users,
   RotateCcw,
+  Sparkles,
+  Stethoscope,
+  Scale,
+  Wrench,
 } from "lucide-react";
 
 const BOOKING_URL = "https://cal.com/provemyads/15min";
@@ -88,12 +92,42 @@ const growthServices = [
   },
 ];
 
+const industryLinks = [
+  {
+    name: "Med Spas",
+    desc: "AI visibility for aesthetic practices",
+    href: "/med-spa",
+    icon: Sparkles,
+  },
+  {
+    name: "Dentists",
+    desc: "AI visibility for dental practices",
+    href: "/dentists",
+    icon: Stethoscope,
+  },
+  {
+    name: "Law Firms",
+    desc: "AI visibility for legal practices",
+    href: "/law-firms",
+    icon: Scale,
+  },
+  {
+    name: "Home Services",
+    desc: "AI visibility for HVAC, plumbing & more",
+    href: "/home-services",
+    icon: Wrench,
+  },
+];
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const industriesTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -116,10 +150,20 @@ export default function Header() {
     dropdownTimeout.current = setTimeout(() => setServicesOpen(false), 150);
   };
 
+  const handleIndustriesEnter = () => {
+    if (industriesTimeout.current) clearTimeout(industriesTimeout.current);
+    setIndustriesOpen(true);
+  };
+
+  const handleIndustriesLeave = () => {
+    industriesTimeout.current = setTimeout(() => setIndustriesOpen(false), 150);
+  };
+
   const isActive = (href: string) => pathname === href;
   const isServiceActive =
     localServices.some((s) => pathname === s.href) ||
     growthServices.some((s) => pathname === s.href);
+  const isIndustryActive = industryLinks.some((s) => pathname === s.href);
 
   return (
     <>
@@ -261,9 +305,67 @@ export default function Header() {
                 </div>
               </div>
 
+              {/* Industries Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={handleIndustriesEnter}
+                onMouseLeave={handleIndustriesLeave}
+              >
+                <button
+                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                    isIndustryActive || industriesOpen
+                      ? "text-primary-light bg-white/5"
+                      : "text-gray-300 hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  Industries
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      industriesOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <div
+                  className={`absolute top-full -left-4 pt-3 transition-all duration-200 ${
+                    industriesOpen
+                      ? "opacity-100 translate-y-0 pointer-events-auto"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
+                  }`}
+                >
+                  <div className="bg-secondary-light rounded-xl shadow-2xl shadow-black/30 border border-white/10 p-4 w-[280px]">
+                    <div className="space-y-1">
+                      {industryLinks.map((s) => (
+                        <Link
+                          key={s.href}
+                          href={s.href}
+                          className={`flex items-start gap-3 px-3 py-2.5 rounded-lg transition-colors group ${
+                            isActive(s.href)
+                              ? "bg-primary/15 text-primary-light"
+                              : "hover:bg-white/5 text-gray-300"
+                          }`}
+                        >
+                          <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-primary/20 transition-colors">
+                            <s.icon className="w-4 h-4 text-primary" />
+                          </div>
+                          <div>
+                            <p className="text-sm font-medium group-hover:text-white transition-colors">
+                              {s.name}
+                            </p>
+                            <p className="text-xs text-gray-500 mt-0.5">
+                              {s.desc}
+                            </p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Top-level Links */}
               {[
-                { name: "Med Spas", href: "/med-spa" },
+                { name: "Free AI Score", href: "/ai-score" },
                 { name: "Case Studies", href: "/case-studies" },
                 { name: "Pricing", href: "/packages" },
                 { name: "Blog", href: "/blog" },
@@ -390,9 +492,45 @@ export default function Header() {
             </div>
           </div>
 
+          {/* Industries Accordion */}
+          <button
+            onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+            className="flex items-center justify-between w-full px-3 py-3 text-sm font-medium text-gray-200 rounded-lg hover:bg-white/5 transition-colors"
+          >
+            Industries
+            <ChevronDown
+              className={`w-4 h-4 transition-transform duration-200 ${
+                mobileIndustriesOpen ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              mobileIndustriesOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="pl-3 pb-2 space-y-1">
+              {industryLinks.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-colors ${
+                    isActive(s.href)
+                      ? "bg-primary/15 text-primary-light"
+                      : "text-gray-400 hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  <s.icon className="w-4 h-4 text-primary shrink-0" />
+                  {s.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {/* Top-level Mobile Links */}
           {[
-            { name: "Med Spas", href: "/med-spa" },
+            { name: "Free AI Score", href: "/ai-score" },
             { name: "Case Studies", href: "/case-studies" },
             { name: "Pricing", href: "/packages" },
             { name: "Monthly Plans", href: "/monthly-plans" },

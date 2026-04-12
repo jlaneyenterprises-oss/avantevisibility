@@ -1484,6 +1484,346 @@ The first step is understanding where you stand. Everything else follows from th
 `,
   },
   {
+    slug: "how-to-get-your-med-spa-found-in-ai-search-results",
+    title: "How to Get Your Med Spa Found in AI Search Results",
+    description:
+      "AI search platforms like ChatGPT and Perplexity are now the first place many patients look for med spa recommendations. Here is a step-by-step guide to getting your practice into AI answers.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "7 min read",
+    category: "Industry",
+    keyTakeaways: [
+      "Med spa patients are increasingly asking AI platforms for provider recommendations before ever searching Google",
+      "AI recommends med spas based on review quality, structured data, content clarity, and citation consistency",
+      "Optimizing treatment-specific pages with FAQ sections and schema markup is the fastest path to AI visibility",
+      "An AI Visibility Score gives you a quick snapshot of where your med spa stands today",
+    ],
+    content: `
+## Your Patients Are Searching Differently Now
+
+The way patients find med spas has changed. Instead of scrolling through Google results, a growing number of people open ChatGPT, Perplexity, or Google's AI Overview and ask: "What is the best med spa for Botox near me?"
+
+The AI does not return 10 links. It recommends 3 to 5 med spas by name and explains why it chose them. If your practice is not in that answer, a competitor is getting that patient.
+
+This guide covers exactly what you need to do to show up.
+
+## Why AI Platforms Skip Most Med Spas
+
+AI models evaluate med spas differently than Google's traditional algorithm. They look for:
+
+- **Review quality and specificity** -- not just star ratings, but what patients say about specific treatments
+- **Structured data** -- schema markup that tells AI exactly what treatments you offer, your credentials, and your location
+- **Content clarity** -- clear, factual descriptions of each treatment rather than vague marketing language
+- **Citation consistency** -- the same business name, address, and phone number across every platform
+
+Most med spas fail on at least two of these. Many fail on all four.
+
+## Step 1: Optimize Your Treatment Pages
+
+Each treatment you offer should have its own dedicated page with:
+
+- A clear description of the treatment, what it involves, and who it is for
+- Expected results, recovery time, and number of sessions
+- Your provider's credentials and experience with this specific treatment
+- A FAQ section answering the 5-10 most common questions patients ask
+- Schema markup (Service schema) so AI can extract the details programmatically
+
+The FAQ section is especially important. AI platforms love extractable Q&A content because it directly matches how people ask questions.
+
+## Step 2: Build Your Review Profile for AI
+
+AI does not just count stars. It reads review text to understand what your med spa is known for. Reviews that mention specific treatments ("My Botox results were amazing"), specific providers ("Dr. Chen was so gentle"), and specific outcomes are far more valuable than generic "Great experience!" reviews.
+
+Aim for:
+- 50+ reviews on Google
+- Active profiles on Healthgrades and RealSelf
+- Owner responses to every review
+- A steady stream of 3-5 new reviews per month
+
+## Step 3: Fix Your Google Business Profile
+
+Your GBP is one of the primary data sources AI uses for local recommendations. Complete every field:
+
+- Set your primary category to "Medical Spa" (not just "Spa")
+- Add all relevant secondary categories
+- Use the full 750 characters in your business description
+- Add 25+ photos covering your facility, team, and treatment rooms
+- Post at least weekly
+- Pre-populate your Q&A with 10-15 common questions
+
+## Step 4: Add Schema Markup to Your Website
+
+Schema markup is invisible code that tells AI exactly what your business is. For a med spa, the most important types are:
+
+- **MedicalBusiness** or **HealthAndBeautyBusiness** on your homepage
+- **Service** schema for each treatment
+- **FAQPage** schema on your FAQ sections
+- **AggregateRating** for your review data
+- **Person** schema for each provider with credentials
+
+Without schema, AI has to guess what your med spa offers. With it, you are handing AI a structured menu of exactly what to recommend.
+
+## Step 5: Check Your AI Visibility
+
+Before investing in optimization, find out where you stand. Use our [free AI Visibility Score tool](/ai-score) to run a quick check across AI platforms and see if your med spa appears when patients ask for recommendations.
+
+For a comprehensive analysis, our [AI Visibility Audit](/ai-visibility-audit) tests 28+ queries across every major AI platform and shows you exactly what to fix.
+
+## The Bottom Line
+
+Med spas that optimize for AI search now are building a competitive moat. The ones who wait will find it increasingly difficult to break into AI recommendations once competitors have established their position.
+
+The first step is knowing where you stand. The second is fixing what AI cannot find.
+
+Learn more about our [AI Visibility services for med spas](/med-spa).
+`,
+  },
+  {
+    slug: "geo-vs-seo-whats-the-difference",
+    title: "GEO vs SEO: What's the Difference and Why You Need Both",
+    description:
+      "GEO and SEO are not the same thing. One gets you ranked in Google. The other gets you recommended by AI. Here is a plain-English comparison and why smart businesses invest in both.",
+    date: "2026-04-10",
+    dateModified: "2026-04-10",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "GEO",
+    keyTakeaways: [
+      "SEO optimizes for Google's ranking algorithm; GEO optimizes for AI recommendation engines like ChatGPT and Perplexity",
+      "The signals that drive SEO rankings (backlinks, keywords) are different from those that drive AI recommendations (reviews, schema, citations)",
+      "GEO does not replace SEO -- the two compound each other for maximum visibility",
+      "Businesses investing in both SEO and GEO have a significant advantage over those doing only one",
+    ],
+    content: `
+## Two Acronyms, Two Different Games
+
+If you have been in business long enough to have a website, you know SEO. Search Engine Optimization has been the backbone of digital marketing for two decades. You optimize your website so Google ranks you higher.
+
+GEO is newer. Generative Engine Optimization is the practice of optimizing your business so AI platforms -- ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude -- recommend you when someone asks for a suggestion.
+
+They sound similar. They are not.
+
+## The Key Differences
+
+| | SEO | GEO |
+|---|---|---|
+| **Goal** | Rank higher in search results | Get recommended in AI answers |
+| **Target** | Google's ranking algorithm | AI language models |
+| **Key signals** | Backlinks, keywords, page speed | Reviews, schema, citations, content clarity |
+| **Content style** | Keyword-optimized pages | Clear, factual, citable statements |
+| **Measurement** | Rankings, organic traffic | AI citation rate, recommendation frequency |
+| **Competition** | Page 1 (10 spots) | AI answer (3-5 mentions) |
+
+## Why SEO Alone Is No Longer Enough
+
+SEO still works. Google still processes billions of searches per day, and ranking well still drives traffic. Nobody is saying you should abandon SEO.
+
+But the landscape is shifting. 44% of consumers now use AI chat as their primary search method. Google's own AI Overviews appear in over 50% of search results, pushing traditional blue links further down the page. Gartner predicts a 25% decline in traditional search volume by the end of 2026.
+
+If your business is only optimized for traditional Google rankings, you are optimized for a shrinking share of how people discover businesses.
+
+## Why GEO Alone Is Not Enough Either
+
+GEO without SEO is like building a house without a foundation. Many of the signals AI platforms use to evaluate your business -- your website content, your review profile, your directory listings -- are the same assets you build through good SEO practice.
+
+A business with strong SEO fundamentals (clean website, good content, solid technical infrastructure) has a much easier time with GEO because the foundation is already there.
+
+## How They Work Together
+
+The smartest approach is treating SEO and GEO as complementary strategies that compound each other:
+
+**SEO builds the foundation:**
+- Clean, fast, mobile-friendly website
+- Keyword-targeted service pages
+- Quality backlinks from authoritative sources
+- Technical infrastructure (indexing, site structure, page speed)
+
+**GEO adds the AI layer:**
+- Schema markup so AI can read your business data
+- Review strategy optimized for AI-parseable language
+- Citation consistency across directories
+- Content structured for AI extraction (FAQs, clear factual statements)
+- llms.txt and AI crawler access optimization
+
+**Together they compound:**
+- Strong SEO gives AI models more and better data about your business
+- GEO improvements (schema, reviews, citations) also improve traditional SEO signals
+- Being visible in both channels means you capture customers regardless of how they search
+
+## What to Do If You Only Have Budget for One
+
+If you are starting from scratch and need to choose, start with SEO fundamentals. Build your website, create service pages, set up your Google Business Profile, and start collecting reviews.
+
+If you already have strong SEO and want to expand into AI visibility, GEO is the logical next step. You already have the foundation -- you just need to add the AI-specific optimizations.
+
+If you are serious about growth, invest in both. The businesses that dominate their markets over the next 2-3 years will be the ones that are visible everywhere their customers search -- traditional Google, AI assistants, and everything in between.
+
+## Getting Started
+
+The first step is understanding where you stand in both channels. Google Search Console shows your SEO performance. Our [free AI Visibility Score](/ai-score) shows you where you stand in AI search.
+
+For a complete picture, our [GEO Audit](/geo-audit) covers both traditional SEO signals and AI-specific optimization factors in a single comprehensive analysis.
+`,
+  },
+  {
+    slug: "is-your-business-showing-up-in-chatgpt",
+    title: "Is Your Business Showing Up in ChatGPT? Here's How to Check",
+    description:
+      "More people are asking ChatGPT for business recommendations than ever before. Here is how to test whether your business appears -- and what to do if it does not.",
+    date: "2026-04-08",
+    dateModified: "2026-04-08",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "AI Visibility",
+    keyTakeaways: [
+      "You can test your ChatGPT visibility in under 5 minutes by asking the queries your customers would ask",
+      "If you do not appear, it is usually because of thin online presence, weak reviews, or missing structured data",
+      "Our free AI Visibility Score tool automates this check across 3 AI platforms instantly",
+      "A full AI Visibility Audit tests 28+ queries and reveals exactly why you are or are not showing up",
+    ],
+    content: `
+## The 5-Minute ChatGPT Visibility Test
+
+Here is the fastest way to check if ChatGPT knows about your business:
+
+1. Open [ChatGPT](https://chat.openai.com)
+2. Type: "What are the best [your industry] businesses in [your city]?"
+3. Read the response carefully
+
+Does your business appear by name? Is the information accurate? Or does the AI recommend your competitors instead?
+
+Now try variations:
+- "Can you recommend a [your service] near [your city]?"
+- "Who is the best [your specialty] in [your area]?"
+- "I need a [your service]. Who should I call in [your city]?"
+
+Run each query and note whether your business appears.
+
+## What If You Do Not Show Up?
+
+If ChatGPT does not mention your business, you are not alone. Most local businesses are invisible to AI platforms. The reasons typically fall into four categories:
+
+### 1. Thin Online Footprint
+AI models build their understanding of your business from multiple online sources. If you only exist on Google and your own website, the AI has limited data to work with. Businesses with profiles across Google, Yelp, Facebook, industry directories, and other platforms give AI more confidence.
+
+### 2. Weak or Few Reviews
+ChatGPT heavily weights review data when making recommendations. If you have fewer than 20 reviews, or your reviews are generic ("Great service!"), the AI may not have enough signal to recommend you.
+
+### 3. Website Not AI-Readable
+Your website might look great to humans but be difficult for AI to parse. Vague headlines, missing service descriptions, no FAQ section, and a lack of schema markup all make it harder for AI to understand and cite your business.
+
+### 4. Missing or Inaccurate Business Data
+If your business name, address, or phone number varies across platforms, or your Google Business Profile is incomplete, AI models see inconsistency and reduce their confidence in recommending you.
+
+## The Faster Way: Use Our Free Tool
+
+Instead of manually testing each platform, use our [free AI Visibility Score tool](/ai-score). Enter your business name, website, city, and industry, and we will query 3 major AI platforms in real time. You get:
+
+- A score from 0-100
+- Platform-by-platform breakdown
+- Specific recommendations to improve your visibility
+
+It takes about 15 seconds and requires no payment or commitment.
+
+## What Comes After the Score
+
+The free score gives you a directional snapshot. If your score is low, the next step is understanding exactly why and building a plan to fix it.
+
+Our [AI Visibility Audit](/ai-visibility-audit) tests 28+ queries across all major AI platforms, benchmarks you against your local competitors, and delivers a prioritized action plan with specific fixes ranked by impact.
+
+Every business that has gone through the audit has found actionable gaps they did not know existed. The most common reaction is: "I had no idea AI was recommending my competitor and not me."
+
+## The Bottom Line
+
+Checking your ChatGPT visibility takes 5 minutes. Fixing it takes strategy. But the businesses that fix it now are building an advantage that compounds over time.
+
+Start with the free check. See where you stand. Then decide what to do about it.
+`,
+  },
+  {
+    slug: "why-ai-search-is-biggest-opportunity-for-med-spas-2026",
+    title: "Why AI Search Is the Biggest Opportunity for Med Spas in 2026",
+    description:
+      "The med spa industry is booming. AI search is creating a new way for patients to find providers. The med spas that optimize for AI now will capture patients their competitors never even see.",
+    date: "2026-04-06",
+    dateModified: "2026-04-06",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "Industry",
+    keyTakeaways: [
+      "The US med spa market is projected to reach $28 billion by 2030 with 15% annual growth",
+      "44% of consumers use AI as their primary search tool -- this includes patients researching aesthetic treatments",
+      "Almost zero med spas are currently optimized for AI search, creating a rare first-mover advantage",
+      "Med spas that invest in AI visibility now will have a compounding advantage over those that wait",
+    ],
+    content: `
+## A Booming Industry Meets a New Discovery Channel
+
+The US medical spa industry is on a tear. The market is projected to reach $28 billion by 2030, growing at roughly 15% per year. More consumers than ever are seeking aesthetic treatments -- Botox, fillers, laser treatments, body contouring, and more.
+
+At the same time, how those consumers find med spas is fundamentally shifting. AI search platforms are becoming the first stop for patients researching treatments and providers.
+
+This convergence -- explosive industry growth plus a new discovery channel -- creates a massive opportunity for med spas that move early.
+
+## How Patients Use AI to Find Med Spas
+
+Patients are not just asking "best med spa near me." They are having detailed conversations with AI:
+
+- "What is the difference between Botox and Dysport?"
+- "How much does a full face of filler cost in [city]?"
+- "What should I look for in a med spa for my first Botox appointment?"
+- "Which med spas in [city] have the best reviews for lip filler?"
+
+The AI answers these questions with specific recommendations. It names providers, cites reviews, describes services, and explains why it chose them.
+
+If your med spa is not part of those answers, you are invisible to this entire discovery channel.
+
+## Why This Is a First-Mover Opportunity
+
+Here is what makes this moment special: almost nobody is doing it yet.
+
+We have audited dozens of med spas across the country. The typical AI visibility score for a med spa? Near zero. Even practices with strong Google rankings, beautiful websites, and hundreds of reviews are completely invisible to ChatGPT, Perplexity, and Google AI Overviews.
+
+The reason is simple: traditional marketing does not address AI visibility. Your Google Ads, Instagram campaigns, and SEO agency are not optimizing for how AI reads and recommends businesses. It requires a different approach -- one that focuses on structured data, citation consistency, review optimization for AI parsing, and AI-readable content.
+
+The med spas that invest in this now will establish AI visibility while the field is empty. As competitors catch on (and they will), the early movers will already have the AI trust signals, review momentum, and content authority that take months to build.
+
+## What AI Visibility Does for a Med Spa
+
+When your med spa is optimized for AI search, you get:
+
+**Passive lead generation.** Patients discover you through AI conversations they are already having. No ad spend required for these leads.
+
+**Higher-quality leads.** AI-referred patients have already been told why your practice is recommended. They arrive pre-sold on your expertise.
+
+**Competitive differentiation.** While competitors fight over Google Ads clicks, you are capturing an entirely separate channel of patient acquisition.
+
+**Compounding advantage.** The longer you are visible in AI, the more data AI accumulates about your practice, which makes your recommendations stronger.
+
+## What It Takes
+
+AI visibility for med spas is not about one magic fix. It is about optimizing across several factors:
+
+1. **Treatment pages** structured for AI extraction (clear descriptions, FAQ sections, schema markup)
+2. **Review strategy** focused on detailed, treatment-specific reviews across Google, Healthgrades, and RealSelf
+3. **Google Business Profile** fully optimized with correct categories, complete descriptions, and regular posts
+4. **Citation consistency** across all directories and platforms
+5. **Provider credentials** structured as schema markup and clearly presented on your website
+6. **AI crawler access** via robots.txt, llms.txt, and proper technical configuration
+
+Each factor contributes to how confidently AI recommends your practice. Miss one, and you leave a gap your competitor can fill.
+
+## Getting Started
+
+The first step is finding out where you stand. Use our [free AI Visibility Score](/ai-score) for a quick check, or book a free strategy call for a live AI search test.
+
+For a complete roadmap, explore our [AI Visibility services for med spas](/med-spa) -- purpose-built for the aesthetic industry.
+
+The med spa market is growing fast. AI search is changing how patients find providers. The practices that combine both trends -- industry growth plus AI visibility -- will be the ones that win this decade.
+`,
+  },
+  {
     slug: "how-to-check-if-your-business-shows-up-in-chatgpt",
     title: "How to Check If Your Business Shows Up in ChatGPT",
     description:

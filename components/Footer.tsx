@@ -56,8 +56,15 @@ const growthLinks = [
   { name: "Algorithm Recovery", href: "/algorithm-recovery" },
 ];
 
-const companyLinks = [
+const industryLinks = [
   { name: "Med Spas", href: "/med-spa" },
+  { name: "Dentists", href: "/dentists" },
+  { name: "Law Firms", href: "/law-firms" },
+  { name: "Home Services", href: "/home-services" },
+];
+
+const companyLinks = [
+  { name: "Free AI Score", href: "/ai-score" },
   { name: "Packages", href: "/packages" },
   { name: "Monthly Plans", href: "/monthly-plans" },
   { name: "Partners", href: "/partners" },
@@ -70,7 +77,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-secondary to-[#060F10] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <p className="text-xl font-bold">
@@ -122,6 +129,25 @@ export default function Footer() {
             </p>
             <ul className="space-y-2.5">
               {growthLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Industries */}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
+              Industries
+            </p>
+            <ul className="space-y-2.5">
+              {industryLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

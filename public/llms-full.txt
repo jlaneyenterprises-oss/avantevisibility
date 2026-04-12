@@ -173,8 +173,31 @@ JoLyn Laney — 20+ years in digital marketing. Began in Google Ads when pay-per
 - Instagram: https://www.instagram.com/avantevisibility
 - X/Twitter: https://x.com/AvanteVisible
 
+## Free AI Visibility Score Tool
+A free tool that instantly checks whether AI platforms like ChatGPT, Perplexity, and Google AI recommend your business. Enter your business name, website, city, and industry, and get a score (0-100) with platform-by-platform breakdown and actionable recommendations. No payment required.
+- URL: https://avantevisibility.com/ai-score
+
+## Industry-Specific AI Visibility Services
+
+### AI Visibility for Med Spas
+AI search visibility optimization for medical spas and aesthetic practices. Covers treatment-specific query testing (Botox, fillers, laser treatments), review optimization across Healthgrades and RealSelf, provider credential structuring, and HIPAA-compliant content strategy.
+- URL: https://avantevisibility.com/med-spa
+
+### AI Visibility for Dentists
+AI search visibility optimization for dental practices. Covers procedure-specific query testing (implants, Invisalign, cosmetic dentistry), review optimization across Healthgrades and ZocDoc, provider credential structuring, and patient acquisition through AI platforms.
+- URL: https://avantevisibility.com/dentists
+
+### AI Visibility for Law Firms
+AI search visibility optimization for law firms and legal practices. Covers practice-area-specific query testing (personal injury, family law, criminal defense), review optimization across Avvo and Martindale-Hubbell, bar-compliant content strategy, and attorney credential structuring.
+- URL: https://avantevisibility.com/law-firms
+
+### AI Visibility for Home Services
+AI search visibility optimization for home service businesses including HVAC, plumbing, roofing, electrical, and more. Covers service-specific query testing, emergency/urgent search optimization, review strategy across Angi, HomeAdvisor, Thumbtack, and BBB.
+- URL: https://avantevisibility.com/home-services
+
 ## Sitemap
 - Home: https://avantevisibility.com
+- Free AI Visibility Score: https://avantevisibility.com/ai-score
 - AI Visibility Audit: https://avantevisibility.com/ai-visibility-audit
 - GEO Audit: https://avantevisibility.com/geo-audit
 - Review Intelligence Audit: https://avantevisibility.com/review-audit
@@ -187,6 +210,10 @@ JoLyn Laney — 20+ years in digital marketing. Began in Google Ads when pay-per
 - Google Ads: https://avantevisibility.com/google-ads
 - Packages: https://avantevisibility.com/packages
 - Monthly Plans: https://avantevisibility.com/monthly-plans
+- Med Spas: https://avantevisibility.com/med-spa
+- Dentists: https://avantevisibility.com/dentists
+- Law Firms: https://avantevisibility.com/law-firms
+- Home Services: https://avantevisibility.com/home-services
 - Agency Partners: https://avantevisibility.com/partners
 - Blog: https://avantevisibility.com/blog
 - About: https://avantevisibility.com/about

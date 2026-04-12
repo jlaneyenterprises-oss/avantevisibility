@@ -52,13 +52,13 @@ export default function Hero({
     return (
       <section className="relative bg-secondary overflow-hidden">
         {/* Full-width banner image */}
-        <div className="relative w-full" style={{ aspectRatio: "1920 / 680", minHeight: "340px" }}>
+        <div className="relative w-full">
           <Image
             src={bannerImage}
             alt="Avante Visibility - AI Visibility & Growth Strategy"
-            width={1920}
-            height={680}
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            width={4128}
+            height={1024}
+            className="w-full h-auto"
             priority
             sizes="100vw"
           />
