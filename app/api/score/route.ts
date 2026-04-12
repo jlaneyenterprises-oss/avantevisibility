@@ -60,6 +60,17 @@ function checkMention(response: string, businessName: string): boolean {
   return matches.length >= Math.ceil(words.length * 0.6);
 }
 
+function checkWebsiteMention(response: string, websiteUrl: string): boolean {
+  const lower = response.toLowerCase();
+  // Extract domain from URL
+  try {
+    const domain = new URL(websiteUrl).hostname.replace("www.", "");
+    return lower.includes(domain);
+  } catch {
+    return false;
+  }
+}
+
 export async function POST(req: NextRequest) {
   // Rate limit: check cookie
   const rateCookie = req.cookies.get("ai_score_check");
@@ -93,18 +104,31 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Handle "Other" industry -- use a generic term instead
-  const industryLabel = industry === "Other" ? "local business" : industry;
+  // Build smarter queries based on business type
+  const industryLabel = industry === "Other" ? "business" : industry;
 
-  const queries = [
-    `What is the best ${industryLabel} in ${city}? Recommend specific businesses by name.`,
-    `Can you recommend a top-rated ${industryLabel} near ${city}? List specific business names.`,
-    `Who are the most recommended ${industryLabel} in ${city}? Name specific businesses.`,
+  // 3 query categories that mirror a real GEO audit:
+  // 1. Branded query - does AI know who you are?
+  // 2. Commercial intent - do you show up when people search for your service?
+  // 3. Comparison/recommendation - are you recommended alongside competitors?
+  const queryCategories = [
+    {
+      label: "Brand Recognition",
+      query: `What is ${businessName}? Tell me about this company and what they offer.`,
+    },
+    {
+      label: "Commercial Discovery",
+      query: `What is the best ${industryLabel} in ${city}? Recommend specific businesses by name with their websites.`,
+    },
+    {
+      label: "AI Recommendation",
+      query: `Can you recommend a top-rated ${industryLabel} near ${city}? List specific business names and why you recommend them.`,
+    },
   ];
 
   try {
     const results = await Promise.allSettled(
-      queries.map((q) => queryPerplexity(q))
+      queryCategories.map((q) => queryPerplexity(q.query))
     );
 
     // Check if ALL queries failed
@@ -117,75 +141,108 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const platformResults: PlatformResult[] = [
-      {
-        platform: "AI Recommendation Query",
-        found: false,
-        details: "",
-      },
-      {
-        platform: "AI Local Search Query",
-        found: false,
-        details: "",
-      },
-      {
-        platform: "AI Provider Directory Query",
-        found: false,
-        details: "",
-      },
-    ];
+    const platformResults: PlatformResult[] = queryCategories.map((q) => ({
+      platform: q.label,
+      found: false,
+      details: "",
+    }));
 
-    let foundCount = 0;
+    let brandFound = false;
+    let commercialFound = false;
+    let recommendationFound = false;
     let successCount = 0;
 
     results.forEach((result, i) => {
       if (result.status === "fulfilled") {
         successCount++;
-        const found = checkMention(result.value, businessName);
+        const nameMentioned = checkMention(result.value, businessName);
+        const siteMentioned = checkWebsiteMention(result.value, websiteUrl);
+        const found = nameMentioned || siteMentioned;
+
         platformResults[i].found = found;
-        platformResults[i].details = found
-          ? `Your business was mentioned in AI search results for this query.`
-          : `Your business was not found. AI recommended other businesses instead.`;
-        if (found) foundCount++;
+
+        if (i === 0) {
+          // Brand Recognition
+          brandFound = found;
+          platformResults[i].details = found
+            ? "AI platforms recognize your brand and can describe your business."
+            : "AI platforms do not recognize your brand. This is the most critical gap.";
+        } else if (i === 1) {
+          // Commercial Discovery
+          commercialFound = found;
+          platformResults[i].details = found
+            ? "Your business appears in commercial search results for your industry."
+            : "Your business was not found. AI recommended other businesses instead.";
+        } else {
+          // Recommendation
+          recommendationFound = found;
+          platformResults[i].details = found
+            ? "AI platforms actively recommend your business to potential customers."
+            : "AI is recommending your competitors instead of your business.";
+        }
       } else {
         platformResults[i].details =
           "Unable to test this query. Try again later.";
       }
     });
 
-    // Calculate score (0-100) -- only count queries that actually ran
-    const baseScore = successCount > 0 ? Math.round((foundCount / successCount) * 70) : 0;
-    // Bonus points for having a website URL (up to 15) and being in a known industry (up to 15)
-    const websiteBonus = websiteUrl.startsWith("http") ? 15 : 5;
-    const industryBonus = industry && industry !== "Other" ? 15 : 5;
-    const score = Math.min(100, baseScore + websiteBonus + industryBonus);
+    // Smarter scoring that aligns with GEO audit methodology
+    // Brand recognition is weighted heaviest (it's the foundation)
+    let score = 0;
+
+    if (successCount === 0) {
+      score = 0;
+    } else {
+      // Brand Recognition: 0-40 points
+      if (brandFound) {
+        score += 40;
+      }
+
+      // Commercial Discovery: 0-30 points
+      if (commercialFound) {
+        score += 30;
+      }
+
+      // AI Recommendation: 0-30 points
+      if (recommendationFound) {
+        score += 30;
+      }
+
+      // If brand is recognized but not showing in commercial/recommendation,
+      // give partial credit -- the business exists in AI knowledge but needs
+      // optimization to appear in non-branded queries
+      if (brandFound && !commercialFound && !recommendationFound) {
+        score += 10; // partial credit for having brand presence
+      }
+    }
 
     // Determine score level
     let level: "critical" | "needs-work" | "good";
     let recommendations: string[];
+    const foundCount = [brandFound, commercialFound, recommendationFound].filter(Boolean).length;
 
-    if (foundCount === 0) {
+    if (score <= 30) {
       level = "critical";
       recommendations = [
-        "Your business is not appearing in any AI search results -- this means potential customers using ChatGPT, Perplexity, or Google AI will never find you.",
-        "Start with a complete Google Business Profile -- this is the #1 data source AI platforms reference.",
-        "Build your review profile to 50+ Google reviews with detailed, service-specific feedback.",
-        "Add schema markup to your website so AI can accurately extract your business information.",
-        "Create clear, factual content on your website that AI can easily quote and cite.",
+        "AI platforms do not recognize your business -- potential customers using ChatGPT, Perplexity, or Google AI will not find you.",
+        "Add structured data (schema markup) to your website so AI can extract your business information accurately.",
+        "Create clear, factual content on your website with FAQ sections that AI can easily quote and cite.",
+        "Build your presence on review platforms and business directories that AI platforms reference.",
+        "Ensure your website has About and Contact pages with complete business details.",
       ];
-    } else if (foundCount < queries.length) {
+    } else if (score <= 60) {
       level = "needs-work";
       recommendations = [
-        "Your business appears in some AI results but not consistently -- you are losing potential customers on queries where you do not show up.",
-        "Improve review volume and recency across Google, Yelp, and industry-specific platforms.",
-        "Add FAQ sections with detailed answers to common customer questions.",
-        "Ensure your NAP (name, address, phone) is identical across all online directories.",
-        "Publish fresh content monthly to signal to AI that your business is active and current.",
+        "AI recognizes your brand but does not recommend you for non-branded searches -- you are missing potential customers.",
+        "Create dedicated landing pages for each service you offer, optimized with the questions your customers ask.",
+        "Add comparison content showing how you stack up against competitors -- AI platforms heavily cite these.",
+        "Publish educational content targeting the specific queries where your competitors are being cited.",
+        "Build authority through reviews, third-party mentions, and industry directory listings.",
       ];
     } else {
       level = "good";
       recommendations = [
-        "Your business is appearing across AI search results -- great foundation.",
+        "Your business has strong AI visibility -- you are being found across multiple query types.",
         "Monitor your AI visibility monthly to maintain your competitive position.",
         "Expand to more long-tail queries specific to your services and specialties.",
         "Build authority through local press mentions and industry directory listings.",
@@ -209,7 +266,9 @@ export async function POST(req: NextRequest) {
             <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Industry</td><td style="padding:8px;border-bottom:1px solid #eee;">${industry}</td></tr>
             <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Email</td><td style="padding:8px;border-bottom:1px solid #eee;"><a href="mailto:${email}">${email}</a></td></tr>
             <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Score</td><td style="padding:8px;border-bottom:1px solid #eee;"><strong>${score}/100 (${level})</strong></td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Found In</td><td style="padding:8px;border-bottom:1px solid #eee;">${foundCount} of ${queries.length} AI queries</td></tr>
+            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Brand Recognition</td><td style="padding:8px;border-bottom:1px solid #eee;">${brandFound ? "Yes" : "No"}</td></tr>
+            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Commercial Discovery</td><td style="padding:8px;border-bottom:1px solid #eee;">${commercialFound ? "Yes" : "No"}</td></tr>
+            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">AI Recommendation</td><td style="padding:8px;border-bottom:1px solid #eee;">${recommendationFound ? "Yes" : "No"}</td></tr>
           </table>
         `,
       });

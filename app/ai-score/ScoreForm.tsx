@@ -195,7 +195,7 @@ export default function ScoreForm() {
         {/* Platform Results */}
         <div className="bg-white border border-gray-200 rounded-xl p-8">
           <h4 className="text-lg font-bold text-secondary mb-4">
-            Platform-by-Platform Results
+            AI Visibility Breakdown
           </h4>
           <div className="space-y-4">
             {result.platformResults.map((pr) => (
@@ -388,7 +388,7 @@ export default function ScoreForm() {
       </div>
 
       <p className="mt-4 text-xs text-text-muted text-center">
-        Takes about 15 seconds. We check 3 AI platforms in real time.
+        Takes about 15 seconds. We test brand recognition, commercial discovery, and AI recommendations in real time.
       </p>
     </form>
   );
