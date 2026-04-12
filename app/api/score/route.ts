@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
   const queries = [
     `What is the best ${industryLabel} in ${city}? Recommend specific businesses by name.`,
     `Can you recommend a top-rated ${industryLabel} near ${city}? List specific business names.`,
-    `Who are the most recommended ${industryLabel} providers in ${city}? Name specific businesses.`,
+    `Who are the most recommended ${industryLabel} in ${city}? Name specific businesses.`,
   ];
 
   try {
@@ -145,7 +145,7 @@ export async function POST(req: NextRequest) {
         platformResults[i].found = found;
         platformResults[i].details = found
           ? `Your business was mentioned in AI search results for this query.`
-          : `Your business was not found. AI recommended other ${industryLabel} businesses instead.`;
+          : `Your business was not found. AI recommended other businesses instead.`;
         if (found) foundCount++;
       } else {
         platformResults[i].details =
