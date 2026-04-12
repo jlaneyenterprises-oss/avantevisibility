@@ -69,7 +69,7 @@ const faqItems = [
   {
     question: "How do I know if my business is showing up in ChatGPT or Perplexity?",
     answer:
-      "The simplest way is to ask. Open ChatGPT, Perplexity, or Google Gemini and type a question a customer would ask — like 'best [your service] in [your city].' If your business doesn't appear in the response, you have a visibility problem. Our AI Visibility Audit goes much deeper, testing your presence across multiple AI platforms, analyzing why you're being included or excluded, and giving you a specific plan to fix it.",
+      "The simplest first check is to ask tools like ChatGPT, Perplexity, Claude, or Google Gemini the kind of question a customer would ask. But a true GEO audit goes further: it tests multiple prompts across platforms, reviews whether your site can be crawled and parsed correctly, and identifies the technical and content signals affecting whether your business is cited or ignored.",
   },
   {
     question: "Will fixing these things really bring in more customers?",
@@ -80,6 +80,16 @@ const faqItems = [
     question: "Do I need all three audits?",
     answer:
       "It depends on your situation. If you're not sure where to start, the AI Visibility Audit is the best first step — it gives you a complete picture of how AI platforms see your business. If you already know your reviews need work or your Google Business Profile is outdated, you can start with those individual audits. For the most comprehensive view and the biggest savings, our Full Digital Visibility bundle includes all three audits at a significant discount.",
+  },
+  {
+    question: "How accurate is the GEO audit?",
+    answer:
+      "Our GEO audits are designed to be evidence-based, point-in-time evaluations — not black-box guesses or secret ranking formulas. We combine live AI query testing, technical crawl analysis, structured data review, and documented platform guidance to identify what is helping or hurting your visibility. Because AI platforms change over time, the audit should be understood as a defensible snapshot built from observable evidence and repeatable methods.",
+  },
+  {
+    question: "Can another SEO team verify the findings?",
+    answer:
+      "Yes. Our reports are built so another experienced SEO or technical team can independently verify the main findings using public tools and live tests. Depending on the issue, that may include PageSpeed Insights, schema validation tools, robots.txt and sitemap checks, and manually re-running a subset of the AI prompts we used in the audit.",
   },
 ];
 
@@ -148,14 +158,14 @@ export default function HomePage() {
       {/* Hero */}
       <Hero
         headline="Your Business Is Invisible to AI. We Fix That."
-        subheadline="When a customer asks ChatGPT &quot;best dentist near me&quot; or searches Google AI for &quot;top-rated restaurant in Henderson,&quot; is your business in the answer? If not, you're losing customers to competitors who are. Avante Visibility finds the gaps and closes them."
+        subheadline="When customers ask ChatGPT, Perplexity, Google AI, or Claude for recommendations, does your business show up — and if not, why not? Avante Visibility delivers evidence-based GEO audits built from live AI query testing, observable site data, and clear technical analysis so you know exactly what's holding you back."
         primaryCTA={{ text: "Get Your Free AI Visibility Score", href: BOOKING_URL }}
         secondaryCTA={{ text: "Book a Free Strategy Call", href: BOOKING_URL }}
         trustBadges={[
-          "20+ Years Digital Marketing Experience",
-          "AI-Powered Diagnostics",
-          "Results in Days, Not Months",
-          "+940% Client Schema Score Improvement",
+          "Point-in-time, independently verifiable findings",
+          "Live AI query testing across major platforms",
+          "Structured technical, schema, and entity analysis",
+          "Prioritized roadmap tied to observable evidence",
         ]}
         showBanner
       />
@@ -168,12 +178,12 @@ export default function HomePage() {
               AI Search Changed the Game. Most Businesses Missed the Memo.
             </h2>
             <p className="mt-6 text-text-muted leading-relaxed">
-              An AI visibility audit reveals whether your business shows up when
-              customers ask ChatGPT, Google AI Overviews, or Perplexity for
-              recommendations. These AI platforms are fundamentally changing how
-              consumers find and choose local businesses. Without a GEO audit or
-              AEO audit to identify your gaps, you&apos;re invisible to a growing
-              share of your market.
+              An AI visibility audit shows whether your business appears when
+              customers ask tools like ChatGPT, Google AI Overviews, Perplexity,
+              or Claude for recommendations. Our audits go beyond surface-level
+              screenshots: we test live prompts, review how your site is crawled
+              and structured, and identify the evidence-based gaps affecting
+              whether AI systems can find, understand, and cite your business.
             </p>
           </div>
 
@@ -206,6 +216,12 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          <p className="text-text-muted text-center text-sm max-w-2xl mx-auto mb-4 leading-relaxed">
+            AI visibility changes over time as platforms, models, and interfaces
+            evolve. Our audits are designed as defensible, point-in-time
+            evaluations using repeatable testing methods.
+          </p>
 
           <p className="text-text-muted text-center max-w-2xl mx-auto mb-12 leading-relaxed">
             If your business isn&apos;t optimized for how AI reads, evaluates, and
@@ -286,8 +302,9 @@ export default function HomePage() {
           </h2>
           <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto leading-relaxed">
             Every Avante Visibility audit delivers a clear written report with
-            specific, prioritized fixes. No jargon. No 60-page PDF you&apos;ll
-            never read. Just exactly what&apos;s wrong and what to do about it.
+            prioritized fixes, supporting evidence, and practical next steps. We
+            keep the language plain, but the analysis is rigorous — so business
+            owners can act on it and technical teams can verify it.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
             <div className="animate-fade-in-up">
@@ -352,7 +369,9 @@ export default function HomePage() {
                 title: "GEO Audit",
                 price: "$2,500",
                 description:
-                  "28+ live AI query tests, 12-point scoring, competitive benchmarking, and a 90-day roadmap.",
+                  "28+ live AI query tests, structured technical and schema analysis, competitor benchmarking, evidence-backed scoring, and a prioritized 90-day roadmap.",
+                support:
+                  "Built as a premium, defensible snapshot — not a black-box score or vague AI promise.",
                 href: "/geo-audit",
               },
               {
@@ -413,6 +432,11 @@ export default function HomePage() {
                 <p className="mt-2 text-sm text-text-muted leading-relaxed">
                   {item.description}
                 </p>
+                {"support" in item && item.support && (
+                  <p className="mt-1.5 text-xs text-primary/70 font-medium italic leading-relaxed">
+                    {item.support}
+                  </p>
+                )}
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary">
                   Learn More{" "}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -438,9 +462,11 @@ export default function HomePage() {
                 Don&apos;t Just Audit. Grow Every Month.
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                Our monthly plans track your AI citations, implement fixes, and
-                grow your visibility with data proving it&apos;s working. Starting
-                at $1,500/mo.
+                Our monthly plans track AI visibility trends, implement
+                prioritized fixes, and monitor whether the evidence is moving in
+                the right direction over time. Because AI platforms change
+                constantly, ongoing measurement matters as much as the initial
+                audit. Starting at $1,500/mo.
               </p>
             </div>
             <div className="shrink-0">
@@ -473,14 +499,14 @@ export default function HomePage() {
               {
                 step: "02",
                 title: "We Do the Deep Dive",
-                desc: "Using a combination of AI-powered tools and expert human analysis, we examine your digital presence across all relevant platforms. Most audits are delivered within 3\u20135 business days.",
+                desc: "We run live AI visibility tests, review technical crawlability, analyze structured data and entity signals, and compare your presence against competitors. Then we separate what is verified, what is inferred, and what needs confirmation before we finalize the report.",
                 img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80",
                 alt: "Digital marketing optimization workflow on screen",
               },
               {
                 step: "03",
                 title: "You Get a Roadmap, Not a Report",
-                desc: "Your audit arrives as a clear, prioritized action plan. Every finding is explained in plain language. Every recommendation is ranked by impact.",
+                desc: "Your audit arrives as a prioritized roadmap supported by observable evidence. Every finding is explained in plain language, and every major recommendation is tied to a specific issue affecting your AI visibility.",
                 img: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&q=80",
                 alt: "Business growth chart trending upward",
               },
@@ -538,11 +564,11 @@ export default function HomePage() {
                 </h2>
                 <p className="text-text-muted leading-relaxed">
                   Order any audit and we&apos;ll deliver your initial technical
-                  findings — schema gaps, crawler access issues, critical
-                  blockers — to your inbox within 48 hours. Your full,
-                  prioritized audit report arrives within 3&ndash;5 business
-                  days. If we miss the 48-hour window on initial findings,
-                  your audit is free. No excuses, no fine print.
+                  findings — including critical schema gaps, crawler access
+                  issues, and major blockers — within 48 hours. Your full audit
+                  follows in 3&ndash;5 business days with evidence,
+                  prioritization, and recommended next steps. If we miss the
+                  48-hour deadline for initial findings, your audit is free.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-4 justify-center md:justify-start text-sm">
                   <div className="flex items-center gap-1.5 text-secondary">
@@ -700,8 +726,9 @@ export default function HomePage() {
               +940% Schema Integrity in 24 Hours
             </h2>
             <p className="mt-4 text-text-muted max-w-2xl mx-auto leading-relaxed">
-              See how we transformed SellerMockups.com from invisible to AI
-              platforms to fully discoverable — with measurable results.
+              See how we improved SellerMockups.com&apos;s structured data
+              coverage and AI discoverability signals in 24 hours — with
+              measurable, documented changes.
             </p>
           </div>
 
@@ -755,9 +782,9 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 "Schema markup across all 159 pages (6 types)",
-                "llms.txt + llms-full.txt for AI discovery",
+                "llms.txt + llms-full.txt as low-cost experimental AI discoverability files, alongside higher-priority schema and entity improvements",
                 "ai-plugin.json for ChatGPT recognition",
-                "AI crawler access for 12+ bot types",
+                "Robots and crawler access review for major search and AI user agents",
                 "970 FAQ headings with structured markup",
                 "Contact page for E-E-A-T trust signals",
               ].map((item) => (
@@ -780,6 +807,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* How We Validate Section */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-8">
+              How We Validate Every GEO Audit
+            </h2>
+            <p className="text-text-muted leading-relaxed mb-6">
+              Every GEO audit is built from a repeatable review process:
+            </p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Live AI query testing across major platforms",
+                "Technical crawlability and indexation checks",
+                "Schema and entity signal analysis",
+                "Competitor comparison across citation patterns and content structure",
+                "Evidence-backed prioritization with clear next steps",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-text-muted leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-text-muted leading-relaxed">
+              We do not present GEO scores as secret platform formulas. We use
+              them as a structured, defensible way to prioritize the fixes most
+              likely to improve AI visibility.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="bg-bg-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -795,7 +855,7 @@ export default function HomePage() {
       {/* Final CTA */}
       <CTASection
         headline="Ready to Stop Being Invisible?"
-        description="Every day your business doesn't appear in AI search results is a day your competitors get the recommendation instead. Let's find out exactly what's holding you back — and fix it."
+        description="If your business is missing from AI-driven recommendations, there is usually a reason — and usually a fix. We'll show you what the evidence says, what matters most, and what to do next."
         buttonText="Get Your Free AI Visibility Score"
         secondaryButtonText="Book a Free Strategy Call"
         showContact
