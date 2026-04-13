@@ -2504,6 +2504,357 @@ You need a professional GEO audit when:
 [Check your free AI visibility score](/ai-score) or [learn more about the full GEO audit](/geo-audit).
 `,
   },
+  {
+    slug: "ai-visibility-for-dentists",
+    title: "AI Visibility for Dentists: Why Patients Can't Find You in ChatGPT (and How to Fix It)",
+    metaTitle: "AI Visibility for Dentists | Get Found in ChatGPT & AI Search",
+    description:
+      "Patients are asking AI assistants for dentist recommendations instead of searching Google. If your practice isn't showing up, you're losing new patients to competitors who are. Here's what to do.",
+    metaDescription:
+      "Patients are asking ChatGPT, Perplexity, and Google AI for dentist recommendations. Learn why most dental practices are invisible to AI search and how a GEO audit fixes it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Patients asking 'best dentist near me' in ChatGPT get one or two specific recommendations -- not a list of ten options",
+      "AI platforms decide which dentists to recommend based on structured data, review content, and entity signals -- not just Google rankings",
+      "Most dental practice websites lack the technical signals AI systems need to understand and recommend them",
+      "A GEO audit tests your real presence across ChatGPT, Perplexity, Google AI, and Gemini and gives you a specific plan to get cited",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "Our free AI Score tool tests whether ChatGPT, Perplexity, and Google AI know your dental practice exists. Takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are patients really using AI to find dentists?",
+        answer:
+          "Yes. 44% of consumers now use AI chat as their primary search method. For dental-specific queries like 'best dentist for veneers in [city]' or 'pediatric dentist recommendations near me,' AI tools provide direct recommendations with reasons. If your practice isn't in the answer, the patient books with whoever is.",
+      },
+      {
+        question: "My dental practice ranks well on Google. Do I still need AI visibility?",
+        answer:
+          "Google rankings and AI recommendations use completely different systems. Google ranks pages by links and keywords. AI platforms recommend businesses based on entity recognition, structured data, review sentiment, and content authority. Many top-ranking dental practices are completely absent from AI responses. The only way to know is to test it.",
+      },
+      {
+        question: "What does a GEO audit test for a dental practice?",
+        answer:
+          "A GEO audit tests 28+ real patient queries across ChatGPT, Perplexity, Google AI, and Gemini -- queries like 'best cosmetic dentist in [your city],' 'emergency dental care near me,' and 'who does Invisalign in [area].' It checks whether your practice shows up, which competitors are being recommended instead, and identifies the specific gaps causing you to be invisible. You get a prioritized 90-day roadmap ranked by impact.",
+      },
+    ],
+    content: `## Patients Are Asking AI for Dentist Recommendations
+
+When someone chips a tooth or decides it's finally time for that whitening consultation, their first instinct is shifting. Instead of typing "dentist near me" into Google, a growing number of patients are asking ChatGPT, Perplexity, or Google AI Overviews: "Who's the best dentist in [city] for cosmetic work?"
+
+The difference is critical. Google shows ten results. AI recommends one or two -- by name, with reasons.
+
+If your practice isn't the one being recommended, that patient books with whoever is. And you'll never know they were looking.
+
+## Why Most Dental Practices Are Invisible to AI
+
+AI systems don't rank websites like Google. They recommend businesses based on:
+
+- **Entity recognition** -- Does the AI know your practice exists as a distinct business entity?
+- **Structured data** -- Does your website tell AI what services you offer, where you're located, which insurance you accept, and what your credentials are?
+- **Review content** -- AI reads the language in your reviews, not just the star rating. Reviews that mention specific procedures, staff names, and experiences carry more weight.
+- **Content authority** -- Do you have content that demonstrates expertise in your specialty areas?
+
+Most dental websites have a homepage, an "about us" page, and a generic services list. That worked for Google in 2018. It doesn't work for AI in 2026.
+
+## The Queries That Matter for Dental Practices
+
+These are real queries patients are asking AI right now:
+
+- "Best dentist in [your city]"
+- "Who does the best veneers near [your area]?"
+- "Pediatric dentist recommendations in [city]"
+- "Emergency dentist open now near me"
+- "Invisalign provider with good reviews in [city]"
+- "Dentist that accepts [insurance] in [area]"
+
+{{AUDIT_BUTTON}}
+
+For each query, AI is naming specific practices. The question is whether yours is one of them.
+
+## The Insurance and Specialty Advantage
+
+Dental practices have a unique AI visibility opportunity. Patients frequently search by specialty and insurance -- "dentist that takes Delta Dental in Henderson" or "best endodontist in [city]." These are high-intent queries where AI recommendations carry enormous weight.
+
+If your structured data includes accepted insurance plans, specialties, and procedure types, AI systems can match you to these specific queries. Most competitors don't have this data structured properly, which means there's a clear first-mover advantage.
+
+## What You Can Do Right Now
+
+Start by finding out where you stand. Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your practice in about 15 seconds.
+
+For the full picture, our [GEO audit](/geo-audit) tests 28+ real patient queries across every major AI platform, benchmarks you against competing practices, and delivers a prioritized 90-day roadmap.
+
+The dental practices that optimize for AI search now will own their market. The ones that wait will keep wondering why new patient calls are slowing down.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min) to see where your practice stands.
+`,
+  },
+  {
+    slug: "ai-visibility-for-real-estate-agents",
+    title: "AI Visibility for Real Estate Agents: Why Buyers Can't Find You in ChatGPT",
+    metaTitle: "AI Visibility for Real Estate | Get Found in ChatGPT & AI Search",
+    description:
+      "Home buyers and sellers are asking AI assistants for real estate agent recommendations. If you're not showing up, you're losing listings and buyers to agents who are.",
+    metaDescription:
+      "Home buyers and sellers are asking ChatGPT, Perplexity, and Google AI for real estate agent recommendations. Learn why most agents are invisible to AI search and how to fix it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Buyers asking AI 'best real estate agent in [city]' get one or two named recommendations, not a list of Zillow links",
+      "AI platforms recommend agents based on entity authority, review content, and structured online presence -- not MLS rankings",
+      "Most real estate agent websites are template-based and lack the signals AI systems need to identify and recommend them",
+      "A GEO audit reveals exactly which agents are being recommended for your market and what they're doing that you're not",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "Our free AI Score tool tests whether ChatGPT, Perplexity, and Google AI recognize your real estate business. Takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are home buyers actually using AI to find real estate agents?",
+        answer:
+          "Yes. Consumers increasingly ask AI tools questions like 'best real estate agent for first-time buyers in [city]' or 'who should I list my home with in [area].' AI gives a direct recommendation with reasoning -- not a list of Zillow profiles. If your name isn't in the answer, the lead goes to whoever's name is.",
+      },
+      {
+        question: "I have a strong Zillow profile. Why do I need AI visibility?",
+        answer:
+          "Zillow profiles and AI visibility are completely separate systems. Zillow ranks agents by ad spend and lead generation within their own platform. AI platforms like ChatGPT recommend agents based on entity recognition, structured data, review content, and overall online authority. An agent with a great Zillow profile can be completely invisible to AI assistants.",
+      },
+      {
+        question: "What does a GEO audit cover for a real estate agent?",
+        answer:
+          "A GEO audit tests 28+ real queries across ChatGPT, Perplexity, Google AI, and Gemini -- things like 'best realtor in [your city],' 'top listing agent in [neighborhood],' and 'who should I hire to sell my house in [area].' It identifies which agents are being recommended instead of you, analyzes why, and provides a prioritized roadmap to improve your AI visibility.",
+      },
+    ],
+    content: `## The Way Clients Find Agents Is Changing
+
+When someone decides to buy or sell a home, their first step used to be asking a friend for a referral or searching Zillow. Now, a growing number of people are asking AI: "Who's the best real estate agent in [city] for selling a luxury home?" or "Recommend a realtor for first-time buyers in [area]."
+
+AI doesn't give ten options. It names one or two agents and explains why. If you're not the agent being named, that client never reaches out. They call whoever the AI recommended.
+
+## Why Most Agents Are Invisible to AI
+
+Real estate agents face a unique AI visibility challenge: most agent websites are templates from their brokerage. They look the same, read the same, and give AI systems nothing distinctive to work with.
+
+AI recommends agents based on:
+
+- **Entity recognition** -- Does AI know you as a distinct, authoritative agent in your market?
+- **Review signals** -- What do your Google, Zillow, and Realtor.com reviews actually say about your specialties and service?
+- **Content authority** -- Do you have market-specific content that demonstrates genuine local expertise?
+- **Structured data** -- Does your website clearly tell AI systems your service areas, specialties, and credentials?
+
+A template brokerage page with your headshot and a Zillow link gives AI almost nothing to work with.
+
+## The Queries That Drive Real Estate Leads
+
+These are real queries consumers are asking AI right now:
+
+- "Best real estate agent in [your city]"
+- "Top listing agent in [neighborhood]"
+- "Recommend a realtor for first-time home buyers in [area]"
+- "Who should I hire to sell my house in [city]?"
+- "Best luxury real estate agent in [market]"
+- "Bilingual real estate agent in [city]"
+
+{{AUDIT_BUTTON}}
+
+Each of these queries generates a specific AI recommendation. The agents who get named are the ones who have built the right signals. Everyone else is invisible.
+
+## The Local Market Knowledge Advantage
+
+Real estate is inherently local, and this is your biggest AI visibility opportunity. AI platforms value agents who demonstrate deep neighborhood-level knowledge. Blog posts about market trends, neighborhood guides, school district comparisons, and local development news all build the kind of content authority that makes AI systems confident enough to recommend you by name.
+
+The agents being recommended in AI search right now aren't necessarily the highest-producing agents. They're the ones whose online presence gives AI systems enough evidence to confidently say "this is the person you should talk to."
+
+## What You Can Do Right Now
+
+Find out where you stand. Our [free AI visibility score tool](/ai-score) checks whether AI platforms recognize your real estate business in about 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real buyer and seller queries across every major AI platform, shows you exactly which agents are being recommended in your market, and delivers a prioritized roadmap to get you cited.
+
+In a referral-driven business, AI recommendations are becoming the new referral. The agents who show up first will build their pipeline. The ones who don't will wonder where the leads went.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-chiropractors",
+    title: "AI Visibility for Chiropractors: Why Patients Aren't Finding You in AI Search",
+    metaTitle: "AI Visibility for Chiropractors | Get Found in ChatGPT & AI Search",
+    description:
+      "Patients are asking AI tools for chiropractor recommendations. If your practice isn't showing up in ChatGPT or Google AI, you're losing new patients to competitors who are.",
+    metaDescription:
+      "Patients are asking ChatGPT, Perplexity, and Google AI for chiropractor recommendations. Learn why most chiropractic practices are invisible to AI and how to fix it with a GEO audit.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Patients asking AI 'best chiropractor near me' get direct recommendations -- not a list of Google results",
+      "AI platforms weigh review content, structured data, and entity signals more than traditional SEO rankings",
+      "Chiropractors who specialize (sports, prenatal, pediatric) have a unique advantage because AI matches specialists to specific queries",
+      "A GEO audit tests your real presence across AI platforms and shows exactly how to get recommended",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your chiropractic practice exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are people really using AI to find chiropractors?",
+        answer:
+          "Yes. Patients increasingly ask AI assistants specific questions like 'best chiropractor for sciatica in [city]' or 'sports chiropractor near me with good reviews.' AI gives a direct answer with one or two named practices. If yours isn't named, those patients never find you.",
+      },
+      {
+        question: "What makes AI recommend one chiropractor over another?",
+        answer:
+          "AI platforms evaluate entity recognition (does it know you exist), structured data (can it parse your services, location, and specialties), review signals (what patients say in reviews, not just star ratings), and content authority (do you publish content demonstrating expertise in your specialty areas). Most chiropractor websites lack most or all of these signals.",
+      },
+    ],
+    content: `## Patients Are Asking AI for Chiropractor Recommendations
+
+When someone's back goes out or they need help with chronic pain, they're increasingly turning to AI. "Best chiropractor for lower back pain in [city]" or "sports chiropractor near me" -- these queries are happening in ChatGPT, Perplexity, and Google AI Overviews every day.
+
+AI doesn't return a list of ten options. It names one or two practices and explains why. If your practice isn't named, that patient books with whoever is.
+
+## Why Most Chiropractic Practices Are Invisible
+
+AI doesn't rank websites like Google. It recommends businesses based on:
+
+- **Entity recognition** -- Does the AI know your practice exists?
+- **Structured data** -- Can AI systems understand your specialties, techniques, location, and credentials?
+- **Review content** -- AI reads what patients say, not just star ratings. Reviews mentioning specific conditions and outcomes carry weight.
+- **Specialty signals** -- Chiropractors who clearly communicate their specialties (sports, prenatal, pediatric, auto injury) get matched to specialty-specific queries.
+
+Most chiropractic websites are generic. "We treat the whole family" with a stock photo and a phone number. That gives AI nothing to work with.
+
+## Your Specialty Is Your AI Advantage
+
+Here's what makes chiropractic unique for AI visibility: patients search by condition and specialty. "Chiropractor for sciatica," "prenatal chiropractic care," "sports chiropractor for runners" -- these are high-intent, specialty-specific queries.
+
+If your website, structured data, and reviews clearly signal your specialty, AI can match you to these exact queries. Most of your competitors haven't done this, which means there's a clear first-mover advantage.
+
+## Queries Patients Are Asking AI Right Now
+
+- "Best chiropractor in [your city]"
+- "Chiropractor for sciatica near me"
+- "Prenatal chiropractor recommendations in [area]"
+- "Sports chiropractor for runners in [city]"
+- "Who treats auto accident injuries in [city]?"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Start with our [free AI visibility score tool](/ai-score) to see if AI platforms recognize your practice. Takes 15 seconds.
+
+For the full picture, our [GEO audit](/geo-audit) tests 28+ real patient queries across every major AI platform, benchmarks you against competing practices, and gives you a prioritized 90-day roadmap.
+
+The chiropractic practices that build AI visibility now will own their specialties in their markets. The rest will keep relying on referrals and hope.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-salons-barbershops",
+    title: "AI Visibility for Salons & Barbershops: Why Clients Can't Find You in AI Search",
+    metaTitle: "AI Visibility for Salons & Barbershops | Get Found in ChatGPT & AI Search",
+    description:
+      "Clients are asking ChatGPT and Google AI for salon and barbershop recommendations. If your shop isn't showing up, you're losing walk-ins and bookings to competitors who are.",
+    metaDescription:
+      "Clients are asking ChatGPT, Perplexity, and Google AI for salon and barbershop recommendations. Learn why most shops are invisible to AI search and how to fix it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Clients asking AI 'best barbershop near me' or 'salon for balayage in [city]' get one or two named recommendations",
+      "AI platforms recommend salons based on review content, specialty signals, and structured data -- not Yelp rankings alone",
+      "Salons with clearly defined specialties (color, curly hair, bridal) have a major AI visibility advantage over generalist shops",
+      "A GEO audit shows exactly which salons AI is recommending in your market and what you need to change to be one of them",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your salon or barbershop exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are people really using AI to find salons and barbershops?",
+        answer:
+          "Yes. Clients increasingly ask AI tools for specific recommendations: 'best salon for balayage in [city],' 'barbershop that does fades near me,' or 'curly hair specialist in [area].' AI gives a direct recommendation -- not a list. If your shop isn't named, those clients book elsewhere.",
+      },
+      {
+        question: "My salon has great Yelp reviews. Isn't that enough?",
+        answer:
+          "Great Yelp reviews help, but AI platforms look at more than review scores. They evaluate whether your business exists as a recognizable entity, whether your website has structured data about your services, and what specific language is in your reviews. A salon with 500 Yelp reviews that all say 'great haircut' signals less to AI than 100 reviews that mention specific services, stylist names, and outcomes.",
+      },
+    ],
+    content: `## How Clients Find Salons and Barbershops Is Changing
+
+"Best barbershop for fades in [city]." "Hair salon that specializes in color correction near me." "Where should I get my hair done for my wedding in [area]?"
+
+These queries are happening in ChatGPT, Perplexity, and Google AI Overviews. And unlike Google, which shows a list of options, AI recommends one or two shops by name -- with a reason why.
+
+If your salon or barbershop isn't the one being named, those clients book with whoever is.
+
+## Why Most Salons Are Invisible to AI
+
+AI systems don't rank businesses the way Google or Yelp do. They recommend based on:
+
+- **Entity recognition** -- Does AI know your shop exists as a distinct business?
+- **Service-specific signals** -- Can AI tell what you specialize in? Color? Curly hair? Fades? Bridal?
+- **Review language** -- AI reads what clients say in reviews. "Great haircut" is less useful than "best balayage I've ever had, ask for Maria."
+- **Structured data** -- Does your website tell AI systems exactly what services you offer, your hours, your location, and your booking options?
+
+Most salon websites are a single page with some photos and a "Book Now" button. That's not enough for AI to recommend you over the salon down the street that has structured data, service-specific content, and detailed reviews.
+
+## Specialty Is Your Biggest Advantage
+
+The salon and barbershop industry has a unique AI opportunity: clients search by specialty. "Curly hair stylist," "balayage specialist," "barber who does skin fades" -- these are the queries AI is answering right now.
+
+If your reviews mention your specialties, your website has structured service data, and your content demonstrates expertise in specific techniques, AI can match you to exactly the right clients. Your competitors who position themselves as "full-service salons" give AI nothing distinctive to recommend.
+
+## Queries Clients Are Asking AI Right Now
+
+- "Best salon in [your city]"
+- "Barbershop for fades near me"
+- "Hair colorist specializing in balayage in [area]"
+- "Curly hair specialist salon in [city]"
+- "Where to get a Brazilian blowout in [city]"
+- "Bridal hair and makeup in [area]"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your salon or barbershop. Takes 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real client queries, shows which shops are being recommended in your market, and gives you a prioritized roadmap.
+
+The salons and barbershops that build AI visibility now will own their specialty in their market. Everyone else will keep hoping Instagram posts are enough.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
