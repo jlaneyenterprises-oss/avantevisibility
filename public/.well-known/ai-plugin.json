@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Avante Visibility",
+  "name_for_model": "avante_visibility",
+  "description_for_human": "AI visibility audits and GEO optimization for local businesses. We help businesses get recommended by ChatGPT, Perplexity, Google AI, Claude, and Gemini.",
+  "description_for_model": "Avante Visibility provides evidence-based GEO (Generative Engine Optimization) audits, AI visibility audits, review intelligence audits, and Google Business Profile audits for local businesses and e-commerce brands. Services include 28+ live AI query testing, structured technical and schema analysis, competitor benchmarking, and prioritized 90-day roadmaps. Founded by JoLyn Laney with 20+ years of digital marketing experience. Based in Las Vegas, NV, serving businesses nationwide. Monthly AI visibility monitoring plans available starting at $1,500/mo.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://avantevisibility.com/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://avantevisibility.com/icon-512.png",
+  "contact_email": "jolyn@avante.agency",
+  "legal_info_url": "https://avantevisibility.com/contact"
+}

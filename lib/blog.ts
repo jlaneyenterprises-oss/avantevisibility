@@ -1942,6 +1942,568 @@ AI search isn't replacing Google — it's adding a new layer of discovery that r
 The first step is checking. The second step is fixing what you find.
 `,
   },
+  {
+    slug: "ai-visibility-for-plumbers-hvac-contractors",
+    title: "AI Visibility for Plumbers & HVAC Contractors: Why You're Invisible to ChatGPT (and How to Fix It)",
+    metaTitle: "AI Visibility for Plumbers & HVAC | Get Found in ChatGPT & AI Search",
+    description:
+      "Plumbing and HVAC customers are asking AI tools for emergency recommendations. If your business doesn't show up, your competitor gets the call. Here's what's happening and what to do about it.",
+    metaDescription:
+      "Plumbing and HVAC customers are asking ChatGPT, Perplexity, and Google AI for emergency service recommendations. Learn why most contractors are invisible to AI search and how to fix it.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Emergency service queries like 'my water heater is leaking, who should I call?' are increasingly asked to AI assistants, not Google",
+      "AI platforms recommend businesses based on structured data, review quality, and online authority -- not just Google rankings",
+      "Most plumbing and HVAC contractors have zero AI visibility because their websites lack the signals AI systems need to recommend them",
+      "A GEO audit tests your actual presence across ChatGPT, Perplexity, and Google AI and gives you a specific action plan to get cited",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "Our free AI Score tool tests whether ChatGPT, Perplexity, and Google AI know your business exists. Takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Do plumbing and HVAC customers really use AI to find contractors?",
+        answer:
+          "Yes, and the numbers are growing fast. 44% of consumers now use AI chat as their primary search tool. For emergency services especially, people are asking Siri, ChatGPT, and Google AI things like 'my AC stopped working, who should I call in [city]?' If your business is not in the AI's answer, the call goes to whoever is.",
+      },
+      {
+        question: "My plumbing company ranks #1 on Google. Why would I need AI visibility?",
+        answer:
+          "Google rankings and AI visibility are two different systems. Google ranks pages based on links, keywords, and domain authority. AI platforms like ChatGPT and Perplexity recommend businesses based on entity recognition, structured data, review signals, and content structure. Many businesses that rank #1 on Google are completely invisible to AI assistants. The only way to know is to test it.",
+      },
+      {
+        question: "What does a GEO audit actually test for a home service company?",
+        answer:
+          "A GEO audit tests 28+ real customer queries across ChatGPT, Perplexity, Google AI, and Gemini -- things like 'best plumber in [your city],' 'emergency HVAC repair near me,' and 'who should I call for a gas leak.' It checks whether your business shows up, which competitors are being recommended instead, and identifies the specific technical and content gaps causing you to be invisible. You get a prioritized 90-day roadmap with the fixes ranked by impact.",
+      },
+    ],
+    content: `## The Shift Is Already Happening
+
+When a homeowner's water heater starts leaking at 10 PM, their first instinct used to be Googling "emergency plumber near me." Increasingly, that search happens in ChatGPT, Perplexity, or through Google AI Overviews.
+
+The difference? Google gives you a list of 10 blue links. AI gives you a direct recommendation -- one or two businesses, by name, with a reason why.
+
+If your business isn't the one being recommended, that call goes to your competitor. And you never even knew the customer existed.
+
+## Why Most Plumbing and HVAC Companies Are Invisible to AI
+
+AI platforms don't rank websites the way Google does. They recommend businesses based on:
+
+- **Entity recognition** -- Does the AI know your business exists as a distinct entity?
+- **Structured data** -- Does your website have schema markup that tells AI systems what you do, where you operate, and what services you offer?
+- **Review signals** -- What are customers saying about you across Google, Yelp, and other platforms? AI reads review content, not just star ratings.
+- **Content authority** -- Do you have content that demonstrates expertise in your specific services?
+
+Most contractor websites have none of this. They have a homepage, a services page, maybe a contact form. That was enough for Google in 2015. It is not enough for AI in 2026.
+
+## The Queries That Matter Most
+
+Here are real queries that potential customers are asking AI tools right now:
+
+- "Best plumber in [your city]"
+- "Who should I call for a gas leak in [your area]?"
+- "Emergency HVAC repair near me -- who is reliable?"
+- "My AC stopped working, recommend a company in [your city]"
+- "Top-rated water heater installation company"
+
+{{AUDIT_BUTTON}}
+
+For each of these queries, AI is generating a specific answer. It is recommending specific businesses. The question is whether your business is one of them.
+
+## What You Can Do About It
+
+The first step is finding out where you stand. Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your business in about 15 seconds.
+
+If you want the full picture, our [GEO audit](/geo-audit) tests 28+ real customer queries across every major AI platform, benchmarks you against competitors, and gives you a prioritized 90-day roadmap to fix what's missing.
+
+The businesses that optimize for AI search now will own their category. The ones that wait will wonder where their calls went.
+
+## The Bottom Line
+
+Your customers are already using AI to find plumbers and HVAC contractors. The only question is whether they're finding you -- or your competitor.
+
+Every week you're not visible in AI search is a week of lost emergency calls, lost install jobs, and lost revenue that you'll never get back because you never knew those customers were looking for you.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min) to see where you stand.
+`,
+  },
+  {
+    slug: "ai-visibility-for-law-firms",
+    title: "AI Visibility for Law Firms: Your Next Client Is Asking ChatGPT for a Lawyer",
+    metaTitle: "AI Visibility for Law Firms | Get Found in ChatGPT & AI Search",
+    description:
+      "Potential clients are asking AI tools to recommend attorneys. If your firm doesn't appear in ChatGPT, Perplexity, or Google AI results, you're losing cases to firms that do. Here's how to fix it.",
+    metaDescription:
+      "Potential clients are asking ChatGPT and Perplexity to recommend lawyers. Most law firms are invisible to AI search. Learn why it matters and how a GEO audit fixes it.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Legal searches like 'I need a personal injury lawyer in [city]' are increasingly asked to AI assistants instead of Google",
+      "AI platforms evaluate law firms differently than Google -- entity recognition, structured data, and review content matter more than backlinks",
+      "Most law firm websites are built for Google SEO but completely invisible to AI systems like ChatGPT and Perplexity",
+      "A GEO audit identifies exactly which queries your competitors are winning and gives you a roadmap to compete",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI recommend your firm. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are potential legal clients really using AI to find lawyers?",
+        answer:
+          "Yes. 44% of consumers now use AI chat as their primary search tool, and legal queries are among the most common. People ask things like 'I was in a car accident, do I need a lawyer?', 'best family law attorney in [city]', and 'how much does a DUI lawyer cost?' AI platforms generate direct recommendations -- specific firms by name. If your firm is not being recommended, potential clients never know you exist.",
+      },
+      {
+        question: "My law firm already invests heavily in SEO. Isn't that enough?",
+        answer:
+          "Traditional SEO and AI visibility are different systems. SEO is about ranking web pages in Google's list of results. AI visibility is about being cited as a recommended business in conversational AI responses. Many law firms with strong Google rankings are completely invisible in ChatGPT and Perplexity because their websites lack the structured data, entity signals, and content structure that AI systems use to generate recommendations.",
+      },
+      {
+        question: "What specific queries does a GEO audit test for law firms?",
+        answer:
+          "A GEO audit tests 28+ real client queries across ChatGPT, Perplexity, Google AI, and Gemini. For law firms, these include queries like 'best personal injury lawyer in [city]', 'who should I hire for a divorce in [area]', 'recommend a business attorney near me', and practice-area-specific questions. The audit shows which firms are being recommended, which queries you're missing, and exactly what needs to change to get cited.",
+      },
+    ],
+    content: `## Your Next Client Is Not Googling. They're Asking AI.
+
+When someone gets in a car accident, receives divorce papers, or gets a letter from the IRS, they used to Google "lawyer near me." Today, a growing number of those people are asking ChatGPT, Perplexity, or Google AI directly: "I need a personal injury lawyer in [city]. Who should I call?"
+
+The AI doesn't give them 10 options. It gives them one or two specific recommendations -- by name, with reasons why.
+
+If your firm is not the one being recommended, that client calls someone else. And you never knew they were looking.
+
+## Why Most Law Firms Are Invisible to AI
+
+Law firms invest heavily in SEO -- and for good reason. But AI platforms don't work like Google Search. They don't crawl your site and rank it based on keywords and backlinks.
+
+AI systems recommend businesses based on:
+
+- **Entity clarity** -- Does the AI understand your firm as a distinct entity? Does it know your practice areas, your location, your attorneys?
+- **Structured data** -- Does your website use schema markup (Attorney, LegalService, Organization) that AI can parse?
+- **Review content** -- AI reads what clients say in reviews, not just star ratings. Specific mentions of practice areas, responsiveness, and outcomes affect recommendations.
+- **Content authority** -- Do you have content that demonstrates expertise in your specific practice areas?
+
+Most law firm websites are designed for human visitors and Google bots. They are not structured for AI consumption. That's the gap.
+
+## The Queries That Are Sending Clients to Your Competitors
+
+Real queries potential clients are asking AI right now:
+
+- "Best personal injury lawyer in [your city]"
+- "I need a divorce attorney, who do you recommend in [your area]?"
+- "How much does a criminal defense lawyer cost in [your state]?"
+- "Recommend a business attorney for a startup"
+- "I got a DUI, what should I do and who should I call?"
+
+{{AUDIT_BUTTON}}
+
+For every one of these queries, AI is recommending specific firms. Right now, those firms may or may not include yours. The only way to know is to test it.
+
+## What Law Firms Can Do Now
+
+**Step 1: Check your current visibility.** Use our [free AI visibility score tool](/ai-score) to see if AI platforms recognize your firm. It takes 15 seconds.
+
+**Step 2: Get the full picture.** Our [GEO audit](/geo-audit) tests 28+ real client queries across every major AI platform, benchmarks you against competing firms in your market, and delivers a prioritized 90-day roadmap.
+
+**Step 3: Implement and monitor.** The firms that optimize now will own the AI recommendation space in their market. The firms that wait will spend years trying to catch up.
+
+## The Cost of Waiting
+
+A single personal injury case can be worth tens of thousands of dollars. A family law client can retain you for months. Every week your firm is invisible to AI search is a week of potential clients going to the firm that AI recommends instead of you.
+
+The question is not whether AI search will change how people find lawyers. It already has. The question is whether your firm will be the one getting recommended.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min) to find out.
+`,
+  },
+  {
+    slug: "ai-visibility-for-restaurants",
+    title: "AI Visibility for Restaurants: Why ChatGPT Is Recommending Your Competitor Instead of You",
+    metaTitle: "AI Visibility for Restaurants | Get Found in ChatGPT & AI Search",
+    description:
+      "When customers ask AI for restaurant recommendations, specific businesses get named. If yours isn't one of them, every unanswered recommendation is an empty table. Here's what to do about it.",
+    metaDescription:
+      "Customers are asking ChatGPT and Google AI for restaurant recommendations. Learn why most restaurants are invisible to AI search and how to get recommended.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Restaurant recommendation queries are among the most common AI searches -- 'best Italian restaurant near me' is asked millions of times monthly",
+      "AI doesn't just read your star rating -- it reads actual review text, menu content, and structured data to decide who to recommend",
+      "Most restaurants rely entirely on Google Maps and Yelp but are invisible to ChatGPT, Perplexity, and Google AI Overviews",
+      "Simple fixes like schema markup, structured review responses, and a well-maintained Google Business Profile can dramatically improve AI recommendations",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if AI platforms recommend your restaurant. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "How do AI platforms decide which restaurants to recommend?",
+        answer:
+          "AI platforms pull from multiple signals: your Google Business Profile completeness, the specific language in your reviews (not just star ratings), your website's structured data and menu information, and your overall online presence across review platforms. A restaurant with 4.3 stars but detailed reviews mentioning 'best handmade pasta' and 'romantic atmosphere' will often be recommended over a 4.8-star restaurant with generic 'great food' reviews.",
+      },
+      {
+        question: "My restaurant already has great reviews. Isn't that enough for AI visibility?",
+        answer:
+          "Great reviews help, but they're only one piece. AI platforms also need to understand what kind of restaurant you are, what you serve, where you're located, and what makes you different. That requires structured data on your website, an optimized Google Business Profile with accurate categories and attributes, and content that clearly describes your cuisine, specialties, and dining experience. Without these signals, AI may know you exist but won't have enough information to confidently recommend you.",
+      },
+    ],
+    content: `## The New Way People Find Restaurants
+
+"What's a good Italian restaurant in Henderson?" "Where should I eat near the Strip that isn't a chain?" "Best brunch spot in [your city] with outdoor seating?"
+
+These questions used to go to Google, Yelp, or friends. Now they go to ChatGPT, Perplexity, and Google AI. And the answers are different.
+
+Instead of showing a list of 10 results, AI gives a direct recommendation: "I recommend [Restaurant Name] because..." followed by a specific reason. One restaurant gets the recommendation. The rest don't exist.
+
+## Why Your Restaurant Might Be Invisible
+
+Having a Yelp page and a Google listing used to be enough. For AI search, it isn't.
+
+AI platforms decide which restaurants to recommend based on:
+
+- **Structured data** -- Does your website have Restaurant schema markup with your cuisine type, price range, hours, and menu?
+- **Review content** -- AI reads the actual words in reviews. "Best Thai food in the city" carries more weight than "5 stars, great food."
+- **Google Business Profile** -- Is your primary category correct? Are your attributes filled out? Do you have menu items, photos, and regular posts?
+- **Online presence breadth** -- Are you on multiple platforms (Google, Yelp, TripAdvisor, OpenTable) with consistent information?
+
+Most restaurants have a basic website, a Google listing they set up years ago, and whatever reviews happen to come in. That's not enough for AI to confidently recommend you over a competitor who has all these signals in place.
+
+## The Queries That Fill (or Empty) Your Tables
+
+Every day, potential customers in your area are asking AI:
+
+- "Best [cuisine type] restaurant in [your city]"
+- "Where should I go for a date night in [your area]?"
+- "Family-friendly restaurants near [landmark]"
+- "Best restaurant for [dietary preference] in [your city]"
+- "Where to eat near me that has outdoor seating"
+
+{{AUDIT_BUTTON}}
+
+For every one of these queries, AI is naming specific restaurants. The ones it names get the reservations. The ones it doesn't name get empty tables.
+
+## What You Can Do Today
+
+**Check where you stand.** Use our [free AI visibility score tool](/ai-score) to see if AI platforms know your restaurant exists. It takes 15 seconds and costs nothing.
+
+**Get the full picture.** Our [AI Visibility Audit](/ai-visibility-audit) tests your presence across every major AI platform and identifies exactly what's missing -- and what to fix first.
+
+**Think beyond Google.** Your Google ranking matters, but it's no longer the only place customers find restaurants. The businesses that show up in both Google and AI results will win more tables than the ones that only show up in one.
+
+Every night your restaurant isn't being recommended by AI is a night of tables that could have been full.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-auto-repair-shops",
+    title: "AI Visibility for Auto Repair Shops: Your Customers Are Asking AI Who to Trust",
+    metaTitle: "AI Visibility for Auto Repair | Get Found in ChatGPT & AI Search",
+    description:
+      "Car owners are asking ChatGPT and Google AI which mechanic to trust. If your shop isn't in the answer, you're losing customers who are actively looking for you. Here's how to fix it.",
+    metaDescription:
+      "Car owners are asking AI assistants which auto repair shop to trust. Most shops are invisible to ChatGPT and Perplexity. Learn how a GEO audit can fix that.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Trust-based queries like 'honest mechanic near me' are perfect for AI because customers want a single recommendation, not a list",
+      "AI evaluates auto repair shops on review content, structured data, and service-specific signals that most shop websites lack",
+      "The auto repair industry has one of the lowest AI visibility rates because most shop websites are template-based with minimal structured content",
+      "Early movers in AI visibility will dominate their local market before competitors catch on",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if AI platforms recommend your shop. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Do car owners actually use AI to find mechanics?",
+        answer:
+          "Yes, and the trend is accelerating. Trust is the #1 factor when choosing an auto repair shop, and AI provides a personal recommendation rather than a list of ads. Queries like 'honest mechanic near me,' 'who should I trust for brake repair,' and 'best auto shop in [city] that won't rip me off' are increasingly common on ChatGPT and Perplexity. The AI gives a direct answer -- one or two shops by name with reasons why.",
+      },
+      {
+        question: "What makes an auto repair shop show up in AI recommendations?",
+        answer:
+          "AI recommends shops based on review content (especially trust-related language like 'honest,' 'fair pricing,' 'explained everything'), structured data on your website (AutoRepair schema, service types, certifications), Google Business Profile completeness, and overall online authority. Most shop websites are basic templates with no structured data, which makes them invisible to AI systems even if they have great reviews.",
+      },
+    ],
+    content: `## Trust Is Everything in Auto Repair -- and AI Knows It
+
+Finding an auto repair shop has always been about trust. Nobody wants to get ripped off. That's why the most common search queries for mechanics include words like "honest," "trustworthy," and "won't overcharge."
+
+Now those trust-seeking queries are going to AI. And AI is doing something Google never did: giving a single, confident recommendation.
+
+"Who's the most honest mechanic in [your city]?" ChatGPT doesn't show 10 ads. It says: "Based on reviews and reputation, I recommend [Shop Name] because..."
+
+If your shop isn't the one being named, that customer -- who was actively looking for a trustworthy mechanic -- goes somewhere else.
+
+## Why Auto Repair Has One of the Lowest AI Visibility Rates
+
+The auto repair industry is particularly vulnerable to AI invisibility because:
+
+- **Template websites** -- Most shop websites are cookie-cutter templates with a phone number, an address, and a list of services. No structured data, no content depth, no signals for AI to work with.
+- **Unclaimed or stale Google Business Profiles** -- Many shops set up their GBP years ago and never updated it. Missing service categories, outdated hours, and no recent photos make it impossible for AI to recommend you confidently.
+- **Review content is generic** -- "Good service" and "fast" don't give AI enough to distinguish you from 50 other shops. Reviews that mention specific services, transparency, and pricing do.
+
+## The Queries Sending Customers to Your Competitors
+
+- "Best mechanic in [your city]"
+- "Honest auto repair shop near me"
+- "Who should I trust for transmission repair in [your area]?"
+- "My check engine light is on, where should I take my car?"
+- "Best rated oil change place in [your city]"
+
+{{AUDIT_BUTTON}}
+
+Right now, AI is answering every one of these queries with specific shop names. Is yours one of them?
+
+## How to Get Your Shop Recommended by AI
+
+**Step 1: Test your visibility.** Our [free AI visibility score tool](/ai-score) shows you in 15 seconds whether AI platforms know your shop exists.
+
+**Step 2: Fix the foundation.** The most impactful fixes are usually structured data (AutoRepair schema), Google Business Profile optimization, and building review content that mentions specific services and trust signals.
+
+**Step 3: Get ahead of competitors.** AI visibility for auto repair is wide open right now. Most shops haven't optimized for it. The ones that move first will own their local market in AI recommendations.
+
+Our [GEO audit](/geo-audit) tests 28+ real customer queries, benchmarks you against competitors in your area, and gives you a clear 90-day roadmap to get recommended.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "geo-audit-vs-seo-audit",
+    title: "GEO Audit vs. SEO Audit: What's the Difference and Which One Do You Need?",
+    metaTitle: "GEO Audit vs SEO Audit: What's the Difference? | Avante Visibility",
+    description:
+      "SEO audits optimize for Google's search results. GEO audits optimize for AI-powered search. They measure different things, fix different problems, and both matter in 2026. Here's how to decide which you need.",
+    metaDescription:
+      "Understand the difference between a GEO audit and an SEO audit. Learn what each measures, which problems they solve, and which one your business needs in 2026.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "7 min read",
+    category: "GEO",
+    keyTakeaways: [
+      "SEO audits optimize for Google's traditional search results (blue links, rankings, organic traffic). GEO audits optimize for AI-powered search (ChatGPT, Perplexity, Google AI Overviews)",
+      "They measure different signals: SEO focuses on backlinks, keywords, and page speed. GEO focuses on entity recognition, structured data, citation patterns, and AI platform coverage",
+      "A business can rank #1 on Google and be completely invisible to AI search -- these are separate systems",
+      "In 2026, most businesses need both. But if you have to pick one first, a GEO audit tells you where you stand in the fastest-growing discovery channel",
+    ],
+    auditCta: {
+      label: "Get Your GEO Audit",
+      subtext:
+        "28+ live AI query tests, evidence-backed scoring, competitor benchmarking, and a prioritized 90-day roadmap. Built as a defensible, point-in-time evaluation.",
+      href: "/geo-audit",
+    },
+    faqs: [
+      {
+        question: "Can I just do SEO and skip GEO?",
+        answer:
+          "You can, but you'll be invisible to a growing channel. 44% of consumers now use AI chat as their primary search tool. AI search queries are increasing while traditional Google search volume is declining. SEO still matters for traditional rankings, but without GEO optimization, you are missing the fastest-growing way customers find businesses. The businesses that rank in both Google and AI search have a compounding advantage over those that only rank in one.",
+      },
+      {
+        question: "Does a GEO audit replace an SEO audit?",
+        answer:
+          "No. They are complementary, not competitive. An SEO audit focuses on technical site health, page speed, keyword targeting, backlinks, and crawlability for Google's traditional search engine. A GEO audit focuses on entity recognition, AI platform coverage, structured data for LLMs, citation patterns, and content structure for AI recommendation engines. Some findings overlap (like schema markup and site speed), but each audit surfaces problems the other doesn't test for.",
+      },
+      {
+        question: "Which should I do first -- GEO audit or SEO audit?",
+        answer:
+          "It depends on where you're losing customers. If your Google rankings are solid but you're not showing up when people ask ChatGPT or Perplexity for recommendations, start with a GEO audit. If your Google rankings have dropped or you're not ranking for important keywords, start with an SEO audit. If you're not sure, our free AI visibility score tool can tell you in 15 seconds whether AI platforms know your business exists -- that's usually enough to decide.",
+      },
+    ],
+    content: `## Two Audits, Two Search Ecosystems
+
+If you've been in business for more than a few years, you've probably had an SEO audit at some point. Someone crawled your site, checked your page speed, looked at your backlinks, and gave you a list of fixes to improve your Google rankings.
+
+A GEO audit is different. It doesn't test how Google's traditional search engine sees your site. It tests how AI-powered search engines see your business -- and whether they recommend you.
+
+These are two separate ecosystems with different rules, different signals, and different outcomes.
+
+## What an SEO Audit Measures
+
+A traditional SEO audit evaluates:
+
+| Area | What It Tests |
+|------|--------------|
+| Technical health | Crawlability, indexation, page speed, Core Web Vitals, mobile optimization |
+| On-page SEO | Title tags, meta descriptions, header structure, keyword usage, content quality |
+| Backlinks | Domain authority, referring domains, toxic links, anchor text distribution |
+| Content | Keyword coverage, content gaps, duplicate content, thin pages |
+| Local SEO | Google Business Profile, NAP consistency, local citations |
+
+The goal: improve your rankings in Google's traditional search results (the blue links).
+
+## What a GEO Audit Measures
+
+A GEO audit evaluates:
+
+| Area | What It Tests |
+|------|--------------|
+| AI platform coverage | Whether your business appears in ChatGPT, Perplexity, Google AI Overviews, Gemini, and Claude |
+| Entity recognition | Whether AI systems understand your business as a distinct entity with clear attributes |
+| Structured data for LLMs | Whether your schema markup is parseable by AI systems (not just Google's crawler) |
+| Citation patterns | Which queries trigger AI to mention your business -- and which trigger competitors |
+| Content citability | Whether your content is structured in a way AI systems can quote and reference |
+| Competitive benchmarking | How your AI visibility compares to specific competitors on real customer queries |
+
+The goal: get your business recommended by AI platforms when potential customers ask for suggestions.
+
+{{AUDIT_BUTTON}}
+
+## Where They Overlap
+
+Some areas show up in both audits:
+
+- **Schema markup** -- Both audits check for it, but SEO audits validate it for Google's Rich Results. GEO audits validate it for AI parser compatibility (which has different requirements).
+- **Site speed** -- Both care about this, but for different reasons. SEO because Google uses it as a ranking factor. GEO because slow sites get crawled less by AI bots.
+- **Content quality** -- Both evaluate content, but SEO looks at keyword targeting while GEO looks at citability and entity clarity.
+
+## The Key Difference: Rankings vs. Recommendations
+
+SEO is about getting your page to rank higher in a list of results. The user still has to click, evaluate, and choose.
+
+GEO is about getting your business directly recommended by name. There is no list. AI says "I recommend [your business]" or it doesn't mention you at all.
+
+This is why a business can rank #1 on Google for "best dentist in [city]" and still be completely absent when someone asks ChatGPT the same question. They are different systems.
+
+## Which Do You Need?
+
+**If your Google rankings are strong but AI platforms don't recommend you:** Start with a GEO audit. You have the SEO foundation -- now you need AI visibility.
+
+**If your Google rankings are weak and you're also invisible to AI:** Start with whichever is losing you more customers today. In most cases, that's the GEO audit, because AI search is where the growth is happening.
+
+**If you want the complete picture:** Our [Technical SEO Audit](/technical-seo-audit) ($997) and [GEO Audit](/geo-audit) ($2,500) can be ordered together, and the findings from each inform the other.
+
+Not sure where you stand? Our [free AI visibility score tool](/ai-score) tells you in 15 seconds whether AI platforms know your business exists. Start there.
+`,
+  },
+  {
+    slug: "ai-visibility-diy-vs-professional-geo-audit",
+    title: "DIY AI Visibility vs. Professional GEO Audit: Can You Do It Yourself?",
+    metaTitle: "DIY AI Visibility vs Professional GEO Audit | Avante Visibility",
+    description:
+      "You can check your own AI visibility for free. But testing 3 queries yourself and testing 28+ queries across 4 platforms with competitive benchmarking are very different things. Here's an honest breakdown.",
+    metaDescription:
+      "Can you audit your own AI visibility or do you need a professional GEO audit? An honest comparison of DIY testing vs. a full 28+ query audit with competitive benchmarking.",
+    date: "2026-04-12",
+    dateModified: "2026-04-12",
+    author: "JoLyn Laney",
+    readTime: "6 min read",
+    category: "GEO",
+    keyTakeaways: [
+      "You can absolutely check your basic AI visibility yourself by asking ChatGPT and Perplexity about your business -- and you should",
+      "The limitation of DIY testing is scope: most people test 3-5 queries on 1-2 platforms. A professional audit tests 28+ queries across 4+ platforms with competitive data",
+      "DIY tells you IF you have a problem. A professional audit tells you WHY, how bad it is compared to competitors, and exactly what to fix in what order",
+      "Our free AI Score tool is the best starting point -- it runs 3 real AI queries in 15 seconds and gives you an honest score",
+    ],
+    auditCta: {
+      label: "Try Our Free AI Score Tool",
+      subtext:
+        "Test your AI visibility right now. 3 live queries, 15 seconds, no commitment. If you want more depth, the full GEO audit goes 10x deeper.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Is the free AI Score tool the same as a full GEO audit?",
+        answer:
+          "No. The free tool tests 3 queries on one platform (Perplexity) and gives you a directional score. The full GEO audit tests 28+ queries across ChatGPT, Perplexity, Google AI, and Gemini, includes competitive benchmarking against your specific competitors, analyzes your structured data and technical setup, and delivers a prioritized 90-day roadmap. Think of the free tool as a thermometer and the GEO audit as a full diagnostic.",
+      },
+      {
+        question: "How much does a professional GEO audit cost?",
+        answer:
+          "Our GEO audit is $2,500. It includes 28+ live AI query tests, structured technical and schema analysis, competitor benchmarking, evidence-backed scoring, and a prioritized 90-day roadmap. Initial technical findings are delivered within 48 hours, with the full audit following in 3-5 business days. If we miss the 48-hour deadline, the audit is free.",
+      },
+      {
+        question: "Can I implement the fixes myself after getting a GEO audit?",
+        answer:
+          "Yes. The audit delivers a prioritized roadmap with every recommendation explained in plain language. Many clients implement fixes themselves or hand the roadmap to their existing web developer or marketing team. If you want ongoing help, our monthly plans start at $1,500/mo and include implementation, monitoring, and monthly progress reporting.",
+      },
+    ],
+    content: `## Yes, You Can Check Your Own AI Visibility
+
+Let's start with the honest answer: you can test your basic AI visibility right now, for free, in about 5 minutes.
+
+Open ChatGPT, Perplexity, or Google Gemini and ask:
+- "What is [your business name]?"
+- "Best [your service] in [your city]?"
+- "Recommend a [your industry] near [your city]"
+
+If your business appears in the response, that's a good sign. If it doesn't, you have a visibility problem.
+
+You just did what our [free AI Score tool](/ai-score) does automatically -- except the tool queries Perplexity via API and scores the results for you in 15 seconds.
+
+## Where DIY Falls Short
+
+The problem with manual testing isn't that it's wrong. It's that it's incomplete.
+
+| | DIY Testing | Free AI Score Tool | Full GEO Audit |
+|---|---|---|---|
+| Queries tested | 3-5 (whatever you think of) | 3 (structured categories) | 28+ (comprehensive) |
+| Platforms tested | 1-2 (whichever you open) | 1 (Perplexity) | 4+ (ChatGPT, Perplexity, Google AI, Gemini) |
+| Competitive data | None | None | Full benchmarking against 3-5 competitors |
+| Technical analysis | None | None | Schema, crawlability, entity signals |
+| Scoring | Pass/fail gut feeling | 0-100 score | 12-category scoring with evidence |
+| Action plan | "I guess I need to fix something" | Directional recommendations | Prioritized 90-day roadmap |
+| Cost | Free | Free | $2,500 |
+| Time | 5 minutes | 15 seconds | 3-5 business days |
+
+DIY tells you **if** you have a problem. The free AI Score tool tells you **how bad** it is. A full GEO audit tells you **why**, **how you compare to competitors**, and **exactly what to fix in what order**.
+
+## When DIY Is Enough
+
+If you just want to know whether AI platforms recognize your business at all, DIY works. Ask your name, see if it shows up. Done.
+
+This is genuinely useful as a gut check. If ChatGPT doesn't even know your business exists, you know you have work to do.
+
+{{AUDIT_BUTTON}}
+
+## When You Need the Full Audit
+
+You need a professional GEO audit when:
+
+- **You need to know why.** Knowing you're invisible is step one. Knowing that your competitors are being recommended because they have LocalBusiness schema, 200+ reviews with service-specific language, and content structured in Q&A format -- that's the information you need to actually fix the problem.
+
+- **You need competitive context.** Your AI visibility only matters relative to your competitors. A GEO audit benchmarks you head-to-head and shows you exactly who is being cited, on which queries, and why.
+
+- **You need a plan, not a diagnosis.** The audit doesn't just tell you what's wrong. It gives you a prioritized 90-day roadmap where every recommendation is ranked by impact and tied to specific evidence.
+
+- **You need to justify the investment.** If you're asking your boss, your partners, or yourself to spend money on AI visibility, you need data. The audit provides it.
+
+## The Right Path for Most Businesses
+
+1. **Start with the free tool.** Our [AI Score tool](/ai-score) runs 3 real queries in 15 seconds. No commitment, no email required until results are ready.
+
+2. **Decide if you need more depth.** If your score is below 50, you almost certainly need the full audit. If it's above 70, you might be in good shape -- but the audit will reveal blind spots the free tool can't test.
+
+3. **Get the audit or don't.** We'd rather you test yourself first and come to us when you're ready than pressure you into buying something you might not need. The free tool exists for exactly this reason.
+
+[Check your free AI visibility score](/ai-score) or [learn more about the full GEO audit](/geo-audit).
+`,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
