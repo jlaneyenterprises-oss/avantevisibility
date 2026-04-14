@@ -2855,6 +2855,443 @@ The salons and barbershops that build AI visibility now will own their specialty
 [Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
 `,
   },
+  {
+    slug: "ai-visibility-for-roofing-companies",
+    title: "AI Visibility for Roofing Companies: Why Homeowners Can't Find You in AI Search",
+    metaTitle: "AI Visibility for Roofing Companies | Get Found in ChatGPT & AI Search",
+    description:
+      "Homeowners are asking ChatGPT and Google AI for roofing recommendations after storms and leaks. If your company isn't showing up, you're losing high-value jobs to competitors who are.",
+    metaDescription:
+      "Homeowners are asking ChatGPT, Perplexity, and Google AI for roofing recommendations. Learn why most roofers are invisible to AI search and how to fix it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Homeowners asking AI 'best roofer near me' or 'roof replacement company in [city]' get one or two named recommendations -- not a list",
+      "AI platforms recommend roofers based on review specifics, service-area signals, and structured data -- not just star ratings",
+      "Roofing companies with clear specialty signals (storm damage, metal roofing, flat roofs) have a major AI visibility advantage",
+      "A GEO audit shows exactly which roofers AI is recommending in your market and what you need to change to be one of them",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your roofing company exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are homeowners really using AI to find roofers?",
+        answer:
+          "Yes. After a storm or when planning a roof replacement, homeowners increasingly ask AI tools: 'best roofing company in [city],' 'who should I hire for storm damage repair,' or 'metal roof installer near me.' AI gives a direct recommendation with reasons -- not a list of 10 options. If your company isn't named, that lead goes to whoever is.",
+      },
+      {
+        question: "My roofing company has great Google reviews. Isn't that enough?",
+        answer:
+          "Great Google reviews help, but AI platforms evaluate more than star ratings. They look at whether your business exists as a recognizable entity, whether reviews mention specific services (storm damage, TPO, shingle replacement), and whether your website has structured data. A roofer with 200 reviews that all say 'great job' signals less to AI than one with 80 reviews mentioning specific roof types, materials, and outcomes.",
+      },
+      {
+        question: "How does storm season affect AI visibility for roofers?",
+        answer:
+          "Storm season creates a surge in AI queries like 'emergency roof repair in [city]' and 'best roofer for hail damage near me.' Roofers who already have AI visibility capture these high-intent leads instantly. Building visibility after the storm hits is too late -- AI has already decided who to recommend.",
+      },
+    ],
+    content: `## How Homeowners Find Roofers Is Changing
+
+"Best roofing company in [city]." "Who should I hire for storm damage repair?" "Metal roof installer near me that's actually reliable."
+
+These queries are happening in ChatGPT, Perplexity, and Google AI Overviews right now. And unlike Google, which shows a list of options, AI recommends one or two companies by name -- with a reason why.
+
+If your roofing company isn't the one being named, that $15,000+ job goes to whoever is.
+
+## Why Most Roofing Companies Are Invisible to AI
+
+AI systems don't rank businesses the way Google does. They recommend based on:
+
+- **Entity recognition** -- Does AI know your company exists as a distinct business?
+- **Service-specific signals** -- Can AI tell what you specialize in? Storm damage? Metal roofs? Commercial flat roofs?
+- **Review language** -- AI reads what customers say. "Good roofer" is less useful than "replaced our entire roof after hail damage in two days, insurance claim handled perfectly."
+- **Structured data** -- Does your website tell AI systems your service area, specialties, licensing, and contact info in machine-readable format?
+
+Most roofing websites are template sites with stock photos and a "Get a Free Quote" button. That's not enough for AI to recommend you over the competitor with structured data, service-specific content, and detailed reviews.
+
+## Roofing Has a Unique AI Opportunity
+
+Roofing jobs are high-value, low-frequency purchases. Homeowners don't have a "regular roofer." They search when they need one -- often urgently after storm damage. This means whoever AI recommends gets the call first.
+
+The roofers winning in AI search right now share three traits: they have reviews that mention specific services and outcomes, their websites have structured data about their specialties, and they have content that demonstrates expertise in specific roof types or damage scenarios.
+
+## Queries Homeowners Are Asking AI Right Now
+
+- "Best roofing company in [your city]"
+- "Who should I hire for storm damage roof repair in [area]"
+- "Metal roof installer near me"
+- "Best roofer for insurance claims in [city]"
+- "Flat roof repair company in [area]"
+- "How much does a roof replacement cost in [city]"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your roofing company. Takes 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real homeowner queries, shows which roofers are being recommended in your market, and gives you a prioritized roadmap.
+
+The roofing companies that build AI visibility before storm season will capture the most valuable leads. Everyone else will keep competing on yard signs and door knocking.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-electricians",
+    title: "AI Visibility for Electricians: Why Customers Can't Find You in AI Search",
+    metaTitle: "AI Visibility for Electricians | Get Found in ChatGPT & AI Search",
+    description:
+      "Homeowners and businesses are asking ChatGPT and Google AI for electrician recommendations. If your company isn't showing up, you're losing service calls to competitors who are.",
+    metaDescription:
+      "Customers are asking ChatGPT, Perplexity, and Google AI for electrician recommendations. Learn why most electrical contractors are invisible to AI search and how to fix it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Customers asking AI 'best electrician near me' or 'licensed electrician in [city]' get one or two named recommendations",
+      "AI platforms recommend electricians based on licensing signals, review specifics, and structured data -- not directory rankings",
+      "Electricians with clear specialty signals (EV chargers, panel upgrades, commercial wiring) have a major AI visibility advantage",
+      "A GEO audit shows exactly which electricians AI is recommending in your area and what you need to change to be one of them",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your electrical company exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are customers really using AI to find electricians?",
+        answer:
+          "Yes. When a homeowner needs a panel upgrade, EV charger install, or emergency repair, they increasingly ask AI: 'best electrician in [city],' 'licensed electrician for panel upgrade near me,' or 'EV charger installer in [area].' AI gives a direct recommendation -- not a list. If your company isn't named, that service call goes to whoever is.",
+      },
+      {
+        question: "Does being licensed help with AI visibility?",
+        answer:
+          "Licensing is a trust signal AI uses when making recommendations. But AI can only factor in your license if your website and structured data explicitly mention it. Having a license number on a PDF buried in your site isn't enough -- it needs to be in your schema markup, your Google Business Profile, and mentioned in your reviews.",
+      },
+    ],
+    content: `## How Customers Find Electricians Is Changing
+
+"Best electrician in [city]." "Licensed electrical contractor for a panel upgrade near me." "Who installs EV chargers in [area]?"
+
+These queries are happening in ChatGPT, Perplexity, and Google AI Overviews right now. And unlike Google, which shows a map pack of options, AI recommends one or two companies by name -- with a reason why.
+
+If your electrical company isn't the one being named, that service call goes to whoever is.
+
+## Why Most Electricians Are Invisible to AI
+
+AI systems don't rank businesses the way Google does. They recommend based on:
+
+- **Entity recognition** -- Does AI know your company exists as a distinct business?
+- **Trust signals** -- Can AI verify your licensing, insurance, and certifications?
+- **Service-specific signals** -- Does AI know you do panel upgrades, EV chargers, commercial work, or emergency repairs?
+- **Review language** -- AI reads what customers say. "Good electrician" is less useful than "upgraded our 100-amp panel to 200-amp, passed inspection first try, very professional."
+- **Structured data** -- Does your website tell AI systems your service area, specialties, licensing, and availability in machine-readable format?
+
+Most electrician websites are basic templates with a phone number and a list of services. That's not enough for AI to recommend you over the competitor with structured data and specific review language.
+
+## The EV Charger Opportunity
+
+EV charger installation is one of the fastest-growing electrical services, and it's generating massive AI search volume. "EV charger installer near me" and "how much does a Level 2 charger install cost" are queries AI answers with specific company recommendations.
+
+Electricians who position themselves as EV charger specialists -- with content, reviews, and structured data about this service -- are capturing these high-value leads through AI before competitors even know the lead existed.
+
+## Queries Customers Are Asking AI Right Now
+
+- "Best electrician in [your city]"
+- "Licensed electrical contractor near me"
+- "EV charger installer in [area]"
+- "Electrician for panel upgrade in [city]"
+- "Emergency electrician available now in [area]"
+- "Commercial electrician for office buildout in [city]"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your electrical company. Takes 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real customer queries, shows which electricians are being recommended in your area, and gives you a prioritized roadmap.
+
+The electrical contractors that build AI visibility now will own the high-value specialties (EV chargers, panel upgrades, commercial) in their market. Everyone else will keep relying on HomeAdvisor leads.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-veterinarians",
+    title: "AI Visibility for Veterinarians: Why Pet Owners Can't Find You in AI Search",
+    metaTitle: "AI Visibility for Veterinarians | Get Found in ChatGPT & AI Search",
+    description:
+      "Pet owners are asking ChatGPT and Google AI for vet recommendations. If your practice isn't showing up, you're losing new patients to competitors who are.",
+    metaDescription:
+      "Pet owners are asking ChatGPT, Perplexity, and Google AI for veterinarian recommendations. Learn why most vet practices are invisible to AI search and how to fix it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Pet owners asking AI 'best vet near me' or 'veterinarian in [city]' get one or two named recommendations -- not a list",
+      "AI platforms recommend vets based on review sentiment, specialty signals, and structured data -- not just proximity",
+      "Practices with clear specialty signals (exotic pets, emergency care, holistic) have a major AI visibility advantage",
+      "A GEO audit shows exactly which vets AI is recommending in your area and what you need to change to be one of them",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your veterinary practice exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are pet owners really using AI to find vets?",
+        answer:
+          "Yes. When someone moves to a new area, gets a new pet, or has an emergency, they increasingly ask AI: 'best vet in [city],' 'emergency vet open now near me,' or 'vet that treats rabbits in [area].' AI gives a direct recommendation with reasons -- not a list of 10 options. If your practice isn't named, that new patient goes to whoever is.",
+      },
+      {
+        question: "My practice has been around for 20 years. Why wouldn't AI know about us?",
+        answer:
+          "Longevity doesn't automatically translate to AI visibility. AI systems build recommendations from structured data, review content, and online entity recognition. A practice with 20 years of history but a basic website and generic reviews can be invisible to AI, while a newer practice with structured data, specific review language, and clear specialty content gets recommended consistently.",
+      },
+      {
+        question: "Does treating exotic pets help with AI visibility?",
+        answer:
+          "Specialties like exotic pet care, holistic veterinary medicine, and veterinary dentistry are huge AI advantages. These are specific queries pet owners ask AI ('vet that treats reptiles in [city]'), and there are far fewer competitors for these niches. Practices that clearly signal their specialties in structured data and reviews are the ones AI recommends.",
+      },
+    ],
+    content: `## How Pet Owners Find Vets Is Changing
+
+"Best vet in [city]." "Emergency vet open right now near me." "Veterinarian that treats exotic pets in [area]."
+
+These queries are happening in ChatGPT, Perplexity, and Google AI Overviews right now. And unlike Google, which shows a map of options, AI recommends one or two practices by name -- with a reason why.
+
+If your veterinary practice isn't the one being named, that new patient (and their lifetime value of $10,000+) goes to whoever is.
+
+## Why Most Vet Practices Are Invisible to AI
+
+AI systems don't rank businesses the way Google does. They recommend based on:
+
+- **Entity recognition** -- Does AI know your practice exists as a distinct business with specific veterinarians on staff?
+- **Specialty signals** -- Can AI tell what you specialize in? Exotic pets? Emergency care? Holistic medicine? Dental?
+- **Review sentiment** -- AI reads what pet owners say. "Good vet" is less useful than "Dr. Chen saved our cat's life at 2am, the emergency team was incredible."
+- **Structured data** -- Does your website tell AI systems your services, hours, accepted species, emergency availability, and veterinarian credentials?
+
+Most vet practice websites are dated designs with a photo of the building and a phone number. That's not enough for AI to recommend you over the practice down the street that has structured data, named veterinarians, and specific review language.
+
+## Specialty Is Your Biggest Advantage
+
+Pet owners search by specialty more than almost any other service category. "Vet for guinea pigs," "holistic veterinarian," "cat-only vet" -- these are real AI queries generating real recommendations right now.
+
+If your practice has any specialty, that's your AI visibility advantage. But AI can only recommend you for that specialty if your website, reviews, and structured data clearly signal it.
+
+## Queries Pet Owners Are Asking AI Right Now
+
+- "Best vet in [your city]"
+- "Emergency veterinarian open now near me"
+- "Vet that treats exotic pets in [area]"
+- "Affordable vet clinic in [city]"
+- "Cat-only veterinarian near me"
+- "Holistic vet in [area]"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your veterinary practice. Takes 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real pet owner queries, shows which practices are being recommended in your area, and gives you a prioritized roadmap.
+
+The veterinary practices that build AI visibility now will be the default recommendation for every new pet owner in their area. Everyone else will keep hoping word-of-mouth is enough.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-gyms-fitness",
+    title: "AI Visibility for Gyms & Fitness Studios: Why Members Can't Find You in AI Search",
+    metaTitle: "AI Visibility for Gyms & Fitness Studios | Get Found in ChatGPT & AI Search",
+    description:
+      "People are asking ChatGPT and Google AI for gym and fitness studio recommendations. If your facility isn't showing up, you're losing new members to competitors who are.",
+    metaDescription:
+      "People are asking ChatGPT, Perplexity, and Google AI for gym and fitness recommendations. Learn why most gyms are invisible to AI search and how to fix it.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "People asking AI 'best gym near me' or 'CrossFit box in [city]' get one or two named recommendations -- not a list",
+      "AI platforms recommend gyms based on specialty signals, review specifics, and structured data -- not just price or size",
+      "Fitness businesses with clear niches (CrossFit, yoga, personal training, boxing) have a major AI visibility advantage over big-box gyms",
+      "A GEO audit shows exactly which gyms AI is recommending in your area and what you need to change to be one of them",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your gym or fitness studio exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are people really using AI to find gyms?",
+        answer:
+          "Yes. When someone moves to a new area, starts a fitness goal, or wants a specific type of training, they ask AI: 'best gym in [city],' 'CrossFit near me,' or 'yoga studio for beginners in [area].' AI gives a direct recommendation -- not a list. If your gym isn't named, that new member signs up somewhere else.",
+      },
+      {
+        question: "Can a small studio compete with big-box gyms in AI search?",
+        answer:
+          "Absolutely. In fact, small studios often have an advantage. AI recommends based on specificity, not size. A boutique yoga studio with detailed reviews mentioning specific instructors and class styles signals more to AI than a Planet Fitness with generic 'good gym' reviews. Specialty is the equalizer in AI search.",
+      },
+    ],
+    content: `## How People Find Gyms and Fitness Studios Is Changing
+
+"Best gym in [city]." "CrossFit box near me." "Yoga studio for beginners in [area]." "Personal trainer that specializes in weight loss in [city]."
+
+These queries are happening in ChatGPT, Perplexity, and Google AI Overviews right now. And unlike Google, which shows a map of options, AI recommends one or two facilities by name -- with a reason why.
+
+If your gym or studio isn't the one being named, that new member joins whoever is.
+
+## Why Most Gyms Are Invisible to AI
+
+AI systems don't rank businesses the way Google does. They recommend based on:
+
+- **Entity recognition** -- Does AI know your gym exists as a distinct business?
+- **Specialty signals** -- Can AI tell what kind of training you offer? CrossFit? Yoga? Boxing? Personal training? Group classes?
+- **Review language** -- AI reads what members say. "Good gym" is less useful than "best CrossFit programming in the city, Coach Mike's strength class transformed my deadlift."
+- **Structured data** -- Does your website tell AI systems your class types, hours, pricing structure, trainers, and specialties?
+
+Most gym websites are a few photos, a class schedule PDF, and a "Join Now" button. That's not enough for AI to recommend you over the competitor with structured data, named trainers, and specific review language.
+
+## Niche Beats Big Box Every Time in AI
+
+This is where smaller gyms and studios have the advantage. Big-box gyms are generic -- AI has no reason to recommend Planet Fitness over LA Fitness for a specific need. But a CrossFit box, a Pilates studio, a boxing gym, or a personal training studio with clear specialty signals? AI can match that to exactly the right person.
+
+The more specific your positioning, the more valuable your AI recommendations become. "Best CrossFit gym in [city]" is a much more actionable query than "best gym near me."
+
+## Queries People Are Asking AI Right Now
+
+- "Best gym in [your city]"
+- "CrossFit near me"
+- "Yoga studio for beginners in [area]"
+- "Personal trainer for weight loss in [city]"
+- "Boxing gym in [area]"
+- "Best group fitness classes in [city]"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your gym or fitness studio. Takes 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real queries, shows which gyms are being recommended in your area, and gives you a prioritized roadmap.
+
+The gyms and studios that build AI visibility now will be the default recommendation for every person starting their fitness journey in their area. Everyone else will keep paying for Instagram ads and hoping for walk-ins.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
+  {
+    slug: "ai-visibility-for-home-services",
+    title: "AI Visibility for Home Service Companies: Why Homeowners Can't Find You in AI Search",
+    metaTitle: "AI Visibility for Home Services | Get Found in ChatGPT & AI Search",
+    description:
+      "Homeowners are asking ChatGPT and Google AI for plumber, HVAC, and home service recommendations. If your company isn't showing up, you're losing high-value jobs to competitors who are.",
+    metaDescription:
+      "Homeowners are asking ChatGPT, Perplexity, and Google AI for home service recommendations. Learn why most HVAC, plumbing, and home service companies are invisible to AI search.",
+    date: "2026-04-13",
+    dateModified: "2026-04-13",
+    author: "JoLyn Laney",
+    readTime: "5 min read",
+    category: "Industry Guide",
+    keyTakeaways: [
+      "Homeowners asking AI 'best plumber near me' or 'HVAC company in [city]' get one or two named recommendations -- not a list",
+      "AI platforms recommend home service companies based on review specifics, licensing signals, and structured data -- not LSA rankings",
+      "Companies with clear specialty signals (tankless water heaters, ductless mini-splits, smart home) have a major AI visibility advantage",
+      "A GEO audit shows exactly which companies AI is recommending in your market and what you need to change to be one of them",
+    ],
+    auditCta: {
+      label: "Check Your AI Visibility Score",
+      subtext:
+        "See if ChatGPT, Perplexity, and Google AI know your home service company exists. Free, takes 15 seconds.",
+      href: "/ai-score",
+    },
+    faqs: [
+      {
+        question: "Are homeowners really using AI to find plumbers and HVAC companies?",
+        answer:
+          "Yes. When a pipe bursts, the AC dies in July, or someone is planning a kitchen remodel, they increasingly ask AI: 'best plumber in [city],' 'HVAC company near me,' or 'who should I hire for a bathroom remodel in [area].' AI gives a direct recommendation -- not a list. If your company isn't named, that $5,000+ job goes to whoever is.",
+      },
+      {
+        question: "We already pay for Google Local Services Ads. Do we need AI visibility too?",
+        answer:
+          "LSAs are pay-per-lead and only work on Google. AI search is happening on ChatGPT, Perplexity, Google AI Overviews, and Claude -- and it's free. When AI recommends your company by name, that lead costs you nothing. As more homeowners shift to AI-first search, the companies with AI visibility will have a growing cost advantage over those relying entirely on paid leads.",
+      },
+      {
+        question: "Which home services get the most AI search queries?",
+        answer:
+          "HVAC, plumbing, and general contracting see the highest AI query volume because these are high-cost, trust-dependent services where homeowners want a specific recommendation. Emergency services (burst pipe, AC failure, furnace out) are especially high-value because homeowners want one answer fast -- not a list to compare.",
+      },
+    ],
+    content: `## How Homeowners Find Home Service Companies Is Changing
+
+"Best plumber in [city]." "HVAC company near me that's actually reliable." "Who should I hire for a kitchen remodel in [area]?"
+
+These queries are happening in ChatGPT, Perplexity, and Google AI Overviews right now. And unlike Google, which shows Local Services Ads and a map pack, AI recommends one or two companies by name -- with a reason why.
+
+If your home service company isn't the one being named, that $5,000-$20,000 job goes to whoever is.
+
+## Why Most Home Service Companies Are Invisible to AI
+
+AI systems don't rank businesses the way Google does. They recommend based on:
+
+- **Entity recognition** -- Does AI know your company exists as a distinct business?
+- **Trust signals** -- Can AI verify your licensing, insurance, and years in business?
+- **Service-specific signals** -- Does AI know you do tankless water heater installs, ductless mini-splits, or whole-home rewiring?
+- **Review language** -- AI reads what homeowners say. "Good plumber" is less useful than "fixed our slab leak in one day, saved us thousands compared to the first quote."
+- **Structured data** -- Does your website tell AI systems your service area, specialties, licensing, emergency availability, and pricing transparency?
+
+Most home service websites are template sites with a phone number and a long list of services. That's not enough for AI to recommend you over the competitor with structured data, specific reviews, and clear expertise signals.
+
+## Emergency Services Are the Highest-Value AI Opportunity
+
+When a pipe bursts at midnight or the furnace dies in January, homeowners don't browse -- they ask AI for one recommendation and call that company. These emergency queries are the highest-value leads in home services, and AI delivers them to whichever company has the strongest visibility signals.
+
+If AI doesn't know your company handles emergencies, has 24/7 availability, or serves that specific area, you'll never see these leads -- no matter how many trucks you have on the road.
+
+## Queries Homeowners Are Asking AI Right Now
+
+- "Best plumber in [your city]"
+- "HVAC company near me"
+- "Emergency plumber available now in [area]"
+- "Best company for AC installation in [city]"
+- "Tankless water heater installer in [area]"
+- "Reliable general contractor for kitchen remodel in [city]"
+
+{{AUDIT_BUTTON}}
+
+## What To Do Next
+
+Our [free AI visibility score tool](/ai-score) tests whether AI platforms recognize your home service company. Takes 15 seconds.
+
+For the complete picture, our [GEO audit](/geo-audit) tests 28+ real homeowner queries, shows which companies are being recommended in your market, and gives you a prioritized roadmap.
+
+The home service companies that build AI visibility now will capture the highest-value leads in their market -- for free. Everyone else will keep paying $50-$150 per lead on HomeAdvisor and Angi.
+
+[Check your free AI visibility score](/ai-score) or [book a free strategy call](https://cal.com/provemyads/15min).
+`,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
