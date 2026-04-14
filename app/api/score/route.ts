@@ -1,5 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
+import {
+  FROM_EMAIL,
+  INTERNAL_EMAIL,
+  buildLeadResultsEmail,
+  buildEnhancedInternalEmail,
+} from "@/lib/emails";
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
@@ -250,30 +256,43 @@ export async function POST(req: NextRequest) {
       ];
     }
 
-    // Send lead notification email
+    // Build email data for templates
+    const emailData = {
+      businessName,
+      email,
+      score,
+      level,
+      industry: industryLabel,
+      city,
+      brandFound,
+      commercialFound,
+      recommendationFound,
+    };
+
+    // Send emails (don't fail the request if emails fail)
     try {
-      await getResend().emails.send({
-        from: "Avante Visibility <onboarding@resend.dev>",
-        to: "jolyn@avante.agency",
-        replyTo: email,
-        subject: `New AI Score Lead: ${businessName} (Score: ${score}/100)`,
-        html: `
-          <h2>New AI Visibility Score Lead</h2>
-          <table style="border-collapse:collapse;width:100%;max-width:600px;">
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Business</td><td style="padding:8px;border-bottom:1px solid #eee;">${businessName}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Website</td><td style="padding:8px;border-bottom:1px solid #eee;"><a href="${websiteUrl}">${websiteUrl}</a></td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">City</td><td style="padding:8px;border-bottom:1px solid #eee;">${city}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Industry</td><td style="padding:8px;border-bottom:1px solid #eee;">${industry}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Email</td><td style="padding:8px;border-bottom:1px solid #eee;"><a href="mailto:${email}">${email}</a></td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Score</td><td style="padding:8px;border-bottom:1px solid #eee;"><strong>${score}/100 (${level})</strong></td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Brand Recognition</td><td style="padding:8px;border-bottom:1px solid #eee;">${brandFound ? "Yes" : "No"}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Commercial Discovery</td><td style="padding:8px;border-bottom:1px solid #eee;">${commercialFound ? "Yes" : "No"}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">AI Recommendation</td><td style="padding:8px;border-bottom:1px solid #eee;">${recommendationFound ? "Yes" : "No"}</td></tr>
-          </table>
-        `,
-      });
+      const resend = getResend();
+      await Promise.allSettled([
+        // Enhanced internal notification with follow-up scripts
+        resend.emails.send({
+          from: FROM_EMAIL,
+          to: INTERNAL_EMAIL,
+          replyTo: email,
+          subject: `New AI Score Lead: ${businessName} (Score: ${score}/100)`,
+          html: buildEnhancedInternalEmail(emailData),
+        }),
+        // Auto-reply to lead with their results
+        // NOTE: Requires verified custom domain in Resend to send to external addresses.
+        // With onboarding@resend.dev (sandbox), this will only work for jolyn@avante.agency.
+        resend.emails.send({
+          from: FROM_EMAIL,
+          to: email,
+          subject: `Your AI Visibility Score: ${score}/100 — ${businessName}`,
+          html: buildLeadResultsEmail(emailData),
+        }),
+      ]);
     } catch {
-      // Don't fail the request if email fails
+      // Don't fail the request if emails fail
     }
 
     const response = NextResponse.json({
