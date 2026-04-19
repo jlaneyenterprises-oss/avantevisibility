@@ -207,6 +207,81 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {/* AI Platform Before/After - Focused Comparison */}
+      <section className="bg-bg-alt">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-3xl font-bold text-secondary text-center mb-2">
+            ChatGPT, Claude, Perplexity: Before &rarr; After
+          </h2>
+          <p className="text-text-muted text-center mb-10 max-w-2xl mx-auto">
+            Direct AI platform referrals to SellerMockups.com. Apples-to-apples:
+            the 18 days before the audit vs the 18 days after.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {[
+              {
+                platform: "ChatGPT",
+                before: "7",
+                after: "41",
+                change: "+485.71%",
+                note: "chatgpt.com / referral",
+              },
+              {
+                platform: "Claude",
+                before: "1",
+                after: "7",
+                change: "+600.00%",
+                note: "claude.ai / referral",
+              },
+              {
+                platform: "Perplexity",
+                before: "0",
+                after: "1",
+                change: "NEW",
+                note: "perplexity.ai / referral",
+              },
+            ].map((ai) => (
+              <div
+                key={ai.platform}
+                className="bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-sm"
+              >
+                <p className="text-center text-lg font-bold text-secondary mb-1">
+                  {ai.platform}
+                </p>
+                <p className="text-center text-[11px] text-text-muted mb-5 font-mono">
+                  {ai.note}
+                </p>
+                <div className="grid grid-cols-2 gap-2 items-center mb-4">
+                  <div className="text-center">
+                    <p className="text-xs font-semibold text-red-600 uppercase tracking-wider mb-1">
+                      Before
+                    </p>
+                    <p className="text-4xl font-bold text-red-600">{ai.before}</p>
+                    <p className="text-[10px] text-text-muted mt-1">Mar 12&ndash;29</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-xs font-semibold text-green-600 uppercase tracking-wider mb-1">
+                      After
+                    </p>
+                    <p className="text-4xl font-bold text-green-600">{ai.after}</p>
+                    <p className="text-[10px] text-text-muted mt-1">Apr 2&ndash;19</p>
+                  </div>
+                </div>
+                <div className="text-center bg-green-50 border border-green-200 rounded-lg py-2">
+                  <p className="text-sm font-bold text-green-700">{ai.change}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-xs text-text-muted mt-6 max-w-2xl mx-auto">
+            Numbers are sessions, not clicks or impressions. Source: Google
+            Analytics 4, property 518992634. Exported 2026-04-19.
+          </p>
+        </div>
+      </section>
+
       {/* Before / After GA4 Screenshots */}
       <section>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
