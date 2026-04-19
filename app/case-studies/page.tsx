@@ -18,14 +18,14 @@ const BOOKING_URL = "https://cal.com/provemyads/15min";
 
 export const metadata: Metadata = {
   title:
-    "GEO Case Study: 4,200% AI Search Traffic Growth | Generative Engine Optimization Results",
+    "GEO Case Study: +485% ChatGPT Referrals in 18 Days | Generative Engine Optimization Results",
   description:
-    "See how our generative engine optimization (GEO) strategy grew SellerMockups AI referral traffic 4,200% in 30 days — from 1 LLM session to 43, with ChatGPT, Perplexity, and Copilot becoming their #3 traffic source using llms.txt, structured data, and E-E-A-T signals.",
+    "Real GA4 data: generative engine optimization (GEO) grew SellerMockups ChatGPT referrals +485.71%, Claude.ai +600%, and combined AI traffic +176.56% in the 18 days after implementation — measured apples-to-apples against the 18 days before.",
   openGraph: {
     title:
-      "GEO Case Study: 4,200% AI Search Traffic Growth in 30 Days",
+      "GEO Case Study: +485% ChatGPT Referrals in 18 Days",
     description:
-      "See how our generative engine optimization strategy grew AI referral traffic 4,200% in 30 days — ChatGPT, Perplexity, and Copilot became the #3 traffic source, ahead of Google organic.",
+      "Apples-to-apples GA4 comparison — ChatGPT referrals +485.71%, Claude.ai +600%, total sessions +108.71% in 18 days after GEO implementation.",
   },
 };
 
@@ -71,41 +71,38 @@ const phases = [
 
 const platformResults = [
   {
-    name: "ChatGPT",
-    sessions: "26",
-    duration: "1m 11s",
-    events: "7.5",
-    quality: "High",
+    name: "ChatGPT (all variants)",
+    before: "11",
+    after: "69",
+    change: "+527.27%",
   },
   {
-    name: "Copilot",
-    sessions: "8",
-    duration: "5m 02s",
-    events: "12.5",
-    quality: "Highest on site",
+    name: "Claude.ai",
+    before: "1",
+    after: "7",
+    change: "+600.00%",
   },
   {
-    name: "Perplexity",
-    sessions: "5",
-    duration: "2m 30s",
-    events: "6.2",
-    quality: "Above average",
+    name: "Perplexity.ai",
+    before: "0",
+    after: "1",
+    change: "NEW (first citation)",
   },
   {
-    name: "Claude",
-    sessions: "4",
-    duration: "1m 45s",
-    events: "5.8",
-    quality: "Above average",
+    name: "Bing organic (powers ChatGPT Search + Copilot)",
+    before: "52",
+    after: "100",
+    change: "+92.31%",
   },
 ];
 
 const rippleEffects = [
-  { label: "Bing organic", change: "+825%" },
-  { label: "Yahoo organic", change: "+3,200%" },
-  { label: "DuckDuckGo organic", change: "+1,400%" },
-  { label: "Engagement rate", change: "83.6% \u2192 90.5%" },
-  { label: "Key events (conversions)", change: "+20.8%" },
+  { label: "Total sessions", change: "+108.71%" },
+  { label: "Organic Search sessions", change: "+119.10%" },
+  { label: "Referral channel sessions", change: "+185.71%" },
+  { label: "Engagement rate", change: "93.18% \u2192 94.01%" },
+  { label: "Bing organic", change: "+92.31%" },
+  { label: "Yahoo organic", change: "+114.29%" },
 ];
 
 export default function CaseStudiesPage() {
@@ -115,7 +112,7 @@ export default function CaseStudiesPage() {
       {
         "@type": "Article",
         headline:
-          "GEO Case Study: How Generative Engine Optimization Grew AI Search Traffic 4,200% in 30 Days",
+          "GEO Case Study: +485% ChatGPT Referrals and +600% Claude.ai Referrals in 18 Days",
         author: {
           "@type": "Person",
           name: "JoLyn Laney",
@@ -124,8 +121,9 @@ export default function CaseStudiesPage() {
           "@id": "https://avantevisibility.com/#organization",
         },
         datePublished: "2026-04-09",
+        dateModified: "2026-04-19",
         description:
-          "SellerMockups went from 1 LLM session to 43 AI referral sessions in 30 days using generative engine optimization. Here\u2019s the exact GEO strategy — llms.txt, structured data, and E-E-A-T signals — that made AI search their #3 traffic source.",
+          "Apples-to-apples GA4 comparison of SellerMockups.com for the 18 days before vs the 18 days after GEO implementation: ChatGPT referrals +485.71%, Claude.ai referrals +600%, combined AI traffic +176.56%, total sessions +108.71%.",
         url: "https://avantevisibility.com/case-studies",
         about: {
           "@type": "Service",
@@ -177,24 +175,25 @@ export default function CaseStudiesPage() {
               GEO Case Study &mdash; SellerMockups.com
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              How Generative Engine Optimization Grew AI Search Traffic{" "}
-              <span className="text-white underline decoration-primary decoration-4 underline-offset-4">4,200%</span> in 30 Days
+              How Generative Engine Optimization Grew ChatGPT Referrals{" "}
+              <span className="text-white underline decoration-primary decoration-4 underline-offset-4">+485%</span> in 18 Days
             </h1>
             <p className="mt-6 text-gray-300 text-lg leading-relaxed">
-              SellerMockups went from 1 AI referral session to 43 &mdash; making
-              ChatGPT, Perplexity, Copilot, and Claude their{" "}
-              <strong className="text-white">#3 traffic source</strong>, ahead
-              of Google organic and paid ads.
+              Apples-to-apples GA4 comparison: in the 18 days after GEO
+              implementation, SellerMockups saw{" "}
+              <strong className="text-white">ChatGPT referrals grow +485.71%</strong>,{" "}
+              <strong className="text-white">Claude.ai +600%</strong>, and{" "}
+              total sessions double &mdash; all without additional ad spend.
             </p>
           </div>
 
           {/* Hero Stats */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {[
-              { value: "4,200%", label: "AI traffic growth" },
-              { value: "43", label: "LLM sessions/month" },
-              { value: "#3", label: "Traffic source" },
-              { value: "8.2%", label: "AI referral share" },
+              { value: "+108.71%", label: "Total sessions" },
+              { value: "+485.71%", label: "ChatGPT referrals" },
+              { value: "+600%", label: "Claude.ai referrals" },
+              { value: "+176.56%", label: "Combined AI traffic" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -226,21 +225,23 @@ export default function CaseStudiesPage() {
                 Before
               </span>
               <span className="text-sm text-text-muted">
-                Feb 4 &ndash; Mar 3, 2026
+                Mar 12 &ndash; Mar 29, 2026 &middot; 18 days pre-audit
               </span>
             </div>
             <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
               <Image
-                src="/images/case-study-before.png"
-                alt="GA4 Traffic Acquisition report before GEO — Feb 4 to Mar 3 2026 showing zero LLM traffic sources, 82.48% engagement rate, and no ChatGPT, Perplexity, or Copilot sessions"
+                src="/images/sellermockups/ga4-home-anomaly.png"
+                alt="GA4 home screen for SellerMockups showing a 783% spike beyond projection on April 12, 2026 — GA4's own anomaly detection flagged a Direct-channel user count of 53 against a forecasted range of 1-25"
                 width={1920}
                 height={1080}
                 className="w-full h-auto"
               />
             </div>
             <p className="text-sm text-text-muted mt-3">
-              Zero AI traffic sources in the top 10. Engagement rate at 82.48%.
-              Bing organic at #9 with just 7 sessions.
+              GA4&apos;s own anomaly detection flagged a <strong>+783% spike
+              beyond projection</strong> ten days after implementation went
+              live &mdash; a Direct-channel surge GA forecasted at 1&ndash;25 users
+              but delivered 53.
             </p>
           </div>
 
@@ -251,21 +252,49 @@ export default function CaseStudiesPage() {
                 After
               </span>
               <span className="text-sm text-text-muted">
-                Mar 4 &ndash; Apr 8, 2026
+                Apr 2 &ndash; Apr 19, 2026 &middot; 18 days post-audit
               </span>
             </div>
             <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
               <Image
-                src="/images/case-study-after.png"
-                alt="GA4 Traffic Acquisition report after GEO — Mar 4 to Apr 8 2026 showing ChatGPT at #6 with 26 sessions, 88.46% engagement rate, 7.54 events per session, and overall engagement rate up to 90.39%"
+                src="/images/sellermockups/ga4-traffic-comparison.png"
+                alt="GA4 Traffic Acquisition comparison — 18 days before vs 18 days after GEO implementation — total sessions 264 to 551 (+108.71%), engaged sessions 246 to 518 (+110.57%), organic search 89 to 195 (+119.1%)"
                 width={1920}
                 height={1080}
                 className="w-full h-auto"
               />
             </div>
             <p className="text-sm text-text-muted mt-3">
-              ChatGPT appears at #6 with 26 sessions and 88.46% engagement.
-              Overall engagement rate jumped to 90.39%.
+              Total sessions doubled (264 &rarr; 551, <strong>+108.71%</strong>).
+              Organic search grew <strong>+119.1%</strong> and the Referral
+              channel grew <strong>+185.71%</strong> &mdash; with no additional
+              ad spend.
+            </p>
+          </div>
+
+          {/* AI referrals close-up */}
+          <div className="mt-10">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">
+                AI Referrals &mdash; Close-Up
+              </span>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+              <Image
+                src="/images/sellermockups/ga4-ai-referrals.png"
+                alt="GA4 Source / Medium report showing chatgpt.com / referral at +485.71% (7 to 41 sessions) and google / organic at +310% and bing / organic at +92.31% after GEO implementation"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-text-muted mt-3">
+              <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded">chatgpt.com / referral</code>
+              {" "}grew <strong>+485.71%</strong> (7 &rarr; 41 sessions) in 18 days.
+              <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded ml-1">claude.ai / referral</code>
+              {" "}grew <strong>+600%</strong> (1 &rarr; 7 sessions).
+              <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded ml-1">perplexity.ai / referral</code>
+              {" "}produced its first-ever citation.
             </p>
           </div>
         </div>
@@ -315,7 +344,7 @@ export default function CaseStudiesPage() {
             </p>
             <div className="space-y-4">
               {[
-                "1 total LLM session in the prior 30-day period",
+                "Effectively zero AI referral traffic — the site was invisible to ChatGPT, Claude, Perplexity, and Copilot",
                 "Not appearing in ChatGPT or Perplexity recommendations for any relevant queries",
                 "No structured data, no AI-specific discovery files, no schema markup",
                 "64 blog posts existed but lacked authorship signals and structured metadata",
@@ -342,7 +371,10 @@ export default function CaseStudiesPage() {
               The GEO Strategy
             </h2>
             <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
-              A three-phase generative engine optimization strategy executed over 30 days &mdash; llms.txt, structured data, E-E-A-T signals, and AI-specific content &mdash; each phase building on the last.
+              A three-phase generative engine optimization strategy executed
+              between early March and April 2, 2026 &mdash; llms.txt, structured
+              data, E-E-A-T signals, and AI-specific content &mdash; each phase
+              building on the last.
             </p>
 
             <div className="space-y-8">
@@ -387,31 +419,33 @@ export default function CaseStudiesPage() {
             AI Search Traffic Results
           </h2>
           <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
-            Industry average is less than 1% AI referral traffic.
-            Our generative engine optimization strategy pushed SellerMockups to 8.2% &mdash; more than 8x the benchmark.
+            Industry average is under 1% AI referral traffic. In the 18 days
+            after GEO implementation, SellerMockups pulled in 77 direct AI
+            platform referrals &mdash; up from 12 in the equivalent 18-day pre-audit
+            window.
           </p>
 
           {/* Headline Results */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16">
             <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
               <TrendingUp className="w-8 h-8 text-primary mx-auto mb-3" />
-              <p className="text-3xl font-bold text-secondary">1 &rarr; 43</p>
+              <p className="text-3xl font-bold text-secondary">12 &rarr; 77</p>
               <p className="text-sm text-text-muted mt-1">
-                LLM sessions per month
+                Direct AI referral sessions (18 days)
               </p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
               <BarChart3 className="w-8 h-8 text-primary mx-auto mb-3" />
-              <p className="text-3xl font-bold text-secondary">#3</p>
+              <p className="text-3xl font-bold text-secondary">264 &rarr; 551</p>
               <p className="text-sm text-text-muted mt-1">
-                Traffic source (ahead of Google organic)
+                Total sessions (+108.71%)
               </p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-6 text-center">
               <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-              <p className="text-3xl font-bold text-secondary">90.5%</p>
+              <p className="text-3xl font-bold text-secondary">93.18% &rarr; 94.01%</p>
               <p className="text-sm text-text-muted mt-1">
-                Engagement rate (up from 83.6%)
+                Engagement rate
               </p>
             </div>
           </div>
@@ -422,52 +456,46 @@ export default function CaseStudiesPage() {
               Per-Platform Breakdown
             </h3>
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-              <div className="hidden sm:grid grid-cols-5 gap-4 px-6 py-3 bg-bg-alt border-b border-gray-200 text-xs font-semibold text-text-muted uppercase tracking-wider">
+              <div className="hidden sm:grid grid-cols-4 gap-4 px-6 py-3 bg-bg-alt border-b border-gray-200 text-xs font-semibold text-text-muted uppercase tracking-wider">
                 <span>Platform</span>
-                <span>Sessions</span>
-                <span>Avg. Duration</span>
-                <span>Events/Session</span>
-                <span>Quality</span>
+                <span>Before (Mar 12&ndash;29)</span>
+                <span>After (Apr 2&ndash;19)</span>
+                <span>Change</span>
               </div>
               {platformResults.map((platform) => (
                 <div
                   key={platform.name}
-                  className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-4 px-6 py-4 border-b border-gray-100 last:border-0"
+                  className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 px-6 py-4 border-b border-gray-100 last:border-0"
                 >
                   <span className="font-semibold text-secondary col-span-2 sm:col-span-1">
                     {platform.name}
                   </span>
                   <span className="text-text-muted">
                     <span className="sm:hidden text-xs text-text-muted/60">
-                      Sessions:{" "}
+                      Before:{" "}
                     </span>
-                    {platform.sessions}
+                    {platform.before}
                   </span>
                   <span className="text-text-muted">
                     <span className="sm:hidden text-xs text-text-muted/60">
-                      Duration:{" "}
+                      After:{" "}
                     </span>
-                    {platform.duration}
+                    {platform.after}
                   </span>
-                  <span className="text-text-muted">
-                    <span className="sm:hidden text-xs text-text-muted/60">
-                      Events:{" "}
+                  <span className="text-green-600 font-semibold">
+                    <span className="sm:hidden text-xs text-text-muted/60 font-normal">
+                      Change:{" "}
                     </span>
-                    {platform.events}
-                  </span>
-                  <span className="text-text-muted">
-                    <span className="sm:hidden text-xs text-text-muted/60">
-                      Quality:{" "}
-                    </span>
-                    {platform.quality}
+                    {platform.change}
                   </span>
                 </div>
               ))}
             </div>
             <p className="mt-4 text-sm text-text-muted">
-              <strong>Copilot visitors averaged 5 minutes and 2 seconds</strong>{" "}
-              per session with 12.5 events &mdash; the highest-quality traffic
-              source on the entire site.
+              <strong>ChatGPT is the largest AI source</strong> at 69 sessions
+              across all chatgpt.com variants &mdash; up from 11 in the pre-audit
+              window. Bing is included because ChatGPT Search and Microsoft
+              Copilot both index from Bing.
             </p>
           </div>
 
@@ -506,8 +534,8 @@ export default function CaseStudiesPage() {
                 <span className="font-bold text-secondary">
                   Business impact:
                 </span>{" "}
-                SellerMockups acquired its first paying customer during this
-                30-day period. The combined lift in visibility and engagement
+                SellerMockups acquired its first paying customer during the
+                GEO engagement. The combined lift in visibility and engagement
                 across all sources created the conditions for conversion.
               </p>
             </div>
@@ -591,7 +619,7 @@ export default function CaseStudiesPage() {
                   number: 1,
                   title: "GEO is a real, measurable channel.",
                   description:
-                    "43 sessions from 4 different AI platforms in 30 days, with engagement metrics that exceed most traditional channels.",
+                    "77 direct sessions from ChatGPT, Claude, and Perplexity in the 18-day post-audit window — up from 12 in the equivalent pre-audit window. Verifiable in GA4, apples-to-apples.",
                 },
                 {
                   number: 2,
@@ -609,7 +637,7 @@ export default function CaseStudiesPage() {
                   number: 4,
                   title: "The halo effect is real.",
                   description:
-                    "GEO improvements lifted Bing (+825%), Yahoo (+3,200%), and DuckDuckGo (+1,400%) in addition to AI platforms. One investment, multiple returns.",
+                    "GEO improvements lifted Bing (+92.31%), Yahoo (+114.29%), and organic search overall (+119.10%) in addition to AI platforms. One investment, multiple returns.",
                 },
                 {
                   number: 5,
