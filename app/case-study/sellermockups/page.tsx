@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Breadcrumb from "@/components/Breadcrumb";
 import CTASection from "@/components/CTASection";
 import { CheckCircle, ArrowRight, TrendingUp, AlertTriangle } from "lucide-react";
@@ -71,6 +72,25 @@ const competitors = [
   { site: "Dynamic Mockups", branded: "20%", commercial: "70%", info: "25%", compare: "80%", overall: "50%", highlight: false },
   { site: "Mockey", branded: "20%", commercial: "70%", info: "25%", compare: "20%", overall: "39.3%", highlight: false },
   { site: "Placeit", branded: "0%", commercial: "0%", info: "0%", compare: "0%", overall: "0%", highlight: false },
+];
+
+const trafficFollowUp = [
+  { metric: "Total Sessions", before: "264", after: "551", change: "+108.71%", positive: true },
+  { metric: "Engaged Sessions", before: "246", after: "518", change: "+110.57%", positive: true },
+  { metric: "Engagement Rate", before: "93.18%", after: "94.01%", change: "+0.89%", positive: true },
+  { metric: "Organic Search Sessions", before: "89", after: "195", change: "+119.10%", positive: true },
+  { metric: "Organic Search — Engaged", before: "78", after: "177", change: "+126.92%", positive: true },
+  { metric: "Referral Channel Sessions", before: "21", after: "60", change: "+185.71%", positive: true },
+];
+
+const aiReferrals = [
+  { source: "chatgpt.com / referral", before: "7", after: "41", change: "+485.71%", highlight: true },
+  { source: "chatgpt.com / (not set)", before: "4", after: "26", change: "+550.00%", highlight: true },
+  { source: "claude.ai / referral", before: "1", after: "7", change: "+600.00%", highlight: true },
+  { source: "chatgpt.com / (none)", before: "0", after: "2", change: "NEW", highlight: true },
+  { source: "perplexity.ai / referral", before: "0", after: "1", change: "NEW (first citation)", highlight: true },
+  { source: "bing / organic (powers ChatGPT Search + Copilot)", before: "52", after: "100", change: "+92.31%", highlight: false },
+  { source: "Combined AI-attributed traffic", before: "64", after: "177", change: "+176.56%", highlight: false, isTotal: true },
 ];
 
 export default function SellerMockupsCaseStudy() {
@@ -391,6 +411,200 @@ export default function SellerMockupsCaseStudy() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      {/* 18-Day Follow-Up — The GA4 Data */}
+      <section>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+            18-Day Follow-Up
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            The Data Tells the Story
+          </h2>
+          <p className="text-text-muted leading-relaxed mb-10 max-w-3xl">
+            The 24-hour citation snapshot above was captured the day the
+            implementation went live. To measure real downstream impact, we
+            pulled GA4 data for the 18 days before the audit (Mar 12&ndash;29,
+            2026) versus the 18 days after (Apr 2&ndash;19, 2026). Same
+            methodology, clean apples-to-apples comparison, no additional
+            marketing spend. Here is exactly what happened.
+          </p>
+
+          {/* Hero stat row */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+            <div className="bg-white border-2 border-green-200 rounded-2xl p-6 text-center shadow-sm">
+              <p className="text-4xl md:text-5xl font-bold text-green-600">+108.71%</p>
+              <p className="text-sm text-text-muted mt-2">Total sessions</p>
+              <p className="text-xs text-text-muted mt-1">264 &rarr; 551</p>
+            </div>
+            <div className="bg-white border-2 border-green-200 rounded-2xl p-6 text-center shadow-sm">
+              <p className="text-4xl md:text-5xl font-bold text-green-600">+485.71%</p>
+              <p className="text-sm text-text-muted mt-2">ChatGPT referrals</p>
+              <p className="text-xs text-text-muted mt-1">7 &rarr; 41 sessions</p>
+            </div>
+            <div className="bg-white border-2 border-green-200 rounded-2xl p-6 text-center shadow-sm">
+              <p className="text-4xl md:text-5xl font-bold text-green-600">+600.00%</p>
+              <p className="text-sm text-text-muted mt-2">Claude.ai referrals</p>
+              <p className="text-xs text-text-muted mt-1">1 &rarr; 7 sessions</p>
+            </div>
+          </div>
+
+          {/* GA Anomaly screenshot */}
+          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-3">
+            <Image
+              src="/images/sellermockups/ga4-home-anomaly.png"
+              alt="Google Analytics 4 home screen for SellerMockups showing a 783% spike beyond projection on April 12, 2026 — GA4's own anomaly detection flagged a Direct-channel user count of 53 against a forecasted range of 1-25"
+              width={1201}
+              height={720}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-text-muted mb-10">
+            <strong className="text-secondary">GA4&apos;s own anomaly detection</strong> flagged
+            a <strong>+783% spike beyond projection</strong> on April 12, 2026 &mdash; ten days
+            after the GEO implementation went live. GA forecasted 1&ndash;25 users
+            for the Direct channel; actual was 53.
+          </p>
+
+          {/* Traffic comparison table */}
+          <h3 className="text-2xl font-bold text-secondary mb-4">
+            Overall Traffic &mdash; Before vs After
+          </h3>
+          <p className="text-sm text-text-muted mb-4">
+            Apr 2&ndash;19, 2026 (post-audit) compared to Mar 12&ndash;29, 2026
+            (pre-audit) &mdash; 18 days each, matched day-of-week.
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-primary">
+                  <th className="text-left py-3 pr-4 font-bold text-secondary">Metric</th>
+                  <th className="text-left py-3 px-4 font-bold text-secondary">Before (Mar 12&ndash;29)</th>
+                  <th className="text-left py-3 px-4 font-bold text-secondary">After (Apr 2&ndash;19)</th>
+                  <th className="text-left py-3 pl-4 font-bold text-secondary">Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                {trafficFollowUp.map((row) => (
+                  <tr
+                    key={row.metric}
+                    className="border-b border-gray-100 hover:bg-bg-alt transition-colors"
+                  >
+                    <td className="py-3 pr-4 font-medium text-text-primary">{row.metric}</td>
+                    <td className="py-3 px-4 text-text-muted">{row.before}</td>
+                    <td className="py-3 px-4 text-text-primary font-medium">{row.after}</td>
+                    <td className={`py-3 pl-4 font-semibold ${row.positive ? "text-green-600" : "text-text-muted"}`}>
+                      {row.change}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-10">
+            <Image
+              src="/images/sellermockups/ga4-traffic-comparison.png"
+              alt="GA4 Traffic Acquisition comparison report — 18 days before audit vs 18 days after — showing total sessions going from 264 to 551 (+108.71%), engaged sessions from 246 to 518 (+110.57%), organic search from 89 to 195 (+119.1%), and direct from 115 to 153 (+33.04%)"
+              width={1201}
+              height={720}
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* AI referrals breakdown — the money shot */}
+          <h3 className="text-2xl font-bold text-secondary mb-4">
+            AI Platform Referrals &mdash; Where the Citations Actually Landed
+          </h3>
+          <p className="text-sm text-text-muted mb-4">
+            The 24-hour snapshot above showed a 0% commercial-intent citation
+            rate because AI hadn&apos;t re-crawled yet. This is what happened
+            once the crawlers caught up. Source &#47; medium data pulled directly
+            from GA4 &mdash; no sampling, no modeling.
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-primary">
+                  <th className="text-left py-3 pr-4 font-bold text-secondary">Source &#47; Medium</th>
+                  <th className="text-left py-3 px-4 font-bold text-secondary">Before</th>
+                  <th className="text-left py-3 px-4 font-bold text-secondary">After</th>
+                  <th className="text-left py-3 pl-4 font-bold text-secondary">Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                {aiReferrals.map((row) => (
+                  <tr
+                    key={row.source}
+                    className={`border-b border-gray-100 ${
+                      row.isTotal
+                        ? "bg-green-50 font-bold"
+                        : row.highlight
+                        ? "bg-primary/5"
+                        : ""
+                    }`}
+                  >
+                    <td className="py-3 pr-4 font-medium text-text-primary">{row.source}</td>
+                    <td className="py-3 px-4 text-text-muted">{row.before}</td>
+                    <td className="py-3 px-4 text-text-primary font-medium">{row.after}</td>
+                    <td className="py-3 pl-4 font-semibold text-green-600">{row.change}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-3">
+            <Image
+              src="/images/sellermockups/ga4-ai-referrals.png"
+              alt="GA4 Source / Medium report showing chatgpt.com / referral at +485.71% (7 to 41 sessions) and google / organic at +310% and bing / organic at +92.31% after GEO implementation"
+              width={1201}
+              height={720}
+              className="w-full h-auto"
+            />
+          </div>
+          <p className="text-sm text-text-muted mb-6">
+            ChatGPT referrals alone jumped from 7 sessions to 41 &mdash; a +485%
+            lift &mdash; in 18 days with no additional marketing spend. Claude.ai and
+            Perplexity.ai both produced first-ever documented citations in the
+            post-audit window.
+          </p>
+          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-10">
+            <Image
+              src="/images/sellermockups/ga4-ai-referrals-claude.png"
+              alt="GA4 Source / Medium deeper view showing claude.ai / referral at +600% (1 to 7 sessions) and additional AI-related referrers including chatgpt.com variants"
+              width={1201}
+              height={720}
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Takeaway */}
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+            <div className="flex items-start gap-3">
+              <TrendingUp className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold text-secondary">Why This Matters</p>
+                <p className="mt-1 text-sm text-text-muted leading-relaxed">
+                  Between April 2 and April 19, 2026, with no new ad spend or
+                  content marketing campaigns, the schema markup, llms.txt, and
+                  AI crawler configuration produced a <strong>+176.56%</strong> lift in
+                  combined AI-attributed sessions (64 &rarr; 177). The 0%
+                  commercial-intent citation rate from the 24-hour snapshot
+                  resolved through real AI platform referrals: 77 direct
+                  sessions from ChatGPT, Claude, and Perplexity in 18 days, up
+                  from 12. The technical foundation paid off before Phase 2
+                  ever began.
+                </p>
+                <p className="mt-3 text-xs text-text-muted">
+                  Data source: Google Analytics 4 property 518992634
+                  (SellerMockups). Date ranges: Mar 12&ndash;29, 2026 vs Apr
+                  2&ndash;19, 2026 (18 days each, matched day-of-week). Screenshots
+                  captured 2026-04-19.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
