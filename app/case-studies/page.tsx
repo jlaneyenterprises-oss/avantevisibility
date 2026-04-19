@@ -275,10 +275,80 @@ export default function CaseStudiesPage() {
             ))}
           </div>
 
-          <p className="text-center text-xs text-text-muted mt-6 max-w-2xl mx-auto">
+          <p className="text-center text-xs text-text-muted mt-6 max-w-3xl mx-auto">
             Numbers are sessions, not clicks or impressions. Source: Google
-            Analytics 4, property 518992634. Exported 2026-04-19.
+            Analytics 4, property 518992634. Exported 2026-04-19. Raw GA4
+            screenshots of each row below.
           </p>
+
+          {/* Raw GA4 screenshots — undeniable proof of each platform */}
+          <div className="mt-12 space-y-8">
+            <div>
+              <p className="text-sm font-semibold text-secondary mb-2">
+                ChatGPT &mdash; GA4 Traffic Acquisition report, Session source /
+                medium view (row 4)
+              </p>
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+                <Image
+                  src="/images/sellermockups/ga4-chatgpt-row.png"
+                  alt="GA4 Source / Medium report showing row 4 chatgpt.com / referral with 41 sessions for Apr 2-19 2026 and 7 sessions for Mar 12-29 2026, a 485.71 percent change"
+                  width={1201}
+                  height={720}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-xs text-text-muted mt-2">
+                <code className="bg-bg-alt px-1.5 py-0.5 rounded">chatgpt.com / referral</code>
+                {" "}&mdash; <strong>Apr 2&ndash;19:</strong> 41 sessions &nbsp;|&nbsp;
+                <strong>Mar 12&ndash;29:</strong> 7 sessions &nbsp;|&nbsp;
+                <strong className="text-green-600">% change: 485.71%</strong>
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-secondary mb-2">
+                Claude &mdash; same report, row 11
+              </p>
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+                <Image
+                  src="/images/sellermockups/ga4-claude-row.png"
+                  alt="GA4 Source / Medium report showing row 11 claude.ai / referral with 7 sessions for Apr 2-19 2026 and 1 session for Mar 12-29 2026, a 600 percent change"
+                  width={1201}
+                  height={720}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-xs text-text-muted mt-2">
+                <code className="bg-bg-alt px-1.5 py-0.5 rounded">claude.ai / referral</code>
+                {" "}&mdash; <strong>Apr 2&ndash;19:</strong> 7 sessions &nbsp;|&nbsp;
+                <strong>Mar 12&ndash;29:</strong> 1 session &nbsp;|&nbsp;
+                <strong className="text-green-600">% change: 600%</strong>
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-secondary mb-2">
+                Perplexity &mdash; same report, row 23 (first-ever citation)
+              </p>
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+                <Image
+                  src="/images/sellermockups/ga4-perplexity-row.png"
+                  alt="GA4 Source / Medium report showing row 23 perplexity.ai / referral with 1 session for Apr 2-19 2026 and 0 sessions for Mar 12-29 2026 — the site's first-ever citation from Perplexity"
+                  width={1201}
+                  height={720}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-xs text-text-muted mt-2">
+                <code className="bg-bg-alt px-1.5 py-0.5 rounded">perplexity.ai / referral</code>
+                {" "}&mdash; <strong>Apr 2&ndash;19:</strong> 1 session &nbsp;|&nbsp;
+                <strong>Mar 12&ndash;29:</strong> 0 sessions &nbsp;|&nbsp;
+                <strong className="text-green-600">First citation</strong>
+                {" "}(GA4 shows 0% because the baseline is zero &mdash; a true
+                first-ever referral.)
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
