@@ -557,28 +557,20 @@ export default function SellerMockupsCaseStudy() {
           </div>
           <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-3">
             <Image
-              src="/images/sellermockups/ga4-ai-referrals.png"
-              alt="GA4 Source / Medium report showing chatgpt.com / referral at +485.71% (7 to 41 sessions) and google / organic at +310% and bing / organic at +92.31% after GEO implementation"
-              width={1201}
-              height={720}
-              className="w-full h-auto"
-            />
-          </div>
-          <p className="text-sm text-text-muted mb-6">
-            ChatGPT referrals alone jumped from 7 sessions to 41 &mdash; a +485%
-            lift &mdash; in 18 days with no additional marketing spend. Claude.ai and
-            Perplexity.ai both produced first-ever documented citations in the
-            post-audit window.
-          </p>
-          <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg mb-10">
-            <Image
               src="/images/sellermockups/ga4-ai-referrals-claude.png"
-              alt="GA4 Source / Medium deeper view showing claude.ai / referral at +600% (1 to 7 sessions) and additional AI-related referrers including chatgpt.com variants"
+              alt="GA4 Source / Medium report showing chatgpt.com / referral at row 4 with +485.71% change (7 to 41 sessions) and claude.ai / referral at row 11 with +600% change (1 to 7 sessions)"
               width={1201}
               height={720}
               className="w-full h-auto"
             />
           </div>
+          <p className="text-sm text-text-muted mb-10">
+            The <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded">chatgpt.com / referral</code> row
+            shows the +485.71% change. Further down, <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded">claude.ai / referral</code>
+            {" "}shows +600%, and <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded">perplexity.ai / referral</code>
+            {" "}produced its first-ever citation. 77 direct AI sessions in 18
+            days, up from 12.
+          </p>
 
           {/* Takeaway */}
           <div className="bg-green-50 border border-green-200 rounded-xl p-6">

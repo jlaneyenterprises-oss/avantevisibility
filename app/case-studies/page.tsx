@@ -272,31 +272,6 @@ export default function CaseStudiesPage() {
             </p>
           </div>
 
-          {/* AI referrals close-up */}
-          <div className="mt-10">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">
-                AI Referrals &mdash; Close-Up
-              </span>
-            </div>
-            <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
-              <Image
-                src="/images/sellermockups/ga4-ai-referrals.png"
-                alt="GA4 Source / Medium report showing chatgpt.com / referral at +485.71% (7 to 41 sessions) and google / organic at +310% and bing / organic at +92.31% after GEO implementation"
-                width={1920}
-                height={1080}
-                className="w-full h-auto"
-              />
-            </div>
-            <p className="text-sm text-text-muted mt-3">
-              <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded">chatgpt.com / referral</code>
-              {" "}grew <strong>+485.71%</strong> (7 &rarr; 41 sessions) in 18 days.
-              <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded ml-1">claude.ai / referral</code>
-              {" "}grew <strong>+600%</strong> (1 &rarr; 7 sessions).
-              <code className="text-xs bg-bg-alt px-1.5 py-0.5 rounded ml-1">perplexity.ai / referral</code>
-              {" "}produced its first-ever citation.
-            </p>
-          </div>
         </div>
       </section>
 
